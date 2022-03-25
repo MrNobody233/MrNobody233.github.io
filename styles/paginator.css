@@ -1,0 +1,30 @@
+.page-nav,
+.paginator {
+  padding-bottom: 10px;
+}
+.page-nav .next,
+.paginator .next {
+  margin-right: 16px;
+  float: right;
+}
+.page-nav .next:hover,
+.paginator .next:hover {
+  transition: 0.2s ease-out;
+  transform: translateX(5px);
+}
+.page-nav .prev,
+.paginator .prev {
+  margin-left: 16px;
+  float: left;
+}
+.page-nav .prev:hover,
+.paginator .prev:hover {
+  transition: 0.2s ease-out;
+  transform: translateX(-5px);
+}
+.post-nav {
+  padding: 15px 18px;
+}
+.post-nav a::before {
+  content: '#';
+}

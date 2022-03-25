@@ -1,0 +1,101 @@
+code,
+pre {
+  padding: 7px;
+  font-size: $code-font-size;
+  font-family: $code-font-family;
+  background: $code-background;
+}
+code {
+  padding: 3px 5px;
+  color: $code-color;
+}
+.highlight {
+  margin: 1em 0;
+  overflow-x: auto;
+  box-shadow: 1px 1px 2px rgba(0,0,0,0.125);
+}
+.highlight table {
+  position: relative;
+  width: 100.1%;
+}
+.highlight table::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  padding: 2px 7px;
+  font-size: $code-font-size;
+  font-weight: bold;
+  color: $gray;
+  background: $code-background;
+  content: 'Code';
+}
+.highlight .code pre {
+  margin: 0;
+  padding: 30px 10px 10px;
+}
+.highlight .gutter {
+  width: 10px;
+  color: $gray;
+}
+.highlight .gutter pre {
+  margin: 0;
+  padding: 30px 7px 10px;
+}
+.highlight .line {
+  height: $code-font-size;
+}
+.highlight table,
+.highlight tr,
+.highlight td {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  border-collapse: collapse;
+}
+.highlight .code .comment,
+.highlight .code .quote {
+  color: map-get($code-highlight-color, comment);
+}
+.highlight .code .keyword,
+.highlight .code .selector-tag,
+.highlight .code .addition {
+  color: map-get($code-highlight-color, keyword);
+}
+.highlight .code .number,
+.highlight .code .string,
+.highlight .code .meta .meta-string,
+.highlight .code .literal,
+.highlight .code .doctag,
+.highlight .code .regexp {
+  color: map-get($code-highlight-color, number);
+}
+.highlight .code .title,
+.highlight .code .section,
+.highlight .code .name,
+.highlight .code .selector-id,
+.highlight .code .selector-class {
+  color: map-get($code-highlight-color, title);
+}
+.highlight .code .attribute,
+.highlight .code .attr,
+.highlight .code .variable,
+.highlight .code .template-variable,
+.highlight .code .class .title,
+.highlight .code .type {
+  color: map-get($code-highlight-color, attribute);
+}
+.highlight .code .symbol,
+.highlight .code .bullet,
+.highlight .code .subst,
+.highlight .code .meta,
+.highlight .code .meta .keyword,
+.highlight .code .selector-attr,
+.highlight .code .selector-pseudo,
+.highlight .code .link {
+  color: map-get($code-highlight-color, symbol);
+}
+.highlight .code .built_in,
+.highlight .code .deletion {
+  color: map-get($code-highlight-color, built_in);
+}

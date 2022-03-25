@@ -1,0 +1,30 @@
+._toc {
+  position: absolute;
+  top: 203px;
+  width: 200px;
+  margin-left: 1040px;
+  border-left: 1px solid #eee;
+  padding-left: 9px;
+}
+._toc .toc-title:before {
+  font-family: "FontAwesome";
+  content: "\f02c";
+  margin-right: 0.5em;
+}
+._toc .toc-content li {
+  list-style: none;
+  white-space: nowrap;
+}
+._toc .toc-content li .toc-link {
+  white-space: pre-wrap;
+}
+.active {
+  background: #e5e9ef;
+  display: block;
+  width: 180px;
+  margin-left: -10px;
+  padding-left: 10px;
+  line-height: 25px;
+  border-left: 3px solid #34495e;
+  box-shadow: 1px 1px 1px #ddd;
+}
