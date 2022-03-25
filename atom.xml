@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>MrNobody&#39;s Blog</title>
+  
+  <subtitle>保持呼吸 不要断气</subtitle>
+  <link href="http://mrnobody233.github.io/atom.xml" rel="self"/>
+  
+  <link href="http://mrnobody233.github.io/"/>
+  <updated>2022-03-25T05:34:44.149Z</updated>
+  <id>http://mrnobody233.github.io/</id>
+  
+  <author>
+    <name>Mr_Nobody</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>不要被外表迷惑</title>
+    <link href="http://mrnobody233.github.io/2022/03/25/%E4%B8%8D%E8%A6%81%E8%A2%AB%E5%A4%96%E8%A1%A8%E8%BF%B7%E6%83%91/"/>
+    <id>http://mrnobody233.github.io/2022/03/25/%E4%B8%8D%E8%A6%81%E8%A2%AB%E5%A4%96%E8%A1%A8%E8%BF%B7%E6%83%91/</id>
+    <published>2022-03-25T05:30:58.000Z</published>
+    <updated>2022-03-25T05:34:44.149Z</updated>
+    
+    
+    
+    
+    
+    <category term="智障" scheme="http://mrnobody233.github.io/tags/%E6%99%BA%E9%9A%9C/"/>
+    
+  </entry>
+  
+</feed>
