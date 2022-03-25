@@ -6,7 +6,7 @@
   <link href="http://mrnobody233.github.io/atom.xml" rel="self"/>
   
   <link href="http://mrnobody233.github.io/"/>
-  <updated>2022-03-25T11:30:37.898Z</updated>
+  <updated>2022-03-25T13:19:53.986Z</updated>
   <id>http://mrnobody233.github.io/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="http://mrnobody233.github.io/2022/03/25/First-Vue-Web/"/>
     <id>http://mrnobody233.github.io/2022/03/25/First-Vue-Web/</id>
     <published>2022-03-25T10:45:09.000Z</published>
-    <updated>2022-03-25T11:30:37.898Z</updated>
+    <updated>2022-03-25T13:19:53.986Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="原因"><a href="#原因" class="headerlink" title="原因"></a>原因</h2><hr><p>因为我的同学<a href="https://thirsty-c.github.io/">胃病患者</a>在上学期参加了，信工的移动安卓设计比赛，并获得了二等奖，我很是<strong>心动</strong> ，并不是心动二等奖，而是心动因为二等奖获得的<strong>雷蛇鼠标</strong>，虽然我已经买了一个比他更贵的鼠标，但是我好不爽，能白嫖为什么要买，所以我下定决心，去参加了这个学期的网站设计大赛，获得更高的奖品，至少给我一个==雷蛇键盘==</p><h3 id="想法"><a href="#想法" class="headerlink" title="想法"></a>想法</h3><hr><p>正好最近学完Vue,有用武之地，为了不让知识悄悄溜走，所以我决定使用Vue来制作本次项目，询问了举办方老师，可以使用Vue之类的东东，所以很快啊，我立马新建文件夹，可是不知道做什么类型的东西，思考许久，终于！！ 我决定做一个做烂的东西，也就是我们工作室的网站，但是是<strong>SPA（单页应用程序）</strong>，想法有了，就有动力去做了。正好比赛需要上交一份PPT，也就顺便把SPA的介绍在博客里面写好，这样就不用再去百度了，我真聪明，哈哈哈哈哈哈！。</p><h4 id="SPA（单页应用程序）"><a href="#SPA（单页应用程序）" class="headerlink" title="SPA（单页应用程序）"></a>SPA（单页应用程序）</h4><hr><p>单页Web应用（single page web application，SPA），就是只有<strong>一张Web页面</strong>的应用。单页应用程序 (SPA) 是加载单个HTML 页面并在用户与应用程序交互时动态更新该页面的Web应用程序。 [1]  浏览器一开始会加载必需的HTML、CSS和JavaScript，所有的操作都在这张页面上完成，都由JavaScript来控制。因此，对单页应用来说模块化的开发和设计显得相当重要。</p><h3 id=""><a href="#" class="headerlink" title=""></a></h3>]]></content>
+    <content type="html"><![CDATA[<h2 id="原因"><a href="#原因" class="headerlink" title="原因"></a>原因</h2><hr><p>因为我的同学<a href="https://thirsty-c.github.io/">胃病患者</a>在上学期参加了，信工的移动安卓设计比赛，并获得了二等奖，我很是<strong>心动</strong> ，并不是心动二等奖，而是心动因为二等奖获得的<strong>雷蛇鼠标</strong>，虽然我已经买了一个比他更贵的鼠标，但是我好不爽，能白嫖为什么要买，所以我下定决心，去参加了这个学期的网站设计大赛，获得更高的奖品，至少给我一个<strong>雷蛇键盘</strong></p><h2 id="想法"><a href="#想法" class="headerlink" title="想法"></a>想法</h2><hr><p>正好最近学完Vue,有用武之地，为了不让知识悄悄溜走，所以我决定使用Vue来制作本次项目，询问了举办方老师，可以使用Vue之类的东东，所以很快啊，我立马新建文件夹，可是不知道做什么类型的东西，思考许久，终于！！ 我决定做一个做烂的东西，也就是我们工作室的网站，但是是<strong>SPA（单页应用程序）</strong>，想法有了，就有动力去做了。正好比赛需要上交一份PPT，也就顺便把SPA的介绍在博客里面写好，这样就不用再去百度了，我真聪明，哈哈哈哈哈哈！。</p><h3 id="SPA（单页应用程序）"><a href="#SPA（单页应用程序）" class="headerlink" title="SPA（单页应用程序）"></a>SPA（单页应用程序）</h3><hr><p>单页Web应用（single page web application，SPA），就是只有<strong>一张Web页面</strong>的应用。单页应用程序 (SPA) 是加载单个HTML 页面并在用户与应用程序交互时动态更新该页面的Web应用程序。 [1]  浏览器一开始会加载必需的HTML、CSS和JavaScript，所有的操作都在这张页面上完成，都由JavaScript来控制。因此，对单页应用来说模块化的开发和设计显得相当重要。</p><h2 id="长啥样？"><a href="#长啥样？" class="headerlink" title="长啥样？"></a>长啥样？</h2><hr><p>  说了这么久那么做的到底咋样呢？实际上不怎么地，在制作期间参考了许多网站，包括学长写过的<a href="https://pjqdyd.github.io/Vue-bst-web/#/">工作室网站</a>发现我写的实在是太垃圾了，简直就是一坨屎一样，不过好歹是我第一次完成Vue作品，也使用了大量的<strong>Vant组件</strong>和<strong>Element组件</strong>，整体看起来不算很丑（自我安慰），相信我以后技术成熟了能够更加完善这个项目，不用再参考公众号的布局。哈哈，那么就来看一看吧。</p><h3 id="长这样。"><a href="#长这样。" class="headerlink" title="长这样。"></a>长这样。</h3><p><img src="https://raw.githubusercontent.com/MrNobody233/Pohot/main/First_Web_03.png" alt="1"></p><h3 id="这样。"><a href="#这样。" class="headerlink" title="这样。"></a>这样。</h3><p><img src="https://raw.githubusercontent.com/MrNobody233/Pohot/main/First_Web_02.png" alt="2"></p><h3 id="和这样"><a href="#和这样" class="headerlink" title="和这样"></a>和这样</h3><p><img src="https://raw.githubusercontent.com/MrNobody233/Pohot/main/First_Web_01.png" alt="3"></p><p>没有全截完 但是也可以看出 制作水平很一般了。 所以还需再接再厉。拜拜~</p>]]></content>
     
     
       
@@ -34,8 +34,12 @@
     
     
     
+    <category term="web前端" scheme="http://mrnobody233.github.io/categories/web%E5%89%8D%E7%AB%AF/"/>
+    
     
     <category term="项目" scheme="http://mrnobody233.github.io/tags/%E9%A1%B9%E7%9B%AE/"/>
+    
+    <category term="前端" scheme="http://mrnobody233.github.io/tags/%E5%89%8D%E7%AB%AF/"/>
     
   </entry>
   
@@ -44,18 +48,20 @@
     <link href="http://mrnobody233.github.io/2022/03/25/%E4%B8%8D%E8%A6%81%E8%A2%AB%E5%A4%96%E8%A1%A8%E8%BF%B7%E6%83%91/"/>
     <id>http://mrnobody233.github.io/2022/03/25/%E4%B8%8D%E8%A6%81%E8%A2%AB%E5%A4%96%E8%A1%A8%E8%BF%B7%E6%83%91/</id>
     <published>2022-03-25T05:30:58.000Z</published>
-    <updated>2022-03-25T06:12:45.604Z</updated>
+    <updated>2022-03-25T12:51:15.598Z</updated>
     
-    <content type="html"><![CDATA[<p>本来这个博客很早就可以完成的，都怪我被迷惑了，因为那个网站实在是太漂亮了，我也想整一个 就是<a href="https://tomotoes.com/">这个网站</a>，他实在是太漂亮了，原来网站可以这么漂亮。  </p><p>我感觉自己白学前端了，所以我下定决心，毕业以后一定不要做<del>程序员</del>   还是去送外卖好了QWQ,所以今天我学废了，自己垃圾就不要去看大佬作品，否则会怀疑人生，马上自闭。</p><p>就酱紫，拜拜~~</p>]]></content>
+    <content type="html"><![CDATA[<p>本来这个博客很早就可以完成的，都怪我被迷惑了，因为那个网站实在是太漂亮了，我也想整一个 就是<a href="https://tomotoes.com/">这个网站(可以点我)</a>，他实在是太漂亮了，原来网站可以这么漂亮。  </p><p>我感觉自己白学前端了，所以我下定决心，毕业以后一定不要做<del>程序员</del>   还是去送外卖好了QWQ,所以今天我学废了，自己垃圾就不要去看大佬作品，否则会怀疑人生，马上自闭。</p><p>就酱紫，拜拜~~</p>]]></content>
     
     
       
       
-    <summary type="html">&lt;p&gt;本来这个博客很早就可以完成的，都怪我被迷惑了，因为那个网站实在是太漂亮了，我也想整一个 就是&lt;a href=&quot;https://tomotoes.com/&quot;&gt;这个网站&lt;/a&gt;，他实在是太漂亮了，原来网站可以这么漂亮。  &lt;/p&gt;
-&lt;p&gt;我感觉自己白学前端了，所以我下定决心，毕</summary>
+    <summary type="html">&lt;p&gt;本来这个博客很早就可以完成的，都怪我被迷惑了，因为那个网站实在是太漂亮了，我也想整一个 就是&lt;a href=&quot;https://tomotoes.com/&quot;&gt;这个网站(可以点我)&lt;/a&gt;，他实在是太漂亮了，原来网站可以这么漂亮。  &lt;/p&gt;
+&lt;p&gt;我感觉自己白学前端了，所以我</summary>
       
     
     
+    
+    <category term="生活" scheme="http://mrnobody233.github.io/categories/%E7%94%9F%E6%B4%BB/"/>
     
     
     <category term="智障" scheme="http://mrnobody233.github.io/tags/%E6%99%BA%E9%9A%9C/"/>

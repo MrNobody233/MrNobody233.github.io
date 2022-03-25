@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>MrNobody&#39;s Blog - 保持呼吸 不要断气</title>
+    <title>Category: web前端 - MrNobody&#39;s Blog</title>
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="google" content="notranslate" />
@@ -18,7 +18,7 @@
     
     
     <meta name="twitter:card" content="summary"/>
-    <meta name="twitter:title" content="MrNobody&#39;s Blog - 保持呼吸 不要断气"/>
+    <meta name="twitter:title" content="Category: web前端 - MrNobody&#39;s Blog"/>
     <meta name="twitter:description" content="MrNobody,"/>
     
     
@@ -26,7 +26,7 @@
     
     <meta property="og:site_name" content="MrNobody&#39;s Blog"/>
     <meta property="og:type" content="object"/>
-    <meta property="og:title" content="MrNobody&#39;s Blog - 保持呼吸 不要断气"/>
+    <meta property="og:title" content="Category: web前端 - MrNobody&#39;s Blog"/>
     <meta property="og:description" content="MrNobody,"/>
     
 <link rel="stylesheet" href="/css/diaspora.css">
@@ -38,31 +38,103 @@
 <body class="loading">
     <span id="config-title" style="display:none">MrNobody&#39;s Blog</span>
     <div id="loader"></div>
-    <div id="single" class="page">
-    <div id="top">
-        <a class="iconfont icon-left image-icon" href="javascript:history.back()"></a>
-    </div>
-    <div class="section">
-        <div class="article">
-            <div class="main">
-                <div class="content">
-                
-                        <h1 id="关于"><a href="#关于" class="headerlink" title="关于"></a>关于</h1><hr>
-<p>为什么会有这个博客，因为我写的第一个Vue项目里面想添加一个友情链接，跳转到我的个人博客，但是我并没有博客，所以我从今天，也就是2022年3月25日13:39:38 诞生了我的第一个博客。</p>
-<p>虽然这个博客的主题一般，但是好歹能用，最主要是我写不出来，我是个fw，嘿嘿。</p>
-<h3 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h3><hr>
-<p>我叫木子曰天，我今年20岁，我是个男孩子，我住在江西省 南昌市 经开区。 如果想要找我玩，可以坐火车到南昌西站，在坐地铁一号线到双港，最后拨打我的电话就行。我性格古怪，脏话连篇，看到熟人会对他放屁，看到我可以立马跑掉</p>
-<h4 id="技能点"><a href="#技能点" class="headerlink" title="技能点"></a>技能点</h4><hr>
-<p> <em>1.我亚索很厉害</em><br> <em>2.CSGO摆烂很厉害</em><br> <em>3.会一些web前端</em><br> <em>4.可以像猴子一样到处乱爬</em><br> <em>5.骂人很厉害</em><br> <em>6.掐人很痛</em><br> <em>7.放屁很臭</em><br> <em>8.鼻屎攻击</em><br> <em>9.阴阳怪气</em></p>
-<h5 id="如何联系我"><a href="#如何联系我" class="headerlink" title="如何联系我"></a>如何联系我</h5><hr>
-<p><u> QQ:1356177686 </u></p>
+    <div class="nav">
+    <ul id="menu-menu" class="menu">
+        
+        <li class="pview menu-item menu-item-type-post_type menu-item-object-page">
+            <a href="//" title="首页" target="_blank" rel="noopener">首页</a>
+        </li>
+        
+        <li class="pview menu-item menu-item-type-post_type menu-item-object-page">
+            <a href="/categories/" title="分类" target="_blank" rel="noopener">分类</a>
+        </li>
+        
+        <li class="pview menu-item menu-item-type-post_type menu-item-object-page">
+            <a href="/tags/" title="标签" target="_blank" rel="noopener">标签</a>
+        </li>
+        
+        <li class="pview menu-item menu-item-type-post_type menu-item-object-page">
+            <a href="/archives/" title="归档" target="_blank" rel="noopener">归档</a>
+        </li>
+        
+        <li class="pview menu-item menu-item-type-post_type menu-item-object-page">
+            <a href="/about/" title="关于" target="_blank" rel="noopener">关于</a>
+        </li>
+        
+    </ul>
+	<span class="target"></span>
+	<center>
+	<div class="hitokoto">
+		<span class="typed" id="hitokoto" data-st="true"></span>
+	</div>
+	</center>
+	
+	<p class="footerlinks">
+		<a href="#" class="iconfont icon-null"></a>
+		
+            <a href="/" title="facebook" class="iconfont icon-facebook" target="_blank" rel="noopener"> </a>
+        
+            <a href="/" title="twitter" class="iconfont icon-twitter" target="_blank" rel="noopener"> </a>
+        
+            <a href="/" title="github" class="iconfont icon-github" target="_blank" rel="noopener"> </a>
+        
+            <a href="/img/logo.png" title="wechat" class="iconfont icon-wechat" target="_blank" rel="noopener"> </a>
+        
+            <a href="mailto:xxxx@gmail.com" title="email" class="iconfont icon-email" target="_blank" rel="noopener"> </a>
+        
+		<a href="#" class="iconfont icon-null"></a>
+	</p>
+	
+    <p id="copyright">
+        &copy; 2022 Mr_Nobody.
+        <span> | </span>Powered by <a href="https://hexo.io/" title="Hexo" target="_blank" rel="noopener">Hexo</a>
+        <span> | </span>Theme <a href="https://github.com/Fechin/hexo-theme-diaspora" title="Diaspora" target="_blank" rel="noopener">Diaspora</a> by Fechin
+		
+		<span> | </span><a rel="nofollow" href="http://www.beian.miit.gov.cn" target="_blank">冀ICP备xxxxxxx号</a>
+		
+    </p>
+</div>
 
-                
-                </div>
-            </div>
+<div id="container">
+    
+<div id="screen">
+    <div id="mark">
+        <div class="layer" data-depth="0.4">
+            <img src="/img/welcome-cover.jpg" id="cover" crossorigin="anonymous" width="1920" height="1080">
         </div>
     </div>
+    <div id="vibrant">
+        <svg viewbox="0 0 2880 1620" height="100%" preserveaspectratio="xMaxYMax slice">
+            <polygon opacity="0.7" points="2000,1620 0,1620 0,0 600,0 "/>
+        </svg>
+        <div></div>
+    </div>
+    <div id="header">
+        <div>
+            <a class="image-logo" href="/"></a>
+			
+            <div class="iconfont icon-menu switchmenu"></div>
+        </div>
+    </div>
+    
+    <div id="post0">
+        <p>三月 25, 2022</p>
+        <h2><a href="/2022/03/25/First-Vue-Web/" title="First_Vue_Web" class="posttitle">First_Vue_Web</a></h2>
+        <p class="summary">原因
+因为我的同学胃病患者在上学期参加了，信工的移动安卓设计比赛，并获得了二等奖，我很是心动 ，并不是心动二等奖，...</p>
+    </div>
+    
 </div>
+
+    <div id="primary">
+        
+    </div>
+    
+</div>
+<div id="preview"></div>
+
+
+
 
 </body>
 
