@@ -6,7 +6,7 @@
   <link href="http://mrnobody233.github.io/atom.xml" rel="self"/>
   
   <link href="http://mrnobody233.github.io/"/>
-  <updated>2022-03-26T11:15:42.265Z</updated>
+  <updated>2022-03-26T14:23:44.192Z</updated>
   <id>http://mrnobody233.github.io/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>实用网站</title>
+    <link href="http://mrnobody233.github.io/2022/03/26/%E5%AE%9E%E7%94%A8%E7%BD%91%E7%AB%99/"/>
+    <id>http://mrnobody233.github.io/2022/03/26/%E5%AE%9E%E7%94%A8%E7%BD%91%E7%AB%99/</id>
+    <published>2022-03-26T13:19:12.000Z</published>
+    <updated>2022-03-26T14:23:44.192Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="实用网站"><a href="#实用网站" class="headerlink" title="实用网站"></a>实用网站</h2><p>我的文件夹里有许多使用的网站，但也只是放在文件夹里，乱七八糟，没有整理，所以现在放在这里，以后就可以更加方便的利用这些网站</p><hr><h3 id="编程类"><a href="#编程类" class="headerlink" title="编程类"></a>编程类</h3><p><a href="https://flatuicolors.com/">颜色网站</a> 不知道如何配色可以看看介个网站<br><a href="https://colorhunt.co/">另一个颜色网站</a> 这个也不错</p><p><a href="https://unbug.github.io/codelf/">取名鬼才</a>不知道取什么变量名可以看看这个</p><h3 id="图片类"><a href="#图片类" class="headerlink" title="图片类"></a>图片类</h3><p><a href="https://wall.alphacoders.com/">wallpaper壁纸</a> 有许多挺不错的漂亮壁纸可以在这里看</p><h3 id="音乐类"><a href="#音乐类" class="headerlink" title="音乐类"></a>音乐类</h3><p><a href="https://music.liuzhijin.cn/">刘志进音乐直连搜索</a> 可以在这里搜索很多音乐</p><p><a href="https://link.hhtjim.com/">外链转换工具</a> 可以配合上一个网站获得音乐的mp3网址</p><h3 id="影视类"><a href="#影视类" class="headerlink" title="影视类"></a>影视类</h3><p><a href="https://www.hwjyingshi.xyz/">hwj影视</a> 可以看各种电影和番剧</p><p><a href="http://www.xfcdm.com/">寻剧吧</a> 也是看各种电影和番剧</p><p><a href="https://www.bilibili.com/">蜀黍的网站</a> 你所热爱的就是你的生活 (<strong>陈睿 吃柠檬</strong>)</p><h3 id="娱乐类"><a href="#娱乐类" class="headerlink" title="娱乐类"></a>娱乐类</h3><p><a href="https://chishenme.xyz/">今天吃什么</a> 不知道吃什么可以看看介个</p><p>待会写..玩儿会儿去。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;实用网站&quot;&gt;&lt;a href=&quot;#实用网站&quot; class=&quot;headerlink&quot; title=&quot;实用网站&quot;&gt;&lt;/a&gt;实用网站&lt;/h2&gt;&lt;p&gt;我的文件夹里有许多使用的网站，但也只是放在文件夹里，乱七八糟，没有整理，所以现在放在这里，以后就可以更加方便的利用这些网站&lt;</summary>
+      
+    
+    
+    
+    <category term="生活" scheme="http://mrnobody233.github.io/categories/%E7%94%9F%E6%B4%BB/"/>
+    
+    
+    <category term="网站" scheme="http://mrnobody233.github.io/tags/%E7%BD%91%E7%AB%99/"/>
+    
+    <category term="工具" scheme="http://mrnobody233.github.io/tags/%E5%B7%A5%E5%85%B7/"/>
+    
+  </entry>
   
   <entry>
     <title>Vue指令</title>
