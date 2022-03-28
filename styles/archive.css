@@ -1,0 +1,42 @@
+.archive {
+  margin: 1em auto;
+  padding: 30px 50px;
+  border-bottom: 1px solid #eee;
+}
+.archive .post-archive {
+  list-style: none;
+  padding: 0;
+}
+.archive .post-archive .collect-year {
+  font-size: 20px;
+}
+.archive .post-archive .collect-year .post-date {
+  display: inline-block;
+  margin-right: 10px;
+  color: #bababa;
+}
+.archive .post-archive .collect-year .post-title {
+  color: #368ccb;
+  text-decoration: none;
+}
+.archive .post-archive .collect-item {
+  border-left: 1px solid #cacaca;
+  margin-left: 2px;
+}
+.archive .post-archive .collect-item .time {
+  font-size: 15px;
+  color: #cacaca;
+  margin-left: 25px;
+}
+.archive .post-archive .collect-item .title {
+  color: #34495e;
+  margin-left: 25px;
+}
+.archive .post-archive .collect-item .title:hover {
+  color: #1e90ff;
+}
+.archive .post-archive .collect-item:hover {
+  transition: 0.2s ease-out;
+  transform: translateX(5px);
+  border-left: 2px solid #5d88ab;
+}

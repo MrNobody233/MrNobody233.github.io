@@ -1,0 +1,51 @@
+.post-content {
+  vertical-align: middle;
+}
+.post-content a:hover {
+  background-color: #c0c0c0;
+  border-radius: 3px;
+}
+@for $i from 1 through 6 {
+  .post-content h#$i {
+    font-size: 1.3em;
+    font-weight: 400;
+    margin-top: 1.2em;
+  }
+}
+.post-content h1 {
+  font-size: 2em;
+}
+.post-content blockquote {
+  padding-left: 10px;
+  border-left: 2px solid #6a7c8e;
+  background-color: #f8f8f8;
+}
+.post-content img {
+  display: inline-block;
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  position: relative;
+}
+.post-content > table {
+  max-width: 100%;
+  margin: 10px 0;
+  border-spacing: 0;
+}
+.post-content > table th,
+.post-content > table td {
+  padding: 5px 15px;
+  border: 1px double $content-table-border-color;
+  text-align: left;
+}
+.post-content ul {
+  list-style-type: disc;
+  position: relative;
+  left: 30px;
+  margin: 12px;
+}
+.post-content ol {
+  position: relative;
+  left: 30px;
+  margin: 12px;
+}
