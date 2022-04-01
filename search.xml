@@ -163,4 +163,70 @@
         <tag>工具</tag>
       </tags>
   </entry>
+  <entry>
+    <title>Vue组件和props</title>
+    <url>/2022/04/01/Vue%E7%BB%84%E4%BB%B6%E5%92%8Cprops/</url>
+    <content><![CDATA[<h3 id="组件"><a href="#组件" class="headerlink" title="组件"></a>组件</h3><p>组件之间可以相互引用，首先得<span style="color:red">注册后使用<span></span></span></p>
+<h4 id="如何注册"><a href="#如何注册" class="headerlink" title="如何注册"></a>如何注册</h4><p>注册组件的方式分为两种，<span style="color:red">全局注册</span> 和 <span style="color:red">局部注册</span></p>
+<ul>
+<li>被全局注册的组件，<span style="color:red">可以在全局任何一个组件内使用/<span></span></span></li>
+<li>被局部注册的组件，<span style="color:red">只能在当前注册的范围内使用</span></li>
+</ul>
+<h5 id="全局注册组件"><a href="#全局注册组件" class="headerlink" title="全局注册组件"></a>全局注册组件</h5><ol>
+<li>在main.js 中导入需要被<span style="color:red">全局注册</span> 的组件   <figure class="highlight javascript"><table><tbody><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> <span class="title class_">Count</span> <span class="keyword">from</span> <span class="string">"@/components/Count.vue"</span>;</span><br></pre></td></tr></tbody></table></figure></li>
+<li>调用Vue.component()方法全局注册组件   <figure class="highlight javascript"><table><tbody><tr><td class="code"><pre><span class="line"><span class="title class_">Vue</span>.<span class="title function_">component</span>(<span class="string">'Count'</span>, <span class="title class_">Count</span>)</span><br></pre></td></tr></tbody></table></figure></li>
+<li>在app组件中使用Count组件   <figure class="highlight javascript"><table><tbody><tr><td class="code"><pre><span class="line">&lt;<span class="title class_">Count</span>&gt;&lt;/<span class="title class_">Count</span>&gt;</span><br></pre></td></tr></tbody></table></figure></li>
+</ol>
+<hr>
+<h5 id="局部注册组件"><a href="#局部注册组件" class="headerlink" title="局部注册组件"></a>局部注册组件</h5><ol>
+<li>在app.vue中导入需要被<span style="color:red">局部注册</span>的组件   <figure class="highlight javascript"><table><tbody><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> <span class="title class_">Count</span> <span class="keyword">from</span> <span class="string">"@/components/Count.vue"</span>;</span><br></pre></td></tr></tbody></table></figure></li>
+<li>在components节点下通过键值对的方式注册组件   <figure class="highlight javascript"><table><tbody><tr><td class="code"><pre><span class="line"><span class="attr">components</span>: {</span><br><span class="line"> <span class="string">'Count'</span>: <span class="title class_">Count</span>,</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure></li>
+<li>在app组件中使用Count组件   <figure class="highlight javascript"><table><tbody><tr><td class="code"><pre><span class="line">&lt;<span class="title class_">Count</span>&gt;&lt;/<span class="title class_">Count</span>&gt;</span><br></pre></td></tr></tbody></table></figure></li>
+</ol>
+<h5 id="全局注册和局部注册的区别"><a href="#全局注册和局部注册的区别" class="headerlink" title="全局注册和局部注册的区别"></a>全局注册和局部注册的区别</h5><ul>
+<li>被全局注册的组件，可以在全局任何一个组件内使用</li>
+<li>被局部注册的组件，只能在当前注册的方位内使用</li>
+</ul>
+<hr>
+<h3 id="组件的props"><a href="#组件的props" class="headerlink" title="组件的props"></a>组件的props</h3><p>props是组件的<span style="color:red">自定义属性</span>，组件的使用者可以通过props<span style="color:red">把数据传递到子组件内部</span>，供子组件内部进行使用。</p>
+<ul>
+<li>作用：父组件通过props<span style="color:red">向子组件传递要展示的数据</span></li>
+<li>好处：提高了组件的<span style="color:red">复用性</span></li>
+</ul>
+<h4 id="如何声明props"><a href="#如何声明props" class="headerlink" title="如何声明props"></a>如何声明props</h4><p>在封装Vue组件时，可以把<span style="color:red">动态的数据项</span>作为props自定义属性。自定义属性可以在当前组件的模板结构中被直接使用。</p>
+<p>在子组件中声明两个要使用的props数据 比如向外界传递一个标题，作者 可以声明一个props数组</p>
+<ul>
+<li>外界可以传递指定的数据，到当前的组件中<figure class="highlight javascript"><table><tbody><tr><td class="code"><pre><span class="line"><span class="attr">props</span>:[<span class="string">'title'</span>,<span class="string">'author'</span>]</span><br></pre></td></tr></tbody></table></figure></li>
+<li>然后可以在DOM结构中使用<span style="color:red">title</span>的值和<span style="color:red">author的值</span>，使用插值表达式<code>{{}}</code> 将两个值渲染到里面</li>
+</ul>
+<figure class="highlight javascript"><table><tbody><tr><td class="code"><pre><span class="line">&lt;div&gt;</span><br><span class="line">  <span class="title class_">Article</span>组件</span><br><span class="line">  &lt;h3&gt;标题：{{ title }}&lt;/h3&gt;</span><br><span class="line">  <span class="language-xml"><span class="tag">&lt;<span class="name">h3</span>&gt;</span>作者:{{ author }}<span class="tag">&lt;/<span class="name">h3</span>&gt;</span></span></span><br><span class="line">  抽刀断水水更流，举杯消愁愁更愁</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></tbody></table></figure>
+<ul>
+<li>接着在使用这个组件期间，可以传递两个数据的值</li>
+</ul>
+<figure class="highlight javascript"><table><tbody><tr><td class="code"><pre><span class="line">&lt;<span class="title class_">Article</span> title=<span class="string">"鹅鹅鹅"</span> author=<span class="string">"木子日天"</span>&gt;&lt;/<span class="title class_">Article</span>&gt;</span><br></pre></td></tr></tbody></table></figure>
+<ul>
+<li>也可以使用v-bind属性绑定的形式，为组件动态绑定props的值</li>
+</ul>
+<figure class="highlight javascript"><table><tbody><tr><td class="code"><pre><span class="line">&lt;<span class="title class_">Article</span> :title=<span class="string">"info.title"</span> :author=<span class="string">"info.name"</span>&gt;&lt;/<span class="title class_">Article</span>&gt;</span><br></pre></td></tr></tbody></table></figure>
+
+<h4 id="props验证"><a href="#props验证" class="headerlink" title="props验证"></a>props验证</h4><p> 指的是：在封装组件时<span style="color:red">对外界传递过来的props数据</span>进行合法性的效验，从而防止数据不合法的问题。</p>
+<p> 使用<span style="color:red">数组类型</span>props节点的话，无法为每个props<span style="color:red">指定具体的数据类型</span></p>
+<h4 id="对象类型的props节点"><a href="#对象类型的props节点" class="headerlink" title="对象类型的props节点"></a><span style="color:red">对象类型</span>的props节点</h4><p> 使用对象类型的props节点，可以对每个props <span style="color:red">进行数据类型的效验</span></p>
+<p> 对象类型的props节点，<span style="color:red">提供了多种数据验证方案</span></p>
+<ol>
+<li>基础的类型检查 <figure class="highlight javascript"><table><tbody><tr><td class="code"><pre><span class="line"> <span class="attr">props</span>:{</span><br><span class="line">   <span class="comment">// title的属性值只能是数字类型</span></span><br><span class="line">  <span class="attr">title</span>:<span class="title class_">Number</span>,</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure></li>
+<li>多个可能的类型  <figure class="highlight javascript"><table><tbody><tr><td class="code"><pre><span class="line"> <span class="attr">props</span>:{</span><br><span class="line">   <span class="comment">// title的属性值可以是 "字符串" 或者 "数字"</span></span><br><span class="line">  <span class="attr">title</span>:[<span class="title class_">String</span>,<span class="title class_">Number</span>],</span><br><span class="line">}  </span><br></pre></td></tr></tbody></table></figure></li>
+<li>必填项效验   <figure class="highlight javascript"><table><tbody><tr><td class="code"><pre><span class="line"> <span class="attr">props</span>:{</span><br><span class="line">  <span class="attr">title</span>:{</span><br><span class="line">    <span class="attr">type</span>:<span class="title class_">String</span>,   <span class="comment">// 表示当前属性的值必须是String字符串类型</span></span><br><span class="line">    <span class="attr">required</span>:<span class="literal">true</span>  <span class="comment">// 表示当前属性是</span></span><br><span class="line">  }</span><br><span class="line">}  </span><br></pre></td></tr></tbody></table></figure></li>
+<li>属性默认值  <figure class="highlight javascript"><table><tbody><tr><td class="code"><pre><span class="line"> <span class="attr">props</span>:{</span><br><span class="line">  <span class="attr">age</span>:{</span><br><span class="line">    <span class="attr">type</span>:<span class="title class_">Number</span>,   <span class="comment">// 表示当前属性的值必须是String字符串类型</span></span><br><span class="line">    <span class="attr">default</span>:<span class="number">18</span>,   <span class="comment">// 如果有使用者没有指定 age 的值 则它的默认值为18</span></span><br><span class="line">  }</span><br><span class="line">}  </span><br></pre></td></tr></tbody></table></figure></li>
+<li>自定义验证函数</li>
+</ol>
+<h6 id=""><a href="#" class="headerlink" title=""></a></h6>]]></content>
+      <categories>
+        <category>web前端</category>
+      </categories>
+      <tags>
+        <tag>前端</tag>
+        <tag>Vue</tag>
+      </tags>
+  </entry>
 </search>

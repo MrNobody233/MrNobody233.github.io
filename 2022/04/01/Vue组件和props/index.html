@@ -1,0 +1,264 @@
+
+<!DOCTYPE html>
+<html lang="zh_CH" class="loading">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Vue组件和props - MrNobody&#39;s Blog</title>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="google" content="notranslate" />
+    <meta name="keywords" content="Fechin,"> 
+    <meta name="description" content="MrNobody,组件组件之间可以相互引用，首先得注册后使用
+如何注册注册组件的方式分为两种，全局注册 和 局部注册
+
+被全局注册的组件，可以在全局任何一个组件内使用/
+被局部注册的组件，只能在当前注册的范围内使用
+,"> 
+    <meta name="author" content="Mr_Nobody"> 
+    <link rel="alternative" href="atom.xml" title="MrNobody&#39;s Blog" type="application/atom+xml"> 
+    <link rel="icon" href="/img/favicon.png"> 
+    
+    
+    
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:title" content="Vue组件和props - MrNobody&#39;s Blog"/>
+    <meta name="twitter:description" content="MrNobody,组件组件之间可以相互引用，首先得注册后使用
+如何注册注册组件的方式分为两种，全局注册 和 局部注册
+
+被全局注册的组件，可以在全局任何一个组件内使用/
+被局部注册的组件，只能在当前注册的范围内使用
+,"/>
+    
+    
+    
+    
+    <meta property="og:site_name" content="MrNobody&#39;s Blog"/>
+    <meta property="og:type" content="object"/>
+    <meta property="og:title" content="Vue组件和props - MrNobody&#39;s Blog"/>
+    <meta property="og:description" content="MrNobody,组件组件之间可以相互引用，首先得注册后使用
+如何注册注册组件的方式分为两种，全局注册 和 局部注册
+
+被全局注册的组件，可以在全局任何一个组件内使用/
+被局部注册的组件，只能在当前注册的范围内使用
+,"/>
+    
+<link rel="stylesheet" href="/css/diaspora.css">
+
+<meta name="generator" content="Hexo 6.1.0">
+<style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
+</head>
+
+<body class="loading">
+    <span id="config-title" style="display:none">MrNobody&#39;s Blog</span>
+    <div id="loader"></div>
+    <div id="single">
+    <div id="top" style="display: block;">
+    <div class="bar" style="width: 0;"></div>
+    <a class="iconfont icon-home image-icon" href="javascript:;" data-url="http://mrnobody233.github.io"></a>
+    <div title="播放/暂停" class="iconfont icon-play"></div>
+    <h3 class="subtitle">Vue组件和props</h3>
+    <div class="social">
+        <div>
+            <div class="share">
+                <a title="获取二维码" class="iconfont icon-scan" href="javascript:;"></a>
+            </div>
+            <div id="qr"></div>
+        </div>
+    </div>
+    <div class="scrollbar"></div>
+</div>
+
+    <div class="section">
+        <div class="article">
+    <div class='main'>
+        <h1 class="title">Vue组件和props</h1>
+        <div class="stuff">
+            <span>四月 01, 2022</span>
+            
+  <ul class="post-tags-list" itemprop="keywords"><li class="post-tags-list-item"><a class="post-tags-list-link" href="/tags/Vue/" rel="tag">Vue</a></li><li class="post-tags-list-item"><a class="post-tags-list-link" href="/tags/%E5%89%8D%E7%AB%AF/" rel="tag">前端</a></li></ul>
+
+
+        </div>
+        <div class="content markdown">
+            <h3 id="组件"><a href="#组件" class="headerlink" title="组件"></a>组件</h3><p>组件之间可以相互引用，首先得<span style="color:red">注册后使用<span></span></span></p>
+<h4 id="如何注册"><a href="#如何注册" class="headerlink" title="如何注册"></a>如何注册</h4><p>注册组件的方式分为两种，<span style="color:red">全局注册</span> 和 <span style="color:red">局部注册</span></p>
+<ul>
+<li>被全局注册的组件，<span style="color:red">可以在全局任何一个组件内使用/<span></span></span></li>
+<li>被局部注册的组件，<span style="color:red">只能在当前注册的范围内使用</span></li>
+</ul>
+<h5 id="全局注册组件"><a href="#全局注册组件" class="headerlink" title="全局注册组件"></a>全局注册组件</h5><ol>
+<li>在main.js 中导入需要被<span style="color:red">全局注册</span> 的组件   <figure class="highlight javascript"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> <span class="title class_">Count</span> <span class="keyword">from</span> <span class="string">"@/components/Count.vue"</span>;</span><br></pre></td></tr></tbody></table></figure></li>
+<li>调用Vue.component()方法全局注册组件   <figure class="highlight javascript"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="title class_">Vue</span>.<span class="title function_">component</span>(<span class="string">'Count'</span>, <span class="title class_">Count</span>)</span><br></pre></td></tr></tbody></table></figure></li>
+<li>在app组件中使用Count组件   <figure class="highlight javascript"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;<span class="title class_">Count</span>&gt;&lt;/<span class="title class_">Count</span>&gt;</span><br></pre></td></tr></tbody></table></figure></li>
+</ol>
+<hr>
+<h5 id="局部注册组件"><a href="#局部注册组件" class="headerlink" title="局部注册组件"></a>局部注册组件</h5><ol>
+<li>在app.vue中导入需要被<span style="color:red">局部注册</span>的组件   <figure class="highlight javascript"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> <span class="title class_">Count</span> <span class="keyword">from</span> <span class="string">"@/components/Count.vue"</span>;</span><br></pre></td></tr></tbody></table></figure></li>
+<li>在components节点下通过键值对的方式注册组件   <figure class="highlight javascript"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">components</span>: {</span><br><span class="line"> <span class="string">'Count'</span>: <span class="title class_">Count</span>,</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure></li>
+<li>在app组件中使用Count组件   <figure class="highlight javascript"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;<span class="title class_">Count</span>&gt;&lt;/<span class="title class_">Count</span>&gt;</span><br></pre></td></tr></tbody></table></figure></li>
+</ol>
+<h5 id="全局注册和局部注册的区别"><a href="#全局注册和局部注册的区别" class="headerlink" title="全局注册和局部注册的区别"></a>全局注册和局部注册的区别</h5><ul>
+<li>被全局注册的组件，可以在全局任何一个组件内使用</li>
+<li>被局部注册的组件，只能在当前注册的方位内使用</li>
+</ul>
+<hr>
+<h3 id="组件的props"><a href="#组件的props" class="headerlink" title="组件的props"></a>组件的props</h3><p>props是组件的<span style="color:red">自定义属性</span>，组件的使用者可以通过props<span style="color:red">把数据传递到子组件内部</span>，供子组件内部进行使用。</p>
+<ul>
+<li>作用：父组件通过props<span style="color:red">向子组件传递要展示的数据</span></li>
+<li>好处：提高了组件的<span style="color:red">复用性</span></li>
+</ul>
+<h4 id="如何声明props"><a href="#如何声明props" class="headerlink" title="如何声明props"></a>如何声明props</h4><p>在封装Vue组件时，可以把<span style="color:red">动态的数据项</span>作为props自定义属性。自定义属性可以在当前组件的模板结构中被直接使用。</p>
+<p>在子组件中声明两个要使用的props数据 比如向外界传递一个标题，作者 可以声明一个props数组</p>
+<ul>
+<li>外界可以传递指定的数据，到当前的组件中<figure class="highlight javascript"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">props</span>:[<span class="string">'title'</span>,<span class="string">'author'</span>]</span><br></pre></td></tr></tbody></table></figure></li>
+<li>然后可以在DOM结构中使用<span style="color:red">title</span>的值和<span style="color:red">author的值</span>，使用插值表达式<code>{{}}</code> 将两个值渲染到里面</li>
+</ul>
+<figure class="highlight javascript"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;div&gt;</span><br><span class="line">  <span class="title class_">Article</span>组件</span><br><span class="line">  &lt;h3&gt;标题：{{ title }}&lt;/h3&gt;</span><br><span class="line">  <span class="language-xml"><span class="tag">&lt;<span class="name">h3</span>&gt;</span>作者:{{ author }}<span class="tag">&lt;/<span class="name">h3</span>&gt;</span></span></span><br><span class="line">  抽刀断水水更流，举杯消愁愁更愁</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></tbody></table></figure>
+<ul>
+<li>接着在使用这个组件期间，可以传递两个数据的值</li>
+</ul>
+<figure class="highlight javascript"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;<span class="title class_">Article</span> title=<span class="string">"鹅鹅鹅"</span> author=<span class="string">"木子日天"</span>&gt;&lt;/<span class="title class_">Article</span>&gt;</span><br></pre></td></tr></tbody></table></figure>
+<ul>
+<li>也可以使用v-bind属性绑定的形式，为组件动态绑定props的值</li>
+</ul>
+<figure class="highlight javascript"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;<span class="title class_">Article</span> :title=<span class="string">"info.title"</span> :author=<span class="string">"info.name"</span>&gt;&lt;/<span class="title class_">Article</span>&gt;</span><br></pre></td></tr></tbody></table></figure>
+
+<h4 id="props验证"><a href="#props验证" class="headerlink" title="props验证"></a>props验证</h4><p> 指的是：在封装组件时<span style="color:red">对外界传递过来的props数据</span>进行合法性的效验，从而防止数据不合法的问题。</p>
+<p> 使用<span style="color:red">数组类型</span>props节点的话，无法为每个props<span style="color:red">指定具体的数据类型</span></p>
+<h4 id="对象类型的props节点"><a href="#对象类型的props节点" class="headerlink" title="对象类型的props节点"></a><span style="color:red">对象类型</span>的props节点</h4><p> 使用对象类型的props节点，可以对每个props <span style="color:red">进行数据类型的效验</span></p>
+<p> 对象类型的props节点，<span style="color:red">提供了多种数据验证方案</span></p>
+<ol>
+<li>基础的类型检查 <figure class="highlight javascript"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"> <span class="attr">props</span>:{</span><br><span class="line">   <span class="comment">// title的属性值只能是数字类型</span></span><br><span class="line">  <span class="attr">title</span>:<span class="title class_">Number</span>,</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure></li>
+<li>多个可能的类型  <figure class="highlight javascript"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"> <span class="attr">props</span>:{</span><br><span class="line">   <span class="comment">// title的属性值可以是 "字符串" 或者 "数字"</span></span><br><span class="line">  <span class="attr">title</span>:[<span class="title class_">String</span>,<span class="title class_">Number</span>],</span><br><span class="line">}  </span><br></pre></td></tr></tbody></table></figure></li>
+<li>必填项效验   <figure class="highlight javascript"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"> <span class="attr">props</span>:{</span><br><span class="line">  <span class="attr">title</span>:{</span><br><span class="line">    <span class="attr">type</span>:<span class="title class_">String</span>,   <span class="comment">// 表示当前属性的值必须是String字符串类型</span></span><br><span class="line">    <span class="attr">required</span>:<span class="literal">true</span>  <span class="comment">// 表示当前属性是</span></span><br><span class="line">  }</span><br><span class="line">}  </span><br></pre></td></tr></tbody></table></figure></li>
+<li>属性默认值  <figure class="highlight javascript"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"> <span class="attr">props</span>:{</span><br><span class="line">  <span class="attr">age</span>:{</span><br><span class="line">    <span class="attr">type</span>:<span class="title class_">Number</span>,   <span class="comment">// 表示当前属性的值必须是String字符串类型</span></span><br><span class="line">    <span class="attr">default</span>:<span class="number">18</span>,   <span class="comment">// 如果有使用者没有指定 age 的值 则它的默认值为18</span></span><br><span class="line">  }</span><br><span class="line">}  </span><br></pre></td></tr></tbody></table></figure></li>
+<li>自定义验证函数</li>
+</ol>
+<h6 id=""><a href="#" class="headerlink" title=""></a></h6>
+            <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
+            <audio id="audio" loop="1" preload="auto" controls="controls" data-autoplay="false">
+                <source type="audio/mpeg" src="">
+            </audio>
+            
+                <ul id="audio-list" style="display:none">
+                    
+                        
+                            <li title="0" data-url="https://link.hhtjim.com/163/1447930796.mp3"></li>
+                        
+                    
+                        
+                            <li title="1" data-url="https://link.hhtjim.com/163/421160291.mp3"></li>
+                        
+                    
+                        
+                            <li title="2" data-url="https://link.hhtjim.com/163/38358225.mp3"></li>
+                        
+                    
+                        
+                            <li title="3" data-url="https://link.hhtjim.com/163/1485304938.mp3"></li>
+                        
+                    
+                        
+                            <li title="4" data-url="https://link.hhtjim.com/163/1418713046.mp3"></li>
+                        
+                    
+                </ul>
+            
+        </div>
+        
+    <div id="gitalk-container" class="comment link"
+		data-enable="false"
+        data-ae="false"
+        data-ci=""
+        data-cs=""
+        data-r=""
+        data-o=""
+        data-a=""
+        data-d="false"
+    >查看评论</div>
+
+
+    </div>
+    
+        <div class="side">
+			<ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BB%84%E4%BB%B6"><span class="toc-number">1.</span> <span class="toc-text">组件</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%A6%82%E4%BD%95%E6%B3%A8%E5%86%8C"><span class="toc-number">1.1.</span> <span class="toc-text">如何注册</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%85%A8%E5%B1%80%E6%B3%A8%E5%86%8C%E7%BB%84%E4%BB%B6"><span class="toc-number">1.1.1.</span> <span class="toc-text">全局注册组件</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%B1%80%E9%83%A8%E6%B3%A8%E5%86%8C%E7%BB%84%E4%BB%B6"><span class="toc-number">1.1.2.</span> <span class="toc-text">局部注册组件</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%85%A8%E5%B1%80%E6%B3%A8%E5%86%8C%E5%92%8C%E5%B1%80%E9%83%A8%E6%B3%A8%E5%86%8C%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="toc-number">1.1.3.</span> <span class="toc-text">全局注册和局部注册的区别</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BB%84%E4%BB%B6%E7%9A%84props"><span class="toc-number">2.</span> <span class="toc-text">组件的props</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%A6%82%E4%BD%95%E5%A3%B0%E6%98%8Eprops"><span class="toc-number">2.1.</span> <span class="toc-text">如何声明props</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#props%E9%AA%8C%E8%AF%81"><span class="toc-number">2.2.</span> <span class="toc-text">props验证</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%AF%B9%E8%B1%A1%E7%B1%BB%E5%9E%8B%E7%9A%84props%E8%8A%82%E7%82%B9"><span class="toc-number">2.3.</span> <span class="toc-text">对象类型的props节点</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link"><span class="toc-number">2.3.0.1.</span> <span class="toc-text"></span></a></li></ol></li></ol></li></ol></li></ol>	
+        </div>
+    
+</div>
+
+
+    </div>
+</div>
+</body>
+
+
+<script src="//lib.baomitu.com/jquery/1.8.3/jquery.min.js"></script>
+<script src="/js/plugin.js"></script>
+<script src="/js/typed.js"></script>
+<script src="/js/diaspora.js"></script>
+
+
+<link rel="stylesheet" href="/photoswipe/photoswipe.css">
+<link rel="stylesheet" href="/photoswipe/default-skin/default-skin.css">
+
+
+<script src="/photoswipe/photoswipe.min.js"></script>
+<script src="/photoswipe/photoswipe-ui-default.min.js"></script>
+
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+            <div class="pswp__top-bar">
+                <!--  Controls are self-explanatory. Order can be changed. -->
+                <div class="pswp__counter"></div>
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+</html>
