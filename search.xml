@@ -324,4 +324,41 @@
         <tag>Vue</tag>
       </tags>
   </entry>
+  <entry>
+    <title>Vue路由</title>
+    <url>/2022/04/05/Vue%E8%B7%AF%E7%94%B1/</url>
+    <content><![CDATA[<p><span style="color:red"></span></p>
+<h1 id="Vue路由"><a href="#Vue路由" class="headerlink" title="Vue路由"></a>Vue路由</h1><p>路由就是<span style="color:red">Hash地址</span>与<span style="color:red">组件</span>之间的对应关系</p>
+<h2 id="前端路由的工作方式"><a href="#前端路由的工作方式" class="headerlink" title="前端路由的工作方式"></a>前端路由的工作方式</h2><ol>
+<li>用户<span style="color:red">点击</span>页面上的<span style="color:red">路由连接</span></li>
+<li>导致了<span style="color:red">Url地址栏</span>中<span style="color:red">Hash</span>值发生了变化</li>
+<li>前端路由<span style="color:red">监听到了Hash地址的变化</span></li>
+<li>前端路由把当前<span style="color:red">Hash地址对应的组件</span>渲染到浏览器中</li>
+</ol>
+<p>结论：前端路由，指的是<span style="color:red">Hash 地址</span>与<span style="color:red">组件之间</span>的<span style="color:red">对应关系</span></p>
+<h3 id="Vue-router"><a href="#Vue-router" class="headerlink" title="Vue-router"></a>Vue-router</h3><p><span style="color:red">Vue-router</span>是vue.js官方给出的<span style="color:red">路由解决方案</span>。它只能结合vue项目进行使用，能够轻松的管理SPA项目中组件的切换</p>
+<ul>
+<li>vue-router 3.x 只能结合<span style="color:red">vue2</span>进行使用</li>
+<li>vue-router 4.x 只能结合<span style="color:red">vue3</span>进行使用</li>
+</ul>
+<h4 id="vue-router-的基本使用步骤"><a href="#vue-router-的基本使用步骤" class="headerlink" title="vue-router 的基本使用步骤"></a>vue-router 的基本使用步骤</h4><h5 id="声明路由链接和占位符"><a href="#声明路由链接和占位符" class="headerlink" title="声明路由链接和占位符"></a>声明<span style="color:red">路由链接</span>和<span style="color:red">占位符</span></h5><p>可以使用<code>&lt;router-link&gt;</code>标签来声明路由链接，并使用<code>&lt;router-view&gt;</code>标签来声明路由占位符</p>
+<figure class="highlight html"><table><tbody><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">template</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">h1</span>&gt;</span>App组件<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!--声明路由连接--&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">router-link</span> <span class="attr">to</span>=<span class="string">"/home"</span>&gt;</span>首页<span class="tag">&lt;/<span class="name">router-link</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">router-link</span> <span class="attr">to</span>=<span class="string">"/movie"</span>&gt;</span>电影<span class="tag">&lt;/<span class="name">router-link</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">router-link</span> <span class="attr">to</span>=<span class="string">"/about"</span>&gt;</span>关于<span class="tag">&lt;/<span class="name">router-link</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">template</span>&gt;</span></span><br></pre></td></tr></tbody></table></figure>
+
+<h5 id="在router-x2F-main-js中导入-并注册组件"><a href="#在router-x2F-main-js中导入-并注册组件" class="headerlink" title="在router/main.js中导入 并注册组件"></a>在router/main.js中导入 并注册组件</h5> <figure class="highlight javascript"><table><tbody><tr><td class="code"><pre><span class="line"><span class="comment">// 导入需要被展示的组件</span></span><br><span class="line"><span class="keyword">import</span> <span class="title class_">Home</span> <span class="keyword">from</span> <span class="string">"@/views/Home.vue"</span>;</span><br><span class="line"><span class="keyword">import</span> <span class="title class_">About</span> <span class="keyword">from</span> <span class="string">"@/views/About.vue"</span>;</span><br><span class="line"><span class="keyword">import</span> <span class="title class_">Movie</span> <span class="keyword">from</span> <span class="string">"@/views/Movie.vue"</span>;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> routes = [</span><br><span class="line">  <span class="comment">// path 是hash地址 component 是要展示的组件</span></span><br><span class="line">    {<span class="attr">path</span>: <span class="string">'/home'</span>, <span class="attr">component</span>: <span class="title class_">Home</span>},</span><br><span class="line">    {<span class="attr">path</span>: <span class="string">'/about'</span>, <span class="attr">component</span>: <span class="title class_">About</span>},</span><br><span class="line">    {<span class="attr">path</span>: <span class="string">'/movie'</span>, <span class="attr">component</span>: <span class="title class_">Movie</span>}</span><br><span class="line">]</span><br><span class="line"></span><br></pre></td></tr></tbody></table></figure>
+
+<h4 id="路由重定向"><a href="#路由重定向" class="headerlink" title="路由重定向"></a>路由重定向</h4><p>指的是：用户在访问<span style="color:red">地址A</span>的时候，<span style="color:red">强制用户跳转</span>到地址C，从而展示特定的组件页面</p>
+<p>用法十分简单 通过路由规则的 <span style="color:red">redirect</span>属性，指定一个新的路由地址，可以很方便的设置路由的重定向</p>
+<figure class="highlight javascript"><table><tbody><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> routes = [</span><br><span class="line"><span class="comment">// path 表示需要被重定向的“原地址”，redirect表示将要被重定向到的“新地址”</span></span><br><span class="line">    {<span class="attr">path</span>: <span class="string">'/'</span>, <span class="attr">redirect</span>: <span class="string">'/home'</span>},</span><br><span class="line">]</span><br></pre></td></tr></tbody></table></figure>
+
+<h4 id="嵌套路由"><a href="#嵌套路由" class="headerlink" title="嵌套路由"></a>嵌套路由</h4><p>通过路由实现<span style="color:red">组件的嵌套展示</span>，叫做嵌套路由</p>
+<p>明天先今天水博客</p>
+]]></content>
+      <categories>
+        <category>web前端</category>
+      </categories>
+      <tags>
+        <tag>前端</tag>
+        <tag>Vue</tag>
+      </tags>
+  </entry>
 </search>

@@ -1,0 +1,238 @@
+
+<!DOCTYPE html>
+<html lang="zh_CH" class="loading">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Vue路由 - MrNobody&#39;s Blog</title>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="google" content="notranslate" />
+    <meta name="keywords" content="Fechin,"> 
+    <meta name="description" content="MrNobody,
+Vue路由路由就是Hash地址与组件之间的对应关系
+前端路由的工作方式
+用户点击页面上的路由连接
+导致了Url地址栏中Hash值发生了变化
+前端路由监听到了Hash地址的变化
+前端路由把当前Has,"> 
+    <meta name="author" content="Mr_Nobody"> 
+    <link rel="alternative" href="atom.xml" title="MrNobody&#39;s Blog" type="application/atom+xml"> 
+    <link rel="icon" href="/img/favicon.png"> 
+    
+    
+    
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:title" content="Vue路由 - MrNobody&#39;s Blog"/>
+    <meta name="twitter:description" content="MrNobody,
+Vue路由路由就是Hash地址与组件之间的对应关系
+前端路由的工作方式
+用户点击页面上的路由连接
+导致了Url地址栏中Hash值发生了变化
+前端路由监听到了Hash地址的变化
+前端路由把当前Has,"/>
+    
+    
+    
+    
+    <meta property="og:site_name" content="MrNobody&#39;s Blog"/>
+    <meta property="og:type" content="object"/>
+    <meta property="og:title" content="Vue路由 - MrNobody&#39;s Blog"/>
+    <meta property="og:description" content="MrNobody,
+Vue路由路由就是Hash地址与组件之间的对应关系
+前端路由的工作方式
+用户点击页面上的路由连接
+导致了Url地址栏中Hash值发生了变化
+前端路由监听到了Hash地址的变化
+前端路由把当前Has,"/>
+    
+<link rel="stylesheet" href="/css/diaspora.css">
+
+<meta name="generator" content="Hexo 6.1.0">
+<style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
+</head>
+
+<body class="loading">
+    <span id="config-title" style="display:none">MrNobody&#39;s Blog</span>
+    <div id="loader"></div>
+    <div id="single">
+    <div id="top" style="display: block;">
+    <div class="bar" style="width: 0;"></div>
+    <a class="iconfont icon-home image-icon" href="javascript:;" data-url="http://mrnobody233.github.io"></a>
+    <div title="播放/暂停" class="iconfont icon-play"></div>
+    <h3 class="subtitle">Vue路由</h3>
+    <div class="social">
+        <div>
+            <div class="share">
+                <a title="获取二维码" class="iconfont icon-scan" href="javascript:;"></a>
+            </div>
+            <div id="qr"></div>
+        </div>
+    </div>
+    <div class="scrollbar"></div>
+</div>
+
+    <div class="section">
+        <div class="article">
+    <div class='main'>
+        <h1 class="title">Vue路由</h1>
+        <div class="stuff">
+            <span>四月 05, 2022</span>
+            
+  <ul class="post-tags-list" itemprop="keywords"><li class="post-tags-list-item"><a class="post-tags-list-link" href="/tags/Vue/" rel="tag">Vue</a></li><li class="post-tags-list-item"><a class="post-tags-list-link" href="/tags/%E5%89%8D%E7%AB%AF/" rel="tag">前端</a></li></ul>
+
+
+        </div>
+        <div class="content markdown">
+            <p><span style="color:red"></span></p>
+<h1 id="Vue路由"><a href="#Vue路由" class="headerlink" title="Vue路由"></a>Vue路由</h1><p>路由就是<span style="color:red">Hash地址</span>与<span style="color:red">组件</span>之间的对应关系</p>
+<h2 id="前端路由的工作方式"><a href="#前端路由的工作方式" class="headerlink" title="前端路由的工作方式"></a>前端路由的工作方式</h2><ol>
+<li>用户<span style="color:red">点击</span>页面上的<span style="color:red">路由连接</span></li>
+<li>导致了<span style="color:red">Url地址栏</span>中<span style="color:red">Hash</span>值发生了变化</li>
+<li>前端路由<span style="color:red">监听到了Hash地址的变化</span></li>
+<li>前端路由把当前<span style="color:red">Hash地址对应的组件</span>渲染到浏览器中</li>
+</ol>
+<p>结论：前端路由，指的是<span style="color:red">Hash 地址</span>与<span style="color:red">组件之间</span>的<span style="color:red">对应关系</span></p>
+<h3 id="Vue-router"><a href="#Vue-router" class="headerlink" title="Vue-router"></a>Vue-router</h3><p><span style="color:red">Vue-router</span>是vue.js官方给出的<span style="color:red">路由解决方案</span>。它只能结合vue项目进行使用，能够轻松的管理SPA项目中组件的切换</p>
+<ul>
+<li>vue-router 3.x 只能结合<span style="color:red">vue2</span>进行使用</li>
+<li>vue-router 4.x 只能结合<span style="color:red">vue3</span>进行使用</li>
+</ul>
+<h4 id="vue-router-的基本使用步骤"><a href="#vue-router-的基本使用步骤" class="headerlink" title="vue-router 的基本使用步骤"></a>vue-router 的基本使用步骤</h4><h5 id="声明路由链接和占位符"><a href="#声明路由链接和占位符" class="headerlink" title="声明路由链接和占位符"></a>声明<span style="color:red">路由链接</span>和<span style="color:red">占位符</span></h5><p>可以使用<code>&lt;router-link&gt;</code>标签来声明路由链接，并使用<code>&lt;router-view&gt;</code>标签来声明路由占位符</p>
+<figure class="highlight html"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">template</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">h1</span>&gt;</span>App组件<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!--声明路由连接--&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">router-link</span> <span class="attr">to</span>=<span class="string">"/home"</span>&gt;</span>首页<span class="tag">&lt;/<span class="name">router-link</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">router-link</span> <span class="attr">to</span>=<span class="string">"/movie"</span>&gt;</span>电影<span class="tag">&lt;/<span class="name">router-link</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">router-link</span> <span class="attr">to</span>=<span class="string">"/about"</span>&gt;</span>关于<span class="tag">&lt;/<span class="name">router-link</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">template</span>&gt;</span></span><br></pre></td></tr></tbody></table></figure>
+
+<h5 id="在router-x2F-main-js中导入-并注册组件"><a href="#在router-x2F-main-js中导入-并注册组件" class="headerlink" title="在router/main.js中导入 并注册组件"></a>在router/main.js中导入 并注册组件</h5> <figure class="highlight javascript"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 导入需要被展示的组件</span></span><br><span class="line"><span class="keyword">import</span> <span class="title class_">Home</span> <span class="keyword">from</span> <span class="string">"@/views/Home.vue"</span>;</span><br><span class="line"><span class="keyword">import</span> <span class="title class_">About</span> <span class="keyword">from</span> <span class="string">"@/views/About.vue"</span>;</span><br><span class="line"><span class="keyword">import</span> <span class="title class_">Movie</span> <span class="keyword">from</span> <span class="string">"@/views/Movie.vue"</span>;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> routes = [</span><br><span class="line">  <span class="comment">// path 是hash地址 component 是要展示的组件</span></span><br><span class="line">    {<span class="attr">path</span>: <span class="string">'/home'</span>, <span class="attr">component</span>: <span class="title class_">Home</span>},</span><br><span class="line">    {<span class="attr">path</span>: <span class="string">'/about'</span>, <span class="attr">component</span>: <span class="title class_">About</span>},</span><br><span class="line">    {<span class="attr">path</span>: <span class="string">'/movie'</span>, <span class="attr">component</span>: <span class="title class_">Movie</span>}</span><br><span class="line">]</span><br><span class="line"></span><br></pre></td></tr></tbody></table></figure>
+
+<h4 id="路由重定向"><a href="#路由重定向" class="headerlink" title="路由重定向"></a>路由重定向</h4><p>指的是：用户在访问<span style="color:red">地址A</span>的时候，<span style="color:red">强制用户跳转</span>到地址C，从而展示特定的组件页面</p>
+<p>用法十分简单 通过路由规则的 <span style="color:red">redirect</span>属性，指定一个新的路由地址，可以很方便的设置路由的重定向</p>
+<figure class="highlight javascript"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> routes = [</span><br><span class="line"><span class="comment">// path 表示需要被重定向的“原地址”，redirect表示将要被重定向到的“新地址”</span></span><br><span class="line">    {<span class="attr">path</span>: <span class="string">'/'</span>, <span class="attr">redirect</span>: <span class="string">'/home'</span>},</span><br><span class="line">]</span><br></pre></td></tr></tbody></table></figure>
+
+<h4 id="嵌套路由"><a href="#嵌套路由" class="headerlink" title="嵌套路由"></a>嵌套路由</h4><p>通过路由实现<span style="color:red">组件的嵌套展示</span>，叫做嵌套路由</p>
+<p>明天先今天水博客</p>
+
+            <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
+            <audio id="audio" loop="1" preload="auto" controls="controls" data-autoplay="false">
+                <source type="audio/mpeg" src="">
+            </audio>
+            
+                <ul id="audio-list" style="display:none">
+                    
+                        
+                            <li title="0" data-url="https://link.hhtjim.com/163/1447930796.mp3"></li>
+                        
+                    
+                        
+                            <li title="1" data-url="https://link.hhtjim.com/163/421160291.mp3"></li>
+                        
+                    
+                        
+                            <li title="2" data-url="https://link.hhtjim.com/163/38358225.mp3"></li>
+                        
+                    
+                        
+                            <li title="3" data-url="https://link.hhtjim.com/163/1485304938.mp3"></li>
+                        
+                    
+                        
+                            <li title="4" data-url="https://link.hhtjim.com/163/1418713046.mp3"></li>
+                        
+                    
+                </ul>
+            
+        </div>
+        
+    <div id="gitalk-container" class="comment link"
+		data-enable="false"
+        data-ae="false"
+        data-ci=""
+        data-cs=""
+        data-r=""
+        data-o=""
+        data-a=""
+        data-d="false"
+    >查看评论</div>
+
+
+    </div>
+    
+        <div class="side">
+			<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Vue%E8%B7%AF%E7%94%B1"><span class="toc-number">1.</span> <span class="toc-text">Vue路由</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%89%8D%E7%AB%AF%E8%B7%AF%E7%94%B1%E7%9A%84%E5%B7%A5%E4%BD%9C%E6%96%B9%E5%BC%8F"><span class="toc-number">1.1.</span> <span class="toc-text">前端路由的工作方式</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Vue-router"><span class="toc-number">1.1.1.</span> <span class="toc-text">Vue-router</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#vue-router-%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8%E6%AD%A5%E9%AA%A4"><span class="toc-number">1.1.1.1.</span> <span class="toc-text">vue-router 的基本使用步骤</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%A3%B0%E6%98%8E%E8%B7%AF%E7%94%B1%E9%93%BE%E6%8E%A5%E5%92%8C%E5%8D%A0%E4%BD%8D%E7%AC%A6"><span class="toc-number">1.1.1.1.1.</span> <span class="toc-text">声明路由链接和占位符</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%9C%A8router-x2F-main-js%E4%B8%AD%E5%AF%BC%E5%85%A5-%E5%B9%B6%E6%B3%A8%E5%86%8C%E7%BB%84%E4%BB%B6"><span class="toc-number">1.1.1.1.2.</span> <span class="toc-text">在router&#x2F;main.js中导入 并注册组件</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%B7%AF%E7%94%B1%E9%87%8D%E5%AE%9A%E5%90%91"><span class="toc-number">1.1.1.2.</span> <span class="toc-text">路由重定向</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%B5%8C%E5%A5%97%E8%B7%AF%E7%94%B1"><span class="toc-number">1.1.1.3.</span> <span class="toc-text">嵌套路由</span></a></li></ol></li></ol></li></ol></li></ol>	
+        </div>
+    
+</div>
+
+
+    </div>
+</div>
+</body>
+
+
+<script src="//lib.baomitu.com/jquery/1.8.3/jquery.min.js"></script>
+<script src="/js/plugin.js"></script>
+<script src="/js/typed.js"></script>
+<script src="/js/diaspora.js"></script>
+
+
+<link rel="stylesheet" href="/photoswipe/photoswipe.css">
+<link rel="stylesheet" href="/photoswipe/default-skin/default-skin.css">
+
+
+<script src="/photoswipe/photoswipe.min.js"></script>
+<script src="/photoswipe/photoswipe-ui-default.min.js"></script>
+
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+            <div class="pswp__top-bar">
+                <!--  Controls are self-explanatory. Order can be changed. -->
+                <div class="pswp__counter"></div>
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+</html>
