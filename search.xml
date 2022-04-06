@@ -1,6 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Markor</title>
+    <url>/2022/04/02/Markor/</url>
+    <content><![CDATA[<h3 id="Markor"><a href="#Markor" class="headerlink" title="Markor"></a>Markor</h3><p>最近想了一小问题，就是学校解封以后，如果我回家的话基本上是不会碰电脑的，虽然我会把电脑一起带回去，但是基本上都没有打开过，可能是我觉得带着有重量感，不对，是害怕我的github没有保持日常提交代码，所以为了避免这个情况，我可以使用平板来写文档，虽然提交不上去，但是回宿舍以后，我也可以躺在床上用平板来写一写自己想写的东西，这样有挺多好处的，可以避免我在床上玩手机，这样就可以玩平板了，哈哈哈哈哈，为什么想要用平板来写文档呢，写博客什么的都不是最主要的，最重要的是让我的平板键盘能有用武之地，我已经太久没有用我的平板键盘了，一直放在抽屉里积灰，这东西花了我600RMB，我也不知道当时我怎么想的，会买这么贵的东西。</p>
+<p>好吧我突然想起来了，在我没有买显示器之前，平板一直是我的副屏，多亏了华为的多屏协同，能帮我省很多事，虽然延迟还是有一小丢丢，但是日常使用还是很给力的，即使是这样还是有缺点的，就是字太小了，我眼睛很好，但是一直看着这么小的字也是会很难受的，所以我买了显示器，果然大屏就是爽，立马抛弃了我的小平板，只用它来记笔记，我们三个一直相处的很好，直到有一天！！！我会写博客了，我为什么不把笔记写在博客里呢，所以我再次抛弃了我的平板，没有考虑平板的感受，呜呜，果然是买前生产力，买后哔哩哔哩，盖泡面，当手托，摸鱼。所以为了改变现状，我可以使用<strong>Markor</strong>来满足自己突然想写博客的欲望，这一篇博客就是使用Markor来写的，还挺像回事，如果找到更好的软件我还是会替代Markor的，哈哈哈哈哈哈，这样我的平板就不会失宠了。</p>
+<p>日常水博客，就酱紫，拜拜。</p>
+]]></content>
+      <categories>
+        <category>生活</category>
+      </categories>
+      <tags>
+        <tag>智障</tag>
+        <tag>自言自语</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>First_Vue_Web</title>
     <url>/2022/03/25/First-Vue-Web/</url>
     <content><![CDATA[<h2 id="原因"><a href="#原因" class="headerlink" title="原因"></a>原因</h2><p>因为我的同学<a href="https://thirsty-c.github.io/">胃病患者</a>在上学期参加了，信工的移动安卓设计比赛，并获得了二等奖，我很是<strong>心动</strong> ，并不是心动二等奖，而是心动因为二等奖获得的<strong>雷蛇鼠标</strong>，虽然我已经买了一个比他更贵的鼠标，但是我好不爽，能白嫖为什么要买，所以我下定决心，去参加了这个学期的网站设计大赛，获得更高的奖品，至少给我一个<strong>雷蛇键盘</strong></p>
@@ -100,67 +115,58 @@
       </tags>
   </entry>
   <entry>
-    <title>不要熬夜</title>
-    <url>/2022/03/28/%E4%B8%8D%E8%A6%81%E7%86%AC%E5%A4%9C/</url>
-    <content><![CDATA[<h3 id="熬夜"><a href="#熬夜" class="headerlink" title="熬夜"></a><span style="color:#4D77FF">熬夜</span></h3><hr>
-<h4 id="起因"><a href="#起因" class="headerlink" title="起因"></a>起因</h4><p>昨天和工作室的小伙伴们一起看<a href="https://charet.github.io/">社恐废宅充电器</a>在玩一款新的游戏，叫做<span style="color:#5EE6EB">幽灵线: 东京</span>，我们更喜欢叫他<span style="color:#FFB72B">林正英模拟器</span><img src="http://i0.hdslb.com/bfs/article/51c890784afb0a55bb8a2d8af4431dcc4809eac3.jpg" alt="" width="50"></p>
-<p>对了那个游戏长这样<img src="http://p2.itc.cn/q_70/images03/20210714/2ce935a73e8f4db89e26c91f37b6561f.jpeg" alt="" width="100">确实比较新颖，因为他的攻击方式是把手比作枪，用手射出子弹一样，给人眼前一亮的感觉，但是玩久了感觉有点单调，不算很耐玩的游戏，也许是它太贵了我买不起，要200多RMB。</p>
+    <title>Vue-ref引用-作用域插槽</title>
+    <url>/2022/04/03/Vue-ref%E5%BC%95%E7%94%A8-%E4%BD%9C%E7%94%A8%E5%9F%9F%E6%8F%92%E6%A7%BD/</url>
+    <content><![CDATA[<h3 id="ref引用"><a href="#ref引用" class="headerlink" title="ref引用"></a>ref引用</h3><p>ref用来辅助开发者在<span style="color:red">不依赖jQuery的情况下</span>，获取DOM元素或组件的引用</p>
+<p>每个vue的组件实例上，都包含一个<span style="color:red"><code>$refs</code>对象</span>，里面存储着对应的DOM元素或组件的引用。默认情况下，<span style="color:red">组件的<code>$ref</code>指向一个空对象</span>。</p>
+<h4 id="使用-ref-引用-DOM-元素"><a href="#使用-ref-引用-DOM-元素" class="headerlink" title="使用 ref 引用 DOM 元素"></a>使用 ref 引用 DOM 元素</h4><ul>
+<li><p>使用ref属性 为对应的DOM添加引用名称</p>
+  <figure class="highlight html"><table><tbody><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">h1</span> <span class="attr">ref</span>=<span class="string">"myh1"</span>&gt;</span>App根组件<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br></pre></td></tr></tbody></table></figure></li>
+<li><p>通过 <code>this.$refs.myh1</code>可以获取到DOM元素的引用</p>
+</li>
+<li><p>操作DOM元素把文本颜色改为红色</p>
+  <figure class="highlight javascript"><table><tbody><tr><td class="code"><pre><span class="line"><span class="variable language_">this</span>.<span class="property">$refs</span>.<span class="property">myh1</span>.<span class="property">style</span>.<span class="property">color</span>=<span class="string">'red'</span></span><br></pre></td></tr></tbody></table></figure></li>
+</ul>
+<h4 id="使用-ref-引用-组件-实例"><a href="#使用-ref-引用-组件-实例" class="headerlink" title="使用 ref 引用 组件 实例"></a>使用 ref 引用 组件 实例</h4><ul>
+<li><p>使用ref属性 为相对应的组件添加引用名称</p>
+  <figure class="highlight html"><table><tbody><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">Counter</span> <span class="attr">ref</span>=<span class="string">"counterRef"</span>&gt;</span><span class="tag">&lt;/<span class="name">Counter</span>&gt;</span></span><br></pre></td></tr></tbody></table></figure></li>
+<li><p>通过 <code>this.$refs.counterRef</code>可以引用组件的实例</p>
+</li>
+<li><p>引用到组件的实例之后，就可以调用组件上的 methods 方法</p>
+  <figure class="highlight javascript"><table><tbody><tr><td class="code"><pre><span class="line"><span class="variable language_">this</span>.<span class="property">$refs</span>.<span class="property">counterRef</span>.<span class="title function_">reset</span>()</span><br></pre></td></tr></tbody></table></figure></li>
+</ul>
+<h4 id="this-nextTick-cb-方法"><a href="#this-nextTick-cb-方法" class="headerlink" title="this.$nextTick(cb)方法"></a>this.$nextTick(cb)方法</h4><p>  组件的$nextTick(cb)方法，会把cb回调推迟到下一个DOM更新周期之后执行，大概意思就是，等组件的DOM异步的重新渲染完成后，再执行cb回调函数，从而保证cb回调函数可以操作到最新的DOM元素。</p>
+  <figure class="highlight javascript"><table><tbody><tr><td class="code"><pre><span class="line"><span class="variable language_">this</span>.$nextTick(<span class="function">()=&gt;</span>{</span><br><span class="line">  <span class="variable language_">this</span>.<span class="property">$refs</span>.<span class="property">ipt</span>.<span class="title function_">focus</span>()</span><br><span class="line">})  </span><br></pre></td></tr></tbody></table></figure>
 <hr>
-<h4 id="然后"><a href="#然后" class="headerlink" title="然后"></a>然后</h4><p>我们的<a href="https://charet.github.io/">社恐废宅充电器</a>就开始了今天的<span style="color:#6A5495">熬夜</span>，他花了一晚上的时间通关了<span style="color:#5EE6EB">幽灵线: 东京</span>，虽然是<span style="color:red">简单版的</span>模式，但主要的是他通宵到到第二天中午才开始睡觉，这是他的睡姿<img src="https://raw.githubusercontent.com/MrNobody233/Pohot/main/blog/Nn_Sleep.jpg" width="100" alt="图片没有显示呀，网太差了吧~"> 睡得和<span style="color:red">死了</span>一样，这样的情况已经不是第一次了，我们也不是第一次提醒他，所以这里提前说明一下，如果他突然有一天走着走着就<span style="color:red">猝死了</span>，希望他不要来找我，因为我已经提醒了很多次了，</p>
-<hr>
-<h4 id="接着"><a href="#接着" class="headerlink" title="接着"></a>接着</h4><p>在寒假的时候我也熬夜，但是没有他这么严重，最多熬到四五点，偶尔六点多起来去吃早餐，我记得五点半去的时候老板娘还没有准备好，所以我等到六点在去吃的，挖槽，原来早饭这么好吃，特别是那个<span style="color:#DD4A48">猪血粉</span>，等学校解封我回我奶奶家，一定得再去吃一次，现在想起来那个老板娘还是我小学同学的妈妈，她告诉我她女儿去参军了，两年以后才会回来，我倒是挺期待她能被改变成什么样，但是我最希望的是老板娘能送我瓶<span style="color:#A05344">核桃味</span>的早餐奶给我喝，我太喜欢喝了，噗哈哈。</p>
-<h4 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h4><p>额，今天写的这个主要是做了一个新的分类，叫做<span style="color:#EEB76B">自言自语</span>，其目的是为了水博客，和分享关于自己有意思的事情，又或者是把自己可能会忘记的日常存在这里，所以最后还是点名一下主题把，就是希望我以后能少熬点夜，不能和那个SB一样，就当为了吃到好吃的<span style="color:#DD4A48">猪血粉</span>而努力吧，就这样，晚安~</p>
+<h3 id="插槽"><a href="#插槽" class="headerlink" title="插槽"></a>插槽</h3><p><span style="color:red">插槽(Slot)</span>是vue为<span style="color:red">组件封装者</span>提供的能力。允许开发者在封装组件时，把<span style="color:red">不确定的，希望用户指定的部分</span>定义为插槽。</p>
+<p>可以把插槽认为是组件封装期间，为用户预留的<span style="color:red">内容的占位符</span></p>
+<h4 id="基础用法"><a href="#基础用法" class="headerlink" title="基础用法"></a>基础用法</h4><p>在封装组件时，可以通过<code>&lt;slot&gt;</code>元素<span style="color:red">定义插槽</span>，从而<span style="color:red">为用户预留内容占位符</span></p>
+<figure class="highlight html"><table><tbody><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">template</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"com-container"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">h3</span>&gt;</span>MyCom组件--基本用法<span class="tag">&lt;/<span class="name">h3</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">hr</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">p</span>&gt;</span>第一个p标签<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">&lt;!-- 通过slot标签 为用户预留内容占位符(插槽) --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">slot</span>&gt;</span><span class="tag">&lt;/<span class="name">slot</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">p</span>&gt;</span>最后一个p标签<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">template</span>&gt;</span></span><br></pre></td></tr></tbody></table></figure>
+<p>用户在使用组件期间 为插槽指定具体内容</p>
+<figure class="highlight html"><table><tbody><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">MyCom</span>&gt;</span></span><br><span class="line">   <span class="comment">&lt;!-- 在使用组件时，为插槽指定具体的内容 --&gt;</span></span><br><span class="line">   <span class="tag">&lt;<span class="name">p</span>&gt;</span>---用户自定义的内容---<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">MyCom</span>&gt;</span></span><br></pre></td></tr></tbody></table></figure>
+
+<h4 id="默认内容"><a href="#默认内容" class="headerlink" title="默认内容"></a>默认内容</h4><p>封装组件，可以为预留的<code>&lt;slot&gt;</code>插槽提供<span style="color:red">默认内容</span>。如果组件的使用者没有为插槽提供任何内容，则默认内容会生效</p>
+<p>使用方式特别简单，在标签内写上默认内容即可</p>
+<figure class="highlight html"><table><tbody><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">template</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"com-container"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">h3</span>&gt;</span>MyCom组件--基本用法<span class="tag">&lt;/<span class="name">h3</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">hr</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">p</span>&gt;</span>第一个p标签<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    </span><br><span class="line">    <span class="tag">&lt;<span class="name">slot</span>&gt;</span>这是默认内容<span class="tag">&lt;/<span class="name">slot</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">p</span>&gt;</span>最后一个p标签<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">template</span>&gt;</span></span><br></pre></td></tr></tbody></table></figure>
+
+<h4 id="具名插槽"><a href="#具名插槽" class="headerlink" title="具名插槽"></a>具名插槽</h4><p>如果在封装组件时<span style="color:red">需要预留多个插槽节点</span>，则需要为每个<code>&lt;slot&gt;</code>插槽指定<span style="color:red">具体的 name 名称</span>。这种<span style="color:red">带有具体名称的插槽</span>叫做”具名插槽”</p>
+<figure class="highlight html"><table><tbody><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"com-container"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">h3</span>&gt;</span>MyCom组件--基本用法<span class="tag">&lt;/<span class="name">h3</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">hr</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">slot</span> <span class="attr">name</span>=<span class="string">"title"</span>&gt;</span><span class="tag">&lt;/<span class="name">slot</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">main</span>&gt;</span><span class="tag">&lt;/<span class="name">main</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">slot</span> <span class="attr">name</span>=<span class="string">"user"</span>&gt;</span><span class="tag">&lt;/<span class="name">slot</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></tbody></table></figure>
+
+<p>在向具名插槽提供内容的时候，我们可以在<code>&lt;template&gt;</code>元素上使用<span style="color:red">v-slot</span>,并以v-slot的参数形式提供其名称</p>
+<figure class="highlight html"><table><tbody><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">MyCom</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">template</span> <span class="attr">v-slot:title</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">p</span>&gt;</span>鹅鹅鹅<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">template</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">template</span> <span class="attr">v-slot:user</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">p</span>&gt;</span>李白<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">template</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">MyCom</span>&gt;</span></span><br></pre></td></tr></tbody></table></figure>
+<p> 具名插槽可以简写，(<span style="color:red">v-slot:</span>)替换为字符<span style="color:red">#</span>。例如 <code>v-slot:header</code>可以被重写为<code>#header</code></p>
+<h4 id="作用域插槽"><a href="#作用域插槽" class="headerlink" title="作用域插槽"></a>作用域插槽</h4><p>在封装组件的过程中，可以为预留的<code>&lt;slot&gt;</code>插槽绑定props数据，这种<span style="color:red">带有props数据的<code>&lt;slot&gt;</code></span>就是作用域插槽</p>
+<figure class="highlight html"><table><tbody><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"com-container"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">h3</span>&gt;</span>MyCom组件--作用域插槽<span class="tag">&lt;/<span class="name">h3</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">hr</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">slot</span> <span class="attr">:info</span>=<span class="string">"userInfo"</span> <span class="attr">:msg</span>=<span class="string">"message"</span>&gt;</span><span class="tag">&lt;/<span class="name">slot</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></tbody></table></figure>
+
+<p>v-slot:default=”任意合法名” 一般使用scope 接收 接着可以使用插值表达式渲染出来</p>
+<figure class="highlight html"><table><tbody><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">MyCom</span>&gt;</span></span><br><span class="line">     <span class="tag">&lt;<span class="name">template</span> #<span class="attr">default</span>=<span class="string">"scope"</span>&gt;</span></span><br><span class="line">       <span class="tag">&lt;<span class="name">p</span>&gt;</span>{{ scope.info.name }}<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">     <span class="tag">&lt;/<span class="name">template</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">MyCom</span>&gt;</span></span><br></pre></td></tr></tbody></table></figure>
 ]]></content>
       <categories>
-        <category>生活</category>
+        <category>web前端</category>
       </categories>
       <tags>
-        <tag>智障</tag>
-        <tag>自言自语</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>不要被外表迷惑</title>
-    <url>/2022/03/25/%E4%B8%8D%E8%A6%81%E8%A2%AB%E5%A4%96%E8%A1%A8%E8%BF%B7%E6%83%91/</url>
-    <content><![CDATA[<p>本来这个博客很早就可以完成的，都怪我被迷惑了，因为那个网站实在是太漂亮了，我也想整一个 就是<a href="https://tomotoes.com/">这个网站(可以点我)</a>，他实在是太漂亮了，原来网站可以这么漂亮,所以我决定使用这个网站，但是发现他的配置文件完全看不懂，我实在是太菜了。 </p>
-<p>感觉自己白学前端了，所以我下定决心，毕业以后一定不要做<del>程序员</del>   还是去送外卖好了QWQ,所以今天我学废了，自己垃圾就不要去看大佬作品，否则会怀疑人生，马上自闭。</p>
-<p>就酱紫，拜拜~~</p>
-]]></content>
-      <categories>
-        <category>生活</category>
-      </categories>
-      <tags>
-        <tag>智障</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>实用网站</title>
-    <url>/2022/03/26/%E5%AE%9E%E7%94%A8%E7%BD%91%E7%AB%99/</url>
-    <content><![CDATA[<h2 id="实用网站"><a href="#实用网站" class="headerlink" title="实用网站"></a>实用网站</h2><p>我的文件夹里有许多使用的网站，但也只是放在文件夹里，乱七八糟，没有整理，所以现在放在这里，以后就可以更加方便的利用这些网站</p>
-<hr>
-<h3 id="编程类"><a href="#编程类" class="headerlink" title="编程类"></a><span style="color:#00a8ff">编程类</span></h3><p><a href="https://flatuicolors.com/">颜色网站</a> 不知道如何配色可以看看介个网站</p>
-<p><a href="https://colorhunt.co/">另一个颜色网站</a> 这个也不错</p>
-<p><a href="https://unbug.github.io/codelf/">取名鬼才</a>不知道取什么变量名可以看看这个</p>
-<h3 id="图片类"><a href="#图片类" class="headerlink" title="图片类"></a><span style="color:#9c88ff">图片类</span></h3><p><a href="https://wall.alphacoders.com/">wallpaper壁纸</a> 有许多挺不错的漂亮壁纸可以在这里看</p>
-<p><a href="http://www.soutushenqi.com/home">搜图神器</a> 可以搜索超清的好康的图片 主要我是<span style="color:red">荣耀捐赠会员</span></p>
-<h3 id="音乐类"><a href="#音乐类" class="headerlink" title="音乐类"></a><span style="color:#e84118">音乐类</span></h3><p><a href="https://music.liuzhijin.cn/">刘志进音乐直连搜索</a> 可以在这里搜索很多音乐</p>
-<p><a href="https://link.hhtjim.com/">外链转换工具</a> 可以配合上一个网站获得音乐的mp3网址</p>
-<h3 id="影视类"><a href="#影视类" class="headerlink" title="影视类"></a><span style="color:#4b4b4b">影视类</span></h3><p><a href="https://www.hwjyingshi.xyz/">hwj影视</a> 可以看各种电影和番剧 (<span style="color:#ff3838">使用手机打开会有广告，推荐开启PC端口 </span>)</p>
-<p><a href="http://www.xfcdm.com/">寻剧吧</a> 也是看各种电影和番剧 (<span style="color:#ff3838">使用手机打开会有广告，推荐开启PC端口 </span>)</p>
-<p><a href="https://www.bilibili.com/">蜀黍的网站</a> 你所热爱的就是你的生活 (<strong>陈睿 吃柠檬</strong>)</p>
-<h3 id="娱乐类"><a href="#娱乐类" class="headerlink" title="娱乐类"></a><span style="color:#ff9f1a">娱乐类</span></h3><p><a href="https://chishenme.xyz/">今天吃什么</a> 不知道吃什么可以看看介个</p>
-<p><a href="https://picrew.me/">Picrew</a> 随机生成头像，我的<a href="https://github.com/MrNobody233">github</a>的<span style="color:#afcfb7">头像</span>就是这里来的，是不是很好看 0.0<br> <img src="https://avatars.githubusercontent.com/u/96650292?v=4" alt="图片没有显示呀，网太差了吧~" width="100"></p>
-<p><a href="https://www.dbbqb.com/">逗比拯救世界</a> 很多各种各样的<span style="color:#ad9d3e">表情包</span>，逗比必备哦。</p>
-<img src="https://raw.githubusercontent.com/MrNobody233/Pohot/main/blog/cheems.jpg" alt="图片没有显示呀，网太差了吧~" width="100">
-
-
-<h2 id="无聊了继续更新-拜拜"><a href="#无聊了继续更新-拜拜" class="headerlink" title=" 无聊了继续更新 拜拜 "></a><span style="color:pink"> 无聊了继续更新 拜拜 </span></h2>]]></content>
-      <categories>
-        <category>生活</category>
-      </categories>
-      <tags>
-        <tag>网站</tag>
-        <tag>工具</tag>
+        <tag>前端</tag>
+        <tag>Vue</tag>
       </tags>
   </entry>
   <entry>
@@ -229,93 +235,6 @@
 <h5 id="使用keep-alive-保持这状态"><a href="#使用keep-alive-保持这状态" class="headerlink" title="使用keep-alive 保持这状态"></a>使用keep-alive 保持这状态</h5><p>默认情况下，切换动态组件时<span style="color:red">无法保持组件的状态</span>。这样就可以使用<code> &lt;keep-alive&gt;</code>组件保持动态组件的状态</p>
 <p>使用方式非常简单</p>
 <figure class="highlight html"><table><tbody><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">keep-alive</span>&gt;</span></span><br><span class="line">     <span class="tag">&lt;<span class="name">component</span> <span class="attr">:is</span>=<span class="string">"comName"</span>&gt;</span><span class="tag">&lt;/<span class="name">component</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">keep-alive</span>&gt;</span></span><br></pre></td></tr></tbody></table></figure>]]></content>
-      <categories>
-        <category>web前端</category>
-      </categories>
-      <tags>
-        <tag>前端</tag>
-        <tag>Vue</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>熬夜之旅</title>
-    <url>/2022/04/01/%E7%86%AC%E5%A4%9C%E4%B9%8B%E6%97%85/</url>
-    <content><![CDATA[<h3 id="熬夜之旅"><a href="#熬夜之旅" class="headerlink" title="熬夜之旅"></a>熬夜之旅</h3><p>  今天在工作室度过第一个夜晚，虽然在暑假比赛的时候已经住过另一个工作室了，但是这里还是头一次，和我一起的有<a href="https://charet.github.io/">社恐废宅充电器</a>和<a href="https://thirsty-c.github.io/">胃病患者</a>，比起宿舍我确实更喜欢这里，毕竟这里不需要交<span style="color:red">电费</span>和<span style="color:red">水费</span>，最主要的是还有空调可以吹，虽然室友都有比较好的作息时间，但在其他时间还是比较吵的，串门的比较多，所以非常感谢有这么好的环境提供给我学习和休息，今晚如果没有SB抢我的折叠床，我应该会睡的比较早。</p>
-<h3 id="其他的事"><a href="#其他的事" class="headerlink" title="其他的事"></a>其他的事</h3><p>  凌晨两点半的时候，有一个网友突然发现了我，她问我是谁，毕竟隔了四五年了，不记得我是谁也很正常，所以我稍微和她解释了一下，这样体现了给人写备注的好处。这个姑娘的也挺悲催的，所以我对她印象挺深刻，她和父母关系不好，有自残倾向，到了现在和她聊了一会，她告诉我在今年，也就是她的18岁那天，她<span style="color:red">自杀未遂</span>，但是和父母关系好了一些，她说她重生了，我为她感到高兴，但也不敢问的太仔细，虽然她貌似想向我分享那些事情，但我还是把话题给往其他地方给放了，认识她是在一个仓鼠群里，我以前养过仓鼠，和她聊得比较好所以她加了我，并且告诉我她家里的一些事，当时我并不会安慰人，只是默默听着，让她有一个地方可以宣泄自己的压力，虽然现在也是一样，我还是不会安慰人，能感受的到别人悲伤的情绪，但也不会说什么，还可能会逃避。</p>
-<p>  扯多了，她问我怕蛇吗，我没回答，只是问她现在开始养蛇了嘛，和仓鼠放在一起不会出事吗，以及蛇没有咬过你吗，她说没有，倒是很想被咬一下试试，所以一不小心又回到了自残的话题，说自己又开始抽起了烟，本以为能缓解压力，结果压力更大了，每天晚上睡眠时间只有5小时，离她想上的大学平均分还差2分，也就是每科需要进步十分，我不敢多聊，因为太晚了，已经快凌晨3点了，所以告诉她生活的美好，以及还有很多没有碰到过的有意思的事情之类的，接着就睡了。</p>
-<p>  其实像这样的网友还有很多，以前聊的特别欢乐，突然有一天就没继续下去，也不知道是什么时候结束，但还是保存在自己的联系人里，默默的看着他们的变化，也是一种属于我自己的乐趣，</p>
-<h3 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h3><p>注意身体，不要熬夜现在是2022年4月2日00:00:57，虽然标题是熬夜之旅，实际上是我想不出标题的名字而已，就酱紫，如果我再不睡，我的折叠床就要被傻逼玷污了！就酱紫，掰掰。还有一件事，这个标签是自言自语，看看就行了，全当我放屁，掰掰。</p>
-]]></content>
-      <categories>
-        <category>生活</category>
-      </categories>
-      <tags>
-        <tag>智障</tag>
-        <tag>自言自语</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Markor</title>
-    <url>/2022/04/02/Markor/</url>
-    <content><![CDATA[<h3 id="Markor"><a href="#Markor" class="headerlink" title="Markor"></a>Markor</h3><p>最近想了一小问题，就是学校解封以后，如果我回家的话基本上是不会碰电脑的，虽然我会把电脑一起带回去，但是基本上都没有打开过，可能是我觉得带着有重量感，不对，是害怕我的github没有保持日常提交代码，所以为了避免这个情况，我可以使用平板来写文档，虽然提交不上去，但是回宿舍以后，我也可以躺在床上用平板来写一写自己想写的东西，这样有挺多好处的，可以避免我在床上玩手机，这样就可以玩平板了，哈哈哈哈哈，为什么想要用平板来写文档呢，写博客什么的都不是最主要的，最重要的是让我的平板键盘能有用武之地，我已经太久没有用我的平板键盘了，一直放在抽屉里积灰，这东西花了我600RMB，我也不知道当时我怎么想的，会买这么贵的东西。</p>
-<p>好吧我突然想起来了，在我没有买显示器之前，平板一直是我的副屏，多亏了华为的多屏协同，能帮我省很多事，虽然延迟还是有一小丢丢，但是日常使用还是很给力的，即使是这样还是有缺点的，就是字太小了，我眼睛很好，但是一直看着这么小的字也是会很难受的，所以我买了显示器，果然大屏就是爽，立马抛弃了我的小平板，只用它来记笔记，我们三个一直相处的很好，直到有一天！！！我会写博客了，我为什么不把笔记写在博客里呢，所以我再次抛弃了我的平板，没有考虑平板的感受，呜呜，果然是买前生产力，买后哔哩哔哩，盖泡面，当手托，摸鱼。所以为了改变现状，我可以使用<strong>Markor</strong>来满足自己突然想写博客的欲望，这一篇博客就是使用Markor来写的，还挺像回事，如果找到更好的软件我还是会替代Markor的，哈哈哈哈哈哈，这样我的平板就不会失宠了。</p>
-<p>日常水博客，就酱紫，拜拜。</p>
-]]></content>
-      <categories>
-        <category>生活</category>
-      </categories>
-      <tags>
-        <tag>智障</tag>
-        <tag>自言自语</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Vue-ref引用-作用域插槽</title>
-    <url>/2022/04/03/Vue-ref%E5%BC%95%E7%94%A8-%E4%BD%9C%E7%94%A8%E5%9F%9F%E6%8F%92%E6%A7%BD/</url>
-    <content><![CDATA[<h3 id="ref引用"><a href="#ref引用" class="headerlink" title="ref引用"></a>ref引用</h3><p>ref用来辅助开发者在<span style="color:red">不依赖jQuery的情况下</span>，获取DOM元素或组件的引用</p>
-<p>每个vue的组件实例上，都包含一个<span style="color:red"><code>$refs</code>对象</span>，里面存储着对应的DOM元素或组件的引用。默认情况下，<span style="color:red">组件的<code>$ref</code>指向一个空对象</span>。</p>
-<h4 id="使用-ref-引用-DOM-元素"><a href="#使用-ref-引用-DOM-元素" class="headerlink" title="使用 ref 引用 DOM 元素"></a>使用 ref 引用 DOM 元素</h4><ul>
-<li><p>使用ref属性 为对应的DOM添加引用名称</p>
-  <figure class="highlight html"><table><tbody><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">h1</span> <span class="attr">ref</span>=<span class="string">"myh1"</span>&gt;</span>App根组件<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br></pre></td></tr></tbody></table></figure></li>
-<li><p>通过 <code>this.$refs.myh1</code>可以获取到DOM元素的引用</p>
-</li>
-<li><p>操作DOM元素把文本颜色改为红色</p>
-  <figure class="highlight javascript"><table><tbody><tr><td class="code"><pre><span class="line"><span class="variable language_">this</span>.<span class="property">$refs</span>.<span class="property">myh1</span>.<span class="property">style</span>.<span class="property">color</span>=<span class="string">'red'</span></span><br></pre></td></tr></tbody></table></figure></li>
-</ul>
-<h4 id="使用-ref-引用-组件-实例"><a href="#使用-ref-引用-组件-实例" class="headerlink" title="使用 ref 引用 组件 实例"></a>使用 ref 引用 组件 实例</h4><ul>
-<li><p>使用ref属性 为相对应的组件添加引用名称</p>
-  <figure class="highlight html"><table><tbody><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">Counter</span> <span class="attr">ref</span>=<span class="string">"counterRef"</span>&gt;</span><span class="tag">&lt;/<span class="name">Counter</span>&gt;</span></span><br></pre></td></tr></tbody></table></figure></li>
-<li><p>通过 <code>this.$refs.counterRef</code>可以引用组件的实例</p>
-</li>
-<li><p>引用到组件的实例之后，就可以调用组件上的 methods 方法</p>
-  <figure class="highlight javascript"><table><tbody><tr><td class="code"><pre><span class="line"><span class="variable language_">this</span>.<span class="property">$refs</span>.<span class="property">counterRef</span>.<span class="title function_">reset</span>()</span><br></pre></td></tr></tbody></table></figure></li>
-</ul>
-<h4 id="this-nextTick-cb-方法"><a href="#this-nextTick-cb-方法" class="headerlink" title="this.$nextTick(cb)方法"></a>this.$nextTick(cb)方法</h4><p>  组件的$nextTick(cb)方法，会把cb回调推迟到下一个DOM更新周期之后执行，大概意思就是，等组件的DOM异步的重新渲染完成后，再执行cb回调函数，从而保证cb回调函数可以操作到最新的DOM元素。</p>
-  <figure class="highlight javascript"><table><tbody><tr><td class="code"><pre><span class="line"><span class="variable language_">this</span>.$nextTick(<span class="function">()=&gt;</span>{</span><br><span class="line">  <span class="variable language_">this</span>.<span class="property">$refs</span>.<span class="property">ipt</span>.<span class="title function_">focus</span>()</span><br><span class="line">})  </span><br></pre></td></tr></tbody></table></figure>
-<hr>
-<h3 id="插槽"><a href="#插槽" class="headerlink" title="插槽"></a>插槽</h3><p><span style="color:red">插槽(Slot)</span>是vue为<span style="color:red">组件封装者</span>提供的能力。允许开发者在封装组件时，把<span style="color:red">不确定的，希望用户指定的部分</span>定义为插槽。</p>
-<p>可以把插槽认为是组件封装期间，为用户预留的<span style="color:red">内容的占位符</span></p>
-<h4 id="基础用法"><a href="#基础用法" class="headerlink" title="基础用法"></a>基础用法</h4><p>在封装组件时，可以通过<code>&lt;slot&gt;</code>元素<span style="color:red">定义插槽</span>，从而<span style="color:red">为用户预留内容占位符</span></p>
-<figure class="highlight html"><table><tbody><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">template</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"com-container"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">h3</span>&gt;</span>MyCom组件--基本用法<span class="tag">&lt;/<span class="name">h3</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">hr</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">p</span>&gt;</span>第一个p标签<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">&lt;!-- 通过slot标签 为用户预留内容占位符(插槽) --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">slot</span>&gt;</span><span class="tag">&lt;/<span class="name">slot</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">p</span>&gt;</span>最后一个p标签<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">template</span>&gt;</span></span><br></pre></td></tr></tbody></table></figure>
-<p>用户在使用组件期间 为插槽指定具体内容</p>
-<figure class="highlight html"><table><tbody><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">MyCom</span>&gt;</span></span><br><span class="line">   <span class="comment">&lt;!-- 在使用组件时，为插槽指定具体的内容 --&gt;</span></span><br><span class="line">   <span class="tag">&lt;<span class="name">p</span>&gt;</span>---用户自定义的内容---<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">MyCom</span>&gt;</span></span><br></pre></td></tr></tbody></table></figure>
-
-<h4 id="默认内容"><a href="#默认内容" class="headerlink" title="默认内容"></a>默认内容</h4><p>封装组件，可以为预留的<code>&lt;slot&gt;</code>插槽提供<span style="color:red">默认内容</span>。如果组件的使用者没有为插槽提供任何内容，则默认内容会生效</p>
-<p>使用方式特别简单，在标签内写上默认内容即可</p>
-<figure class="highlight html"><table><tbody><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">template</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"com-container"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">h3</span>&gt;</span>MyCom组件--基本用法<span class="tag">&lt;/<span class="name">h3</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">hr</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">p</span>&gt;</span>第一个p标签<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    </span><br><span class="line">    <span class="tag">&lt;<span class="name">slot</span>&gt;</span>这是默认内容<span class="tag">&lt;/<span class="name">slot</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">p</span>&gt;</span>最后一个p标签<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">template</span>&gt;</span></span><br></pre></td></tr></tbody></table></figure>
-
-<h4 id="具名插槽"><a href="#具名插槽" class="headerlink" title="具名插槽"></a>具名插槽</h4><p>如果在封装组件时<span style="color:red">需要预留多个插槽节点</span>，则需要为每个<code>&lt;slot&gt;</code>插槽指定<span style="color:red">具体的 name 名称</span>。这种<span style="color:red">带有具体名称的插槽</span>叫做”具名插槽”</p>
-<figure class="highlight html"><table><tbody><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"com-container"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">h3</span>&gt;</span>MyCom组件--基本用法<span class="tag">&lt;/<span class="name">h3</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">hr</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">slot</span> <span class="attr">name</span>=<span class="string">"title"</span>&gt;</span><span class="tag">&lt;/<span class="name">slot</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">main</span>&gt;</span><span class="tag">&lt;/<span class="name">main</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">slot</span> <span class="attr">name</span>=<span class="string">"user"</span>&gt;</span><span class="tag">&lt;/<span class="name">slot</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></tbody></table></figure>
-
-<p>在向具名插槽提供内容的时候，我们可以在<code>&lt;template&gt;</code>元素上使用<span style="color:red">v-slot</span>,并以v-slot的参数形式提供其名称</p>
-<figure class="highlight html"><table><tbody><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">MyCom</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">template</span> <span class="attr">v-slot:title</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">p</span>&gt;</span>鹅鹅鹅<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">template</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">template</span> <span class="attr">v-slot:user</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">p</span>&gt;</span>李白<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">template</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">MyCom</span>&gt;</span></span><br></pre></td></tr></tbody></table></figure>
-<p> 具名插槽可以简写，(<span style="color:red">v-slot:</span>)替换为字符<span style="color:red">#</span>。例如 <code>v-slot:header</code>可以被重写为<code>#header</code></p>
-<h4 id="作用域插槽"><a href="#作用域插槽" class="headerlink" title="作用域插槽"></a>作用域插槽</h4><p>在封装组件的过程中，可以为预留的<code>&lt;slot&gt;</code>插槽绑定props数据，这种<span style="color:red">带有props数据的<code>&lt;slot&gt;</code></span>就是作用域插槽</p>
-<figure class="highlight html"><table><tbody><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"com-container"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">h3</span>&gt;</span>MyCom组件--作用域插槽<span class="tag">&lt;/<span class="name">h3</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">hr</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">slot</span> <span class="attr">:info</span>=<span class="string">"userInfo"</span> <span class="attr">:msg</span>=<span class="string">"message"</span>&gt;</span><span class="tag">&lt;/<span class="name">slot</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></tbody></table></figure>
-
-<p>v-slot:default=”任意合法名” 一般使用scope 接收 接着可以使用插值表达式渲染出来</p>
-<figure class="highlight html"><table><tbody><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">MyCom</span>&gt;</span></span><br><span class="line">     <span class="tag">&lt;<span class="name">template</span> #<span class="attr">default</span>=<span class="string">"scope"</span>&gt;</span></span><br><span class="line">       <span class="tag">&lt;<span class="name">p</span>&gt;</span>{{ scope.info.name }}<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">     <span class="tag">&lt;/<span class="name">template</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">MyCom</span>&gt;</span></span><br></pre></td></tr></tbody></table></figure>
-]]></content>
       <categories>
         <category>web前端</category>
       </categories>
@@ -405,7 +324,7 @@
 <li>实现导航历史的前进，后退</li>
 </ul>
 <h5 id="导航守卫"><a href="#导航守卫" class="headerlink" title="导航守卫"></a>导航守卫</h5><p>导航守卫可以<span style="color:red">控制路由的访问权限</span></p>
-<p>全局守卫的守卫方法可以接受三个形参</p>
+<figure class="highlight javascript"><table><tbody><tr><td class="code"><pre><span class="line"></span><br><span class="line">router.<span class="title function_">beforeEach</span>(<span class="function">(<span class="params">to, form, next</span>) =&gt;</span> {</span><br><span class="line">    <span class="comment">// to 目标路由对象</span></span><br><span class="line">    <span class="comment">// from 当前导航正要离开的路由对象</span></span><br><span class="line">    <span class="comment">// next 是一个函数 表示放行</span></span><br><span class="line">    <span class="keyword">const</span> token = <span class="variable language_">localStorage</span>.<span class="title function_">getItem</span>(<span class="string">'token'</span>)</span><br><span class="line">    <span class="keyword">if</span> (to.<span class="property">path</span> === <span class="string">'/main'</span> &amp;&amp; !token) {</span><br><span class="line">        <span class="comment">// next(false) 不允许跳转</span></span><br><span class="line">        <span class="title function_">next</span>(<span class="string">'/login'</span>) <span class="comment">//强制跳转到“登录页面”</span></span><br><span class="line">    } <span class="keyword">else</span> {</span><br><span class="line">        <span class="title function_">next</span>() <span class="comment">// 直接放行， 允许访问“后台主页”</span></span><br><span class="line">    }</span><br><span class="line">})</span><br></pre></td></tr></tbody></table></figure>
 ]]></content>
       <categories>
         <category>web前端</category>
@@ -413,6 +332,87 @@
       <tags>
         <tag>前端</tag>
         <tag>Vue</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>不要熬夜</title>
+    <url>/2022/03/28/%E4%B8%8D%E8%A6%81%E7%86%AC%E5%A4%9C/</url>
+    <content><![CDATA[<h3 id="熬夜"><a href="#熬夜" class="headerlink" title="熬夜"></a><span style="color:#4D77FF">熬夜</span></h3><hr>
+<h4 id="起因"><a href="#起因" class="headerlink" title="起因"></a>起因</h4><p>昨天和工作室的小伙伴们一起看<a href="https://charet.github.io/">社恐废宅充电器</a>在玩一款新的游戏，叫做<span style="color:#5EE6EB">幽灵线: 东京</span>，我们更喜欢叫他<span style="color:#FFB72B">林正英模拟器</span><img src="http://i0.hdslb.com/bfs/article/51c890784afb0a55bb8a2d8af4431dcc4809eac3.jpg" alt="" width="50"></p>
+<p>对了那个游戏长这样<img src="http://p2.itc.cn/q_70/images03/20210714/2ce935a73e8f4db89e26c91f37b6561f.jpeg" alt="" width="100">确实比较新颖，因为他的攻击方式是把手比作枪，用手射出子弹一样，给人眼前一亮的感觉，但是玩久了感觉有点单调，不算很耐玩的游戏，也许是它太贵了我买不起，要200多RMB。</p>
+<hr>
+<h4 id="然后"><a href="#然后" class="headerlink" title="然后"></a>然后</h4><p>我们的<a href="https://charet.github.io/">社恐废宅充电器</a>就开始了今天的<span style="color:#6A5495">熬夜</span>，他花了一晚上的时间通关了<span style="color:#5EE6EB">幽灵线: 东京</span>，虽然是<span style="color:red">简单版的</span>模式，但主要的是他通宵到到第二天中午才开始睡觉，这是他的睡姿<img src="https://raw.githubusercontent.com/MrNobody233/Pohot/main/blog/Nn_Sleep.jpg" width="100" alt="图片没有显示呀，网太差了吧~"> 睡得和<span style="color:red">死了</span>一样，这样的情况已经不是第一次了，我们也不是第一次提醒他，所以这里提前说明一下，如果他突然有一天走着走着就<span style="color:red">猝死了</span>，希望他不要来找我，因为我已经提醒了很多次了，</p>
+<hr>
+<h4 id="接着"><a href="#接着" class="headerlink" title="接着"></a>接着</h4><p>在寒假的时候我也熬夜，但是没有他这么严重，最多熬到四五点，偶尔六点多起来去吃早餐，我记得五点半去的时候老板娘还没有准备好，所以我等到六点在去吃的，挖槽，原来早饭这么好吃，特别是那个<span style="color:#DD4A48">猪血粉</span>，等学校解封我回我奶奶家，一定得再去吃一次，现在想起来那个老板娘还是我小学同学的妈妈，她告诉我她女儿去参军了，两年以后才会回来，我倒是挺期待她能被改变成什么样，但是我最希望的是老板娘能送我瓶<span style="color:#A05344">核桃味</span>的早餐奶给我喝，我太喜欢喝了，噗哈哈。</p>
+<h4 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h4><p>额，今天写的这个主要是做了一个新的分类，叫做<span style="color:#EEB76B">自言自语</span>，其目的是为了水博客，和分享关于自己有意思的事情，又或者是把自己可能会忘记的日常存在这里，所以最后还是点名一下主题把，就是希望我以后能少熬点夜，不能和那个SB一样，就当为了吃到好吃的<span style="color:#DD4A48">猪血粉</span>而努力吧，就这样，晚安~</p>
+]]></content>
+      <categories>
+        <category>生活</category>
+      </categories>
+      <tags>
+        <tag>智障</tag>
+        <tag>自言自语</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>不要被外表迷惑</title>
+    <url>/2022/03/25/%E4%B8%8D%E8%A6%81%E8%A2%AB%E5%A4%96%E8%A1%A8%E8%BF%B7%E6%83%91/</url>
+    <content><![CDATA[<p>本来这个博客很早就可以完成的，都怪我被迷惑了，因为那个网站实在是太漂亮了，我也想整一个 就是<a href="https://tomotoes.com/">这个网站(可以点我)</a>，他实在是太漂亮了，原来网站可以这么漂亮,所以我决定使用这个网站，但是发现他的配置文件完全看不懂，我实在是太菜了。 </p>
+<p>感觉自己白学前端了，所以我下定决心，毕业以后一定不要做<del>程序员</del>   还是去送外卖好了QWQ,所以今天我学废了，自己垃圾就不要去看大佬作品，否则会怀疑人生，马上自闭。</p>
+<p>就酱紫，拜拜~~</p>
+]]></content>
+      <categories>
+        <category>生活</category>
+      </categories>
+      <tags>
+        <tag>智障</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>实用网站</title>
+    <url>/2022/03/26/%E5%AE%9E%E7%94%A8%E7%BD%91%E7%AB%99/</url>
+    <content><![CDATA[<h2 id="实用网站"><a href="#实用网站" class="headerlink" title="实用网站"></a>实用网站</h2><p>我的文件夹里有许多使用的网站，但也只是放在文件夹里，乱七八糟，没有整理，所以现在放在这里，以后就可以更加方便的利用这些网站</p>
+<hr>
+<h3 id="编程类"><a href="#编程类" class="headerlink" title="编程类"></a><span style="color:#00a8ff">编程类</span></h3><p><a href="https://flatuicolors.com/">颜色网站</a> 不知道如何配色可以看看介个网站</p>
+<p><a href="https://colorhunt.co/">另一个颜色网站</a> 这个也不错</p>
+<p><a href="https://unbug.github.io/codelf/">取名鬼才</a>不知道取什么变量名可以看看这个</p>
+<h3 id="图片类"><a href="#图片类" class="headerlink" title="图片类"></a><span style="color:#9c88ff">图片类</span></h3><p><a href="https://wall.alphacoders.com/">wallpaper壁纸</a> 有许多挺不错的漂亮壁纸可以在这里看</p>
+<p><a href="http://www.soutushenqi.com/home">搜图神器</a> 可以搜索超清的好康的图片 主要我是<span style="color:red">荣耀捐赠会员</span></p>
+<h3 id="音乐类"><a href="#音乐类" class="headerlink" title="音乐类"></a><span style="color:#e84118">音乐类</span></h3><p><a href="https://music.liuzhijin.cn/">刘志进音乐直连搜索</a> 可以在这里搜索很多音乐</p>
+<p><a href="https://link.hhtjim.com/">外链转换工具</a> 可以配合上一个网站获得音乐的mp3网址</p>
+<h3 id="影视类"><a href="#影视类" class="headerlink" title="影视类"></a><span style="color:#4b4b4b">影视类</span></h3><p><a href="https://www.hwjyingshi.xyz/">hwj影视</a> 可以看各种电影和番剧 (<span style="color:#ff3838">使用手机打开会有广告，推荐开启PC端口 </span>)</p>
+<p><a href="http://www.xfcdm.com/">寻剧吧</a> 也是看各种电影和番剧 (<span style="color:#ff3838">使用手机打开会有广告，推荐开启PC端口 </span>)</p>
+<p><a href="https://www.bilibili.com/">蜀黍的网站</a> 你所热爱的就是你的生活 (<strong>陈睿 吃柠檬</strong>)</p>
+<h3 id="娱乐类"><a href="#娱乐类" class="headerlink" title="娱乐类"></a><span style="color:#ff9f1a">娱乐类</span></h3><p><a href="https://chishenme.xyz/">今天吃什么</a> 不知道吃什么可以看看介个</p>
+<p><a href="https://picrew.me/">Picrew</a> 随机生成头像，我的<a href="https://github.com/MrNobody233">github</a>的<span style="color:#afcfb7">头像</span>就是这里来的，是不是很好看 0.0<br> <img src="https://avatars.githubusercontent.com/u/96650292?v=4" alt="图片没有显示呀，网太差了吧~" width="100"></p>
+<p><a href="https://www.dbbqb.com/">逗比拯救世界</a> 很多各种各样的<span style="color:#ad9d3e">表情包</span>，逗比必备哦。</p>
+<img src="https://raw.githubusercontent.com/MrNobody233/Pohot/main/blog/cheems.jpg" alt="图片没有显示呀，网太差了吧~" width="100">
+
+
+<h2 id="无聊了继续更新-拜拜"><a href="#无聊了继续更新-拜拜" class="headerlink" title=" 无聊了继续更新 拜拜 "></a><span style="color:pink"> 无聊了继续更新 拜拜 </span></h2>]]></content>
+      <categories>
+        <category>生活</category>
+      </categories>
+      <tags>
+        <tag>网站</tag>
+        <tag>工具</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>熬夜之旅</title>
+    <url>/2022/04/01/%E7%86%AC%E5%A4%9C%E4%B9%8B%E6%97%85/</url>
+    <content><![CDATA[<h3 id="熬夜之旅"><a href="#熬夜之旅" class="headerlink" title="熬夜之旅"></a>熬夜之旅</h3><p>  今天在工作室度过第一个夜晚，虽然在暑假比赛的时候已经住过另一个工作室了，但是这里还是头一次，和我一起的有<a href="https://charet.github.io/">社恐废宅充电器</a>和<a href="https://thirsty-c.github.io/">胃病患者</a>，比起宿舍我确实更喜欢这里，毕竟这里不需要交<span style="color:red">电费</span>和<span style="color:red">水费</span>，最主要的是还有空调可以吹，虽然室友都有比较好的作息时间，但在其他时间还是比较吵的，串门的比较多，所以非常感谢有这么好的环境提供给我学习和休息，今晚如果没有SB抢我的折叠床，我应该会睡的比较早。</p>
+<h3 id="其他的事"><a href="#其他的事" class="headerlink" title="其他的事"></a>其他的事</h3><p>  凌晨两点半的时候，有一个网友突然发现了我，她问我是谁，毕竟隔了四五年了，不记得我是谁也很正常，所以我稍微和她解释了一下，这样体现了给人写备注的好处。这个姑娘的也挺悲催的，所以我对她印象挺深刻，她和父母关系不好，有自残倾向，到了现在和她聊了一会，她告诉我在今年，也就是她的18岁那天，她<span style="color:red">自杀未遂</span>，但是和父母关系好了一些，她说她重生了，我为她感到高兴，但也不敢问的太仔细，虽然她貌似想向我分享那些事情，但我还是把话题给往其他地方给放了，认识她是在一个仓鼠群里，我以前养过仓鼠，和她聊得比较好所以她加了我，并且告诉我她家里的一些事，当时我并不会安慰人，只是默默听着，让她有一个地方可以宣泄自己的压力，虽然现在也是一样，我还是不会安慰人，能感受的到别人悲伤的情绪，但也不会说什么，还可能会逃避。</p>
+<p>  扯多了，她问我怕蛇吗，我没回答，只是问她现在开始养蛇了嘛，和仓鼠放在一起不会出事吗，以及蛇没有咬过你吗，她说没有，倒是很想被咬一下试试，所以一不小心又回到了自残的话题，说自己又开始抽起了烟，本以为能缓解压力，结果压力更大了，每天晚上睡眠时间只有5小时，离她想上的大学平均分还差2分，也就是每科需要进步十分，我不敢多聊，因为太晚了，已经快凌晨3点了，所以告诉她生活的美好，以及还有很多没有碰到过的有意思的事情之类的，接着就睡了。</p>
+<p>  其实像这样的网友还有很多，以前聊的特别欢乐，突然有一天就没继续下去，也不知道是什么时候结束，但还是保存在自己的联系人里，默默的看着他们的变化，也是一种属于我自己的乐趣，</p>
+<h3 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h3><p>注意身体，不要熬夜现在是2022年4月2日00:00:57，虽然标题是熬夜之旅，实际上是我想不出标题的名字而已，就酱紫，如果我再不睡，我的折叠床就要被傻逼玷污了！就酱紫，掰掰。还有一件事，这个标签是自言自语，看看就行了，全当我放屁，掰掰。</p>
+]]></content>
+      <categories>
+        <category>生活</category>
+      </categories>
+      <tags>
+        <tag>智障</tag>
+        <tag>自言自语</tag>
       </tags>
   </entry>
 </search>
