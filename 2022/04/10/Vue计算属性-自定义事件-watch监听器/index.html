@@ -1,0 +1,230 @@
+
+<!DOCTYPE html>
+<html lang="zh_CH" class="loading">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Vue计算属性-自定义事件-watch监听器 - MrNobody&#39;s Blog</title>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="google" content="notranslate" />
+    <meta name="keywords" content="Fechin,"> 
+    <meta name="description" content="MrNobody,计算属性计算属性本质上就是一个function函数,它可以实时监听data中数据的变化，并return一个计算后的新值，供组件渲染DOM时使用
+声明计算属性计算属性需要以function函数的形式声,"> 
+    <meta name="author" content="Mr_Nobody"> 
+    <link rel="alternative" href="atom.xml" title="MrNobody&#39;s Blog" type="application/atom+xml"> 
+    <link rel="icon" href="/img/favicon.png"> 
+    
+    
+    
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:title" content="Vue计算属性-自定义事件-watch监听器 - MrNobody&#39;s Blog"/>
+    <meta name="twitter:description" content="MrNobody,计算属性计算属性本质上就是一个function函数,它可以实时监听data中数据的变化，并return一个计算后的新值，供组件渲染DOM时使用
+声明计算属性计算属性需要以function函数的形式声,"/>
+    
+    
+    
+    
+    <meta property="og:site_name" content="MrNobody&#39;s Blog"/>
+    <meta property="og:type" content="object"/>
+    <meta property="og:title" content="Vue计算属性-自定义事件-watch监听器 - MrNobody&#39;s Blog"/>
+    <meta property="og:description" content="MrNobody,计算属性计算属性本质上就是一个function函数,它可以实时监听data中数据的变化，并return一个计算后的新值，供组件渲染DOM时使用
+声明计算属性计算属性需要以function函数的形式声,"/>
+    
+<link rel="stylesheet" href="/css/diaspora.css">
+
+<meta name="generator" content="Hexo 6.1.0">
+<style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
+</head>
+
+<body class="loading">
+    <span id="config-title" style="display:none">MrNobody&#39;s Blog</span>
+    <div id="loader"></div>
+    <div id="single">
+    <div id="top" style="display: block;">
+    <div class="bar" style="width: 0;"></div>
+    <a class="iconfont icon-home image-icon" href="javascript:;" data-url="http://mrnobody233.github.io"></a>
+    <div title="播放/暂停" class="iconfont icon-play"></div>
+    <h3 class="subtitle">Vue计算属性-自定义事件-watch监听器</h3>
+    <div class="social">
+        <div>
+            <div class="share">
+                <a title="获取二维码" class="iconfont icon-scan" href="javascript:;"></a>
+            </div>
+            <div id="qr"></div>
+        </div>
+    </div>
+    <div class="scrollbar"></div>
+</div>
+
+    <div class="section">
+        <div class="article">
+    <div class='main'>
+        <h1 class="title">Vue计算属性-自定义事件-watch监听器</h1>
+        <div class="stuff">
+            <span>四月 10, 2022</span>
+            
+  <ul class="post-tags-list" itemprop="keywords"><li class="post-tags-list-item"><a class="post-tags-list-link" href="/tags/Vue/" rel="tag">Vue</a></li><li class="post-tags-list-item"><a class="post-tags-list-link" href="/tags/%E5%89%8D%E7%AB%AF/" rel="tag">前端</a></li></ul>
+
+
+        </div>
+        <div class="content markdown">
+            <h3 id="计算属性"><a href="#计算属性" class="headerlink" title="计算属性"></a>计算属性</h3><p>计算属性<span style="color:red">本质上</span>就是一个<span style="color:red">function函数</span>,它可以<span style="color:red">实时监听</span>data中数据的变化，并<span style="color:red">return一个计算后的新值</span>，供组件渲染DOM时使用</p>
+<h4 id="声明计算属性"><a href="#声明计算属性" class="headerlink" title="声明计算属性"></a>声明计算属性</h4><p>计算属性需要以<span style="color:red">function函数</span>的形式声明到组件的<span style="color:red">computed节点中</span>，示例代码如下</p>
+<figure class="highlight javascript"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">&lt;input type=<span class="string">"text"</span> v-model.<span class="property">number</span>=<span class="string">"count"</span>&gt;</span><br><span class="line"><span class="language-xml"><span class="tag">&lt;<span class="name">p</span>&gt;</span>{{count}}乘以 2 的值为：{{ plus }} <span class="tag">&lt;/<span class="name">p</span>&gt;</span></span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="language-xml"><span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="language-javascript"></span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">  <span class="keyword">export</span> <span class="keyword">default</span> {</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">    <span class="title function_">data</span>(<span class="params"></span>){</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">      <span class="keyword">return</span>{</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">        <span class="attr">count</span>:<span class="number">1</span>,</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">      }</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">    },</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">    <span class="attr">computed</span>:{</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">      <span class="title function_">plus</span>(<span class="params"></span>){ <span class="comment">// 计算属性，监听 data 中 count 的变化，自动计算出 count * 2 之后的新值</span></span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">        <span class="keyword">return</span> <span class="variable language_">this</span>.<span class="property">count</span> * <span class="number">2</span></span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">      }</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">    }</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">  }</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span></span><br></pre></td></tr></tbody></table></figure>
+<h4 id="计算属性的使用注意点"><a href="#计算属性的使用注意点" class="headerlink" title="计算属性的使用注意点"></a>计算属性的<span style="color:red">使用注意点</span></h4><ol>
+<li>计算属性<span style="color:red">必须定义在computed节点中</span></li>
+<li>计算属性<span style="color:red">必须是一个function的函数</span></li>
+<li>计算属性<span style="color:red">必须有 return 返回值！！</span></li>
+<li>计算属性<span style="color:red">必须当作普通属性使用</span></li>
+</ol>
+<h4 id="计算属性-vs-方法"><a href="#计算属性-vs-方法" class="headerlink" title="计算属性 vs 方法"></a>计算属性 vs 方法</h4><p>相对于方法来说，<span style="color:red">计算属性会缓存计算的结果</span>，只有计算属性的<span style="color:red">依赖项发生变化时</span>，才会<span style="color:red">重新进行运算</span>，因此计算属性的性能更好</p>
+<hr>
+<h3 id="自定义事件"><a href="#自定义事件" class="headerlink" title="自定义事件"></a>自定义事件</h3><p>在封装组件时，为了让<span style="color:red">组件的使用者</span>可以<span style="color:red">监听到组件内状态的变化</span>，此时需要用到<span style="color:red">组件的自定义事件</span></p>
+<h4 id="自定义事件的3个使用步骤"><a href="#自定义事件的3个使用步骤" class="headerlink" title="自定义事件的3个使用步骤"></a>自定义事件的3个使用步骤</h4><ul>
+<li>在封装组件时</li>
+</ul>
+<h5 id="声明自定义事件"><a href="#声明自定义事件" class="headerlink" title="声明自定义事件"></a><span style="color:red">声明</span>自定义事件</h5><p>开发者为自定义组件封装的<span style="color:red">自定义事件</span>，必须事先在<span style="color:red">emits</span>节点中声明</p>
+<figure class="highlight javascript"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">export</span> <span class="keyword">default</span>{</span><br><span class="line">  <span class="comment">// 1.声明自定义事件</span></span><br><span class="line">  <span class="attr">emits</span>:[<span class="string">'change'</span>],</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+
+<h5 id="触发自定义事件"><a href="#触发自定义事件" class="headerlink" title="触发自定义事件"></a><span style="color:red">触发</span>自定义事件</h5><p>在<span style="color:red">emits</span>节点下声明的自定义事件，可以通过<span style="color:red">this.$emit</span>(‘自定义事件的名称’)方法进行触发</p>
+<figure class="highlight javascript"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">&lt;template&gt;</span><br><span class="line">  <span class="language-xml"><span class="tag">&lt;<span class="name">div</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">    <span class="tag">&lt;<span class="name">p</span>&gt;</span>count的值是：{{ count }}<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">    <span class="tag">&lt;<span class="name">button</span> @<span class="attr">click</span>=<span class="string">"add"</span>&gt;</span>+1<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br><span class="line">&lt;/template&gt;</span><br><span class="line"></span><br><span class="line"><span class="language-xml"><span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="language-javascript"></span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml"><span class="keyword">export</span> <span class="keyword">default</span>{</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">  <span class="comment">// 1.声明自定义事件</span></span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">  <span class="attr">emits</span>:[<span class="string">'countChange'</span>],</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml"></span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">  <span class="attr">methods</span>: {</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">    <span class="title function_">add</span>(<span class="params"></span>) {</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">      <span class="variable language_">this</span>.<span class="property">count</span>++</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">      <span class="comment">// 2.this.$emit() 触发自定义事件</span></span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">      <span class="variable language_">this</span>.$emit(<span class="string">'countChange'</span>)</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">    }</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">  }</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">}</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span></span><br></pre></td></tr></tbody></table></figure>
+
+
+<ul>
+<li>在使用组件时<h5 id="监听自定义事件"><a href="#监听自定义事件" class="headerlink" title="监听自定义事件"></a><span style="color:red">监听</span>自定义事件</h5></li>
+</ul>
+<p>在使用自定义的组件时，可以通过<span style="color:red">v-on</span>的形式<span style="color:red">监听自定义事件</span>。</p>
+<figure class="highlight javascript"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">&lt;<span class="title class_">Counter</span> @countChange=<span class="string">"getCount"</span>&gt;&lt;/<span class="title class_">Counter</span>&gt;</span><br><span class="line"></span><br><span class="line">  <span class="attr">methods</span>: {</span><br><span class="line">  <span class="title function_">getCount</span>(<span class="params"></span>) {</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">'触发countChange事件'</span>)</span><br><span class="line">  }</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+
+<h4 id="自定义事件传参。"><a href="#自定义事件传参。" class="headerlink" title="自定义事件传参。"></a>自定义事件<span style="color:red">传参</span>。</h4><p>在调用<span style="color:red">this.$emit()</span>方法触发自定义事件时，可以通过<span style="color:red">第二个参数</span>为自定义事件传参</p>
+<figure class="highlight javascript"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="variable language_">this</span>.$emit(<span class="string">'countChange'</span>, <span class="variable language_">this</span>.<span class="property">count</span>) <span class="comment">//  触发自定义事件时，通过第二个参数传参</span></span><br><span class="line"></span><br><span class="line">======================</span><br><span class="line"><span class="comment">// 外界在监听countChange自定义事件时候可以通过事件处理函数的形参拿到最新的 count值</span></span><br><span class="line">  <span class="title function_">getCount</span>(<span class="params">val</span>) {</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">'触发countChange事件,count值为:'</span> + val)</span><br><span class="line">  }</span><br></pre></td></tr></tbody></table></figure>
+
+<h3 id="watch-监听器"><a href="#watch-监听器" class="headerlink" title="watch 监听器"></a>watch 监听器</h3><p>待更新</p>
+
+            <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
+            <audio id="audio" loop="1" preload="auto" controls="controls" data-autoplay="false">
+                <source type="audio/mpeg" src="">
+            </audio>
+            
+                <ul id="audio-list" style="display:none">
+                    
+                        
+                            <li title="0" data-url="https://link.hhtjim.com/163/1447930796.mp3"></li>
+                        
+                    
+                        
+                            <li title="1" data-url="https://link.hhtjim.com/163/421160291.mp3"></li>
+                        
+                    
+                        
+                            <li title="2" data-url="https://link.hhtjim.com/163/38358225.mp3"></li>
+                        
+                    
+                        
+                            <li title="3" data-url="https://link.hhtjim.com/163/1485304938.mp3"></li>
+                        
+                    
+                        
+                            <li title="4" data-url="https://link.hhtjim.com/163/1418713046.mp3"></li>
+                        
+                    
+                </ul>
+            
+        </div>
+        
+    <div id="gitalk-container" class="comment link"
+		data-enable="false"
+        data-ae="false"
+        data-ci=""
+        data-cs=""
+        data-r=""
+        data-o=""
+        data-a=""
+        data-d="false"
+    >查看评论</div>
+
+
+    </div>
+    
+        <div class="side">
+			<ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%AE%A1%E7%AE%97%E5%B1%9E%E6%80%A7"><span class="toc-number">1.</span> <span class="toc-text">计算属性</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%A3%B0%E6%98%8E%E8%AE%A1%E7%AE%97%E5%B1%9E%E6%80%A7"><span class="toc-number">1.1.</span> <span class="toc-text">声明计算属性</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%AE%A1%E7%AE%97%E5%B1%9E%E6%80%A7%E7%9A%84%E4%BD%BF%E7%94%A8%E6%B3%A8%E6%84%8F%E7%82%B9"><span class="toc-number">1.2.</span> <span class="toc-text">计算属性的使用注意点</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%AE%A1%E7%AE%97%E5%B1%9E%E6%80%A7-vs-%E6%96%B9%E6%B3%95"><span class="toc-number">1.3.</span> <span class="toc-text">计算属性 vs 方法</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%87%AA%E5%AE%9A%E4%B9%89%E4%BA%8B%E4%BB%B6"><span class="toc-number">2.</span> <span class="toc-text">自定义事件</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%87%AA%E5%AE%9A%E4%B9%89%E4%BA%8B%E4%BB%B6%E7%9A%843%E4%B8%AA%E4%BD%BF%E7%94%A8%E6%AD%A5%E9%AA%A4"><span class="toc-number">2.1.</span> <span class="toc-text">自定义事件的3个使用步骤</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%A3%B0%E6%98%8E%E8%87%AA%E5%AE%9A%E4%B9%89%E4%BA%8B%E4%BB%B6"><span class="toc-number">2.1.1.</span> <span class="toc-text">声明自定义事件</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E8%A7%A6%E5%8F%91%E8%87%AA%E5%AE%9A%E4%B9%89%E4%BA%8B%E4%BB%B6"><span class="toc-number">2.1.2.</span> <span class="toc-text">触发自定义事件</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E7%9B%91%E5%90%AC%E8%87%AA%E5%AE%9A%E4%B9%89%E4%BA%8B%E4%BB%B6"><span class="toc-number">2.1.3.</span> <span class="toc-text">监听自定义事件</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%87%AA%E5%AE%9A%E4%B9%89%E4%BA%8B%E4%BB%B6%E4%BC%A0%E5%8F%82%E3%80%82"><span class="toc-number">2.2.</span> <span class="toc-text">自定义事件传参。</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#watch-%E7%9B%91%E5%90%AC%E5%99%A8"><span class="toc-number">3.</span> <span class="toc-text">watch 监听器</span></a></li></ol>	
+        </div>
+    
+</div>
+
+
+    </div>
+</div>
+</body>
+
+
+<script src="//lib.baomitu.com/jquery/1.8.3/jquery.min.js"></script>
+<script src="/js/plugin.js"></script>
+<script src="/js/typed.js"></script>
+<script src="/js/diaspora.js"></script>
+
+
+<link rel="stylesheet" href="/photoswipe/photoswipe.css">
+<link rel="stylesheet" href="/photoswipe/default-skin/default-skin.css">
+
+
+<script src="/photoswipe/photoswipe.min.js"></script>
+<script src="/photoswipe/photoswipe-ui-default.min.js"></script>
+
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+            <div class="pswp__top-bar">
+                <!--  Controls are self-explanatory. Order can be changed. -->
+                <div class="pswp__counter"></div>
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+</html>
