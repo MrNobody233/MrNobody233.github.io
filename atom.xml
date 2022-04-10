@@ -6,7 +6,7 @@
   <link href="http://mrnobody233.github.io/atom.xml" rel="self"/>
   
   <link href="http://mrnobody233.github.io/"/>
-  <updated>2022-04-07T12:37:26.362Z</updated>
+  <updated>2022-04-10T12:08:22.951Z</updated>
   <id>http://mrnobody233.github.io/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Vue数据共享</title>
+    <link href="http://mrnobody233.github.io/2022/04/10/Vue%E6%95%B0%E6%8D%AE%E5%85%B1%E4%BA%AB/"/>
+    <id>http://mrnobody233.github.io/2022/04/10/Vue%E6%95%B0%E6%8D%AE%E5%85%B1%E4%BA%AB/</id>
+    <published>2022-04-10T11:39:29.000Z</published>
+    <updated>2022-04-10T12:08:22.951Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="组件之间的数据共享"><a href="#组件之间的数据共享" class="headerlink" title="组件之间的数据共享"></a>组件之间的数据共享</h2><h3 id="在项目开发中，组件之间的关系分为如下3种"><a href="#在项目开发中，组件之间的关系分为如下3种" class="headerlink" title="在项目开发中，组件之间的关系分为如下3种"></a>在项目开发中，组件之间的关系分为如下3种</h3><ol><li>父子关系</li><li>兄弟关系</li><li>后代关系</li></ol><hr><h3 id="父子之间的数据共享"><a href="#父子之间的数据共享" class="headerlink" title="父子之间的数据共享"></a>父子之间的数据共享</h3><p>父子组件之间的数据共享又分为</p><h4 id="1-父向子共享数据"><a href="#1-父向子共享数据" class="headerlink" title="1. 父向子共享数据"></a>1. <span style="color:red">父向子</span>共享数据</h4><p>父组件通过<span style="color:red">v-bind属性绑定</span>向子组件共享数据。同时，子组件需要使用<span style="color:red">props</span>接收数据</p><p><span style="color:red">父组件</span></p><figure class="highlight javascript"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 父组件</span></span><br><span class="line">&lt;myTest </span><br><span class="line">  :msg=<span class="string">"message"</span></span><br><span class="line">  :user=<span class="string">"userinfo"</span>&gt;</span><br><span class="line">&lt;/myTest&gt;</span><br><span class="line"></span><br><span class="line"><span class="title function_">data</span>(<span class="params"></span>){</span><br><span class="line">  <span class="keyword">return</span>{</span><br><span class="line">    <span class="attr">message</span>:<span class="string">'hello vue'</span>,</span><br><span class="line">    <span class="attr">userinfo</span>:{ <span class="attr">name</span>:<span class="string">'zs'</span>, <span class="attr">age</span>:<span class="number">20</span> }</span><br><span class="line">  }</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure><p><span style="color:red">子组件</span></p><figure class="highlight javascript"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">&lt;!-- 子组件 --&gt;</span><br><span class="line"><span class="language-xml"><span class="tag">&lt;<span class="name">template</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">  <span class="tag">&lt;<span class="name">h3</span>&gt;</span>测试父子传值<span class="tag">&lt;/<span class="name">h3</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">  <span class="tag">&lt;<span class="name">p</span>&gt;</span>{{ msg }}<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">  <span class="tag">&lt;<span class="name">p</span>&gt;</span>{{ userinfo }}<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span></span><br><span class="line"><span class="language-xml"><span class="tag">&lt;/<span class="name">template</span>&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="language-xml"><span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="language-javascript"></span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml"><span class="keyword">export</span> <span class="keyword">default</span> {</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">  <span class="attr">name</span>: <span class="string">"MyTest"</span>,</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">  <span class="attr">props</span>: [<span class="string">'msg'</span>, <span class="string">'userinfo'</span>],</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">}</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span></span><br></pre></td></tr></tbody></table></figure><hr><h4 id="2-子向父共享数据"><a href="#2-子向父共享数据" class="headerlink" title="2. 子向父共享数据"></a>2. <span style="color:red">子向父</span>共享数据</h4><p>子组件通过<span style="color:red">自定义事件</span>的方式向父组件共享数据。</p><p>等我复习一下自定义事件在更新QWQ</p><hr><h4 id="3-父与子双向数据同步"><a href="#3-父与子双向数据同步" class="headerlink" title="3. 父与子双向数据同步"></a>3. <span style="color:red">父与子</span>双向数据同步</h4>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;组件之间的数据共享&quot;&gt;&lt;a href=&quot;#组件之间的数据共享&quot; class=&quot;headerlink&quot; title=&quot;组件之间的数据共享&quot;&gt;&lt;/a&gt;组件之间的数据共享&lt;/h2&gt;&lt;h3 id=&quot;在项目开发中，组件之间的关系分为如下3种&quot;&gt;&lt;a href=&quot;#在项目开发</summary>
+      
+    
+    
+    
+    <category term="web前端" scheme="http://mrnobody233.github.io/categories/web%E5%89%8D%E7%AB%AF/"/>
+    
+    
+    <category term="前端" scheme="http://mrnobody233.github.io/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+    <category term="Vue" scheme="http://mrnobody233.github.io/tags/Vue/"/>
+    
+  </entry>
   
   <entry>
     <title>Vue路由</title>
