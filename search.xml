@@ -499,7 +499,10 @@
 <li>在<span style="color:red">数据发送方</span>触发事件</li>
 </ol>
 <p>在数据发送方，调用<span style="color:red">bus.emit</span>(‘事件名称’,要发送的数据)方法<span style="color:red">触发自定义事件</span></p>
-<figure class="highlight javascript"><table><tbody><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> bus <span class="keyword">from</span> <span class="string">"@/eventBus/eventBus.js"</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> {</span><br><span class="line">  <span class="attr">name</span>: <span class="string">"Left"</span>,</span><br><span class="line">  <span class="title function_">data</span>(<span class="params"></span>) {</span><br><span class="line">    <span class="keyword">return</span> {</span><br><span class="line">      <span class="attr">num</span>: <span class="number">0</span></span><br><span class="line">    }</span><br><span class="line">  },</span><br><span class="line">  <span class="attr">methods</span>: {</span><br><span class="line">    <span class="title function_">addCount</span>(<span class="params"></span>) {</span><br><span class="line">      <span class="variable language_">this</span>.<span class="property">num</span>++</span><br><span class="line">      <span class="comment">// 调用bus.emit()方法触发自定义事件，并发送数据</span></span><br><span class="line">      bus.<span class="title function_">emit</span>(<span class="string">'countChange'</span>, <span class="variable language_">this</span>.<span class="property">num</span>)</span><br><span class="line">    }</span><br><span class="line">  },</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>]]></content>
+<figure class="highlight javascript"><table><tbody><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> bus <span class="keyword">from</span> <span class="string">"@/eventBus/eventBus.js"</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> {</span><br><span class="line">  <span class="attr">name</span>: <span class="string">"Left"</span>,</span><br><span class="line">  <span class="title function_">data</span>(<span class="params"></span>) {</span><br><span class="line">    <span class="keyword">return</span> {</span><br><span class="line">      <span class="attr">num</span>: <span class="number">0</span></span><br><span class="line">    }</span><br><span class="line">  },</span><br><span class="line">  <span class="attr">methods</span>: {</span><br><span class="line">    <span class="title function_">addCount</span>(<span class="params"></span>) {</span><br><span class="line">      <span class="variable language_">this</span>.<span class="property">num</span>++</span><br><span class="line">      <span class="comment">// 调用bus.emit()方法触发自定义事件，并发送数据</span></span><br><span class="line">      bus.<span class="title function_">emit</span>(<span class="string">'countChange'</span>, <span class="variable language_">this</span>.<span class="property">num</span>)</span><br><span class="line">    }</span><br><span class="line">  },</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+
+<hr>
+]]></content>
       <categories>
         <category>web前端</category>
       </categories>
@@ -558,6 +561,19 @@
 
 <h4 id="监听对象单个属性的变化"><a href="#监听对象单个属性的变化" class="headerlink" title="监听对象单个属性的变化"></a>监听对象单个属性的变化</h4><p>只想监听info.username的属性变化，可以把这个访问列声明过来即可</p>
 <figure class="highlight javascript"><table><tbody><tr><td class="code"><pre><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> {</span><br><span class="line">  <span class="title function_">data</span>(<span class="params"></span>) {</span><br><span class="line">    <span class="keyword">return</span> {</span><br><span class="line">      <span class="attr">username</span>: <span class="string">''</span>,</span><br><span class="line">      <span class="attr">available</span>: <span class="string">' '</span>,</span><br><span class="line">      <span class="attr">info</span>: {</span><br><span class="line">        <span class="attr">username</span>: <span class="string">'zs'</span>,</span><br><span class="line">        <span class="attr">password</span>:<span class="string">''</span></span><br><span class="line">      }</span><br><span class="line">    }</span><br><span class="line">  },</span><br><span class="line"></span><br><span class="line"><span class="comment">//  侦听器</span></span><br><span class="line">  <span class="attr">watch</span>: {</span><br><span class="line">    <span class="string">'info.username'</span>: { <span class="comment">// 只想监听 info.username属性值的变化</span></span><br><span class="line">      <span class="keyword">async</span> <span class="title function_">handle</span>(<span class="params">newVal</span>) {</span><br><span class="line">        <span class="keyword">const</span> {<span class="attr">data</span>: res} = <span class="keyword">await</span> axios.<span class="title function_">get</span>(<span class="string">`https://www.escook.cn/api/finduser/`</span> + newVal)</span><br><span class="line">        <span class="variable language_">this</span>.<span class="property">available</span> = res.<span class="property">message</span>;</span><br><span class="line">      },</span><br><span class="line">      <span class="attr">deep</span>: <span class="literal">true</span></span><br><span class="line">    },</span><br><span class="line">  }</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+]]></content>
+      <categories>
+        <category>web前端</category>
+      </categories>
+      <tags>
+        <tag>前端</tag>
+        <tag>Vue</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Vue-vuex</title>
+    <url>/2022/04/14/Vue-vuex/</url>
+    <content><![CDATA[<h3 id="vuex"><a href="#vuex" class="headerlink" title="vuex"></a>vuex</h3><p>专门在Vue中实现集中式状态(数据)管理的一个Vue插件，对vue应用中<span style="color:red">多个组件的共享</span>进行集中式的管理（读/写）,也是一种组件间通信的方式，且适用于任意组件间通信。</p>
 ]]></content>
       <categories>
         <category>web前端</category>
