@@ -501,7 +501,7 @@
 <li>接下来可以调用<code>this.$emit('update:xxx',最新的数据)</code> 发送出去即可<figure class="highlight javascript"><table><tbody><tr><td class="code"><pre><span class="line"><span class="title function_">add</span>(<span class="params"></span>) {</span><br><span class="line">      <span class="variable language_">this</span>.$emit(<span class="string">'update:num'</span>, <span class="variable language_">this</span>.<span class="property">num</span> + <span class="number">1</span>)</span><br><span class="line">  }</span><br></pre></td></tr></tbody></table></figure></li>
 </ol>
 <hr>
-<h3 id="兄弟组件之间的数据共享"><a href="#兄弟组件之间的数据共享" class="headerlink" title="兄弟组件之间的数据共享"></a>兄弟组件之间的数据共享</h3><p>兄弟组件之间实现数据共享的方案是<span style="color:red">EventBus</span>，可以结束第三方的包<span style="color:red">mitt</span>来创建<span style="color:red">eventBus对象</span>，从而实现兄弟组件之间的数据共享</p>
+<h3 id="兄弟组件之间的数据共享"><a href="#兄弟组件之间的数据共享" class="headerlink" title="兄弟组件之间的数据共享"></a>兄弟组件之间的数据共享</h3><p>兄弟组件之间实现数据共享的方案是<span style="color:red">EventBus</span>，可以接受第三方的包<span style="color:red">mitt</span>来创建<span style="color:red">eventBus对象</span>，从而实现兄弟组件之间的数据共享</p>
 <ol>
 <li>安装mitt 依赖包<br>  <code>npm i mitt</code></li>
 <li>创建公共的<span style="color:red">eventBus</span>模块<figure class="highlight javascript"><table><tbody><tr><td class="code"><pre><span class="line"><span class="comment">// 导入mitt包</span></span><br><span class="line"><span class="keyword">import</span> mitt <span class="keyword">from</span> <span class="string">'mitt'</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 创建EventBus对象</span></span><br><span class="line"><span class="keyword">const</span> bus = <span class="title function_">mitt</span>()</span><br><span class="line"></span><br><span class="line"><span class="comment">// 将EventBus的实例对象共享出去</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> but</span><br></pre></td></tr></tbody></table></figure></li>
@@ -584,9 +584,56 @@
       </tags>
   </entry>
   <entry>
-    <title>Vue-vuex</title>
-    <url>/2022/04/14/Vue-vuex/</url>
-    <content><![CDATA[<h3 id="vuex"><a href="#vuex" class="headerlink" title="vuex"></a>vuex</h3><p>专门在Vue中实现集中式状态(数据)管理的一个Vue插件，对vue应用中<span style="color:red">多个组件的共享</span>进行集中式的管理（读/写）,也是一种组件间通信的方式，且适用于任意组件间通信。</p>
+    <title>Vue-Vuex</title>
+    <url>/2022/04/14/Vue-Vuex/</url>
+    <content><![CDATA[<h3 id="Vuex-概述"><a href="#Vuex-概述" class="headerlink" title="Vuex 概述"></a>Vuex 概述</h3><h4 id="组件之间共享数据"><a href="#组件之间共享数据" class="headerlink" title="组件之间共享数据"></a>组件之间共享数据</h4><ol>
+<li>父向子传值：<span style="color:red">v-bind 属性绑定</span></li>
+<li>子向父传值：<span style="color:red">自定义事件</span></li>
+<li>兄弟之间共享数据：<span style="color:red">EventBus</span></li>
+</ol>
+<ul>
+<li>$on 接收数据的那个组件</li>
+<li>$emit 发送数据的那个组件</li>
+</ul>
+<p>以上传值只适合<span style="color:red">小范围</span>，如果需要<span style="color:red">频繁</span>的<span style="color:red">大范围</span>的共享就可使用vuex</p>
+<hr>
+<h4 id="Vuex-是什么"><a href="#Vuex-是什么" class="headerlink" title="Vuex 是什么"></a>Vuex 是什么</h4><p>是实现组件全局状态(数据) 管理的一种机制，可以方便的实现组件之间数据的共享</p>
+<p>使用Vuex统一管理状态的好处</p>
+<ol>
+<li>能够在 vuex 集中管理共享的数据，易于开发和后期维护</li>
+<li>能够高效地实现组件之间的数据共享，提高开发效率</li>
+<li>存储在vuex中的数据都是响应式的，能够实时保持数据与页面的同步</li>
+</ol>
+<h3 id="Vuex-的基本使用"><a href="#Vuex-的基本使用" class="headerlink" title="Vuex 的基本使用"></a>Vuex 的基本使用</h3><h4 id="1-安装-vuex-依赖包"><a href="#1-安装-vuex-依赖包" class="headerlink" title="1. 安装 vuex 依赖包"></a>1. 安装 vuex 依赖包</h4><p><code>npm i vuex -s</code></p>
+<h4 id="2-导入-vuex-包"><a href="#2-导入-vuex-包" class="headerlink" title="2. 导入 vuex 包"></a>2. 导入 vuex 包</h4><p><code>import Vuex from 'vuex'</code><br><code>Vue.use(Vuex)</code></p>
+<h4 id="3-创建-store-对象、"><a href="#3-创建-store-对象、" class="headerlink" title="3.创建 store 对象、"></a>3.创建 store 对象、</h4><figure class="highlight javascript"><table><tbody><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> store = <span class="keyword">new</span> <span class="title class_">Vuex</span>.<span class="title function_">store</span>({</span><br><span class="line">  <span class="comment">// state 中存放的就是全局共享的数据</span></span><br><span class="line">  <span class="attr">state</span>:{ <span class="attr">count</span>: <span class="number">0</span> }</span><br><span class="line">})</span><br></pre></td></tr></tbody></table></figure>
+<h4 id="4-将-store-对象挂载到-vue-实例中"><a href="#4-将-store-对象挂载到-vue-实例中" class="headerlink" title="4.将 store 对象挂载到 vue 实例中"></a>4.将 store 对象挂载到 vue 实例中</h4><figure class="highlight javascript"><table><tbody><tr><td class="code"><pre><span class="line"><span class="keyword">new</span> <span class="title class_">Vue</span>({</span><br><span class="line">  <span class="attr">el</span>:<span class="string">'#app'</span>,</span><br><span class="line">  <span class="attr">render</span>:<span class="function"><span class="params">h</span>=&gt;</span><span class="title function_">h</span>(app),</span><br><span class="line">  router,</span><br><span class="line">  <span class="comment">// 将创建的共享数据，挂载到Vue实例中</span></span><br><span class="line">  <span class="comment">// 所有的组件，就可以直接从 store 中获取全局的数据了</span></span><br><span class="line">  store</span><br><span class="line">})</span><br></pre></td></tr></tbody></table></figure>
+<hr>
+<h3 id="vuex的核心概念"><a href="#vuex的核心概念" class="headerlink" title="vuex的核心概念"></a>vuex的核心概念</h3><p>Vuex中的主要核心概念如下：</p>
+<ul>
+<li>State</li>
+<li>Mutation</li>
+<li>Action</li>
+<li>Getter</li>
+</ul>
+<h4 id="State"><a href="#State" class="headerlink" title="State"></a>State</h4><p>state提供位移的公共数据源，所有共享的数据都要统一放到Store的State中进行存储</p>
+<figure class="highlight javascript"><table><tbody><tr><td class="code"><pre><span class="line"><span class="comment">// 创建store数据源，提供唯一公共数据</span></span><br><span class="line"><span class="keyword">const</span> store = <span class="keyword">new</span> <span class="title class_">Vuex</span>.<span class="title class_">Store</span>({</span><br><span class="line">  <span class="attr">state</span>: { <span class="attr">count</span>: <span class="number">0</span> }</span><br><span class="line">})</span><br></pre></td></tr></tbody></table></figure>
+
+<p>组件访问State中数据的 <span style="color:red">第一种方式</span>：</p>
+<figure class="highlight javascript"><table><tbody><tr><td class="code"><pre><span class="line"><span class="string">`this.$store.state.全局数据名称</span></span><br></pre></td></tr></tbody></table></figure>
+
+<p>组件访问State中数据的 <span style="color:red">第二种方式</span>：</p>
+<figure class="highlight javascript"><table><tbody><tr><td class="code"><pre><span class="line"><span class="comment">// 1.从 vuex 中按需导入mapState函数</span></span><br><span class="line"><span class="keyword">import</span> { mapState } <span class="keyword">from</span> <span class="string">'vuex'</span></span><br></pre></td></tr></tbody></table></figure>
+<p>通过刚才导入的mapState函数，将当前组件需要的全局数据，映射为当前组件的computed计算属性</p>
+<figure class="highlight javascript"><table><tbody><tr><td class="code"><pre><span class="line"><span class="comment">// 2.将全局数据，映射为当前组件的计算属性</span></span><br><span class="line"><span class="attr">computed</span>:{</span><br><span class="line">  ..<span class="title function_">mapStated</span>([<span class="string">'count'</span>])</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+
+<h4 id="Mutation"><a href="#Mutation" class="headerlink" title="Mutation"></a>Mutation</h4><p>Mutation 用于变更 Store 中的数据。</p>
+<ol>
+<li>只能通过 mutation 变更 Store 数据，不可以直接操作 Store 中的数据</li>
+<li>通过这种方式虽然操作起来繁琐一些，但是可以集中监控所有数据的变化</li>
+</ol>
+<figure class="highlight javascript"><table><tbody><tr><td class="code"><pre><span class="line"><span class="comment">// 定义 Mutation</span></span><br><span class="line"><span class="keyword">const</span> store = <span class="keyword">new</span> <span class="title class_">Vuex</span>.<span class="title function_">store</span>({</span><br><span class="line">  <span class="attr">state</span>:{</span><br><span class="line">     <span class="attr">count</span>: <span class="number">0</span> </span><br><span class="line">    },</span><br><span class="line">  <span class="attr">mutations</span>: {</span><br><span class="line">    <span class="title function_">add</span>(<span class="params">state</span>) {</span><br><span class="line">       <span class="comment">// 变更状态</span></span><br><span class="line">        state.<span class="property">count</span>++</span><br><span class="line">    }</span><br><span class="line">  },</span><br><span class="line">})</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight javascript"><table><tbody><tr><td class="code"><pre><span class="line"><span class="comment">// 触发mutation</span></span><br><span class="line"><span class="attr">methods</span>: {</span><br><span class="line"><span class="title function_">btnHandler1</span>(<span class="params"></span>) {</span><br><span class="line">  <span class="comment">// 触发mutation的第一种方式</span></span><br><span class="line">  <span class="variable language_">this</span>.<span class="property">$store</span>.<span class="title function_">commit</span>(<span class="string">'add'</span>)</span><br><span class="line">  }</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
 ]]></content>
       <categories>
         <category>web前端</category>
