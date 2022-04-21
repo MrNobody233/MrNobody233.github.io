@@ -1,0 +1,224 @@
+
+<!DOCTYPE html>
+<html lang="zh_CH" class="loading">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>黑马程序员-电商管理知识总结 - MrNobody&#39;s Blog</title>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="google" content="notranslate" />
+    <meta name="keywords" content="Fechin,"> 
+    <meta name="description" content="MrNobody,使用阿里图标
+把下载好的font文件放进 assets 目录下
+在 main.js 中导入字体图标  import &#39;./assets/fonts/iconfont.css&#39;
+复制类名即可    &amp;,"> 
+    <meta name="author" content="Mr_Nobody"> 
+    <link rel="alternative" href="atom.xml" title="MrNobody&#39;s Blog" type="application/atom+xml"> 
+    <link rel="icon" href="/img/favicon.png"> 
+    
+    
+    
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:title" content="黑马程序员-电商管理知识总结 - MrNobody&#39;s Blog"/>
+    <meta name="twitter:description" content="MrNobody,使用阿里图标
+把下载好的font文件放进 assets 目录下
+在 main.js 中导入字体图标  import &#39;./assets/fonts/iconfont.css&#39;
+复制类名即可    &amp;,"/>
+    
+    
+    
+    
+    <meta property="og:site_name" content="MrNobody&#39;s Blog"/>
+    <meta property="og:type" content="object"/>
+    <meta property="og:title" content="黑马程序员-电商管理知识总结 - MrNobody&#39;s Blog"/>
+    <meta property="og:description" content="MrNobody,使用阿里图标
+把下载好的font文件放进 assets 目录下
+在 main.js 中导入字体图标  import &#39;./assets/fonts/iconfont.css&#39;
+复制类名即可    &amp;,"/>
+    
+<link rel="stylesheet" href="/css/diaspora.css">
+
+<meta name="generator" content="Hexo 6.1.0">
+<style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
+</head>
+
+<body class="loading">
+    <span id="config-title" style="display:none">MrNobody&#39;s Blog</span>
+    <div id="loader"></div>
+    <div id="single">
+    <div id="top" style="display: block;">
+    <div class="bar" style="width: 0;"></div>
+    <a class="iconfont icon-home image-icon" href="javascript:;" data-url="http://mrnobody233.github.io"></a>
+    <div title="播放/暂停" class="iconfont icon-play"></div>
+    <h3 class="subtitle">黑马程序员-电商管理知识总结</h3>
+    <div class="social">
+        <div>
+            <div class="share">
+                <a title="获取二维码" class="iconfont icon-scan" href="javascript:;"></a>
+            </div>
+            <div id="qr"></div>
+        </div>
+    </div>
+    <div class="scrollbar"></div>
+</div>
+
+    <div class="section">
+        <div class="article">
+    <div class='main'>
+        <h1 class="title">黑马程序员-电商管理知识总结</h1>
+        <div class="stuff">
+            <span>四月 21, 2022</span>
+            
+  <ul class="post-tags-list" itemprop="keywords"><li class="post-tags-list-item"><a class="post-tags-list-link" href="/tags/Vue/" rel="tag">Vue</a></li><li class="post-tags-list-item"><a class="post-tags-list-link" href="/tags/axios/" rel="tag">axios</a></li><li class="post-tags-list-item"><a class="post-tags-list-link" href="/tags/%E5%89%8D%E7%AB%AF/" rel="tag">前端</a></li></ul>
+
+
+        </div>
+        <div class="content markdown">
+            <h3 id="使用阿里图标"><a href="#使用阿里图标" class="headerlink" title="使用阿里图标"></a>使用阿里图标</h3><ol>
+<li>把下载好的font文件放进 assets 目录下</li>
+<li>在 main.js 中导入字体图标  <code>import './assets/fonts/iconfont.css'</code></li>
+<li>复制类名即可 <code>   &lt;el-input prefix-icon="iconfont icon-3702mima"&gt;&lt;/el-input&gt;</code>  <span style="color:red">iconfont是固定写法 </span></li>
+</ol>
+<h3 id="全局配置axios"><a href="#全局配置axios" class="headerlink" title="全局配置axios"></a>全局配置axios</h3><ol>
+<li>在 main.js 中导入 axios<br><code>import axios from "axios"; </code></li>
+<li>设置请求的根路径<br><code>axios.defaults.baseURL = 'http://127.0.0.1:8888/api/private/v1/'</code></li>
+<li>把包挂载到 vue 的原型对象上<br><code>Vue.prototype.$http = axios</code></li>
+<li>通过 this 就可以访问原型上的 $http发起axios请求<figure class="highlight js"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="title function_">login</span>(<span class="params"></span>) {</span><br><span class="line">   <span class="variable language_">this</span>.<span class="property">$refs</span>.<span class="property">loginFormRef</span>.<span class="title function_">validate</span>(<span class="keyword">async</span> value =&gt; {</span><br><span class="line">     <span class="keyword">if</span> (value === <span class="literal">false</span>) <span class="keyword">return</span>;</span><br><span class="line">     <span class="keyword">const</span> {<span class="attr">data</span>: res} = <span class="keyword">await</span> <span class="variable language_">this</span>.<span class="property">$http</span>.<span class="title function_">post</span>(<span class="string">'login'</span>, <span class="variable language_">this</span>.<span class="property">loginForm</span>)</span><br><span class="line">     <span class="variable language_">console</span>.<span class="title function_">log</span>(res)</span><br><span class="line">   })</span><br><span class="line"> }</span><br></pre></td></tr></tbody></table></figure>
+<hr>
+</li>
+</ol>
+<h3 id="登录成功后保存-token"><a href="#登录成功后保存-token" class="headerlink" title="登录成功后保存 token"></a>登录成功后保存 token</h3><ol>
+<li>将 token 保存在 sessionStorage 中<br><code>window.sessionStorage.setItem('token', res.data.token);</code></li>
+<li>通过编程式导航跳转到主页<br><code>this.$router.push('/home')</code></li>
+<li>路由导航守卫控制访问权限<figure class="highlight js"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">router.<span class="title function_">beforeEach</span>(<span class="function">(<span class="params">to, form, next</span>) =&gt;</span> {</span><br><span class="line">    <span class="keyword">if</span> (to.<span class="property">path</span> === <span class="string">'/login'</span>) <span class="keyword">return</span> <span class="title function_">next</span>()</span><br><span class="line">    <span class="comment">// 获取token</span></span><br><span class="line">    <span class="keyword">const</span> tokenStr = <span class="variable language_">window</span>.<span class="property">sessionStorage</span>.<span class="title function_">getItem</span>(<span class="string">'token'</span>)</span><br><span class="line">    <span class="comment">// 如果 token 是空值，则返回login页面</span></span><br><span class="line">    <span class="keyword">if</span> (!tokenStr) <span class="keyword">return</span> <span class="title function_">next</span>(<span class="string">'/login'</span>)</span><br><span class="line">    <span class="title function_">next</span>()</span><br><span class="line">})</span><br></pre></td></tr></tbody></table></figure></li>
+</ol>
+<hr>
+<h3 id="退出登录"><a href="#退出登录" class="headerlink" title="退出登录"></a>退出登录</h3><ol>
+<li>清空token<br><code>window.sessionStorage.clear()</code></li>
+<li>跳转到登录页面<br><code>this.$router.push('/login')</code></li>
+</ol>
+<hr>
+
+            <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
+            <audio id="audio" loop="1" preload="auto" controls="controls" data-autoplay="false">
+                <source type="audio/mpeg" src="">
+            </audio>
+            
+                <ul id="audio-list" style="display:none">
+                    
+                        
+                            <li title="0" data-url="https://link.hhtjim.com/163/1447930796.mp3"></li>
+                        
+                    
+                        
+                            <li title="1" data-url="https://link.hhtjim.com/163/421160291.mp3"></li>
+                        
+                    
+                        
+                            <li title="2" data-url="https://link.hhtjim.com/163/38358225.mp3"></li>
+                        
+                    
+                        
+                            <li title="3" data-url="https://link.hhtjim.com/163/1418713046.mp3"></li>
+                        
+                    
+                </ul>
+            
+        </div>
+        
+    <div id="gitalk-container" class="comment link"
+		data-enable="false"
+        data-ae="false"
+        data-ci=""
+        data-cs=""
+        data-r=""
+        data-o=""
+        data-a=""
+        data-d="false"
+    >查看评论</div>
+
+
+    </div>
+    
+        <div class="side">
+			<ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8%E9%98%BF%E9%87%8C%E5%9B%BE%E6%A0%87"><span class="toc-number">1.</span> <span class="toc-text">使用阿里图标</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%85%A8%E5%B1%80%E9%85%8D%E7%BD%AEaxios"><span class="toc-number">2.</span> <span class="toc-text">全局配置axios</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%99%BB%E5%BD%95%E6%88%90%E5%8A%9F%E5%90%8E%E4%BF%9D%E5%AD%98-token"><span class="toc-number">3.</span> <span class="toc-text">登录成功后保存 token</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%80%80%E5%87%BA%E7%99%BB%E5%BD%95"><span class="toc-number">4.</span> <span class="toc-text">退出登录</span></a></li></ol>	
+        </div>
+    
+</div>
+
+
+    </div>
+</div>
+</body>
+
+
+<script src="//lib.baomitu.com/jquery/1.8.3/jquery.min.js"></script>
+<script src="/js/plugin.js"></script>
+<script src="/js/typed.js"></script>
+<script src="/js/diaspora.js"></script>
+
+
+<link rel="stylesheet" href="/photoswipe/photoswipe.css">
+<link rel="stylesheet" href="/photoswipe/default-skin/default-skin.css">
+
+
+<script src="/photoswipe/photoswipe.min.js"></script>
+<script src="/photoswipe/photoswipe-ui-default.min.js"></script>
+
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+            <div class="pswp__top-bar">
+                <!--  Controls are self-explanatory. Order can be changed. -->
+                <div class="pswp__counter"></div>
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+</html>

@@ -6,7 +6,7 @@
   <link href="http://mrnobody233.github.io/atom.xml" rel="self"/>
   
   <link href="http://mrnobody233.github.io/"/>
-  <updated>2022-04-21T08:13:19.943Z</updated>
+  <updated>2022-04-21T13:39:37.035Z</updated>
   <id>http://mrnobody233.github.io/</id>
   
   <author>
@@ -15,6 +15,36 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>黑马程序员-电商管理知识总结</title>
+    <link href="http://mrnobody233.github.io/2022/04/21/%E9%BB%91%E9%A9%AC%E7%A8%8B%E5%BA%8F%E5%91%98-%E7%94%B5%E5%95%86%E7%AE%A1%E7%90%86%E7%9F%A5%E8%AF%86%E6%80%BB%E7%BB%93/"/>
+    <id>http://mrnobody233.github.io/2022/04/21/%E9%BB%91%E9%A9%AC%E7%A8%8B%E5%BA%8F%E5%91%98-%E7%94%B5%E5%95%86%E7%AE%A1%E7%90%86%E7%9F%A5%E8%AF%86%E6%80%BB%E7%BB%93/</id>
+    <published>2022-04-21T10:32:51.000Z</published>
+    <updated>2022-04-21T13:39:37.035Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="使用阿里图标"><a href="#使用阿里图标" class="headerlink" title="使用阿里图标"></a>使用阿里图标</h3><ol><li>把下载好的font文件放进 assets 目录下</li><li>在 main.js 中导入字体图标  <code>import './assets/fonts/iconfont.css'</code></li><li>复制类名即可 <code>   &lt;el-input prefix-icon="iconfont icon-3702mima"&gt;&lt;/el-input&gt;</code>  <span style="color:red">iconfont是固定写法 </span></li></ol><h3 id="全局配置axios"><a href="#全局配置axios" class="headerlink" title="全局配置axios"></a>全局配置axios</h3><ol><li>在 main.js 中导入 axios<br><code>import axios from "axios"; </code></li><li>设置请求的根路径<br><code>axios.defaults.baseURL = 'http://127.0.0.1:8888/api/private/v1/'</code></li><li>把包挂载到 vue 的原型对象上<br><code>Vue.prototype.$http = axios</code></li><li>通过 this 就可以访问原型上的 $http发起axios请求<figure class="highlight js"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="title function_">login</span>(<span class="params"></span>) {</span><br><span class="line">   <span class="variable language_">this</span>.<span class="property">$refs</span>.<span class="property">loginFormRef</span>.<span class="title function_">validate</span>(<span class="keyword">async</span> value =&gt; {</span><br><span class="line">     <span class="keyword">if</span> (value === <span class="literal">false</span>) <span class="keyword">return</span>;</span><br><span class="line">     <span class="keyword">const</span> {<span class="attr">data</span>: res} = <span class="keyword">await</span> <span class="variable language_">this</span>.<span class="property">$http</span>.<span class="title function_">post</span>(<span class="string">'login'</span>, <span class="variable language_">this</span>.<span class="property">loginForm</span>)</span><br><span class="line">     <span class="variable language_">console</span>.<span class="title function_">log</span>(res)</span><br><span class="line">   })</span><br><span class="line"> }</span><br></pre></td></tr></tbody></table></figure><hr></li></ol><h3 id="登录成功后保存-token"><a href="#登录成功后保存-token" class="headerlink" title="登录成功后保存 token"></a>登录成功后保存 token</h3><ol><li>将 token 保存在 sessionStorage 中<br><code>window.sessionStorage.setItem('token', res.data.token);</code></li><li>通过编程式导航跳转到主页<br><code>this.$router.push('/home')</code></li><li>路由导航守卫控制访问权限<figure class="highlight js"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">router.<span class="title function_">beforeEach</span>(<span class="function">(<span class="params">to, form, next</span>) =&gt;</span> {</span><br><span class="line">    <span class="keyword">if</span> (to.<span class="property">path</span> === <span class="string">'/login'</span>) <span class="keyword">return</span> <span class="title function_">next</span>()</span><br><span class="line">    <span class="comment">// 获取token</span></span><br><span class="line">    <span class="keyword">const</span> tokenStr = <span class="variable language_">window</span>.<span class="property">sessionStorage</span>.<span class="title function_">getItem</span>(<span class="string">'token'</span>)</span><br><span class="line">    <span class="comment">// 如果 token 是空值，则返回login页面</span></span><br><span class="line">    <span class="keyword">if</span> (!tokenStr) <span class="keyword">return</span> <span class="title function_">next</span>(<span class="string">'/login'</span>)</span><br><span class="line">    <span class="title function_">next</span>()</span><br><span class="line">})</span><br></pre></td></tr></tbody></table></figure></li></ol><hr><h3 id="退出登录"><a href="#退出登录" class="headerlink" title="退出登录"></a>退出登录</h3><ol><li>清空token<br><code>window.sessionStorage.clear()</code></li><li>跳转到登录页面<br><code>this.$router.push('/login')</code></li></ol><hr>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h3 id=&quot;使用阿里图标&quot;&gt;&lt;a href=&quot;#使用阿里图标&quot; class=&quot;headerlink&quot; title=&quot;使用阿里图标&quot;&gt;&lt;/a&gt;使用阿里图标&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;把下载好的font文件放进 assets 目录下&lt;/li&gt;
+&lt;li&gt;在 main.js 中导入字</summary>
+      
+    
+    
+    
+    <category term="web前端" scheme="http://mrnobody233.github.io/categories/web%E5%89%8D%E7%AB%AF/"/>
+    
+    
+    <category term="前端" scheme="http://mrnobody233.github.io/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+    <category term="Vue" scheme="http://mrnobody233.github.io/tags/Vue/"/>
+    
+    <category term="axios" scheme="http://mrnobody233.github.io/tags/axios/"/>
+    
+  </entry>
   
   <entry>
     <title>axios</title>
