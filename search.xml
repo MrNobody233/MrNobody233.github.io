@@ -628,8 +628,12 @@
 </ol>
 <p>  可以使用<span style="color:red">结构赋值</span></p>
 <figure class="highlight js"><table><tbody><tr><td class="code"><pre><span class="line"><span class="keyword">async</span> <span class="title function_">btnGet</span>(<span class="params"></span>) {</span><br><span class="line">    <span class="keyword">const</span> {<span class="attr">data</span>: res} = <span class="keyword">await</span> <span class="title function_">axios</span>({</span><br><span class="line">      <span class="attr">method</span>: <span class="string">'GET'</span>,</span><br><span class="line">      <span class="attr">url</span>: <span class="string">'http://www.liulongbin.top:3006/api/get'</span>,</span><br><span class="line">      <span class="attr">params</span>: {  <span class="comment">// GET 参数要通过 params 属性提供</span></span><br><span class="line">        <span class="attr">name</span>: <span class="string">'zs'</span>,</span><br><span class="line">        <span class="attr">age</span>: <span class="number">20</span></span><br><span class="line">      }</span><br><span class="line">    })</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(res)</span><br><span class="line">  }</span><br></pre></td></tr></tbody></table></figure>]]></content>
+      <categories>
+        <category>web前端</category>
+      </categories>
       <tags>
-        <tag>Git</tag>
+        <tag>前端</tag>
+        <tag>Ajax</tag>
       </tags>
   </entry>
   <entry>
@@ -733,23 +737,6 @@
       <tags>
         <tag>前端</tag>
         <tag>Vue</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Git基本使用</title>
-    <url>/2022/04/20/Git%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/</url>
-    <content><![CDATA[<ol>
-<li><p>复习git基本使用</p>
-</li>
-<li><p>完成黑马电商平台</p>
-</li>
-<li><p>学习TypeScript</p>
-<p> 目前要解决的事情是 玩CSGO和水提交！</p>
-</li>
-</ol>
-]]></content>
-      <tags>
-        <tag>Git</tag>
       </tags>
   </entry>
 </search>
