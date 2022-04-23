@@ -955,4 +955,24 @@
         <tag>CSS</tag>
       </tags>
   </entry>
+  <entry>
+    <title>第一次拆机</title>
+    <url>/2022/04/23/%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%8B%86%E6%9C%BA/</url>
+    <content><![CDATA[<h3 id="周记"><a href="#周记" class="headerlink" title="周记"></a>周记</h3><p>创建了一个新的标签 叫做周记 和日记差不多，不过是换成了一周一次，又或者是好几周一次，所以取名为周记，</p>
+<h3 id="起因"><a href="#起因" class="headerlink" title="起因"></a>起因</h3><p>昨天<span style="color:#ccc">充电器</span>把<span style="color:#a33038">apex</span>传给我了，安装好以后确实能玩，把所有配置降到最低以后还是卡的一批，<span style="color:#ccc">充电器</span>检查后找到了一些原因，就是我的电脑太辣鸡啦，除了写代码一无是处，还有一些原因是我的电脑买了快两年了，散热器积灰了，风都出不来了，从而导致的帧数降低，为了让我更好的使用这台 华为 matebook13 2020 办公本，来玩 <span style="color:#a33038">apex</span> 和 <span style="color:#edb94d">CSGO</span> 带<span style="color:#ccc">充电器</span> 上大分，他今天中午带了螺丝刀准备帮我拆机清理灰尘，说实话我还是非常担心的。</p>
+<h3 id="回忆"><a href="#回忆" class="headerlink" title="回忆"></a>回忆</h3><p>在19年的时候我也尝试过自己拆机，不过拆的是我的手机，我心爱的 小米mix2s 因为它打游戏的续航能力实在是太垃圾了啦，玩两局吃鸡就基本没电了，所以我买了它的4500毫安的电池，准备给它换一个新的心脏。经历了九九八十一难，我终于把它的后盖打开了，一切都准备就绪，可是我弄错了一根线，以为它是电源线，实际上它是前置摄像头的线，用力一拔下后，断了。。。当时我心都凉了一大截，在一瞬间我买什么手机都想好了，后来长按开机后才发现是前置摄像头，吓屎我了，差点就要换手机了。嘿嘿，虽然不能拍我的美照了，但是游戏续航提升了一大截，缺点就是充电慢了许多。</p>
+<h3 id="拆机"><a href="#拆机" class="headerlink" title="拆机"></a>拆机</h3><p>经历了那件事后，我对拆机有了一些莫名的恐惧感，生怕拆断一根线，但是现在是<span style="color:#ccc">充电器</span>来帮我拆，即使是这样我还是会非常担心滴，毕竟我没有更多的钱买新的电脑了。在拆完外面六个螺丝之后，准备打开后盖，我差点要暴力拆开后壳了，还好<span style="color:#ccc">充电器</span>叫我看一下拆机视频，结果发现垫子底下居然藏了四个螺丝，妈的差点外壳就要报废了。所以需要回到我宿舍使用吹风机把垫子里面的胶吹化掉然后拿下来。回宿舍期间我给<span style="color:#ccc">充电器</span>买了个 1.5￥ 的冰棒作为报酬。拆完垫子之后回到工作室，终于看到了我心爱的电脑的内脏，长这样子。</p>
+<img src="https://raw.githubusercontent.com/MrNobody233/Pohot/main/blog/MyComputer.jpg" width="200/">
+
+<p>可见灰尘还是蛮多的，接下来就看<span style="color:#ccc">充电器</span>的操作了，不愧是老手，在拆机之前居然双手摸桌子下的铁柱子，来释放人体电流，防止电脑触电烧机，实在是太高级了！在他的努力下，我的电脑居然安然无恙，正常开机了，而且还抹了散热硅胶，本来想 <del>狠狠敲诈</del>  好好报答他的，没有机会了 嘿嘿。</p>
+<h3 id="结尾"><a href="#结尾" class="headerlink" title="结尾"></a>结尾</h3><p>后面就是打开<span style="color:#a33038">apex</span>测试了一下，太棒了，稳定40帧，偶尔上60，俗话说：<span style="color:red">1帧能玩 2帧流畅 3帧电竞</span>,我的宝贝本子居然上40帧，简直就是神机啊。测试了几局以后还开出了两个<span style="color:#f5de16">金箱子</span>，<span style="color:purple">紫箱子</span>，不愧是宝藏本子，还给我带来好运，真滴太棒啦，唯一的缺点就是风扇声更大了，仿佛回到了我和它刚见面的模样，当时它也是转的很大声，经历了这一次拆机过程以后，我学会啦！！ 就是不要自己拆机，买个冰棒给<span style="color:#ccc">充电器</span>让他帮我拆就行了</p>
+<p>就这样，掰掰！期待夏天买新散热硅脂再次拆机</p>
+]]></content>
+      <categories>
+        <category>生活</category>
+      </categories>
+      <tags>
+        <tag>周记</tag>
+      </tags>
+  </entry>
 </search>
