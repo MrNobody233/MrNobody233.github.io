@@ -747,7 +747,7 @@
 <li>在 main.js 中导入字体图标  <code>import './assets/fonts/iconfont.css'</code></li>
 <li>复制类名即可 <code>   &lt;el-input prefix-icon="iconfont icon-3702mima"&gt;&lt;/el-input&gt;</code>  <span style="color:red">iconfont是固定写法 </span></li>
 </ol>
-<h3 id="全局配置axios"><a href="#全局配置axios" class="headerlink" title="全局配置axios"></a>全局配置axios</h3><ol>
+<h3 id="vue2中全局配置axios"><a href="#vue2中全局配置axios" class="headerlink" title="vue2中全局配置axios"></a>vue2中全局配置axios</h3><ol>
 <li>在 main.js 中导入 axios<br><code>import axios from "axios"; </code></li>
 <li>设置请求的根路径<br><code>axios.defaults.baseURL = 'http://127.0.0.1:8888/api/private/v1/'</code></li>
 <li>把包挂载到 vue 的原型对象上<br><code>Vue.prototype.$http = axios</code></li>
@@ -966,13 +966,45 @@
 
 <p>可见灰尘还是蛮多的，接下来就看<span style="color:#ccc">充电器</span>的操作了，不愧是老手，在拆机之前居然双手摸桌子下的铁柱子，来释放人体电流，防止电脑触电烧机，实在是太高级了！在他的努力下，我的电脑居然安然无恙，正常开机了，而且还抹了散热硅胶，本来想 <del>狠狠敲诈</del>  好好报答他的，没有机会了 嘿嘿。</p>
 <h3 id="结尾"><a href="#结尾" class="headerlink" title="结尾"></a>结尾</h3><p>后面就是打开<span style="color:#a33038">apex</span>测试了一下，太棒了，稳定40帧，偶尔上60，俗话说：<span style="color:red">1帧能玩 2帧流畅 3帧电竞</span>,我的宝贝本子居然上40帧，简直就是神机啊。测试了几局以后还开出了两个<span style="color:#f5de16">金箱子</span>，<span style="color:purple">紫箱子</span>，不愧是宝藏本子，还给我带来好运，真滴太棒啦，唯一的缺点就是风扇声更大了，仿佛回到了我和它刚见面的模样，当时它也是转的很大声，经历了这一次拆机过程以后，我学会啦！！ 就是不要自己拆机，买个冰棒给<span style="color:#ccc">充电器</span>让他帮我拆就行了</p>
-<p>就这样，掰掰！期待夏天买新散热硅脂再次拆机</p>
+<p>就这样，掰掰！期待夏天买新散热硅脂再次拆机.</p>
 ]]></content>
       <categories>
         <category>生活</category>
       </categories>
       <tags>
         <tag>周记</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>axios拦截器</title>
+    <url>/2022/04/24/axios%E6%8B%A6%E6%88%AA%E5%99%A8/</url>
+    <content><![CDATA[<h3 id="拦截器"><a href="#拦截器" class="headerlink" title="拦截器"></a>拦截器</h3><p><span style="color:red">拦截器</span> (英文：interceptors) 会在<span style="color:red">每次发起ajax请求</span> 和<span style="color:red">得到响应</span> 的时候自动被触发</p>
+<p>应用场景：</p>
+<ul>
+<li>Token 身份认证</li>
+<li>Loading 效果</li>
+<li>etc…</li>
+</ul>
+<h3 id="配置请求拦截器"><a href="#配置请求拦截器" class="headerlink" title="配置请求拦截器"></a>配置<span style="color:red">请求拦截器</span></h3><p>通过 <span style="color:skyblue">axios</span><span style="color:red">.interceptors.request</span> <span style="color:skyblue">.use</span>( <span style="color:red">成功的回调</span>，失败的回调) 可以配置请求拦截器，其中失败的回调函数可以被省略！</p>
+<figure class="highlight js"><table><tbody><tr><td class="code"><pre><span class="line">axios.<span class="property">interceptors</span>.<span class="property">request</span>.<span class="title function_">use</span>(<span class="function">(<span class="params">config</span>)=&gt;</span>{</span><br><span class="line"> <span class="comment">// 一定要 return config 固定写法</span></span><br><span class="line"> <span class="keyword">return</span> config;</span><br><span class="line"></span><br><span class="line">},<span class="function">(<span class="params">error</span>)=&gt;</span>{</span><br><span class="line"></span><br><span class="line"> <span class="keyword">return</span> <span class="title class_">Promise</span>.<span class="title function_">reject</span>(error);</span><br><span class="line"></span><br><span class="line">})</span><br></pre></td></tr></tbody></table></figure>
+
+<h3 id="请求拦截器-Token-认证"><a href="#请求拦截器-Token-认证" class="headerlink" title="请求拦截器-Token 认证"></a>请求拦截器-<span style="color:red">Token 认证</span></h3><figure class="highlight js"><table><tbody><tr><td class="code"><pre><span class="line"><span class="comment">// 1.导入axios</span></span><br><span class="line"><span class="keyword">import</span> axios <span class="keyword">from</span> <span class="string">"axios"</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 2.设置请求的根路径</span></span><br><span class="line">axios.<span class="property">defaults</span>.<span class="property">baseURL</span> = <span class="string">'http://127.0.0.1:8888/api/private/v1/'</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 配置请求拦截器</span></span><br><span class="line">axios.<span class="property">interceptors</span>.<span class="property">request</span>.<span class="title function_">use</span>(<span class="function"><span class="params">config</span> =&gt;</span> {</span><br><span class="line">    <span class="comment">// 为当前请求配置 Token 认证字段</span></span><br><span class="line">    config.<span class="property">headers</span>.<span class="property">Authorzation</span> = <span class="string">'bear xxx'</span></span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(config)</span><br><span class="line">    <span class="keyword">return</span> config</span><br><span class="line">})</span><br><span class="line"></span><br><span class="line"><span class="comment">// 3.把包挂载到vue的原型对象上</span></span><br><span class="line"><span class="title class_">Vue</span>.<span class="property"><span class="keyword">prototype</span></span>.<span class="property">$http</span> = axios</span><br></pre></td></tr></tbody></table></figure>
+
+
+<h3 id="展示-Loading-效果"><a href="#展示-Loading-效果" class="headerlink" title="展示 Loading 效果"></a>展示 Loading 效果</h3><p>借助 element ui 提供的 Loading 效果组件 可以方便的实现Loading效果展示</p>
+<figure class="highlight js"><table><tbody><tr><td class="code"><pre><span class="line"><span class="comment">// 1.按需导入Loading效果组件</span></span><br><span class="line"><span class="keyword">import</span> { <span class="title class_">Loading</span> } <span class="keyword">from</span> <span class="string">'element-ui'</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 2.声明变量，用来存储 Loading 组件的实例对象</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> loadingInstance = <span class="literal">null</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//  配置请求拦截器</span></span><br><span class="line">axios.<span class="property">interceptors</span>.<span class="property">request</span>.<span class="title function_">use</span>(<span class="function"><span class="params">config</span> =&gt;</span> {</span><br><span class="line">    <span class="comment">// 调用 Loading 组件的 service() 方法,创建 Loading 组件的实例，并全屏展示 loading 效果</span></span><br><span class="line">    loadingInstance = <span class="title class_">Loading</span>.<span class="title function_">service</span>({<span class="attr">fullscreen</span>: <span class="literal">true</span>})</span><br><span class="line">    <span class="keyword">return</span> config</span><br><span class="line">})</span><br></pre></td></tr></tbody></table></figure>
+
+<h3 id="配置响应拦截器"><a href="#配置响应拦截器" class="headerlink" title="配置响应拦截器"></a>配置<span style="color:red">响应拦截器</span></h3><p>通过 <span style="color:skyblue">axios</span><span style="color:red">.interceptors.response</span> <span style="color:skyblue">.use</span>( <span style="color:red">成功的回调</span>，失败的回调) 可以配置响应拦截器，失败的回调函数依旧可以被省略。</p>
+<figure class="highlight js"><table><tbody><tr><td class="code"><pre><span class="line">axios.<span class="property">interceptors</span>.<span class="property">response</span>.<span class="title function_">use</span>(<span class="function">(<span class="params">response</span>)=&gt;</span>{</span><br><span class="line"></span><br><span class="line"> <span class="keyword">return</span> response;</span><br><span class="line"></span><br><span class="line">},<span class="function">(<span class="params">error</span>)=&gt;</span>{</span><br><span class="line"></span><br><span class="line"> <span class="keyword">return</span> <span class="title class_">Promise</span>.<span class="title function_">reject</span>(error);</span><br><span class="line"></span><br><span class="line">})</span><br></pre></td></tr></tbody></table></figure>
+
+<h3 id="响应拦截器-关闭Loading效果"><a href="#响应拦截器-关闭Loading效果" class="headerlink" title="响应拦截器 - 关闭Loading效果"></a>响应拦截器 - <span style="color:red">关闭Loading效果</span></h3><p>调用 Loading 实例提供的 close() 方法即可关闭 Loading效果</p>
+<figure class="highlight js"><table><tbody><tr><td class="code"><pre><span class="line"><span class="comment">// 配置响应拦截器</span></span><br><span class="line">axios.<span class="property">interceptors</span>.<span class="property">response</span>.<span class="title function_">use</span>(<span class="function"><span class="params">response</span> =&gt;</span> {</span><br><span class="line">  <span class="comment">// 关闭loading</span></span><br><span class="line">    loadingInstance.<span class="title function_">close</span>()</span><br><span class="line">    <span class="keyword">return</span> response</span><br><span class="line">})</span><br></pre></td></tr></tbody></table></figure>]]></content>
+      <categories>
+        <category>web前端</category>
+      </categories>
+      <tags>
+        <tag>前端</tag>
+        <tag>Ajax</tag>
       </tags>
   </entry>
 </search>
