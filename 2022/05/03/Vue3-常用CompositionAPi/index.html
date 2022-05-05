@@ -1,0 +1,259 @@
+
+<!DOCTYPE html>
+<html lang="zh_CH" class="loading">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Vue3-常用CompositionAPi - MrNobody&#39;s Blog</title>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="google" content="notranslate" />
+    <meta name="keywords" content="Fechin,"> 
+    <meta name="description" content="MrNobody,setup
+vue3中的一个新的配置项，值为一个函数
+组件中所用到的：数据，方法等等，均要配置在 setup 中
+setup 函数的两种返回值：
+若返回一个对象，则对象中的属性，方法，在模板中均可以,"> 
+    <meta name="author" content="Mr_Nobody"> 
+    <link rel="alternative" href="atom.xml" title="MrNobody&#39;s Blog" type="application/atom+xml"> 
+    <link rel="icon" href="/img/favicon.png"> 
+    
+    
+    
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:title" content="Vue3-常用CompositionAPi - MrNobody&#39;s Blog"/>
+    <meta name="twitter:description" content="MrNobody,setup
+vue3中的一个新的配置项，值为一个函数
+组件中所用到的：数据，方法等等，均要配置在 setup 中
+setup 函数的两种返回值：
+若返回一个对象，则对象中的属性，方法，在模板中均可以,"/>
+    
+    
+    
+    
+    <meta property="og:site_name" content="MrNobody&#39;s Blog"/>
+    <meta property="og:type" content="object"/>
+    <meta property="og:title" content="Vue3-常用CompositionAPi - MrNobody&#39;s Blog"/>
+    <meta property="og:description" content="MrNobody,setup
+vue3中的一个新的配置项，值为一个函数
+组件中所用到的：数据，方法等等，均要配置在 setup 中
+setup 函数的两种返回值：
+若返回一个对象，则对象中的属性，方法，在模板中均可以,"/>
+    
+<link rel="stylesheet" href="/css/diaspora.css">
+
+<meta name="generator" content="Hexo 6.1.0">
+<style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
+</head>
+
+<body class="loading">
+    <span id="config-title" style="display:none">MrNobody&#39;s Blog</span>
+    <div id="loader"></div>
+    <div id="single">
+    <div id="top" style="display: block;">
+    <div class="bar" style="width: 0;"></div>
+    <a class="iconfont icon-home image-icon" href="javascript:;" data-url="http://mrnobody233.github.io"></a>
+    <div title="播放/暂停" class="iconfont icon-play"></div>
+    <h3 class="subtitle">Vue3-常用CompositionAPi</h3>
+    <div class="social">
+        <div>
+            <div class="share">
+                <a title="获取二维码" class="iconfont icon-scan" href="javascript:;"></a>
+            </div>
+            <div id="qr"></div>
+        </div>
+    </div>
+    <div class="scrollbar"></div>
+</div>
+
+    <div class="section">
+        <div class="article">
+    <div class='main'>
+        <h1 class="title">Vue3-常用CompositionAPi</h1>
+        <div class="stuff">
+            <span>五月 03, 2022</span>
+            
+  <ul class="post-tags-list" itemprop="keywords"><li class="post-tags-list-item"><a class="post-tags-list-link" href="/tags/Vue/" rel="tag">Vue</a></li><li class="post-tags-list-item"><a class="post-tags-list-link" href="/tags/%E5%89%8D%E7%AB%AF/" rel="tag">前端</a></li></ul>
+
+
+        </div>
+        <div class="content markdown">
+            <h3 id="setup"><a href="#setup" class="headerlink" title="setup"></a>setup</h3><ol>
+<li>vue3中的一个新的配置项，值为一个函数</li>
+<li>组件中所用到的：数据，方法等等，均要配置在 setup 中</li>
+<li>setup 函数的两种返回值：<ul>
+<li>若返回一个对象，则对象中的属性，方法，在模板中均可以直接使用。</li>
+<li>若返回一个渲染函数：则可以自定义渲染内容</li>
+</ul>
+</li>
+</ol>
+<h3 id="ref函数"><a href="#ref函数" class="headerlink" title="ref函数"></a>ref函数</h3><ul>
+<li>作用：定义一个响应式的数据</li>
+<li>语法: <code>const name = ref('zs')</code><ul>
+<li>创建一个包含响应式数据的<span style="color:#cb6c55">引用对象（reference对象 简称ref对象）</span></li>
+<li>js中操作数据：<code>name.value</code></li>
+<li>模板中读取数据： 不需要.value, 直接<code>&lt;div&gt;{{ name }}&lt;/div&gt;</code><figure class="highlight js"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br></pre></td><td class="code"><pre><span class="line">  &lt;template&gt;</span><br><span class="line">  <span class="language-xml"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"container"</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">    <span class="tag">&lt;<span class="name">h1</span>&gt;</span>姓名：{{ name }}<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">    <span class="tag">&lt;<span class="name">h1</span>&gt;</span>年龄：{{ age }}<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">    <span class="tag">&lt;<span class="name">h1</span>&gt;</span>工作种类：{{ job.type }}<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">    <span class="tag">&lt;<span class="name">h1</span>&gt;</span>工资：{{ job.money }}<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">    <span class="tag">&lt;<span class="name">button</span> @<span class="attr">click</span>=<span class="string">"changeInfo"</span>&gt;</span>修改人的信息<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br><span class="line">&lt;/template&gt;</span><br><span class="line"></span><br><span class="line"><span class="language-xml"><span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="language-javascript"></span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml"></span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml"><span class="comment">// 导入ref</span></span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml"><span class="keyword">import</span> {ref} <span class="keyword">from</span> <span class="string">'vue'</span></span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml"></span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml"><span class="keyword">export</span> <span class="keyword">default</span> {</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">  <span class="attr">name</span>: <span class="string">"App"</span>,</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">  <span class="title function_">setup</span>(<span class="params"></span>) {</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">    <span class="keyword">let</span> name = <span class="title function_">ref</span>(<span class="string">'zs'</span>)</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">    <span class="keyword">let</span> age = <span class="title function_">ref</span>(<span class="number">18</span>)</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">    <span class="keyword">let</span> job = <span class="title function_">ref</span>({</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">      <span class="attr">type</span>: <span class="string">'前端'</span>,</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">      <span class="attr">money</span>: <span class="number">3000</span></span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">    })</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml"></span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">    <span class="keyword">function</span> <span class="title function_">changeInfo</span>(<span class="params"></span>) {</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">      name.<span class="property">value</span> = <span class="string">'ls'</span></span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">      age.<span class="property">value</span> = <span class="number">48</span></span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">      job.<span class="property">value</span>.<span class="property">type</span> = <span class="string">'后端'</span></span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">      job.<span class="property">value</span>.<span class="property">money</span> = <span class="number">4000</span></span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">      <span class="variable language_">console</span>.<span class="title function_">log</span>(name, age)</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">    }</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml"></span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">    <span class="keyword">return</span> {</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">      name,</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">      age,</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">      changeInfo,</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">      job</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">    }</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">  }</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">}</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span></span><br><span class="line"></span><br></pre></td></tr></tbody></table></figure></li>
+</ul>
+</li>
+</ul>
+<h3 id="reactive-函数"><a href="#reactive-函数" class="headerlink" title="reactive 函数"></a>reactive 函数</h3><ul>
+<li>作用：定义一个<span style="color:#cb6c55">对象类型</span>的响应数据(基本类型不要用它，要用<code>ref</code>函数)</li>
+<li>语法：<code>const person = reactive({ name:'zs', age:18 })</code>,接收一个对象 (或者数组)返回一个<span style="color:#cb6c55">代理对象(proxy对象)</span></li>
+<li>reactive 定义的响应式数据是 “深层次的”</li>
+<li>内部基于ES6的Proxy实现，通过代理对象操作对象内部数据进行操作</li>
+</ul>
+<figure class="highlight js"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br></pre></td><td class="code"><pre><span class="line">&lt;template&gt;</span><br><span class="line">  <span class="language-xml"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"container"</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">    <span class="tag">&lt;<span class="name">h1</span>&gt;</span>姓名：{{ person.name }}<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">    <span class="tag">&lt;<span class="name">h1</span>&gt;</span>年龄：{{ person.age }}<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">    <span class="tag">&lt;<span class="name">h1</span>&gt;</span>工作种类：{{ person.job.type }}<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">    <span class="tag">&lt;<span class="name">h1</span>&gt;</span>工资：{{ person.job.money }}<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">    <span class="tag">&lt;<span class="name">h1</span>&gt;</span>爱好：{{ person.hobby }}<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">    <span class="tag">&lt;<span class="name">button</span> @<span class="attr">click</span>=<span class="string">"changeInfo"</span>&gt;</span>修改人的信息<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br><span class="line">&lt;/template&gt;</span><br><span class="line"></span><br><span class="line"><span class="language-xml"><span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="language-javascript"></span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml"><span class="keyword">import</span> {reactive} <span class="keyword">from</span> <span class="string">'vue'</span></span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml"></span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml"><span class="keyword">export</span> <span class="keyword">default</span> {</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">  <span class="attr">name</span>: <span class="string">"App"</span>,</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">  <span class="title function_">setup</span>(<span class="params"></span>) {</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">    <span class="comment">// 数据</span></span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">    <span class="keyword">let</span> person = <span class="title function_">reactive</span>({</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">      <span class="attr">name</span>: <span class="string">'zs'</span>,</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">      <span class="attr">age</span>: <span class="number">18</span>,</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">      <span class="attr">job</span>: {</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">        <span class="attr">type</span>: <span class="string">'前端'</span>,</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">        <span class="attr">money</span>: <span class="number">3000</span></span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">      },</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">      <span class="attr">hobby</span>: [<span class="string">'抽烟'</span>, <span class="string">'喝酒'</span>, <span class="string">'烫头'</span>]</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">    })</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml"></span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml"></span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">    <span class="comment">// 方法</span></span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">    <span class="keyword">function</span> <span class="title function_">changeInfo</span>(<span class="params"></span>) {</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml"></span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">      person.<span class="property">age</span> = <span class="number">48</span></span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">      person.<span class="property">job</span>.<span class="property">type</span> = <span class="string">'后端'</span></span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">      person.<span class="property">job</span>.<span class="property">money</span> = <span class="number">4000</span></span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">      person.<span class="property">hobby</span>[<span class="number">0</span>] = <span class="string">'放屁'</span></span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">      <span class="variable language_">console</span>.<span class="title function_">log</span>(person.<span class="property">name</span>, person.<span class="property">job</span>.<span class="property">type</span>)</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">    }</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml"></span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">    <span class="keyword">return</span> {</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">      person,</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">      changeInfo,</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml"></span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">    }</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">  }</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">}</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span></span><br><span class="line"></span><br></pre></td></tr></tbody></table></figure>
+
+<h3 id="reactive-对比-ref"><a href="#reactive-对比-ref" class="headerlink" title="reactive 对比 ref"></a>reactive 对比 ref</h3><ul>
+<li>从定义数据角度对比：<ul>
+<li>ref 用来定义： <span style="color:#cb6c55">基本类型数据</span></li>
+<li>reactive 用来定义 <span style="color:#cb6c55">对象(或数组) 类型数据</span></li>
+<li>备注： ref 也可以用来定义<span style="color:#cb6c55">对象(或数组) 类型数据</span>，它内部会通过<code>reactive</code>转为<span style="color:#cb6c55">代理对象</span></li>
+</ul>
+</li>
+<li>从使用角度对比<ul>
+<li>ref 定义数据：操作数据需要<code>.value</code>,读取数据时模板中直接读取,不需要<code>.value</code></li>
+<li>reactive 定义数据：操作数据与读取数据：均不需要 <code>.value</code></li>
+</ul>
+</li>
+</ul>
+<h3 id="计算属性与监视"><a href="#计算属性与监视" class="headerlink" title="计算属性与监视"></a>计算属性与监视</h3><h4 id="1-computed函数"><a href="#1-computed函数" class="headerlink" title="1.computed函数"></a>1.computed函数</h4><ul>
+<li>与Vue2中computed配置功能一致</li>
+<li>写法<figure class="highlight js"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br></pre></td><td class="code"><pre><span class="line">&lt;template&gt;</span><br><span class="line"></span><br><span class="line">  姓：&lt;input type=<span class="string">"text"</span> name=<span class="string">""</span> id=<span class="string">""</span> v-model=<span class="string">"person.firstName"</span>&gt;</span><br><span class="line">  &lt;br&gt;</span><br><span class="line">  名：&lt;input type=<span class="string">"text"</span> name=<span class="string">""</span> v-model=<span class="string">"person.lastName"</span>&gt;</span><br><span class="line">  &lt;br&gt;</span><br><span class="line">  <span class="language-xml"><span class="tag">&lt;<span class="name">span</span>&gt;</span>全名：{{ person.fullName }}<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span></span><br><span class="line">  &lt;br&gt;</span><br><span class="line">  全名：&lt;input type=<span class="string">"text"</span> v-model=<span class="string">"person.fullName"</span>&gt;</span><br><span class="line">&lt;/template&gt;</span><br><span class="line"></span><br><span class="line"><span class="language-xml"><span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="language-javascript"></span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml"><span class="keyword">import</span> {reactive, computed} <span class="keyword">from</span> <span class="string">"vue"</span>;</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml"></span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml"><span class="keyword">export</span> <span class="keyword">default</span> {</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">  <span class="attr">name</span>: <span class="string">"App"</span>,</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml"></span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">  <span class="title function_">setup</span>(<span class="params"></span>) {</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">    <span class="comment">// 数据</span></span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">    <span class="keyword">let</span> person = <span class="title function_">reactive</span>({</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">      <span class="attr">firstName</span>: <span class="string">"张"</span>,</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">      <span class="attr">lastName</span>: <span class="string">"三"</span></span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">    })</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">    <span class="comment">// 计算属性--简写形式 (没有考虑计算属性被修改的情况)</span></span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">    <span class="comment">/*</span></span></span></span><br><span class="line"><span class="comment"><span class="language-javascript"><span class="language-xml">      person.fullName = computed(() =&gt; {</span></span></span></span><br><span class="line"><span class="comment"><span class="language-javascript"><span class="language-xml">          return person.firstName + "-" + person.lastName</span></span></span></span><br><span class="line"><span class="comment"><span class="language-javascript"><span class="language-xml">        })</span></span></span></span><br><span class="line"><span class="comment"><span class="language-javascript"><span class="language-xml">    */</span></span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml"></span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">    <span class="comment">// 计算属性--完整写法 (考虑读和写)</span></span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">    person.<span class="property">fullName</span> = <span class="title function_">computed</span>({</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">      <span class="title function_">get</span>(<span class="params"></span>) {</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">        <span class="keyword">return</span> person.<span class="property">firstName</span> + <span class="string">"-"</span> + person.<span class="property">lastName</span></span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">      },</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">      <span class="title function_">set</span>(<span class="params">value</span>) {</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">        <span class="keyword">const</span> nameArr = value.<span class="title function_">split</span>(<span class="string">'-'</span>)</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">        person.<span class="property">firstName</span> = nameArr[<span class="number">0</span>]</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">        person.<span class="property">lastName</span> = nameArr[<span class="number">1</span>]</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">      }</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">    })</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">    <span class="keyword">return</span> {</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">      person,</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml"></span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">    }</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">  }</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">}</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span></span><br><span class="line"></span><br></pre></td></tr></tbody></table></figure></li>
+</ul>
+<h4 id="watch函数"><a href="#watch函数" class="headerlink" title="watch函数"></a>watch函数</h4><ul>
+<li>与Vue2 watch配置功能一致</li>
+</ul>
+<figure class="highlight js"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br></pre></td><td class="code"><pre><span class="line">&lt;template&gt;</span><br><span class="line">  <span class="language-xml"><span class="tag">&lt;<span class="name">h2</span>&gt;</span>当前求和为：{{ sum }}<span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span></span><br><span class="line">  <span class="language-xml"><span class="tag">&lt;<span class="name">button</span> @<span class="attr">click</span>=<span class="string">'sum++'</span>&gt;</span>+1<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span></span><br><span class="line">  &lt;hr&gt;</span><br><span class="line">  <span class="language-xml"><span class="tag">&lt;<span class="name">h2</span>&gt;</span> 当前的信息为：{{ msg }}<span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span></span><br><span class="line">  <span class="language-xml"><span class="tag">&lt;<span class="name">button</span> @<span class="attr">click</span>=<span class="string">"msg+='!'"</span>&gt;</span>修改信息<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span></span><br><span class="line"></span><br><span class="line">&lt;/template&gt;</span><br><span class="line"></span><br><span class="line"><span class="language-xml"><span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="language-javascript"></span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml"><span class="keyword">import</span> {ref, watch} <span class="keyword">from</span> <span class="string">"vue"</span>;</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml"></span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml"><span class="keyword">export</span> <span class="keyword">default</span> {</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">  <span class="attr">name</span>: <span class="string">"App"</span>,</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml"></span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">  <span class="title function_">setup</span>(<span class="params"></span>) {</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">    <span class="comment">// 数据</span></span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">    <span class="keyword">let</span> sum = <span class="title function_">ref</span>(<span class="number">0</span>)</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">    <span class="keyword">let</span> msg = <span class="title function_">ref</span>(<span class="string">'你好吗'</span>)</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml"></span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">    <span class="comment">// 情况1： 监视ref所定义的一个响应式数据</span></span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">    <span class="comment">/*</span></span></span></span><br><span class="line"><span class="comment"><span class="language-javascript"><span class="language-xml">        watch(sum, (newValue, oldValue) =&gt; {</span></span></span></span><br><span class="line"><span class="comment"><span class="language-javascript"><span class="language-xml">          console.log('sum变了', newValue, oldValue)</span></span></span></span><br><span class="line"><span class="comment"><span class="language-javascript"><span class="language-xml">        }, {immediate: true, deep: true})</span></span></span></span><br><span class="line"><span class="comment"><span class="language-javascript"><span class="language-xml">    */</span></span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml"></span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">    <span class="comment">// 情况2： 监视ref所定义的多个响应式数据</span></span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">    <span class="title function_">watch</span>([sum, msg], <span class="function">(<span class="params">newValue, oldValue</span>) =&gt;</span> {</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">      <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">'sum 或 msg 变了'</span>, newValue, oldValue)</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">    }, {<span class="attr">immediate</span>: <span class="literal">true</span>, <span class="attr">deep</span>: <span class="literal">true</span>})</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml"></span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml"></span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">    <span class="keyword">return</span> {</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">      sum,</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">      msg</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">    }</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">  }</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">}</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span></span><br></pre></td></tr></tbody></table></figure>
+
+<h3 id="watchEffect-函数"><a href="#watchEffect-函数" class="headerlink" title="watchEffect 函数"></a>watchEffect 函数</h3><ul>
+<li>不用指明监视哪个属性，监视的回调中用到哪个属性，就监视哪个属性</li>
+<li>类似computed：<ul>
+<li>computed注重计算出的值（回调函数的返回值），所以必须要写返回值</li>
+<li>watchEffect更注重的是过程 （回调函数的函数体），所以不用写返回值</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight js"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// watchEffect 所指定的回调中用到的数据只要发生变化，就会直接重新执行回调</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> { watchEffect } <span class="keyword">from</span> <span class="string">'vue'</span></span><br><span class="line"></span><br><span class="line"><span class="title function_">watch</span>(<span class="function">()=&gt;</span>{</span><br><span class="line">  <span class="keyword">const</span> x1 = sum.<span class="property">value</span></span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">'watchEffect配置的回调执行了'</span>)</span><br><span class="line">})</span><br></pre></td></tr></tbody></table></figure>
+            <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
+            <audio id="audio" loop="1" preload="auto" controls="controls" data-autoplay="false">
+                <source type="audio/mpeg" src="">
+            </audio>
+            
+                <ul id="audio-list" style="display:none">
+                    
+                        
+                            <li title="0" data-url="https://link.hhtjim.com/163/1447930796.mp3"></li>
+                        
+                    
+                        
+                            <li title="1" data-url="https://link.hhtjim.com/163/421160291.mp3"></li>
+                        
+                    
+                        
+                            <li title="2" data-url="https://link.hhtjim.com/163/38358225.mp3"></li>
+                        
+                    
+                        
+                            <li title="3" data-url="https://link.hhtjim.com/163/1418713046.mp3"></li>
+                        
+                    
+                </ul>
+            
+        </div>
+        
+    <div id="gitalk-container" class="comment link"
+		data-enable="false"
+        data-ae="false"
+        data-ci=""
+        data-cs=""
+        data-r=""
+        data-o=""
+        data-a=""
+        data-d="false"
+    >查看评论</div>
+
+
+    </div>
+    
+        <div class="side">
+			<ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#setup"><span class="toc-number">1.</span> <span class="toc-text">setup</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#ref%E5%87%BD%E6%95%B0"><span class="toc-number">2.</span> <span class="toc-text">ref函数</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#reactive-%E5%87%BD%E6%95%B0"><span class="toc-number">3.</span> <span class="toc-text">reactive 函数</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#reactive-%E5%AF%B9%E6%AF%94-ref"><span class="toc-number">4.</span> <span class="toc-text">reactive 对比 ref</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%AE%A1%E7%AE%97%E5%B1%9E%E6%80%A7%E4%B8%8E%E7%9B%91%E8%A7%86"><span class="toc-number">5.</span> <span class="toc-text">计算属性与监视</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-computed%E5%87%BD%E6%95%B0"><span class="toc-number">5.1.</span> <span class="toc-text">1.computed函数</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#watch%E5%87%BD%E6%95%B0"><span class="toc-number">5.2.</span> <span class="toc-text">watch函数</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#watchEffect-%E5%87%BD%E6%95%B0"><span class="toc-number">6.</span> <span class="toc-text">watchEffect 函数</span></a></li></ol>	
+        </div>
+    
+</div>
+
+
+    </div>
+</div>
+</body>
+
+
+<script src="//lib.baomitu.com/jquery/1.8.3/jquery.min.js"></script>
+<script src="/js/plugin.js"></script>
+<script src="/js/typed.js"></script>
+<script src="/js/diaspora.js"></script>
+
+
+<link rel="stylesheet" href="/photoswipe/photoswipe.css">
+<link rel="stylesheet" href="/photoswipe/default-skin/default-skin.css">
+
+
+<script src="/photoswipe/photoswipe.min.js"></script>
+<script src="/photoswipe/photoswipe-ui-default.min.js"></script>
+
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+            <div class="pswp__top-bar">
+                <!--  Controls are self-explanatory. Order can be changed. -->
+                <div class="pswp__counter"></div>
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+</html>
