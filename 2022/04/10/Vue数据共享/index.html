@@ -1,264 +1,612 @@
 
+
+
+
 <!DOCTYPE html>
-<html lang="zh_CH" class="loading">
+<html lang="zh-CN">
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Vue数据共享 - MrNobody&#39;s Blog</title>
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta name="google" content="notranslate" />
-    <meta name="keywords" content="Fechin,"> 
-    <meta name="description" content="MrNobody,组件之间的数据共享在项目开发中，组件之间的关系分为如下3种
-父子关系
-兄弟关系
-后代关系
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#FFF">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="icon" type="image/ico" sizes="32x32" href="/images/favicon.ico">
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
 
 
-父子之间的数据共享父子组件之间的数据共享又分为
-1. 父向子共享数据父组件通过v-bind属性绑定向子组,"> 
-    <meta name="author" content="Mr_Nobody"> 
-    <link rel="alternative" href="atom.xml" title="MrNobody&#39;s Blog" type="application/atom+xml"> 
-    <link rel="icon" href="/img/favicon.png"> 
-    
-    
-    
-    <meta name="twitter:card" content="summary"/>
-    <meta name="twitter:title" content="Vue数据共享 - MrNobody&#39;s Blog"/>
-    <meta name="twitter:description" content="MrNobody,组件之间的数据共享在项目开发中，组件之间的关系分为如下3种
-父子关系
-兄弟关系
-后代关系
+<link rel="alternate" type="application/rss+xml" title="MrNobody's Blog" href="http://mrnobody233.github.io/rss.xml" />
+<link rel="alternate" type="application/atom+xml" title="MrNobody's Blog" href="http://mrnobody233.github.io/atom.xml" />
+<link rel="alternate" type="application/json" title="MrNobody's Blog" href="http://mrnobody233.github.io/feed.json" />
+
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Mulish:300,300italic,400,400italic,700,700italic%7CFredericka%20the%20Great:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20JP:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20SC:300,300italic,400,400italic,700,700italic%7CInconsolata:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+
+<link rel="stylesheet" href="/css/app.css?v=0.2.5">
+
+  
+  <meta name="keywords" content="前端,Vue" />
 
 
-父子之间的数据共享父子组件之间的数据共享又分为
-1. 父向子共享数据父组件通过v-bind属性绑定向子组,"/>
-    
-    
-    
-    
-    <meta property="og:site_name" content="MrNobody&#39;s Blog"/>
-    <meta property="og:type" content="object"/>
-    <meta property="og:title" content="Vue数据共享 - MrNobody&#39;s Blog"/>
-    <meta property="og:description" content="MrNobody,组件之间的数据共享在项目开发中，组件之间的关系分为如下3种
-父子关系
-兄弟关系
-后代关系
+<link rel="canonical" href="http://mrnobody233.github.io/2022/04/10/Vue%E6%95%B0%E6%8D%AE%E5%85%B1%E4%BA%AB/">
 
 
-父子之间的数据共享父子组件之间的数据共享又分为
-1. 父向子共享数据父组件通过v-bind属性绑定向子组,"/>
-    
-<link rel="stylesheet" href="/css/diaspora.css">
 
+  <title>
+Vue数据共享 - web前端 |
+MrNobody's Blog = 保持呼吸 不要断气</title>
 <meta name="generator" content="Hexo 6.1.0">
 <style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
 </head>
-
-<body class="loading">
-    <span id="config-title" style="display:none">MrNobody&#39;s Blog</span>
-    <div id="loader"></div>
-    <div id="single">
-    <div id="top" style="display: block;">
-    <div class="bar" style="width: 0;"></div>
-    <a class="iconfont icon-home image-icon" href="javascript:;" data-url="http://mrnobody233.github.io"></a>
-    <div title="播放/暂停" class="iconfont icon-play"></div>
-    <h3 class="subtitle">Vue数据共享</h3>
-    <div class="social">
-        <div>
-            <div class="share">
-                <a title="获取二维码" class="iconfont icon-scan" href="javascript:;"></a>
-            </div>
-            <div id="qr"></div>
-        </div>
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div id="loading">
+    <div class="cat">
+      <div class="body"></div>
+      <div class="head">
+        <div class="face"></div>
+      </div>
+      <div class="foot">
+        <div class="tummy-end"></div>
+        <div class="bottom"></div>
+        <div class="legs left"></div>
+        <div class="legs right"></div>
+      </div>
+      <div class="paw">
+        <div class="hands left"></div>
+        <div class="hands right"></div>
+      </div>
     </div>
-    <div class="scrollbar"></div>
+  </div>
+  <div id="container">
+    <header id="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="inner">
+        <div id="brand">
+          <div class="pjax">
+          
+  <h1 itemprop="name headline">Vue数据共享
+  </h1>
+  
+<div class="meta">
+  <span class="item" title="创建时间：2022-04-10 19:39:29">
+    <span class="icon">
+      <i class="ic i-calendar"></i>
+    </span>
+    <span class="text">发表于</span>
+    <time itemprop="dateCreated datePublished" datetime="2022-04-10T19:39:29+08:00">2022-04-10</time>
+  </span>
+  <span class="item" title="本文字数">
+    <span class="icon">
+      <i class="ic i-pen"></i>
+    </span>
+    <span class="text">本文字数</span>
+    <span>2.4k</span>
+    <span class="text">字</span>
+  </span>
+  <span class="item" title="阅读时长">
+    <span class="icon">
+      <i class="ic i-clock"></i>
+    </span>
+    <span class="text">阅读时长</span>
+    <span>2 分钟</span>
+  </span>
 </div>
 
-    <div class="section">
-        <div class="article">
-    <div class='main'>
-        <h1 class="title">Vue数据共享</h1>
-        <div class="stuff">
-            <span>四月 10, 2022</span>
-            
-  <ul class="post-tags-list" itemprop="keywords"><li class="post-tags-list-item"><a class="post-tags-list-link" href="/tags/Vue/" rel="tag">Vue</a></li><li class="post-tags-list-item"><a class="post-tags-list-link" href="/tags/%E5%89%8D%E7%AB%AF/" rel="tag">前端</a></li></ul>
 
-
+          </div>
         </div>
-        <div class="content markdown">
-            <h2 id="组件之间的数据共享"><a href="#组件之间的数据共享" class="headerlink" title="组件之间的数据共享"></a>组件之间的数据共享</h2><h3 id="在项目开发中，组件之间的关系分为如下3种"><a href="#在项目开发中，组件之间的关系分为如下3种" class="headerlink" title="在项目开发中，组件之间的关系分为如下3种"></a>在项目开发中，组件之间的关系分为如下3种</h3><ol>
+        <nav id="nav">
+  <div class="inner">
+    <div class="toggle">
+      <div class="lines" aria-label="切换导航栏">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </div>
+    </div>
+    <ul class="menu">
+      <li class="item title"><a href="/" rel="start">MrNobody's Blog</a></li>
+    </ul>
+    <ul class="right">
+      <li class="item theme">
+        <i class="ic i-sun"></i>
+      </li>
+      <li class="item search">
+        <i class="ic i-search"></i>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+      </div>
+      <div id="imgs" class="pjax">
+        <ul>
+          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1gicli9lfebj20zk0m84qp.jpg"></li>
+          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1giciuja1j1j20zk0m8kjl.jpg"></li>
+          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1giclj61ylzj20zk0m8b29.jpg"></li>
+          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1gicis081o9j20zk0m8dmr.jpg"></li>
+          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1gicitht3xtj20zk0m8k5v.jpg"></li>
+          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1giclimtf7dj20zk0m8qav.jpg"></li>
+        </ul>
+      </div>
+    </header>
+    <div id="waves">
+      <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+        <defs>
+          <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+        </defs>
+        <g class="parallax">
+          <use xlink:href="#gentle-wave" x="48" y="0" />
+          <use xlink:href="#gentle-wave" x="48" y="3" />
+          <use xlink:href="#gentle-wave" x="48" y="5" />
+          <use xlink:href="#gentle-wave" x="48" y="7" />
+        </g>
+      </svg>
+    </div>
+    <main>
+      <div class="inner">
+        <div id="main" class="pjax">
+          
+  <div class="article wrap">
+    
+<div class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+<i class="ic i-home"></i>
+<span><a href="/">首页</a></span><i class="ic i-angle-right"></i>
+<span  class="current" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a href="/categories/web%E5%89%8D%E7%AB%AF/" itemprop="item" rel="index" title="分类于 web前端"><span itemprop="name">web前端</span></a>
+<meta itemprop="position" content="1" /></span>
+</div>
+
+    <article itemscope itemtype="http://schema.org/Article" class="post block" lang="zh-CN">
+  <link itemprop="mainEntityOfPage" href="http://mrnobody233.github.io/2022/04/10/Vue%E6%95%B0%E6%8D%AE%E5%85%B1%E4%BA%AB/">
+
+  <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="image" content="/images/avatar.jpg">
+    <meta itemprop="name" content="Mr_Nobody">
+    <meta itemprop="description" content="保持呼吸 不要断气, MrNobody">
+  </span>
+
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="MrNobody's Blog">
+  </span>
+
+  <div class="body md" itemprop="articleBody">
+    
+
+    <h2 id="组件之间的数据共享"><a class="markdownIt-Anchor" href="#组件之间的数据共享">#</a> 组件之间的数据共享</h2>
+<h3 id="在项目开发中组件之间的关系分为如下3种"><a class="markdownIt-Anchor" href="#在项目开发中组件之间的关系分为如下3种">#</a> 在项目开发中，组件之间的关系分为如下 3 种</h3>
+<ol>
 <li>父子关系</li>
 <li>兄弟关系</li>
 <li>后代关系</li>
 </ol>
 <hr>
-<h3 id="父子之间的数据共享"><a href="#父子之间的数据共享" class="headerlink" title="父子之间的数据共享"></a>父子之间的数据共享</h3><p>父子组件之间的数据共享又分为</p>
-<h4 id="1-父向子共享数据"><a href="#1-父向子共享数据" class="headerlink" title="1. 父向子共享数据"></a>1. <span style="color:red">父向子</span>共享数据</h4><p>父组件通过<span style="color:red">v-bind属性绑定</span>向子组件共享数据。同时，子组件需要使用<span style="color:red">props</span>接收数据</p>
+<h3 id="父子之间的数据共享"><a class="markdownIt-Anchor" href="#父子之间的数据共享">#</a> 父子之间的数据共享</h3>
+<p>父子组件之间的数据共享又分为</p>
+<h4 id="1-span-stylecolorred父向子span共享数据"><a class="markdownIt-Anchor" href="#1-span-stylecolorred父向子span共享数据">#</a> 1. <span style="color:red">父向子</span>共享数据</h4>
+<p>父组件通过<span style="color:red">v-bind 属性绑定</span>向子组件共享数据。同时，子组件需要使用<span style="color:red">props</span>接收数据</p>
 <p><span style="color:red">父组件</span></p>
-<figure class="highlight javascript"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 父组件</span></span><br><span class="line">&lt;myTest </span><br><span class="line">  :msg=<span class="string">"message"</span></span><br><span class="line">  :user=<span class="string">"userinfo"</span>&gt;</span><br><span class="line">&lt;/myTest&gt;</span><br><span class="line"></span><br><span class="line"><span class="title function_">data</span>(<span class="params"></span>){</span><br><span class="line">  <span class="keyword">return</span>{</span><br><span class="line">    <span class="attr">message</span>:<span class="string">'hello vue'</span>,</span><br><span class="line">    <span class="attr">userinfo</span>:{ <span class="attr">name</span>:<span class="string">'zs'</span>, <span class="attr">age</span>:<span class="number">20</span> }</span><br><span class="line">  }</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
-
-<p><span style="color:red">子组件</span></p>
-<figure class="highlight javascript"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">&lt;!-- 子组件 --&gt;</span><br><span class="line"><span class="language-xml"><span class="tag">&lt;<span class="name">template</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">  <span class="tag">&lt;<span class="name">h3</span>&gt;</span>测试父子传值<span class="tag">&lt;/<span class="name">h3</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">  <span class="tag">&lt;<span class="name">p</span>&gt;</span>{{ msg }}<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">  <span class="tag">&lt;<span class="name">p</span>&gt;</span>{{ userinfo }}<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span></span><br><span class="line"><span class="language-xml"><span class="tag">&lt;/<span class="name">template</span>&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="language-xml"><span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="language-javascript"></span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml"><span class="keyword">export</span> <span class="keyword">default</span> {</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">  <span class="attr">name</span>: <span class="string">"MyTest"</span>,</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">  <span class="attr">props</span>: [<span class="string">'msg'</span>, <span class="string">'userinfo'</span>],</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">}</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span></span><br></pre></td></tr></tbody></table></figure>
-<hr>
-<h4 id="2-子向父共享数据"><a href="#2-子向父共享数据" class="headerlink" title="2. 子向父共享数据"></a>2. <span style="color:red">子向父</span>共享数据</h4><p>子组件通过<span style="color:red">自定义事件</span>的方式向父组件共享数据。</p>
+<figure class="highlight javascript"><figcaption data-lang="javascript"></figcaption><table><tbody><tr><td data-num="1"></td><td><pre><span class="token comment">// 父组件</span></pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token operator">&lt;</span>myTest </pre></td></tr><tr><td data-num="3"></td><td><pre>  <span class="token operator">:</span>msg<span class="token operator">=</span><span class="token string">"message"</span></pre></td></tr><tr><td data-num="4"></td><td><pre>  <span class="token operator">:</span>user<span class="token operator">=</span><span class="token string">"userinfo"</span><span class="token operator">&gt;</span></pre></td></tr><tr><td data-num="5"></td><td><pre><span class="token operator">&lt;</span><span class="token operator">/</span>myTest<span class="token operator">&gt;</span></pre></td></tr><tr><td data-num="6"></td><td><pre></pre></td></tr><tr><td data-num="7"></td><td><pre><span class="token function">data</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span></pre></td></tr><tr><td data-num="8"></td><td><pre>  <span class="token keyword">return</span><span class="token punctuation">{</span></pre></td></tr><tr><td data-num="9"></td><td><pre>    <span class="token literal-property property">message</span><span class="token operator">:</span><span class="token string">'hello vue'</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="10"></td><td><pre>    <span class="token literal-property property">userinfo</span><span class="token operator">:</span><span class="token punctuation">{</span> <span class="token literal-property property">name</span><span class="token operator">:</span><span class="token string">'zs'</span><span class="token punctuation">,</span> <span class="token literal-property property">age</span><span class="token operator">:</span><span class="token number">20</span> <span class="token punctuation">}</span></pre></td></tr><tr><td data-num="11"></td><td><pre>  <span class="token punctuation">}</span></pre></td></tr><tr><td data-num="12"></td><td><pre><span class="token punctuation">}</span></pre></td></tr></tbody></table></figure><p><span style="color:red">子组件</span></p>
+<figure class="highlight javascript"><figcaption data-lang="javascript"></figcaption><table><tbody><tr><td data-num="1"></td><td><pre><span class="token operator">&lt;</span><span class="token operator">!</span><span class="token operator">--</span> 子组件 <span class="token operator">--</span><span class="token operator">&gt;</span></pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token operator">&lt;</span>template<span class="token operator">&gt;</span></pre></td></tr><tr><td data-num="3"></td><td><pre>  <span class="token operator">&lt;</span>h3<span class="token operator">&gt;</span>测试父子传值<span class="token operator">&lt;</span><span class="token operator">/</span>h3<span class="token operator">&gt;</span></pre></td></tr><tr><td data-num="4"></td><td><pre>  <span class="token operator">&lt;</span>p<span class="token operator">&gt;</span><span class="token operator">&lt;</span><span class="token operator">!</span><span class="token operator">--</span>swig￼<span class="token number">0</span><span class="token operator">--</span><span class="token operator">&gt;</span><span class="token operator">&lt;</span><span class="token operator">/</span>p<span class="token operator">&gt;</span></pre></td></tr><tr><td data-num="5"></td><td><pre>  <span class="token operator">&lt;</span>p<span class="token operator">&gt;</span><span class="token operator">&lt;</span><span class="token operator">!</span><span class="token operator">--</span>swig￼<span class="token number">1</span><span class="token operator">--</span><span class="token operator">&gt;</span><span class="token operator">&lt;</span><span class="token operator">/</span>p<span class="token operator">&gt;</span></pre></td></tr><tr><td data-num="6"></td><td><pre><span class="token operator">&lt;</span><span class="token operator">/</span>template<span class="token operator">&gt;</span></pre></td></tr><tr><td data-num="7"></td><td><pre></pre></td></tr><tr><td data-num="8"></td><td><pre><span class="token operator">&lt;</span>script<span class="token operator">&gt;</span></pre></td></tr><tr><td data-num="9"></td><td><pre><span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span></pre></td></tr><tr><td data-num="10"></td><td><pre>  <span class="token literal-property property">name</span><span class="token operator">:</span> <span class="token string">"MyTest"</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="11"></td><td><pre>  <span class="token literal-property property">props</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">'msg'</span><span class="token punctuation">,</span> <span class="token string">'userinfo'</span><span class="token punctuation">]</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="12"></td><td><pre><span class="token punctuation">}</span></pre></td></tr><tr><td data-num="13"></td><td><pre><span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">&gt;</span></pre></td></tr></tbody></table></figure><hr>
+<h4 id="2-span-stylecolorred子向父span共享数据"><a class="markdownIt-Anchor" href="#2-span-stylecolorred子向父span共享数据">#</a> 2. <span style="color:red">子向父</span>共享数据</h4>
+<p>子组件通过<span style="color:red">自定义事件</span>的方式向父组件共享数据。</p>
 <p>在<span style="color:red">子组件</span>中</p>
 <ul>
-<li>先声明自定义事件 <code>  emits: ['MyTestCount'],</code></li>
-<li>触发自定义事件 <code>   this.$emit('MyTestCount', this.count)</code><figure class="highlight javascript"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="comment">// 子组件</span></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> {</span><br><span class="line">  <span class="comment">// 1. 声明自定义事件</span></span><br><span class="line">  <span class="attr">emits</span>: [<span class="string">'MyTestCount'</span>],</span><br><span class="line">  <span class="title function_">data</span>(<span class="params"></span>) {</span><br><span class="line">    <span class="keyword">return</span> {</span><br><span class="line">      <span class="attr">count</span>: <span class="number">0</span></span><br><span class="line">    }</span><br><span class="line">  },</span><br><span class="line">  <span class="attr">methods</span>: {</span><br><span class="line">    <span class="title function_">add</span>(<span class="params"></span>) {</span><br><span class="line">      <span class="variable language_">this</span>.<span class="property">count</span> += <span class="number">1</span>;</span><br><span class="line">      <span class="comment">// 2.数据发生变化时，触发自定义事件</span></span><br><span class="line">      <span class="variable language_">this</span>.$emit(<span class="string">'MyTestCount'</span>, <span class="variable language_">this</span>.<span class="property">count</span>)</span><br><span class="line">    }</span><br><span class="line">  }</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure></li>
+<li>先声明自定义事件  <code>  emits: ['MyTestCount'],</code></li>
+<li>触发自定义事件  <code>   this.$emit('MyTestCount', this.count)</code></li>
 </ul>
-<p>在<span style="color:red"> 父组件</span>中</p>
+<figure class="highlight javascript"><figcaption data-lang="javascript"></figcaption><table><tbody><tr><td data-num="1"></td><td><pre><span class="token comment">// 子组件</span></pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span></pre></td></tr><tr><td data-num="3"></td><td><pre>  <span class="token comment">// 1. 声明自定义事件</span></pre></td></tr><tr><td data-num="4"></td><td><pre>  <span class="token literal-property property">emits</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">'MyTestCount'</span><span class="token punctuation">]</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="5"></td><td><pre>  <span class="token function">data</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span></pre></td></tr><tr><td data-num="6"></td><td><pre>    <span class="token keyword">return</span> <span class="token punctuation">{</span></pre></td></tr><tr><td data-num="7"></td><td><pre>      <span class="token literal-property property">count</span><span class="token operator">:</span> <span class="token number">0</span></pre></td></tr><tr><td data-num="8"></td><td><pre>    <span class="token punctuation">}</span></pre></td></tr><tr><td data-num="9"></td><td><pre>  <span class="token punctuation">}</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="10"></td><td><pre>  <span class="token literal-property property">methods</span><span class="token operator">:</span> <span class="token punctuation">{</span></pre></td></tr><tr><td data-num="11"></td><td><pre>    <span class="token function">add</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span></pre></td></tr><tr><td data-num="12"></td><td><pre>      <span class="token keyword">this</span><span class="token punctuation">.</span>count <span class="token operator">+=</span> <span class="token number">1</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="13"></td><td><pre>      <span class="token comment">// 2. 数据发生变化时，触发自定义事件</span></pre></td></tr><tr><td data-num="14"></td><td><pre>      <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">$emit</span><span class="token punctuation">(</span><span class="token string">'MyTestCount'</span><span class="token punctuation">,</span> <span class="token keyword">this</span><span class="token punctuation">.</span>count<span class="token punctuation">)</span></pre></td></tr><tr><td data-num="15"></td><td><pre>    <span class="token punctuation">}</span></pre></td></tr><tr><td data-num="16"></td><td><pre>  <span class="token punctuation">}</span></pre></td></tr><tr><td data-num="17"></td><td><pre><span class="token punctuation">}</span></pre></td></tr></tbody></table></figure><p>在<span style="color:red"> 父组件</span>中</p>
 <ul>
-<li>监听子组件的自定义事件  <code>&lt;test @MyTestCount = 'getTestCount'&gt; &lt;/test&gt;</code></li>
+<li>监听子组件的自定义事件   <code>&lt;test @MyTestCount = 'getTestCount'&gt; &lt;/test&gt;</code></li>
 <li>通过形参接收子组件传递过来的数据</li>
 </ul>
-<figure class="highlight javascript"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">&lt;!--父组件--&gt;</span><br><span class="line">  &lt;!--<span class="number">1.</span>监听子组件的自定义事件 @<span class="title class_">MyTestCount</span>--&gt;</span><br><span class="line">  <span class="language-xml"><span class="tag">&lt;<span class="name">MyTest</span> @<span class="attr">MyTestCount</span>=<span class="string">"getMyTestCount"</span>&gt;</span><span class="tag">&lt;/<span class="name">MyTest</span>&gt;</span></span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="language-xml"><span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="language-javascript"></span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml"><span class="keyword">import</span> <span class="title class_">MyTest</span> <span class="keyword">from</span> <span class="string">"@/components/MyTest"</span>;</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml"></span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml"></span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml"><span class="comment">// 父组件</span></span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml"><span class="keyword">export</span> <span class="keyword">default</span> {</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">  <span class="attr">components</span>: {<span class="title class_">MyTest</span>,},</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">  <span class="title function_">data</span>(<span class="params"></span>) {</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">    <span class="keyword">return</span> {</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">      <span class="attr">count</span>: <span class="number">0</span>,</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">    }</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">  },</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">  <span class="attr">methods</span>: {</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">    <span class="title function_">getMyTestCount</span>(<span class="params">val</span>) { <span class="comment">// 2. 通过形参，接收子组件传递过来的数据</span></span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">      <span class="variable language_">this</span>.<span class="property">count</span> = val</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">    }</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">  }</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">}</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span></span><br></pre></td></tr></tbody></table></figure>
-<hr>
-<h4 id="3-父与子双向数据同步"><a href="#3-父与子双向数据同步" class="headerlink" title="3. 父与子双向数据同步"></a>3. <span style="color:red">父与子</span>双向数据同步</h4><p>  父组件在使用子组件期间，可以使用<span style="color:red">v-model指令</span>维护组件内外数据的双向同步</p>
+<figure class="highlight javascript"><figcaption data-lang="javascript"></figcaption><table><tbody><tr><td data-num="1"></td><td><pre><span class="token operator">&lt;</span><span class="token operator">!</span><span class="token operator">--</span>父组件<span class="token operator">--</span><span class="token operator">&gt;</span></pre></td></tr><tr><td data-num="2"></td><td><pre>  <span class="token operator">&lt;</span><span class="token operator">!</span><span class="token operator">--</span><span class="token number">1.</span>监听子组件的自定义事件 @MyTestCount<span class="token operator">--</span><span class="token operator">&gt;</span></pre></td></tr><tr><td data-num="3"></td><td><pre>  <span class="token operator">&lt;</span>MyTest @MyTestCount<span class="token operator">=</span><span class="token string">"getMyTestCount"</span><span class="token operator">&gt;</span><span class="token operator">&lt;</span><span class="token operator">/</span>MyTest<span class="token operator">&gt;</span></pre></td></tr><tr><td data-num="4"></td><td><pre></pre></td></tr><tr><td data-num="5"></td><td><pre></pre></td></tr><tr><td data-num="6"></td><td><pre><span class="token operator">&lt;</span>script<span class="token operator">&gt;</span></pre></td></tr><tr><td data-num="7"></td><td><pre><span class="token keyword">import</span> MyTest <span class="token keyword">from</span> <span class="token string">"@/components/MyTest"</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="8"></td><td><pre></pre></td></tr><tr><td data-num="9"></td><td><pre></pre></td></tr><tr><td data-num="10"></td><td><pre><span class="token comment">// 父组件</span></pre></td></tr><tr><td data-num="11"></td><td><pre><span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span></pre></td></tr><tr><td data-num="12"></td><td><pre>  <span class="token literal-property property">components</span><span class="token operator">:</span> <span class="token punctuation">{</span>MyTest<span class="token punctuation">,</span><span class="token punctuation">}</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="13"></td><td><pre>  <span class="token function">data</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span></pre></td></tr><tr><td data-num="14"></td><td><pre>    <span class="token keyword">return</span> <span class="token punctuation">{</span></pre></td></tr><tr><td data-num="15"></td><td><pre>      <span class="token literal-property property">count</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="16"></td><td><pre>    <span class="token punctuation">}</span></pre></td></tr><tr><td data-num="17"></td><td><pre>  <span class="token punctuation">}</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="18"></td><td><pre>  <span class="token literal-property property">methods</span><span class="token operator">:</span> <span class="token punctuation">{</span></pre></td></tr><tr><td data-num="19"></td><td><pre>    <span class="token function">getMyTestCount</span><span class="token punctuation">(</span><span class="token parameter">val</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token comment">// 2. 通过形参，接收子组件传递过来的数据</span></pre></td></tr><tr><td data-num="20"></td><td><pre>      <span class="token keyword">this</span><span class="token punctuation">.</span>count <span class="token operator">=</span> val</pre></td></tr><tr><td data-num="21"></td><td><pre>    <span class="token punctuation">}</span></pre></td></tr><tr><td data-num="22"></td><td><pre>  <span class="token punctuation">}</span></pre></td></tr><tr><td data-num="23"></td><td><pre><span class="token punctuation">}</span></pre></td></tr><tr><td data-num="24"></td><td><pre><span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">&gt;</span></pre></td></tr></tbody></table></figure><hr>
+<h4 id="3-span-stylecolorred父与子span双向数据同步"><a class="markdownIt-Anchor" href="#3-span-stylecolorred父与子span双向数据同步">#</a> 3. <span style="color:red">父与子</span>双向数据同步</h4>
+<p>父组件在使用子组件期间，可以使用<span style="color:red">v-model 指令</span>维护组件内外数据的双向同步</p>
 <ol>
-<li>首先父组件通过<span style="color:red">属性绑定</span>的形式，向子组件传递一个<span style="color:red">props</span>数据<figure class="highlight html"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">MySon</span> <span class="attr">v-model:num</span>=<span class="string">"count"</span>&gt;</span><span class="tag">&lt;/<span class="name">MySon</span>&gt;</span></span><br></pre></td></tr></tbody></table></figure></li>
-<li>接下来在子组件接收props并声明<span style="color:red">emits</span>.注意emits需要以<code>'update:要更新谁放谁'</code>形式写出来，这是一个固定写法</li>
+<li>首先父组件通过<span style="color:red">属性绑定</span>的形式，向子组件传递一个<span style="color:red">props</span>数据</li>
 </ol>
-<figure class="highlight javascript"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">props</span>:[<span class="string">'num'</span>]</span><br><span class="line"><span class="attr">emits</span>: [<span class="string">'update:num'</span>],</span><br></pre></td></tr></tbody></table></figure>
-
-<ol start="3">
-<li>接下来可以调用<code>this.$emit('update:xxx',最新的数据)</code> 发送出去即可<figure class="highlight javascript"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="title function_">add</span>(<span class="params"></span>) {</span><br><span class="line">      <span class="variable language_">this</span>.$emit(<span class="string">'update:num'</span>, <span class="variable language_">this</span>.<span class="property">num</span> + <span class="number">1</span>)</span><br><span class="line">  }</span><br></pre></td></tr></tbody></table></figure></li>
+<figure class="highlight html"><figcaption data-lang="HTML"></figcaption><table><tbody><tr><td data-num="1"></td><td><pre><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>MySon</span> <span class="token attr-name"><span class="token namespace">v-model:</span>num</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>count<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>MySon</span><span class="token punctuation">&gt;</span></span></pre></td></tr></tbody></table></figure><ol start="2">
+<li>接下来在子组件接收 props 并声明<span style="color:red">emits</span>. 注意 emits 需要以 <code>'update:要更新谁放谁'</code>  形式写出来，这是一个固定写法</li>
 </ol>
-<hr>
-<h3 id="兄弟组件之间的数据共享"><a href="#兄弟组件之间的数据共享" class="headerlink" title="兄弟组件之间的数据共享"></a>兄弟组件之间的数据共享</h3><p>兄弟组件之间实现数据共享的方案是<span style="color:red">EventBus</span>，可以接受第三方的包<span style="color:red">mitt</span>来创建<span style="color:red">eventBus对象</span>，从而实现兄弟组件之间的数据共享</p>
+<figure class="highlight javascript"><figcaption data-lang="javascript"></figcaption><table><tbody><tr><td data-num="1"></td><td><pre><span class="token literal-property property">props</span><span class="token operator">:</span><span class="token punctuation">[</span><span class="token string">'num'</span><span class="token punctuation">]</span></pre></td></tr><tr><td data-num="2"></td><td><pre>  <span class="token literal-property property">emits</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">'update:num'</span><span class="token punctuation">]</span><span class="token punctuation">,</span></pre></td></tr></tbody></table></figure><ol start="3">
+<li>接下来可以调用 <code>this.$emit('update:xxx',最新的数据)</code>  发送出去即可</li>
+</ol>
+<figure class="highlight javascript"><figcaption data-lang="javascript"></figcaption><table><tbody><tr><td data-num="1"></td><td><pre><span class="token function">add</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span></pre></td></tr><tr><td data-num="2"></td><td><pre>      <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">$emit</span><span class="token punctuation">(</span><span class="token string">'update:num'</span><span class="token punctuation">,</span> <span class="token keyword">this</span><span class="token punctuation">.</span>num <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="3"></td><td><pre>  <span class="token punctuation">}</span></pre></td></tr></tbody></table></figure><hr>
+<h3 id="兄弟组件之间的数据共享"><a class="markdownIt-Anchor" href="#兄弟组件之间的数据共享">#</a> 兄弟组件之间的数据共享</h3>
+<p>兄弟组件之间实现数据共享的方案是<span style="color:red">EventBus</span>，可以接受第三方的包<span style="color:red">mitt</span>来创建<span style="color:red">eventBus 对象</span>，从而实现兄弟组件之间的数据共享</p>
 <ol>
-<li>安装mitt 依赖包<br>  <code>npm i mitt</code></li>
-<li>创建公共的<span style="color:red">eventBus</span>模块<figure class="highlight javascript"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 导入mitt包</span></span><br><span class="line"><span class="keyword">import</span> mitt <span class="keyword">from</span> <span class="string">'mitt'</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 创建EventBus对象</span></span><br><span class="line"><span class="keyword">const</span> bus = <span class="title function_">mitt</span>()</span><br><span class="line"></span><br><span class="line"><span class="comment">// 将EventBus的实例对象共享出去</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> but</span><br></pre></td></tr></tbody></table></figure></li>
-<li>在<span style="color:red">数据接收方</span>定义事件<br>  在数据接收方调用<span style="color:red">bus.on</span>(‘事件名’,事件处理函数)方法<span style="color:red">注册一个自定义事件</span></li>
+<li>安装 mitt 依赖包<br>
+ <code>npm i mitt</code></li>
+<li>创建公共的<span style="color:red">eventBus</span>模块</li>
 </ol>
-<figure class="highlight javascript"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="comment">// 导入eventBus.js模块，得到共享的bus对象</span></span><br><span class="line"><span class="keyword">import</span> bus <span class="keyword">from</span> <span class="string">'@/eventBus/eventBus.js'</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> {</span><br><span class="line">  <span class="attr">name</span>: <span class="string">"Right"</span>,</span><br><span class="line">  <span class="title function_">data</span>(<span class="params"></span>) {</span><br><span class="line">    <span class="keyword">return</span> {</span><br><span class="line">      <span class="attr">count</span>: <span class="number">0</span></span><br><span class="line">    }</span><br><span class="line">  },</span><br><span class="line">  <span class="title function_">created</span>(<span class="params"></span>) {</span><br><span class="line">    <span class="comment">//  调用bus.on()方法注册一个自定义事件，通过事件处理函数的形参接收数据</span></span><br><span class="line">    bus.<span class="title function_">on</span>(<span class="string">'countChange'</span>, <span class="function">(<span class="params">num</span>) =&gt;</span> {</span><br><span class="line">      <span class="variable language_">this</span>.<span class="property">count</span> = num</span><br><span class="line">    })</span><br><span class="line">  }</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
-<ol start="4">
+<figure class="highlight javascript"><figcaption data-lang="javascript"></figcaption><table><tbody><tr><td data-num="1"></td><td><pre><span class="token comment">// 导入 mitt 包</span></pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token keyword">import</span> mitt <span class="token keyword">from</span> <span class="token string">'mitt'</span></pre></td></tr><tr><td data-num="3"></td><td><pre></pre></td></tr><tr><td data-num="4"></td><td><pre><span class="token comment">// 创建 EventBus 对象</span></pre></td></tr><tr><td data-num="5"></td><td><pre><span class="token keyword">const</span> bus <span class="token operator">=</span> <span class="token function">mitt</span><span class="token punctuation">(</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="6"></td><td><pre></pre></td></tr><tr><td data-num="7"></td><td><pre><span class="token comment">// 将 EventBus 的实例对象共享出去</span></pre></td></tr><tr><td data-num="8"></td><td><pre></pre></td></tr><tr><td data-num="9"></td><td><pre><span class="token keyword">export</span> <span class="token keyword">default</span> but</pre></td></tr></tbody></table></figure><ol start="3">
+<li>在<span style="color:red">数据接收方</span>定义事件<br>
+在数据接收方调用<span style="color:red">bus.on</span>(‘事件名’, 事件处理函数) 方法<span style="color:red">注册一个自定义事件</span></li>
+</ol>
+<figure class="highlight javascript"><figcaption data-lang="javascript"></figcaption><table><tbody><tr><td data-num="1"></td><td><pre><span class="token comment">// 导入 eventBus.js 模块，得到共享的 bus 对象</span></pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token keyword">import</span> bus <span class="token keyword">from</span> <span class="token string">'@/eventBus/eventBus.js'</span></pre></td></tr><tr><td data-num="3"></td><td><pre></pre></td></tr><tr><td data-num="4"></td><td><pre><span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span></pre></td></tr><tr><td data-num="5"></td><td><pre>  <span class="token literal-property property">name</span><span class="token operator">:</span> <span class="token string">"Right"</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="6"></td><td><pre>  <span class="token function">data</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span></pre></td></tr><tr><td data-num="7"></td><td><pre>    <span class="token keyword">return</span> <span class="token punctuation">{</span></pre></td></tr><tr><td data-num="8"></td><td><pre>      <span class="token literal-property property">count</span><span class="token operator">:</span> <span class="token number">0</span></pre></td></tr><tr><td data-num="9"></td><td><pre>    <span class="token punctuation">}</span></pre></td></tr><tr><td data-num="10"></td><td><pre>  <span class="token punctuation">}</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="11"></td><td><pre>  <span class="token function">created</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span></pre></td></tr><tr><td data-num="12"></td><td><pre>    <span class="token comment">//  调用 bus.on () 方法注册一个自定义事件，通过事件处理函数的形参接收数据</span></pre></td></tr><tr><td data-num="13"></td><td><pre>    bus<span class="token punctuation">.</span><span class="token function">on</span><span class="token punctuation">(</span><span class="token string">'countChange'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token parameter">num</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span></pre></td></tr><tr><td data-num="14"></td><td><pre>      <span class="token keyword">this</span><span class="token punctuation">.</span>count <span class="token operator">=</span> num</pre></td></tr><tr><td data-num="15"></td><td><pre>    <span class="token punctuation">}</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="16"></td><td><pre>  <span class="token punctuation">}</span></pre></td></tr><tr><td data-num="17"></td><td><pre><span class="token punctuation">}</span></pre></td></tr></tbody></table></figure><ol start="4">
 <li>在<span style="color:red">数据发送方</span>触发事件</li>
 </ol>
-<p>在数据发送方，调用<span style="color:red">bus.emit</span>(‘事件名称’,要发送的数据)方法<span style="color:red">触发自定义事件</span></p>
-<figure class="highlight javascript"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> bus <span class="keyword">from</span> <span class="string">"@/eventBus/eventBus.js"</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> {</span><br><span class="line">  <span class="attr">name</span>: <span class="string">"Left"</span>,</span><br><span class="line">  <span class="title function_">data</span>(<span class="params"></span>) {</span><br><span class="line">    <span class="keyword">return</span> {</span><br><span class="line">      <span class="attr">num</span>: <span class="number">0</span></span><br><span class="line">    }</span><br><span class="line">  },</span><br><span class="line">  <span class="attr">methods</span>: {</span><br><span class="line">    <span class="title function_">addCount</span>(<span class="params"></span>) {</span><br><span class="line">      <span class="variable language_">this</span>.<span class="property">num</span>++</span><br><span class="line">      <span class="comment">// 调用bus.emit()方法触发自定义事件，并发送数据</span></span><br><span class="line">      bus.<span class="title function_">emit</span>(<span class="string">'countChange'</span>, <span class="variable language_">this</span>.<span class="property">num</span>)</span><br><span class="line">    }</span><br><span class="line">  },</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+<p>在数据发送方，调用<span style="color:red">bus.emit</span>(‘事件名称’, 要发送的数据) 方法<span style="color:red">触发自定义事件</span></p>
+<figure class="highlight javascript"><figcaption data-lang="javascript"></figcaption><table><tbody><tr><td data-num="1"></td><td><pre><span class="token keyword">import</span> bus <span class="token keyword">from</span> <span class="token string">"@/eventBus/eventBus.js"</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="2"></td><td><pre></pre></td></tr><tr><td data-num="3"></td><td><pre><span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span></pre></td></tr><tr><td data-num="4"></td><td><pre>  <span class="token literal-property property">name</span><span class="token operator">:</span> <span class="token string">"Left"</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="5"></td><td><pre>  <span class="token function">data</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span></pre></td></tr><tr><td data-num="6"></td><td><pre>    <span class="token keyword">return</span> <span class="token punctuation">{</span></pre></td></tr><tr><td data-num="7"></td><td><pre>      <span class="token literal-property property">num</span><span class="token operator">:</span> <span class="token number">0</span></pre></td></tr><tr><td data-num="8"></td><td><pre>    <span class="token punctuation">}</span></pre></td></tr><tr><td data-num="9"></td><td><pre>  <span class="token punctuation">}</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="10"></td><td><pre>  <span class="token literal-property property">methods</span><span class="token operator">:</span> <span class="token punctuation">{</span></pre></td></tr><tr><td data-num="11"></td><td><pre>    <span class="token function">addCount</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span></pre></td></tr><tr><td data-num="12"></td><td><pre>      <span class="token keyword">this</span><span class="token punctuation">.</span>num<span class="token operator">++</span></pre></td></tr><tr><td data-num="13"></td><td><pre>      <span class="token comment">// 调用 bus.emit () 方法触发自定义事件，并发送数据</span></pre></td></tr><tr><td data-num="14"></td><td><pre>      bus<span class="token punctuation">.</span><span class="token function">emit</span><span class="token punctuation">(</span><span class="token string">'countChange'</span><span class="token punctuation">,</span> <span class="token keyword">this</span><span class="token punctuation">.</span>num<span class="token punctuation">)</span></pre></td></tr><tr><td data-num="15"></td><td><pre>    <span class="token punctuation">}</span></pre></td></tr><tr><td data-num="16"></td><td><pre>  <span class="token punctuation">}</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="17"></td><td><pre><span class="token punctuation">}</span></pre></td></tr></tbody></table></figure><hr>
 
-<hr>
+      <div class="tags">
+          <a href="/tags/%E5%89%8D%E7%AB%AF/" rel="tag"><i class="ic i-tag"></i> 前端</a>
+          <a href="/tags/Vue/" rel="tag"><i class="ic i-tag"></i> Vue</a>
+      </div>
+  </div>
 
-            <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
-            <audio id="audio" loop="1" preload="auto" controls="controls" data-autoplay="false">
-                <source type="audio/mpeg" src="">
-            </audio>
-            
-                <ul id="audio-list" style="display:none">
-                    
-                        
-                            <li title="0" data-url="https://link.hhtjim.com/163/1447930796.mp3"></li>
-                        
-                    
-                        
-                            <li title="1" data-url="https://link.hhtjim.com/163/421160291.mp3"></li>
-                        
-                    
-                        
-                            <li title="2" data-url="https://link.hhtjim.com/163/38358225.mp3"></li>
-                        
-                    
-                        
-                            <li title="3" data-url="https://link.hhtjim.com/163/1418713046.mp3"></li>
-                        
-                    
-                </ul>
-            
+   <footer>
+
+    <div class="meta">
+  <span class="item">
+    <span class="icon">
+      <i class="ic i-calendar-check"></i>
+    </span>
+    <span class="text">更新于</span>
+    <time title="修改时间：2022-04-16 18:14:25" itemprop="dateModified" datetime="2022-04-16T18:14:25+08:00">2022-04-16</time>
+  </span>
+</div>
+
+      
+<div class="reward">
+  <button><i class="ic i-heartbeat"></i> 赞赏</button>
+  <p>请我喝[茶]~(￣▽￣)~*</p>
+  <div id="qr">
+      
+      <div>
+        <img data-src="/images/wechatpay.png" alt="Mr_Nobody 微信支付">
+        <p>微信支付</p>
+      </div>
+      
+      <div>
+        <img data-src="/images/alipay.png" alt="Mr_Nobody 支付宝">
+        <p>支付宝</p>
+      </div>
+      
+      <div>
+        <img data-src="/images/paypal.png" alt="Mr_Nobody 贝宝">
+        <p>贝宝</p>
+      </div>
+  </div>
+</div>
+
+      
+
+<div id="copyright">
+<ul>
+  <li class="author">
+    <strong>本文作者： </strong>Mr_Nobody <i class="ic i-at"><em>@</em></i>MrNobody's Blog
+  </li>
+  <li class="link">
+    <strong>本文链接：</strong>
+    <a href="http://mrnobody233.github.io/2022/04/10/Vue%E6%95%B0%E6%8D%AE%E5%85%B1%E4%BA%AB/" title="Vue数据共享">http://mrnobody233.github.io/2022/04/10/Vue数据共享/</a>
+  </li>
+  <li class="license">
+    <strong>版权声明： </strong>本站所有文章除特别声明外，均采用 <span class="exturl" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC9kZWVkLnpo"><i class="ic i-creative-commons"><em>(CC)</em></i>BY-NC-SA</span> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+  </footer>
+
+</article>
+
+  </div>
+  
+
+<div class="post-nav">
+    <div class="item left">
+      
+
+  <a href="/2022/04/05/Vue%E8%B7%AF%E7%94%B1/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva4.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giclh5u05ej20zk0m87df.jpg" title="Vue路由">
+  <span class="type">上一篇</span>
+  <span class="category"><i class="ic i-flag"></i> web前端</span>
+  <h3>Vue路由</h3>
+  </a>
+
+    </div>
+    <div class="item right">
+      
+
+  <a href="/2022/04/10/Vue%E8%AE%A1%E7%AE%97%E5%B1%9E%E6%80%A7-%E8%87%AA%E5%AE%9A%E4%B9%89%E4%BA%8B%E4%BB%B6-watch%E7%9B%91%E5%90%AC%E5%99%A8/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva4.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giclx29mstj20zk0m8hdt.jpg" title="Vue计算属性-自定义事件-watch监听器">
+  <span class="type">下一篇</span>
+  <span class="category"><i class="ic i-flag"></i> web前端</span>
+  <h3>Vue计算属性-自定义事件-watch监听器</h3>
+  </a>
+
+    </div>
+</div>
+
+  
+  <div class="wrap" id="comments"></div>
+
+
         </div>
+        <div id="sidebar">
+          
+
+<div class="inner">
+
+  <div class="panels">
+    <div class="inner">
+      <div class="contents panel pjax" data-title="文章目录">
+          <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BB%84%E4%BB%B6%E4%B9%8B%E9%97%B4%E7%9A%84%E6%95%B0%E6%8D%AE%E5%85%B1%E4%BA%AB"><span class="toc-number">1.</span> <span class="toc-text"> 组件之间的数据共享</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9C%A8%E9%A1%B9%E7%9B%AE%E5%BC%80%E5%8F%91%E4%B8%AD%E7%BB%84%E4%BB%B6%E4%B9%8B%E9%97%B4%E7%9A%84%E5%85%B3%E7%B3%BB%E5%88%86%E4%B8%BA%E5%A6%82%E4%B8%8B3%E7%A7%8D"><span class="toc-number">1.1.</span> <span class="toc-text"> 在项目开发中，组件之间的关系分为如下 3 种</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%88%B6%E5%AD%90%E4%B9%8B%E9%97%B4%E7%9A%84%E6%95%B0%E6%8D%AE%E5%85%B1%E4%BA%AB"><span class="toc-number">1.2.</span> <span class="toc-text"> 父子之间的数据共享</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-span-stylecolorred%E7%88%B6%E5%90%91%E5%AD%90span%E5%85%B1%E4%BA%AB%E6%95%B0%E6%8D%AE"><span class="toc-number">1.2.1.</span> <span class="toc-text"> 1. 父向子共享数据</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-span-stylecolorred%E5%AD%90%E5%90%91%E7%88%B6span%E5%85%B1%E4%BA%AB%E6%95%B0%E6%8D%AE"><span class="toc-number">1.2.2.</span> <span class="toc-text"> 2. 子向父共享数据</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-span-stylecolorred%E7%88%B6%E4%B8%8E%E5%AD%90span%E5%8F%8C%E5%90%91%E6%95%B0%E6%8D%AE%E5%90%8C%E6%AD%A5"><span class="toc-number">1.2.3.</span> <span class="toc-text"> 3. 父与子双向数据同步</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%85%84%E5%BC%9F%E7%BB%84%E4%BB%B6%E4%B9%8B%E9%97%B4%E7%9A%84%E6%95%B0%E6%8D%AE%E5%85%B1%E4%BA%AB"><span class="toc-number">1.3.</span> <span class="toc-text"> 兄弟组件之间的数据共享</span></a></li></ol></li></ol>
+      </div>
+      <div class="related panel pjax" data-title="系列文章">
+        <ul>
+          <li><a href="/2022/03/25/First-Vue-Web/" rel="bookmark" title="First_Vue_Web">First_Vue_Web</a></li><li><a href="/2022/03/26/Vue%E6%8C%87%E4%BB%A4/" rel="bookmark" title="Vue指令">Vue指令</a></li><li><a href="/2022/04/01/Vue%E7%BB%84%E4%BB%B6%E5%92%8Cprops/" rel="bookmark" title="Vue组件和props">Vue组件和props</a></li><li><a href="/2022/04/03/Vue-ref%E5%BC%95%E7%94%A8-%E4%BD%9C%E7%94%A8%E5%9F%9F%E6%8F%92%E6%A7%BD/" rel="bookmark" title="Vue-ref引用-作用域插槽">Vue-ref引用-作用域插槽</a></li><li><a href="/2022/04/05/Vue%E8%B7%AF%E7%94%B1/" rel="bookmark" title="Vue路由">Vue路由</a></li><li class="active"><a href="/2022/04/10/Vue%E6%95%B0%E6%8D%AE%E5%85%B1%E4%BA%AB/" rel="bookmark" title="Vue数据共享">Vue数据共享</a></li><li><a href="/2022/04/10/Vue%E8%AE%A1%E7%AE%97%E5%B1%9E%E6%80%A7-%E8%87%AA%E5%AE%9A%E4%B9%89%E4%BA%8B%E4%BB%B6-watch%E7%9B%91%E5%90%AC%E5%99%A8/" rel="bookmark" title="Vue计算属性-自定义事件-watch监听器">Vue计算属性-自定义事件-watch监听器</a></li><li><a href="/2022/04/14/Vuex/" rel="bookmark" title="Vuex">Vuex</a></li><li><a href="/2022/04/19/axios/" rel="bookmark" title="axios">axios</a></li><li><a href="/2022/04/21/%E9%BB%91%E9%A9%AC%E7%A8%8B%E5%BA%8F%E5%91%98-%E7%94%B5%E5%95%86%E7%AE%A1%E7%90%86%E7%9F%A5%E8%AF%86%E6%80%BB%E7%BB%93/" rel="bookmark" title="黑马程序员-电商管理知识总结">黑马程序员-电商管理知识总结</a></li><li><a href="/2022/04/23/flex%E5%B8%83%E5%B1%80/" rel="bookmark" title="flex布局">flex布局</a></li><li><a href="/2022/04/24/axios%E6%8B%A6%E6%88%AA%E5%99%A8/" rel="bookmark" title="axios拦截器">axios拦截器</a></li><li><a href="/2022/05/03/Vue3-%E5%B8%B8%E7%94%A8CompositionAPi/" rel="bookmark" title="Vue3-常用CompositionAPi">Vue3-常用CompositionAPi</a></li>
+        </ul>
+      </div>
+      <div class="overview panel" data-title="站点概览">
+        <div class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <img class="image" itemprop="image" alt="Mr_Nobody"
+      data-src="/images/avatar.jpg">
+  <p class="name" itemprop="name">Mr_Nobody</p>
+  <div class="description" itemprop="description">MrNobody</div>
+</div>
+
+<nav class="state">
+    <div class="item posts">
+      <a href="/archives/">
+        <span class="count">22</span>
+        <span class="name">文章</span>
+      </a>
+    </div>
+    <div class="item categories">
+      <a href="/categories/">
+        <span class="count">2</span>
+        <span class="name">分类</span>
+      </a>
+    </div>
+    <div class="item tags">
+      <a href="/tags/">
+        <span class="count">11</span>
+        <span class="name">标签</span>
+      </a>
+    </div>
+</nav>
+
+<div class="social">
+      <span class="exturl item github" data-url="aHR0cHM6Ly9naXRodWIuY29tL21ybm9ib2R5MjMz" title="https:&#x2F;&#x2F;github.com&#x2F;mrnobody233"><i class="ic i-github"></i></span>
+      <span class="exturl item music" data-url="aHR0cHM6Ly9tdXNpYy4xNjMuY29tLyMvdXNlci9ob21lP2lkPTQxNDk3NjY2Mg==" title="https:&#x2F;&#x2F;music.163.com&#x2F;#&#x2F;user&#x2F;home?id&#x3D;414976662"><i class="ic i-cloud-music"></i></span>
+      <span class="exturl item bilibili" data-url="aHR0cHM6Ly9zcGFjZS5iaWxpYmlsaS5jb20vMjEzODMwMTc/c3BtX2lkX2Zyb209MzMzLjEwMDcuMC4w" title="https:&#x2F;&#x2F;space.bilibili.com&#x2F;21383017?spm_id_from&#x3D;333.1007.0.0"><i class="ic i-bilibili"></i></span>
+</div>
+
+<ul class="menu">
+  
+    
+  <li class="item">
+    <a href="/" rel="section"><i class="ic i-home"></i>首页</a>
+  </li>
+
+    
+  <li class="item">
+    <a href="/about/" rel="section"><i class="ic i-user"></i>关于</a>
+  </li>
+
         
-    <div id="gitalk-container" class="comment link"
-		data-enable="false"
-        data-ae="false"
-        data-ci=""
-        data-cs=""
-        data-r=""
-        data-o=""
-        data-a=""
-        data-d="false"
-    >查看评论</div>
+  <li class="item dropdown">
+      <a href="javascript:void(0);"><i class="ic i-feather"></i>文章</a>
+    <ul class="submenu">
 
+        
+  <li class="item">
+    <a href="/archives/" rel="section"><i class="ic i-list-alt"></i>归档</a>
+  </li>
 
-    </div>
+        
+  <li class="item">
+    <a href="/categories/" rel="section"><i class="ic i-th"></i>分类</a>
+  </li>
+
+        
+  <li class="item">
+    <a href="/tags/" rel="section"><i class="ic i-tags"></i>标签</a>
+  </li>
+
+  </ul>
     
-        <div class="side">
-			<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BB%84%E4%BB%B6%E4%B9%8B%E9%97%B4%E7%9A%84%E6%95%B0%E6%8D%AE%E5%85%B1%E4%BA%AB"><span class="toc-number">1.</span> <span class="toc-text">组件之间的数据共享</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9C%A8%E9%A1%B9%E7%9B%AE%E5%BC%80%E5%8F%91%E4%B8%AD%EF%BC%8C%E7%BB%84%E4%BB%B6%E4%B9%8B%E9%97%B4%E7%9A%84%E5%85%B3%E7%B3%BB%E5%88%86%E4%B8%BA%E5%A6%82%E4%B8%8B3%E7%A7%8D"><span class="toc-number">1.1.</span> <span class="toc-text">在项目开发中，组件之间的关系分为如下3种</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%88%B6%E5%AD%90%E4%B9%8B%E9%97%B4%E7%9A%84%E6%95%B0%E6%8D%AE%E5%85%B1%E4%BA%AB"><span class="toc-number">1.2.</span> <span class="toc-text">父子之间的数据共享</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-%E7%88%B6%E5%90%91%E5%AD%90%E5%85%B1%E4%BA%AB%E6%95%B0%E6%8D%AE"><span class="toc-number">1.2.1.</span> <span class="toc-text">1. 父向子共享数据</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-%E5%AD%90%E5%90%91%E7%88%B6%E5%85%B1%E4%BA%AB%E6%95%B0%E6%8D%AE"><span class="toc-number">1.2.2.</span> <span class="toc-text">2. 子向父共享数据</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-%E7%88%B6%E4%B8%8E%E5%AD%90%E5%8F%8C%E5%90%91%E6%95%B0%E6%8D%AE%E5%90%8C%E6%AD%A5"><span class="toc-number">1.2.3.</span> <span class="toc-text">3. 父与子双向数据同步</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%85%84%E5%BC%9F%E7%BB%84%E4%BB%B6%E4%B9%8B%E9%97%B4%E7%9A%84%E6%95%B0%E6%8D%AE%E5%85%B1%E4%BA%AB"><span class="toc-number">1.3.</span> <span class="toc-text">兄弟组件之间的数据共享</span></a></li></ol></li></ol>	
+  <li class="item">
+    <a href="/friends/" rel="section"><i class="ic i-heart"></i>friends</a>
+  </li>
+
+
+</ul>
+
+      </div>
+    </div>
+  </div>
+
+  <ul id="quick">
+    <li class="prev pjax">
+        <a href="/2022/04/05/Vue%E8%B7%AF%E7%94%B1/" rel="prev" title="上一篇"><i class="ic i-chevron-left"></i></a>
+    </li>
+    <li class="up"><i class="ic i-arrow-up"></i></li>
+    <li class="down"><i class="ic i-arrow-down"></i></li>
+    <li class="next pjax">
+        <a href="/2022/04/10/Vue%E8%AE%A1%E7%AE%97%E5%B1%9E%E6%80%A7-%E8%87%AA%E5%AE%9A%E4%B9%89%E4%BA%8B%E4%BB%B6-watch%E7%9B%91%E5%90%AC%E5%99%A8/" rel="next" title="下一篇"><i class="ic i-chevron-right"></i></a>
+    </li>
+    <li class="percent"></li>
+  </ul>
+</div>
+
+
         </div>
+        <div class="dimmer"></div>
+      </div>
+    </main>
+    <footer id="footer">
+      <div class="inner">
+        <div class="widgets">
+          
+<div class="rpost pjax">
+  <h2>随机文章</h2>
+  <ul>
+      
+  <li class="item">
     
+<div class="breadcrumb">
+<a href="/categories/%E7%94%9F%E6%B4%BB/" title="分类于 生活">生活</a>
 </div>
 
+    <span><a href="/2022/03/28/%E4%B8%8D%E8%A6%81%E7%86%AC%E5%A4%9C/" title="不要熬夜">不要熬夜</a></span>
+  </li>
 
-    </div>
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/web%E5%89%8D%E7%AB%AF/" title="分类于 web前端">web前端</a>
 </div>
+
+    <span><a href="/2022/04/24/axios%E6%8B%A6%E6%88%AA%E5%99%A8/" title="axios拦截器">axios拦截器</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E7%94%9F%E6%B4%BB/" title="分类于 生活">生活</a>
+</div>
+
+    <span><a href="/2022/03/26/%E5%AE%9E%E7%94%A8%E7%BD%91%E7%AB%99/" title="实用网站">实用网站</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/web%E5%89%8D%E7%AB%AF/" title="分类于 web前端">web前端</a>
+</div>
+
+    <span><a href="/2022/03/25/First-Vue-Web/" title="First_Vue_Web">First_Vue_Web</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/web%E5%89%8D%E7%AB%AF/" title="分类于 web前端">web前端</a>
+</div>
+
+    <span><a href="/2022/04/10/Vue%E8%AE%A1%E7%AE%97%E5%B1%9E%E6%80%A7-%E8%87%AA%E5%AE%9A%E4%B9%89%E4%BA%8B%E4%BB%B6-watch%E7%9B%91%E5%90%AC%E5%99%A8/" title="Vue计算属性-自定义事件-watch监听器">Vue计算属性-自定义事件-watch监听器</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E7%94%9F%E6%B4%BB/" title="分类于 生活">生活</a>
+</div>
+
+    <span><a href="/2022/04/23/%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%8B%86%E6%9C%BA/" title="第一次拆机">第一次拆机</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E7%94%9F%E6%B4%BB/" title="分类于 生活">生活</a>
+</div>
+
+    <span><a href="/2022/03/25/%E4%B8%8D%E8%A6%81%E8%A2%AB%E5%A4%96%E8%A1%A8%E8%BF%B7%E6%83%91/" title="不要被外表迷惑">不要被外表迷惑</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E7%94%9F%E6%B4%BB/" title="分类于 生活">生活</a>
+</div>
+
+    <span><a href="/2022/04/18/%E5%87%8C%E6%99%A8%E6%A0%A1%E5%9B%AD/" title="凌晨校园">凌晨校园</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/web%E5%89%8D%E7%AB%AF/" title="分类于 web前端">web前端</a>
+</div>
+
+    <span><a href="/2022/04/21/%E9%BB%91%E9%A9%AC%E7%A8%8B%E5%BA%8F%E5%91%98-%E7%94%B5%E5%95%86%E7%AE%A1%E7%90%86%E7%9F%A5%E8%AF%86%E6%80%BB%E7%BB%93/" title="黑马程序员-电商管理知识总结">黑马程序员-电商管理知识总结</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/web%E5%89%8D%E7%AB%AF/" title="分类于 web前端">web前端</a>
+</div>
+
+    <span><a href="/2022/04/23/flex%E5%B8%83%E5%B1%80/" title="flex布局">flex布局</a></span>
+  </li>
+
+  </ul>
+</div>
+
+        </div>
+        <div class="status">
+  <div class="copyright">
+    
+    &copy; 2010 – 
+    <span itemprop="copyrightYear">2022</span>
+    <span class="with-love">
+      <i class="ic i-sakura rotate"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">Mr_Nobody @ MrNobody's Blog</span>
+  </div>
+  <div class="count">
+    <span class="post-meta-item-icon">
+      <i class="ic i-chart-area"></i>
+    </span>
+    <span title="站点总字数">37k 字</span>
+
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="ic i-coffee"></i>
+    </span>
+    <span title="站点阅读时长">34 分钟</span>
+  </div>
+  <div class="powered-by">
+    基于 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & Theme.<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2FtZWhpbWUvaGV4by10aGVtZS1zaG9rYQ==">Shoka</span>
+  </div>
+</div>
+
+      </div>
+    </footer>
+  </div>
+<script data-config type="text/javascript">
+  var LOCAL = {
+    path: '2022/04/10/Vue数据共享/',
+    favicon: {
+      show: "（●´3｀●）やれやれだぜ",
+      hide: "(´Д｀)大変だ！"
+    },
+    search : {
+      placeholder: "文章搜索",
+      empty: "关于 「 ${query} 」，什么也没搜到",
+      stats: "${time} ms 内找到 ${hits} 条结果"
+    },
+    valine: true,fancybox: true,
+    copyright: '复制成功，转载请遵守 <i class="ic i-creative-commons"></i>BY-NC-SA 协议。',
+    ignores : [
+      function(uri) {
+        return uri.includes('#');
+      },
+      function(uri) {
+        return new RegExp(LOCAL.path+"$").test(uri);
+      }
+    ]
+  };
+</script>
+
+<script src="https://cdn.polyfill.io/v2/polyfill.js"></script>
+
+<script src="//cdn.jsdelivr.net/combine/npm/pace-js@1.0.2/pace.min.js,npm/pjax@0.2.8/pjax.min.js,npm/whatwg-fetch@3.4.0/dist/fetch.umd.min.js,npm/animejs@3.2.0/lib/anime.min.js,npm/algoliasearch@4/dist/algoliasearch-lite.umd.js,npm/instantsearch.js@4/dist/instantsearch.production.min.js,npm/lozad@1/dist/lozad.min.js,npm/quicklink@2/dist/quicklink.umd.js"></script>
+
+<script src="/js/app.js?v=0.2.5"></script>
+
+
+
+
 </body>
-
-
-<script src="//lib.baomitu.com/jquery/1.8.3/jquery.min.js"></script>
-<script src="/js/plugin.js"></script>
-<script src="/js/typed.js"></script>
-<script src="/js/diaspora.js"></script>
-
-
-<link rel="stylesheet" href="/photoswipe/photoswipe.css">
-<link rel="stylesheet" href="/photoswipe/default-skin/default-skin.css">
-
-
-<script src="/photoswipe/photoswipe.min.js"></script>
-<script src="/photoswipe/photoswipe-ui-default.min.js"></script>
-
-
-<!-- Root element of PhotoSwipe. Must have class pswp. -->
-<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
-    <!-- Background of PhotoSwipe. 
-         It's a separate element as animating opacity is faster than rgba(). -->
-    <div class="pswp__bg"></div>
-    <!-- Slides wrapper with overflow:hidden. -->
-    <div class="pswp__scroll-wrap">
-        <!-- Container that holds slides. 
-            PhotoSwipe keeps only 3 of them in the DOM to save memory.
-            Don't modify these 3 pswp__item elements, data is added later on. -->
-        <div class="pswp__container">
-            <div class="pswp__item"></div>
-            <div class="pswp__item"></div>
-            <div class="pswp__item"></div>
-        </div>
-        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
-        <div class="pswp__ui pswp__ui--hidden">
-            <div class="pswp__top-bar">
-                <!--  Controls are self-explanatory. Order can be changed. -->
-                <div class="pswp__counter"></div>
-                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
-                <button class="pswp__button pswp__button--share" title="Share"></button>
-                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
-                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
-                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
-                <!-- element will get class pswp__preloader--active when preloader is running -->
-                <div class="pswp__preloader">
-                    <div class="pswp__preloader__icn">
-                      <div class="pswp__preloader__cut">
-                        <div class="pswp__preloader__donut"></div>
-                      </div>
-                    </div>
-                </div>
-            </div>
-            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
-                <div class="pswp__share-tooltip"></div> 
-            </div>
-            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
-            </button>
-            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
-            </button>
-            <div class="pswp__caption">
-                <div class="pswp__caption__center"></div>
-            </div>
-        </div>
-    </div>
-</div>
-
-
-
-
-
-
 </html>
