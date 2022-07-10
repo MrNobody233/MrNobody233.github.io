@@ -3,11 +3,11 @@
   <title>MrNobody&#39;s Blog</title>
   
   <subtitle>保持呼吸 不要断气</subtitle>
-  <link href="http://mrnobody233.github.io/atom.xml" rel="self"/>
+  <link href="http://mrnobody233.gitee.io/atom.xml" rel="self"/>
   
-  <link href="http://mrnobody233.github.io/"/>
-  <updated>2022-07-07T14:53:33.677Z</updated>
-  <id>http://mrnobody233.github.io/</id>
+  <link href="http://mrnobody233.gitee.io/"/>
+  <updated>2022-07-10T15:46:12.198Z</updated>
+  <id>http://mrnobody233.gitee.io/</id>
   
   <author>
     <name>Mr_Nobody</name>
@@ -18,12 +18,12 @@
   
   <entry>
     <title>我直接嗨</title>
-    <link href="http://mrnobody233.github.io/2022/07/07/%E6%88%91%E7%9B%B4%E6%8E%A5%E5%97%A8/"/>
-    <id>http://mrnobody233.github.io/2022/07/07/%E6%88%91%E7%9B%B4%E6%8E%A5%E5%97%A8/</id>
+    <link href="http://mrnobody233.gitee.io/2022/07/07/%E6%88%91%E7%9B%B4%E6%8E%A5%E5%97%A8/"/>
+    <id>http://mrnobody233.gitee.io/2022/07/07/%E6%88%91%E7%9B%B4%E6%8E%A5%E5%97%A8/</id>
     <published>2022-07-07T13:28:56.000Z</published>
-    <updated>2022-07-07T14:53:33.677Z</updated>
+    <updated>2022-07-10T15:46:12.198Z</updated>
     
-    <content type="html"><![CDATA[<p>已经放暑假好多好多天了，在奶奶家已经放松过渡啦，电脑都积灰，《美丽新世界》也就看了三章，那我这些天在干什么捏，让我来回忆一下，回忆完了，就是玩，各种玩，困了就睡，起来就中午 12 点，下午拿我弟弟的电脑玩会儿 apex，晚上十点多饿了就和我堂弟去吃羊肉串，美好的日子随着他马上要去当预备兵而结束，这样我就没有流畅的电脑玩游戏啦，也就可以静下心来写代码和看书。</p><p>中午婶婶来接弟弟回家，我们也去惹，应该是走之前吃点好东西，所以去饭店吃滴，妈的让我印象最深的菜就是一个鸭子，也许是鸭子太辣了，没吃多少，打包回他家晚上吃，我吃了一口，辣的我喝了一瓶冰啤酒，真下酒菜，喝的我脑袋晕乎乎的，还把喝酒的杯子打碎了，回家洗了个澡我还是有点困，但我又好像清醒了，所以开始写博客给自己找点事情做，打算暑假给自己一个充实的生活。然后我就把博客部署到码云上了，虽然还在实名认证审核中，不过我还是提前把链接放在这里，O (∩_∩) O, 这样不用翻墙就可以看到我的博客啦，但是配置文件放在一起会出现分支的问题，所以我简单粗暴地分了两个文件，一个 github 一个 gitee，这样虽然麻烦点，但问题好歹解决了 0.0 <span class="exturl" data-url="aHR0cHM6Ly9tcm5vYm9keTIzMy5naXRlZS5pby8=">（点我跳转）</span></p>]]></content>
+    <content type="html"><![CDATA[<p>已经放暑假好多好多天了，在奶奶家已经放松过渡啦，电脑都积灰，《美丽新世界》也就看了三章，那我这些天在干什么捏，让我来回忆一下，回忆完了，就是玩，各种玩，困了就睡，起来就中午 12 点，下午拿我弟弟的电脑玩会儿 apex，晚上十点多饿了就和我堂弟去吃羊肉串，美好的日子随着他马上要去当预备兵而结束，这样我就没有流畅的电脑玩游戏啦，也就可以静下心来写代码和看书。</p><p>中午婶婶来接弟弟回家，我们也去惹，应该是走之前吃点好东西，所以去饭店吃滴，妈的让我印象最深的菜就是一个鸭子，也许是鸭子太辣了，没吃多少，打包回他家晚上吃，我吃了一口，辣的我喝了一瓶冰啤酒，真下酒菜，喝的我脑袋晕乎乎的，还把喝酒的杯子打碎了，回家洗了个澡我还是有点困，但我又好像清醒了，所以开始写博客给自己找点事情做，打算暑假给自己一个充实的生活。然后我就把博客部署到码云上了，虽然还在实名认证审核中，不过我还是提前把链接放在这里，O (∩_∩) O, 这样不用翻墙就可以看到我的博客啦，但是配置文件放在一起会出现分支的问题，所以我简单粗暴地分了两个文件，一个 github 一个 gitee，这样虽然麻烦点，但问题好歹解决了 0.0 <a href="https://mrnobody233.gitee.io/">（点我跳转码云的博客）</a></p>]]></content>
     
     
       
@@ -33,21 +33,21 @@
     
     
     
-    <category term="生活" scheme="http://mrnobody233.github.io/categories/%E7%94%9F%E6%B4%BB/"/>
+    <category term="生活" scheme="http://mrnobody233.gitee.io/categories/%E7%94%9F%E6%B4%BB/"/>
     
     
-    <category term="智障" scheme="http://mrnobody233.github.io/tags/%E6%99%BA%E9%9A%9C/"/>
+    <category term="智障" scheme="http://mrnobody233.gitee.io/tags/%E6%99%BA%E9%9A%9C/"/>
     
-    <category term="自言自语" scheme="http://mrnobody233.github.io/tags/%E8%87%AA%E8%A8%80%E8%87%AA%E8%AF%AD/"/>
+    <category term="自言自语" scheme="http://mrnobody233.gitee.io/tags/%E8%87%AA%E8%A8%80%E8%87%AA%E8%AF%AD/"/>
     
-    <category term="生活" scheme="http://mrnobody233.github.io/tags/%E7%94%9F%E6%B4%BB/"/>
+    <category term="生活" scheme="http://mrnobody233.gitee.io/tags/%E7%94%9F%E6%B4%BB/"/>
     
   </entry>
   
   <entry>
     <title>什么什么什么</title>
-    <link href="http://mrnobody233.github.io/2022/06/19/%E4%BB%80%E4%B9%88%E4%BB%80%E4%B9%88%E4%BB%80%E4%B9%88/"/>
-    <id>http://mrnobody233.github.io/2022/06/19/%E4%BB%80%E4%B9%88%E4%BB%80%E4%B9%88%E4%BB%80%E4%B9%88/</id>
+    <link href="http://mrnobody233.gitee.io/2022/06/19/%E4%BB%80%E4%B9%88%E4%BB%80%E4%B9%88%E4%BB%80%E4%B9%88/"/>
+    <id>http://mrnobody233.gitee.io/2022/06/19/%E4%BB%80%E4%B9%88%E4%BB%80%E4%B9%88%E4%BB%80%E4%B9%88/</id>
     <published>2022-06-18T21:45:03.000Z</published>
     <updated>2022-06-21T14:07:38.078Z</updated>
     
@@ -62,21 +62,21 @@
     
     
     
-    <category term="生活" scheme="http://mrnobody233.github.io/categories/%E7%94%9F%E6%B4%BB/"/>
+    <category term="生活" scheme="http://mrnobody233.gitee.io/categories/%E7%94%9F%E6%B4%BB/"/>
     
     
-    <category term="智障" scheme="http://mrnobody233.github.io/tags/%E6%99%BA%E9%9A%9C/"/>
+    <category term="智障" scheme="http://mrnobody233.gitee.io/tags/%E6%99%BA%E9%9A%9C/"/>
     
-    <category term="自言自语" scheme="http://mrnobody233.github.io/tags/%E8%87%AA%E8%A8%80%E8%87%AA%E8%AF%AD/"/>
+    <category term="自言自语" scheme="http://mrnobody233.gitee.io/tags/%E8%87%AA%E8%A8%80%E8%87%AA%E8%AF%AD/"/>
     
-    <category term="生活" scheme="http://mrnobody233.github.io/tags/%E7%94%9F%E6%B4%BB/"/>
+    <category term="生活" scheme="http://mrnobody233.gitee.io/tags/%E7%94%9F%E6%B4%BB/"/>
     
   </entry>
   
   <entry>
     <title>Vuex持久化</title>
-    <link href="http://mrnobody233.github.io/2022/05/30/Vuex%E6%8C%81%E4%B9%85%E5%8C%96/"/>
-    <id>http://mrnobody233.github.io/2022/05/30/Vuex%E6%8C%81%E4%B9%85%E5%8C%96/</id>
+    <link href="http://mrnobody233.gitee.io/2022/05/30/Vuex%E6%8C%81%E4%B9%85%E5%8C%96/"/>
+    <id>http://mrnobody233.gitee.io/2022/05/30/Vuex%E6%8C%81%E4%B9%85%E5%8C%96/</id>
     <published>2022-05-30T12:54:17.000Z</published>
     <updated>2022-05-31T00:25:44.039Z</updated>
     
@@ -91,19 +91,19 @@
     
     
     
-    <category term="web前端" scheme="http://mrnobody233.github.io/categories/web%E5%89%8D%E7%AB%AF/"/>
+    <category term="web前端" scheme="http://mrnobody233.gitee.io/categories/web%E5%89%8D%E7%AB%AF/"/>
     
     
-    <category term="前端" scheme="http://mrnobody233.github.io/tags/%E5%89%8D%E7%AB%AF/"/>
+    <category term="前端" scheme="http://mrnobody233.gitee.io/tags/%E5%89%8D%E7%AB%AF/"/>
     
-    <category term="Vue" scheme="http://mrnobody233.github.io/tags/Vue/"/>
+    <category term="Vue" scheme="http://mrnobody233.gitee.io/tags/Vue/"/>
     
   </entry>
   
   <entry>
     <title>平常的一天</title>
-    <link href="http://mrnobody233.github.io/2022/05/27/%E5%B9%B3%E5%B8%B8%E7%9A%84%E4%B8%80%E5%A4%A9/"/>
-    <id>http://mrnobody233.github.io/2022/05/27/%E5%B9%B3%E5%B8%B8%E7%9A%84%E4%B8%80%E5%A4%A9/</id>
+    <link href="http://mrnobody233.gitee.io/2022/05/27/%E5%B9%B3%E5%B8%B8%E7%9A%84%E4%B8%80%E5%A4%A9/"/>
+    <id>http://mrnobody233.gitee.io/2022/05/27/%E5%B9%B3%E5%B8%B8%E7%9A%84%E4%B8%80%E5%A4%A9/</id>
     <published>2022-05-27T15:32:09.000Z</published>
     <updated>2022-05-28T03:27:57.963Z</updated>
     
@@ -118,19 +118,19 @@
     
     
     
-    <category term="生活" scheme="http://mrnobody233.github.io/categories/%E7%94%9F%E6%B4%BB/"/>
+    <category term="生活" scheme="http://mrnobody233.gitee.io/categories/%E7%94%9F%E6%B4%BB/"/>
     
     
-    <category term="自言自语" scheme="http://mrnobody233.github.io/tags/%E8%87%AA%E8%A8%80%E8%87%AA%E8%AF%AD/"/>
+    <category term="自言自语" scheme="http://mrnobody233.gitee.io/tags/%E8%87%AA%E8%A8%80%E8%87%AA%E8%AF%AD/"/>
     
-    <category term="周记" scheme="http://mrnobody233.github.io/tags/%E5%91%A8%E8%AE%B0/"/>
+    <category term="周记" scheme="http://mrnobody233.gitee.io/tags/%E5%91%A8%E8%AE%B0/"/>
     
   </entry>
   
   <entry>
     <title>Vue3-vuex</title>
-    <link href="http://mrnobody233.github.io/2022/05/20/vue3-vuex/"/>
-    <id>http://mrnobody233.github.io/2022/05/20/vue3-vuex/</id>
+    <link href="http://mrnobody233.gitee.io/2022/05/20/vue3-vuex/"/>
+    <id>http://mrnobody233.gitee.io/2022/05/20/vue3-vuex/</id>
     <published>2022-05-20T13:09:52.000Z</published>
     <updated>2022-06-23T11:56:52.389Z</updated>
     
@@ -146,19 +146,19 @@
     
     
     
-    <category term="web前端" scheme="http://mrnobody233.github.io/categories/web%E5%89%8D%E7%AB%AF/"/>
+    <category term="web前端" scheme="http://mrnobody233.gitee.io/categories/web%E5%89%8D%E7%AB%AF/"/>
     
     
-    <category term="前端" scheme="http://mrnobody233.github.io/tags/%E5%89%8D%E7%AB%AF/"/>
+    <category term="前端" scheme="http://mrnobody233.gitee.io/tags/%E5%89%8D%E7%AB%AF/"/>
     
-    <category term="Vue" scheme="http://mrnobody233.github.io/tags/Vue/"/>
+    <category term="Vue" scheme="http://mrnobody233.gitee.io/tags/Vue/"/>
     
   </entry>
   
   <entry>
     <title>待办事项</title>
-    <link href="http://mrnobody233.github.io/2022/05/17/%E5%BE%85%E5%8A%9E%E4%BA%8B%E9%A1%B9/"/>
-    <id>http://mrnobody233.github.io/2022/05/17/%E5%BE%85%E5%8A%9E%E4%BA%8B%E9%A1%B9/</id>
+    <link href="http://mrnobody233.gitee.io/2022/05/17/%E5%BE%85%E5%8A%9E%E4%BA%8B%E9%A1%B9/"/>
+    <id>http://mrnobody233.gitee.io/2022/05/17/%E5%BE%85%E5%8A%9E%E4%BA%8B%E9%A1%B9/</id>
     <published>2022-05-17T05:32:01.000Z</published>
     <updated>2022-06-21T14:09:23.802Z</updated>
     
@@ -173,17 +173,17 @@
     
     
     
-    <category term="生活" scheme="http://mrnobody233.github.io/categories/%E7%94%9F%E6%B4%BB/"/>
+    <category term="生活" scheme="http://mrnobody233.gitee.io/categories/%E7%94%9F%E6%B4%BB/"/>
     
     
-    <category term="待办" scheme="http://mrnobody233.github.io/tags/%E5%BE%85%E5%8A%9E/"/>
+    <category term="待办" scheme="http://mrnobody233.gitee.io/tags/%E5%BE%85%E5%8A%9E/"/>
     
   </entry>
   
   <entry>
     <title>axios封装</title>
-    <link href="http://mrnobody233.github.io/2022/05/11/axios%E5%B0%81%E8%A3%85/"/>
-    <id>http://mrnobody233.github.io/2022/05/11/axios%E5%B0%81%E8%A3%85/</id>
+    <link href="http://mrnobody233.gitee.io/2022/05/11/axios%E5%B0%81%E8%A3%85/"/>
+    <id>http://mrnobody233.gitee.io/2022/05/11/axios%E5%B0%81%E8%A3%85/</id>
     <published>2022-05-11T05:29:38.000Z</published>
     <updated>2022-05-17T06:05:23.107Z</updated>
     
@@ -198,19 +198,19 @@
     
     
     
-    <category term="web前端" scheme="http://mrnobody233.github.io/categories/web%E5%89%8D%E7%AB%AF/"/>
+    <category term="web前端" scheme="http://mrnobody233.gitee.io/categories/web%E5%89%8D%E7%AB%AF/"/>
     
     
-    <category term="前端" scheme="http://mrnobody233.github.io/tags/%E5%89%8D%E7%AB%AF/"/>
+    <category term="前端" scheme="http://mrnobody233.gitee.io/tags/%E5%89%8D%E7%AB%AF/"/>
     
-    <category term="Ajax" scheme="http://mrnobody233.github.io/tags/Ajax/"/>
+    <category term="Ajax" scheme="http://mrnobody233.gitee.io/tags/Ajax/"/>
     
   </entry>
   
   <entry>
     <title>网站设计大赛</title>
-    <link href="http://mrnobody233.github.io/2022/05/10/%E7%BD%91%E7%AB%99%E8%AE%BE%E8%AE%A1%E5%A4%A7%E8%B5%9B/"/>
-    <id>http://mrnobody233.github.io/2022/05/10/%E7%BD%91%E7%AB%99%E8%AE%BE%E8%AE%A1%E5%A4%A7%E8%B5%9B/</id>
+    <link href="http://mrnobody233.gitee.io/2022/05/10/%E7%BD%91%E7%AB%99%E8%AE%BE%E8%AE%A1%E5%A4%A7%E8%B5%9B/"/>
+    <id>http://mrnobody233.gitee.io/2022/05/10/%E7%BD%91%E7%AB%99%E8%AE%BE%E8%AE%A1%E5%A4%A7%E8%B5%9B/</id>
     <published>2022-05-10T01:45:34.000Z</published>
     <updated>2022-06-21T14:02:09.644Z</updated>
     
@@ -225,17 +225,17 @@
     
     
     
-    <category term="生活" scheme="http://mrnobody233.github.io/categories/%E7%94%9F%E6%B4%BB/"/>
+    <category term="生活" scheme="http://mrnobody233.gitee.io/categories/%E7%94%9F%E6%B4%BB/"/>
     
     
-    <category term="网站" scheme="http://mrnobody233.github.io/tags/%E7%BD%91%E7%AB%99/"/>
+    <category term="网站" scheme="http://mrnobody233.gitee.io/tags/%E7%BD%91%E7%AB%99/"/>
     
   </entry>
   
   <entry>
     <title>新的主题:shoka</title>
-    <link href="http://mrnobody233.github.io/2022/05/08/%E6%96%B0%E7%9A%84%E4%B8%BB%E9%A2%98-shoka/"/>
-    <id>http://mrnobody233.github.io/2022/05/08/%E6%96%B0%E7%9A%84%E4%B8%BB%E9%A2%98-shoka/</id>
+    <link href="http://mrnobody233.gitee.io/2022/05/08/%E6%96%B0%E7%9A%84%E4%B8%BB%E9%A2%98-shoka/"/>
+    <id>http://mrnobody233.gitee.io/2022/05/08/%E6%96%B0%E7%9A%84%E4%B8%BB%E9%A2%98-shoka/</id>
     <published>2022-05-08T06:26:46.000Z</published>
     <updated>2022-05-11T06:14:24.445Z</updated>
     
@@ -250,19 +250,19 @@
     
     
     
-    <category term="生活" scheme="http://mrnobody233.github.io/categories/%E7%94%9F%E6%B4%BB/"/>
+    <category term="生活" scheme="http://mrnobody233.gitee.io/categories/%E7%94%9F%E6%B4%BB/"/>
     
     
-    <category term="网站" scheme="http://mrnobody233.github.io/tags/%E7%BD%91%E7%AB%99/"/>
+    <category term="网站" scheme="http://mrnobody233.gitee.io/tags/%E7%BD%91%E7%AB%99/"/>
     
-    <category term="工具" scheme="http://mrnobody233.github.io/tags/%E5%B7%A5%E5%85%B7/"/>
+    <category term="工具" scheme="http://mrnobody233.gitee.io/tags/%E5%B7%A5%E5%85%B7/"/>
     
   </entry>
   
   <entry>
     <title>Vue3-常用CompositionAPi</title>
-    <link href="http://mrnobody233.github.io/2022/05/03/Vue3-%E5%B8%B8%E7%94%A8CompositionAPi/"/>
-    <id>http://mrnobody233.github.io/2022/05/03/Vue3-%E5%B8%B8%E7%94%A8CompositionAPi/</id>
+    <link href="http://mrnobody233.gitee.io/2022/05/03/Vue3-%E5%B8%B8%E7%94%A8CompositionAPi/"/>
+    <id>http://mrnobody233.gitee.io/2022/05/03/Vue3-%E5%B8%B8%E7%94%A8CompositionAPi/</id>
     <published>2022-05-03T13:38:41.000Z</published>
     <updated>2022-05-13T03:34:20.946Z</updated>
     
@@ -279,19 +279,19 @@
     
     
     
-    <category term="web前端" scheme="http://mrnobody233.github.io/categories/web%E5%89%8D%E7%AB%AF/"/>
+    <category term="web前端" scheme="http://mrnobody233.gitee.io/categories/web%E5%89%8D%E7%AB%AF/"/>
     
     
-    <category term="前端" scheme="http://mrnobody233.github.io/tags/%E5%89%8D%E7%AB%AF/"/>
+    <category term="前端" scheme="http://mrnobody233.gitee.io/tags/%E5%89%8D%E7%AB%AF/"/>
     
-    <category term="Vue" scheme="http://mrnobody233.github.io/tags/Vue/"/>
+    <category term="Vue" scheme="http://mrnobody233.gitee.io/tags/Vue/"/>
     
   </entry>
   
   <entry>
     <title>浅度睡眠</title>
-    <link href="http://mrnobody233.github.io/2022/04/25/%E6%B5%85%E5%BA%A6%E7%9D%A1%E7%9C%A0/"/>
-    <id>http://mrnobody233.github.io/2022/04/25/%E6%B5%85%E5%BA%A6%E7%9D%A1%E7%9C%A0/</id>
+    <link href="http://mrnobody233.gitee.io/2022/04/25/%E6%B5%85%E5%BA%A6%E7%9D%A1%E7%9C%A0/"/>
+    <id>http://mrnobody233.gitee.io/2022/04/25/%E6%B5%85%E5%BA%A6%E7%9D%A1%E7%9C%A0/</id>
     <published>2022-04-25T15:16:45.000Z</published>
     <updated>2022-04-26T02:03:08.481Z</updated>
     
@@ -306,21 +306,21 @@
     
     
     
-    <category term="生活" scheme="http://mrnobody233.github.io/categories/%E7%94%9F%E6%B4%BB/"/>
+    <category term="生活" scheme="http://mrnobody233.gitee.io/categories/%E7%94%9F%E6%B4%BB/"/>
     
     
-    <category term="智障" scheme="http://mrnobody233.github.io/tags/%E6%99%BA%E9%9A%9C/"/>
+    <category term="智障" scheme="http://mrnobody233.gitee.io/tags/%E6%99%BA%E9%9A%9C/"/>
     
-    <category term="自言自语" scheme="http://mrnobody233.github.io/tags/%E8%87%AA%E8%A8%80%E8%87%AA%E8%AF%AD/"/>
+    <category term="自言自语" scheme="http://mrnobody233.gitee.io/tags/%E8%87%AA%E8%A8%80%E8%87%AA%E8%AF%AD/"/>
     
-    <category term="周记" scheme="http://mrnobody233.github.io/tags/%E5%91%A8%E8%AE%B0/"/>
+    <category term="周记" scheme="http://mrnobody233.gitee.io/tags/%E5%91%A8%E8%AE%B0/"/>
     
   </entry>
   
   <entry>
     <title>axios拦截器</title>
-    <link href="http://mrnobody233.github.io/2022/04/24/axios%E6%8B%A6%E6%88%AA%E5%99%A8/"/>
-    <id>http://mrnobody233.github.io/2022/04/24/axios%E6%8B%A6%E6%88%AA%E5%99%A8/</id>
+    <link href="http://mrnobody233.gitee.io/2022/04/24/axios%E6%8B%A6%E6%88%AA%E5%99%A8/"/>
+    <id>http://mrnobody233.gitee.io/2022/04/24/axios%E6%8B%A6%E6%88%AA%E5%99%A8/</id>
     <published>2022-04-24T12:45:28.000Z</published>
     <updated>2022-04-24T13:46:58.136Z</updated>
     
@@ -335,19 +335,19 @@
     
     
     
-    <category term="web前端" scheme="http://mrnobody233.github.io/categories/web%E5%89%8D%E7%AB%AF/"/>
+    <category term="web前端" scheme="http://mrnobody233.gitee.io/categories/web%E5%89%8D%E7%AB%AF/"/>
     
     
-    <category term="前端" scheme="http://mrnobody233.github.io/tags/%E5%89%8D%E7%AB%AF/"/>
+    <category term="前端" scheme="http://mrnobody233.gitee.io/tags/%E5%89%8D%E7%AB%AF/"/>
     
-    <category term="Ajax" scheme="http://mrnobody233.github.io/tags/Ajax/"/>
+    <category term="Ajax" scheme="http://mrnobody233.gitee.io/tags/Ajax/"/>
     
   </entry>
   
   <entry>
     <title>第一次拆机</title>
-    <link href="http://mrnobody233.github.io/2022/04/23/%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%8B%86%E6%9C%BA/"/>
-    <id>http://mrnobody233.github.io/2022/04/23/%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%8B%86%E6%9C%BA/</id>
+    <link href="http://mrnobody233.gitee.io/2022/04/23/%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%8B%86%E6%9C%BA/"/>
+    <id>http://mrnobody233.gitee.io/2022/04/23/%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%8B%86%E6%9C%BA/</id>
     <published>2022-04-23T15:30:17.000Z</published>
     <updated>2022-04-23T16:15:44.480Z</updated>
     
@@ -363,17 +363,17 @@
     
     
     
-    <category term="生活" scheme="http://mrnobody233.github.io/categories/%E7%94%9F%E6%B4%BB/"/>
+    <category term="生活" scheme="http://mrnobody233.gitee.io/categories/%E7%94%9F%E6%B4%BB/"/>
     
     
-    <category term="周记" scheme="http://mrnobody233.github.io/tags/%E5%91%A8%E8%AE%B0/"/>
+    <category term="周记" scheme="http://mrnobody233.gitee.io/tags/%E5%91%A8%E8%AE%B0/"/>
     
   </entry>
   
   <entry>
     <title>flex布局</title>
-    <link href="http://mrnobody233.github.io/2022/04/23/flex%E5%B8%83%E5%B1%80/"/>
-    <id>http://mrnobody233.github.io/2022/04/23/flex%E5%B8%83%E5%B1%80/</id>
+    <link href="http://mrnobody233.gitee.io/2022/04/23/flex%E5%B8%83%E5%B1%80/"/>
+    <id>http://mrnobody233.gitee.io/2022/04/23/flex%E5%B8%83%E5%B1%80/</id>
     <published>2022-04-23T08:18:52.000Z</published>
     <updated>2022-04-23T15:24:03.911Z</updated>
     
@@ -388,19 +388,19 @@
     
     
     
-    <category term="web前端" scheme="http://mrnobody233.github.io/categories/web%E5%89%8D%E7%AB%AF/"/>
+    <category term="web前端" scheme="http://mrnobody233.gitee.io/categories/web%E5%89%8D%E7%AB%AF/"/>
     
     
-    <category term="前端" scheme="http://mrnobody233.github.io/tags/%E5%89%8D%E7%AB%AF/"/>
+    <category term="前端" scheme="http://mrnobody233.gitee.io/tags/%E5%89%8D%E7%AB%AF/"/>
     
-    <category term="CSS" scheme="http://mrnobody233.github.io/tags/CSS/"/>
+    <category term="CSS" scheme="http://mrnobody233.gitee.io/tags/CSS/"/>
     
   </entry>
   
   <entry>
     <title>黑马程序员-电商管理知识总结</title>
-    <link href="http://mrnobody233.github.io/2022/04/21/%E9%BB%91%E9%A9%AC%E7%A8%8B%E5%BA%8F%E5%91%98-%E7%94%B5%E5%95%86%E7%AE%A1%E7%90%86%E7%9F%A5%E8%AF%86%E6%80%BB%E7%BB%93/"/>
-    <id>http://mrnobody233.github.io/2022/04/21/%E9%BB%91%E9%A9%AC%E7%A8%8B%E5%BA%8F%E5%91%98-%E7%94%B5%E5%95%86%E7%AE%A1%E7%90%86%E7%9F%A5%E8%AF%86%E6%80%BB%E7%BB%93/</id>
+    <link href="http://mrnobody233.gitee.io/2022/04/21/%E9%BB%91%E9%A9%AC%E7%A8%8B%E5%BA%8F%E5%91%98-%E7%94%B5%E5%95%86%E7%AE%A1%E7%90%86%E7%9F%A5%E8%AF%86%E6%80%BB%E7%BB%93/"/>
+    <id>http://mrnobody233.gitee.io/2022/04/21/%E9%BB%91%E9%A9%AC%E7%A8%8B%E5%BA%8F%E5%91%98-%E7%94%B5%E5%95%86%E7%AE%A1%E7%90%86%E7%9F%A5%E8%AF%86%E6%80%BB%E7%BB%93/</id>
     <published>2022-04-21T10:32:51.000Z</published>
     <updated>2022-04-26T04:03:33.146Z</updated>
     
@@ -417,21 +417,21 @@
     
     
     
-    <category term="web前端" scheme="http://mrnobody233.github.io/categories/web%E5%89%8D%E7%AB%AF/"/>
+    <category term="web前端" scheme="http://mrnobody233.gitee.io/categories/web%E5%89%8D%E7%AB%AF/"/>
     
     
-    <category term="前端" scheme="http://mrnobody233.github.io/tags/%E5%89%8D%E7%AB%AF/"/>
+    <category term="前端" scheme="http://mrnobody233.gitee.io/tags/%E5%89%8D%E7%AB%AF/"/>
     
-    <category term="Vue" scheme="http://mrnobody233.github.io/tags/Vue/"/>
+    <category term="Vue" scheme="http://mrnobody233.gitee.io/tags/Vue/"/>
     
-    <category term="axios" scheme="http://mrnobody233.github.io/tags/axios/"/>
+    <category term="axios" scheme="http://mrnobody233.gitee.io/tags/axios/"/>
     
   </entry>
   
   <entry>
     <title>axios</title>
-    <link href="http://mrnobody233.github.io/2022/04/19/axios/"/>
-    <id>http://mrnobody233.github.io/2022/04/19/axios/</id>
+    <link href="http://mrnobody233.gitee.io/2022/04/19/axios/"/>
+    <id>http://mrnobody233.gitee.io/2022/04/19/axios/</id>
     <published>2022-04-19T03:09:31.000Z</published>
     <updated>2022-04-21T08:13:19.943Z</updated>
     
@@ -446,19 +446,19 @@
     
     
     
-    <category term="web前端" scheme="http://mrnobody233.github.io/categories/web%E5%89%8D%E7%AB%AF/"/>
+    <category term="web前端" scheme="http://mrnobody233.gitee.io/categories/web%E5%89%8D%E7%AB%AF/"/>
     
     
-    <category term="前端" scheme="http://mrnobody233.github.io/tags/%E5%89%8D%E7%AB%AF/"/>
+    <category term="前端" scheme="http://mrnobody233.gitee.io/tags/%E5%89%8D%E7%AB%AF/"/>
     
-    <category term="Ajax" scheme="http://mrnobody233.github.io/tags/Ajax/"/>
+    <category term="Ajax" scheme="http://mrnobody233.gitee.io/tags/Ajax/"/>
     
   </entry>
   
   <entry>
     <title>凌晨校园</title>
-    <link href="http://mrnobody233.github.io/2022/04/18/%E5%87%8C%E6%99%A8%E6%A0%A1%E5%9B%AD/"/>
-    <id>http://mrnobody233.github.io/2022/04/18/%E5%87%8C%E6%99%A8%E6%A0%A1%E5%9B%AD/</id>
+    <link href="http://mrnobody233.gitee.io/2022/04/18/%E5%87%8C%E6%99%A8%E6%A0%A1%E5%9B%AD/"/>
+    <id>http://mrnobody233.gitee.io/2022/04/18/%E5%87%8C%E6%99%A8%E6%A0%A1%E5%9B%AD/</id>
     <published>2022-04-17T16:06:15.000Z</published>
     <updated>2022-04-18T13:31:48.415Z</updated>
     
@@ -473,17 +473,17 @@
     
     
     
-    <category term="生活" scheme="http://mrnobody233.github.io/categories/%E7%94%9F%E6%B4%BB/"/>
+    <category term="生活" scheme="http://mrnobody233.gitee.io/categories/%E7%94%9F%E6%B4%BB/"/>
     
     
-    <category term="智障" scheme="http://mrnobody233.github.io/tags/%E6%99%BA%E9%9A%9C/"/>
+    <category term="智障" scheme="http://mrnobody233.gitee.io/tags/%E6%99%BA%E9%9A%9C/"/>
     
   </entry>
   
   <entry>
     <title>Vuex</title>
-    <link href="http://mrnobody233.github.io/2022/04/14/Vuex/"/>
-    <id>http://mrnobody233.github.io/2022/04/14/Vuex/</id>
+    <link href="http://mrnobody233.gitee.io/2022/04/14/Vuex/"/>
+    <id>http://mrnobody233.gitee.io/2022/04/14/Vuex/</id>
     <published>2022-04-14T12:22:26.000Z</published>
     <updated>2022-06-23T11:56:32.567Z</updated>
     
@@ -498,19 +498,19 @@
     
     
     
-    <category term="web前端" scheme="http://mrnobody233.github.io/categories/web%E5%89%8D%E7%AB%AF/"/>
+    <category term="web前端" scheme="http://mrnobody233.gitee.io/categories/web%E5%89%8D%E7%AB%AF/"/>
     
     
-    <category term="前端" scheme="http://mrnobody233.github.io/tags/%E5%89%8D%E7%AB%AF/"/>
+    <category term="前端" scheme="http://mrnobody233.gitee.io/tags/%E5%89%8D%E7%AB%AF/"/>
     
-    <category term="Vue" scheme="http://mrnobody233.github.io/tags/Vue/"/>
+    <category term="Vue" scheme="http://mrnobody233.gitee.io/tags/Vue/"/>
     
   </entry>
   
   <entry>
     <title>Vue计算属性-自定义事件-watch监听器</title>
-    <link href="http://mrnobody233.github.io/2022/04/10/Vue%E8%AE%A1%E7%AE%97%E5%B1%9E%E6%80%A7-%E8%87%AA%E5%AE%9A%E4%B9%89%E4%BA%8B%E4%BB%B6-watch%E7%9B%91%E5%90%AC%E5%99%A8/"/>
-    <id>http://mrnobody233.github.io/2022/04/10/Vue%E8%AE%A1%E7%AE%97%E5%B1%9E%E6%80%A7-%E8%87%AA%E5%AE%9A%E4%B9%89%E4%BA%8B%E4%BB%B6-watch%E7%9B%91%E5%90%AC%E5%99%A8/</id>
+    <link href="http://mrnobody233.gitee.io/2022/04/10/Vue%E8%AE%A1%E7%AE%97%E5%B1%9E%E6%80%A7-%E8%87%AA%E5%AE%9A%E4%B9%89%E4%BA%8B%E4%BB%B6-watch%E7%9B%91%E5%90%AC%E5%99%A8/"/>
+    <id>http://mrnobody233.gitee.io/2022/04/10/Vue%E8%AE%A1%E7%AE%97%E5%B1%9E%E6%80%A7-%E8%87%AA%E5%AE%9A%E4%B9%89%E4%BA%8B%E4%BB%B6-watch%E7%9B%91%E5%90%AC%E5%99%A8/</id>
     <published>2022-04-10T12:11:01.000Z</published>
     <updated>2022-06-23T11:54:52.983Z</updated>
     
@@ -525,19 +525,19 @@
     
     
     
-    <category term="web前端" scheme="http://mrnobody233.github.io/categories/web%E5%89%8D%E7%AB%AF/"/>
+    <category term="web前端" scheme="http://mrnobody233.gitee.io/categories/web%E5%89%8D%E7%AB%AF/"/>
     
     
-    <category term="前端" scheme="http://mrnobody233.github.io/tags/%E5%89%8D%E7%AB%AF/"/>
+    <category term="前端" scheme="http://mrnobody233.gitee.io/tags/%E5%89%8D%E7%AB%AF/"/>
     
-    <category term="Vue" scheme="http://mrnobody233.github.io/tags/Vue/"/>
+    <category term="Vue" scheme="http://mrnobody233.gitee.io/tags/Vue/"/>
     
   </entry>
   
   <entry>
     <title>Vue数据共享</title>
-    <link href="http://mrnobody233.github.io/2022/04/10/Vue%E6%95%B0%E6%8D%AE%E5%85%B1%E4%BA%AB/"/>
-    <id>http://mrnobody233.github.io/2022/04/10/Vue%E6%95%B0%E6%8D%AE%E5%85%B1%E4%BA%AB/</id>
+    <link href="http://mrnobody233.gitee.io/2022/04/10/Vue%E6%95%B0%E6%8D%AE%E5%85%B1%E4%BA%AB/"/>
+    <id>http://mrnobody233.gitee.io/2022/04/10/Vue%E6%95%B0%E6%8D%AE%E5%85%B1%E4%BA%AB/</id>
     <published>2022-04-10T11:39:29.000Z</published>
     <updated>2022-06-23T11:54:35.941Z</updated>
     
@@ -552,12 +552,12 @@
     
     
     
-    <category term="web前端" scheme="http://mrnobody233.github.io/categories/web%E5%89%8D%E7%AB%AF/"/>
+    <category term="web前端" scheme="http://mrnobody233.gitee.io/categories/web%E5%89%8D%E7%AB%AF/"/>
     
     
-    <category term="前端" scheme="http://mrnobody233.github.io/tags/%E5%89%8D%E7%AB%AF/"/>
+    <category term="前端" scheme="http://mrnobody233.gitee.io/tags/%E5%89%8D%E7%AB%AF/"/>
     
-    <category term="Vue" scheme="http://mrnobody233.github.io/tags/Vue/"/>
+    <category term="Vue" scheme="http://mrnobody233.gitee.io/tags/Vue/"/>
     
   </entry>
   
