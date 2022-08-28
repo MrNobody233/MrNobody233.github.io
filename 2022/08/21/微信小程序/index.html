@@ -78,7 +78,7 @@ MrNobody's Blog = 保持呼吸 不要断气</title>
       <i class="ic i-pen"></i>
     </span>
     <span class="text">本文字数</span>
-    <span>4.4k</span>
+    <span>8k</span>
     <span class="text">字</span>
   </span>
   <span class="item" title="阅读时长">
@@ -86,7 +86,7 @@ MrNobody's Blog = 保持呼吸 不要断气</title>
       <i class="ic i-clock"></i>
     </span>
     <span class="text">阅读时长</span>
-    <span>4 分钟</span>
+    <span>7 分钟</span>
   </span>
 </div>
 
@@ -119,12 +119,12 @@ MrNobody's Blog = 保持呼吸 不要断气</title>
       </div>
       <div id="imgs" class="pjax">
         <ul>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gicitzannuj20zk0m8b29.jpg"></li>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gipesng5oej20zk0m87d4.jpg"></li>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gipexw3o58j20zk0m8e81.jpg"></li>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gipeudstjqj20zk0m8k3r.jpg"></li>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giclimtf7dj20zk0m8qav.jpg"></li>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gipevarprfj20zk0m8npd.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gicit31ffoj20zk0m8naf.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipexw3o58j20zk0m8e81.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gicitzannuj20zk0m8b29.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giciuv0socj20zk0m8qes.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipewf5l51j20zk0m8b29.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gicm0n457cj20zk0m8e81.jpg"></li>
         </ul>
       </div>
     </header>
@@ -491,7 +491,167 @@ MrNobody's Blog = 保持呼吸 不要断气</title>
 </ol>
 <h2 id="发起请求"><a class="markdownIt-Anchor" href="#发起请求">#</a> 发起请求</h2>
 <p>调用小程序提供的  <code>wx.request()</code>  方法，可以发起 GET 数据请求</p>
-<figure class="highlight js"><figcaption data-lang="JavaScript"></figcaption><table><tbody><tr><td data-num="1"></td><td><pre>wx<span class="token punctuation">.</span><span class="token function">request</span><span class="token punctuation">(</span><span class="token punctuation">{</span></pre></td></tr><tr><td data-num="2"></td><td><pre>    <span class="token literal-property property">url</span><span class="token operator">:</span> <span class="token string">'https://www.escook.cn/api/get'</span><span class="token punctuation">,</span> <span class="token comment">// 地址</span></pre></td></tr><tr><td data-num="3"></td><td><pre>    <span class="token literal-property property">method</span><span class="token operator">:</span> <span class="token string">'GET'</span><span class="token punctuation">,</span>   <span class="token comment">// 方法</span></pre></td></tr><tr><td data-num="4"></td><td><pre>    <span class="token literal-property property">data</span><span class="token operator">:</span> <span class="token punctuation">{</span>          <span class="token comment">// 传送的数据 </span></pre></td></tr><tr><td data-num="5"></td><td><pre>        <span class="token literal-property property">name</span><span class="token operator">:</span> <span class="token string">'zs'</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="6"></td><td><pre>        <span class="token literal-property property">age</span><span class="token operator">:</span> <span class="token number">20</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="7"></td><td><pre>    <span class="token punctuation">}</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="8"></td><td><pre>    <span class="token function-variable function">success</span><span class="token operator">:</span> <span class="token punctuation">(</span><span class="token parameter">res</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>  <span class="token comment">// 返回的结果</span></pre></td></tr><tr><td data-num="9"></td><td><pre>        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>res<span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="10"></td><td><pre>    <span class="token punctuation">}</span></pre></td></tr><tr><td data-num="11"></td><td><pre></pre></td></tr><tr><td data-num="12"></td><td><pre><span class="token punctuation">}</span><span class="token punctuation">)</span></pre></td></tr></tbody></table></figure>
+<figure class="highlight js"><figcaption data-lang="JavaScript"></figcaption><table><tbody><tr><td data-num="1"></td><td><pre>wx<span class="token punctuation">.</span><span class="token function">request</span><span class="token punctuation">(</span><span class="token punctuation">{</span></pre></td></tr><tr><td data-num="2"></td><td><pre>    <span class="token literal-property property">url</span><span class="token operator">:</span> <span class="token string">'https://www.escook.cn/api/get'</span><span class="token punctuation">,</span> <span class="token comment">// 地址</span></pre></td></tr><tr><td data-num="3"></td><td><pre>    <span class="token literal-property property">method</span><span class="token operator">:</span> <span class="token string">'GET'</span><span class="token punctuation">,</span>   <span class="token comment">// 方法</span></pre></td></tr><tr><td data-num="4"></td><td><pre>    <span class="token literal-property property">data</span><span class="token operator">:</span> <span class="token punctuation">{</span>          <span class="token comment">// 传送的数据 </span></pre></td></tr><tr><td data-num="5"></td><td><pre>        <span class="token literal-property property">name</span><span class="token operator">:</span> <span class="token string">'zs'</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="6"></td><td><pre>        <span class="token literal-property property">age</span><span class="token operator">:</span> <span class="token number">20</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="7"></td><td><pre>    <span class="token punctuation">}</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="8"></td><td><pre>    <span class="token function-variable function">success</span><span class="token operator">:</span> <span class="token punctuation">(</span><span class="token parameter">res</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>  <span class="token comment">// 返回的结果</span></pre></td></tr><tr><td data-num="9"></td><td><pre>        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>res<span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="10"></td><td><pre>    <span class="token punctuation">}</span></pre></td></tr><tr><td data-num="11"></td><td><pre></pre></td></tr><tr><td data-num="12"></td><td><pre><span class="token punctuation">}</span><span class="token punctuation">)</span></pre></td></tr></tbody></table></figure><hr>
+<h1 id="页面导航"><a class="markdownIt-Anchor" href="#页面导航">#</a> 页面导航</h1>
+<p>指页面之间的相互跳转，在小程序中实现页面导航的两种方式</p>
+<ol>
+<li>声明式导航</li>
+</ol>
+<ul>
+<li>在页面中声明一个 <code>&lt;navigator&gt;</code>  导航组件</li>
+<li>通过点击 <code>&lt;navigator&gt;</code>  组件实现页面跳转</li>
+</ul>
+<ol start="2">
+<li>编程式导航</li>
+</ol>
+<ul>
+<li>调用小程序提供的导航 API，实现页面的跳转</li>
+</ul>
+<h2 id="声明式导航"><a class="markdownIt-Anchor" href="#声明式导航">#</a> 声明式导航</h2>
+<h3 id="导航到-tabbar-页面"><a class="markdownIt-Anchor" href="#导航到-tabbar-页面">#</a> 导航到 tabBar 页面</h3>
+<p><strong>tabBar</strong> 页面指的是被配置为 tabBar 的页面<br>
+在使用 <code>&lt;navigator&gt;</code>  组件跳转到指定的 tabBar 页面时，需要指定<strong> url</strong> 属性和<strong> open-type</strong> 属性。</p>
+<ul>
+<li>url 表示要跳转的页面的地址 必须以 / 开头</li>
+<li>open-type 表示跳转的方式 如果是 tabBar 页面 必须为<strong> switchTab</strong></li>
+</ul>
+<figure class="highlight html"><figcaption data-lang="HTML"></figcaption><table><tbody><tr><td data-num="1"></td><td><pre><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>navigator</span> <span class="token attr-name">url</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>/pages/index/index<span class="token punctuation">"</span></span> <span class="token attr-name">open-type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>switchTab<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>跳转首页<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>navigator</span><span class="token punctuation">&gt;</span></span></pre></td></tr></tbody></table></figure><h3 id="跳转到非-tabbar页面"><a class="markdownIt-Anchor" href="#跳转到非-tabbar页面">#</a> 跳转到非 tabBar 页面</h3>
+<p>意思是没有被配置 tabBar 的页面</p>
+<p>只需要将属性 <strong>open-type</strong> 设置为 <strong>navigate</strong> 即可</p>
+<p>实际上不加也行，open-type 的默认值就是 navigate</p>
+<figure class="highlight html"><figcaption data-lang="HTML"></figcaption><table><tbody><tr><td data-num="1"></td><td><pre><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>navigator</span> <span class="token attr-name">url</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>/pages/info/info<span class="token punctuation">"</span></span> <span class="token attr-name">open-type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>navigate<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>跳转info页面<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>navigator</span><span class="token punctuation">&gt;</span></span></pre></td></tr></tbody></table></figure><h3 id="后退导航"><a class="markdownIt-Anchor" href="#后退导航">#</a> 后退导航</h3>
+<p>如果要后退到上一页面或多级页面，则需要指定 open-type 属性 和 delta 属性</p>
+<ul>
+<li>open-type 的值必须是 <strong>navigateBack</strong> 表示进行后退导航</li>
+<li>delta 的值必须是数字，表示后退的层级</li>
+</ul>
+<figure class="highlight html"><figcaption data-lang="HTML"></figcaption><table><tbody><tr><td data-num="1"></td><td><pre><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>navigator</span> <span class="token attr-name">open-type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>navigateBack<span class="token punctuation">"</span></span> <span class="token attr-name">delta</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>1<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>返回上一级<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>navigator</span><span class="token punctuation">&gt;</span></span></pre></td></tr></tbody></table></figure><p>也可以省略 delta 属性 ，默认值就是 1</p>
+<h2 id="编程式导航"><a class="markdownIt-Anchor" href="#编程式导航">#</a> 编程式导航</h2>
+<h3 id="跳转到-tabbar-页面"><a class="markdownIt-Anchor" href="#跳转到-tabbar-页面">#</a> 跳转到 tabBar 页面</h3>
+<p>通过  <code>wx.switchTab(Object Object)</code>  方法，可以跳转到 tabBar 页面。其中 Object 参数对象的属性列表如下</p>
+<p>其中 url 参数是必填，其他是可选</p>
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th>类型</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>url</td>
+<td>String</td>
+<td>需要跳转的 tabBar 页面的路径，路径后不能携带参数</td>
+</tr>
+<tr>
+<td>success</td>
+<td>function</td>
+<td>接口调用成功的回调函数</td>
+</tr>
+<tr>
+<td>fail</td>
+<td>function</td>
+<td>接口调用失败的回调函数</td>
+</tr>
+<tr>
+<td>complete</td>
+<td>function</td>
+<td>接口调用结束的回调函数 (调用成功，失败都会执行)</td>
+</tr>
+</tbody>
+</table>
+<figure class="highlight html"><figcaption data-lang="HTML"></figcaption><table><tbody><tr><td data-num="1"></td><td><pre><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">bindtap</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>gotoIndex<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>跳转到首页<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span></pre></td></tr></tbody></table></figure><figure class="highlight js"><figcaption data-lang="JavaScript"></figcaption><table><tbody><tr><td data-num="1"></td><td><pre><span class="token comment">// 跳转到首页</span></pre></td></tr><tr><td data-num="2"></td><td><pre>    <span class="token function">gotoIndex</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span></pre></td></tr><tr><td data-num="3"></td><td><pre>        wx<span class="token punctuation">.</span><span class="token function">switchTab</span><span class="token punctuation">(</span><span class="token punctuation">{</span></pre></td></tr><tr><td data-num="4"></td><td><pre>            <span class="token literal-property property">url</span><span class="token operator">:</span> <span class="token string">'/pages/index/index'</span></pre></td></tr><tr><td data-num="5"></td><td><pre>        <span class="token punctuation">}</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="6"></td><td><pre>    <span class="token punctuation">}</span><span class="token punctuation">,</span></pre></td></tr></tbody></table></figure><h3 id="跳转到非tabbar页面"><a class="markdownIt-Anchor" href="#跳转到非tabbar页面">#</a> 跳转到非 tabBar 页面</h3>
+<p>调用  <code>wx.navigateTo(Object Object</code>  方法，object 参数对象和上一个一样，就不做演示了</p>
+<h3 id="后退导航-2"><a class="markdownIt-Anchor" href="#后退导航-2">#</a> 后退导航</h3>
+<p>一样的，懒得说了 换成  <code>wx.navigateBack()</code>  就行 不过是 url 换成了 delta 而已</p>
+<figure class="highlight js"><figcaption data-lang="JavaScript"></figcaption><table><tbody><tr><td data-num="1"></td><td><pre><span class="token function">backOne</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span></pre></td></tr><tr><td data-num="2"></td><td><pre>    wx<span class="token punctuation">.</span><span class="token function">navigateBack</span><span class="token punctuation">(</span><span class="token punctuation">{</span></pre></td></tr><tr><td data-num="3"></td><td><pre>        <span class="token literal-property property">delta</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="4"></td><td><pre>    <span class="token punctuation">}</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="5"></td><td><pre><span class="token punctuation">}</span><span class="token punctuation">,</span></pre></td></tr></tbody></table></figure><h2 id="导航传参"><a class="markdownIt-Anchor" href="#导航传参">#</a> 导航传参</h2>
+<ol>
+<li>声明式导航传参</li>
+</ol>
+<ul>
+<li>参数与路径之间使用？分格</li>
+<li>参数键与参数值用 = 相连</li>
+<li>不同参数用 &amp; 分格</li>
+</ul>
+<figure class="highlight html"><figcaption data-lang="HTML"></figcaption><table><tbody><tr><td data-num="1"></td><td><pre><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>navigator</span> <span class="token attr-name">url</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>/pages/info/info?name=zs&amp;age=20<span class="token punctuation">"</span></span> <span class="token attr-name">open-type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>navigate<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>跳转info页面<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>navigator</span><span class="token punctuation">&gt;</span></span></pre></td></tr></tbody></table></figure><ol start="2">
+<li>
+<p>编程式导航也是一样的</p>
+</li>
+<li>
+<p>在 onLoad 中接收导航传参</p>
+</li>
+</ol>
+<p>通过声明式导航传参和编程式导航传参所携带的参数，可以直接在 onLoad 事件中直接获取到</p>
+<figure class="highlight js"><figcaption data-lang="JavaScript"></figcaption><table><tbody><tr><td data-num="1"></td><td><pre><span class="token comment">/**</span></pre></td></tr><tr><td data-num="2"></td><td><pre>     * 生命周期函数 -- 监听页面加载</pre></td></tr><tr><td data-num="3"></td><td><pre>     */</pre></td></tr><tr><td data-num="4"></td><td><pre>    <span class="token function">onLoad</span><span class="token punctuation">(</span><span class="token parameter">options</span><span class="token punctuation">)</span> <span class="token punctuation">{</span></pre></td></tr><tr><td data-num="5"></td><td><pre>        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>options<span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="6"></td><td><pre></pre></td></tr><tr><td data-num="7"></td><td><pre>    <span class="token punctuation">}</span><span class="token punctuation">,</span></pre></td></tr></tbody></table></figure><hr>
+<h1 id="页面事件"><a class="markdownIt-Anchor" href="#页面事件">#</a> 页面事件</h1>
+<h2 id="下拉刷新事件"><a class="markdownIt-Anchor" href="#下拉刷新事件">#</a> 下拉刷新事件</h2>
+<p>就是手指在屏幕的下拉滑动操作，从而重新加载页面数据</p>
+<ol>
+<li>
+<p>全局开启下拉刷新<br>
+在 app.json 的 window 节点中将 enablePullDownRefresh 设置成 true 就行</p>
+</li>
+<li>
+<p>局部开启下拉刷新</p>
+</li>
+</ol>
+<p>在对应的 json window 节点中设置就行 推荐使用第二种方式</p>
+<ol start="3">
+<li>监听页面的下拉刷新事件</li>
+</ol>
+<p>在页面的.js 文件中，通过 <code>onPullDownRefresh()</code>  函数即可监听当前的下拉刷新事件</p>
+<figure class="highlight js"><figcaption data-lang="JavaScript"></figcaption><table><tbody><tr><td data-num="1"></td><td><pre><span class="token function">onPullDownRefresh</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span></pre></td></tr><tr><td data-num="2"></td><td><pre>    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"触发了demo页面的下拉刷新"</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="3"></td><td><pre><span class="token punctuation">}</span><span class="token punctuation">,</span></pre></td></tr></tbody></table></figure><ol start="4">
+<li><strong>停止下拉刷新的效果</strong></li>
+</ol>
+<p>当处理完下拉刷新后，loading 效果会一直显示，不会主动消失，调用 <code>wx.stopPullDownRefresh()</code>  就可以停止当前页面的下拉刷新</p>
+<figure class="highlight js"><figcaption data-lang="JavaScript"></figcaption><table><tbody><tr><td data-num="1"></td><td><pre><span class="token function">onPullDownRefresh</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span></pre></td></tr><tr><td data-num="2"></td><td><pre>        <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">setData</span><span class="token punctuation">(</span><span class="token punctuation">{</span></pre></td></tr><tr><td data-num="3"></td><td><pre>            <span class="token literal-property property">number</span><span class="token operator">:</span> <span class="token keyword">this</span><span class="token punctuation">.</span>data<span class="token punctuation">.</span>number <span class="token operator">+</span> <span class="token number">1</span></pre></td></tr><tr><td data-num="4"></td><td><pre>        <span class="token punctuation">}</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="5"></td><td><pre>        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"触发了demo页面的下拉刷新"</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="6"></td><td><pre>        wx<span class="token punctuation">.</span><span class="token function">stopPullDownRefresh</span><span class="token punctuation">(</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="7"></td><td><pre>    <span class="token punctuation">}</span><span class="token punctuation">,</span></pre></td></tr></tbody></table></figure><h2 id="上拉触底事件"><a class="markdownIt-Anchor" href="#上拉触底事件">#</a> 上拉触底事件</h2>
+<p>通过手指在屏幕上的上拉滑动操作，从而加载更多数据的行为</p>
+<ol>
+<li>监听页面的上拉触底事件</li>
+</ol>
+<p>在页面的.js 文件中，通过 <code>onReachBottom()</code>  函数即可监听当前页面的上拉触底事件</p>
+<ol start="2">
+<li>配置上拉触底距离</li>
+</ol>
+<p>触发上拉触底事件时，滚动条距离页面底部的距离<br>
+可以在.json 文件中 通过  <code>onReachBottomDistance</code>  来配置触底的距离 默认为 50px</p>
+<ol start="3">
+<li>添加 loading 提示效果</li>
+</ol>
+<p>wx.showLoading () 可以显示 loading 提示框效果<br>
+ wx.hideLoading () 关闭提示效果</p>
+<figure class="highlight js"><figcaption data-lang="JavaScript"></figcaption><table><tbody><tr><td data-num="1"></td><td><pre><span class="token function">getColors</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span></pre></td></tr><tr><td data-num="2"></td><td><pre>  wx<span class="token punctuation">.</span><span class="token function">showLoading</span><span class="token punctuation">(</span><span class="token punctuation">{</span></pre></td></tr><tr><td data-num="3"></td><td><pre>      <span class="token literal-property property">title</span><span class="token operator">:</span> <span class="token string">'数据加载中...'</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="4"></td><td><pre>  <span class="token punctuation">}</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="5"></td><td><pre>  wx<span class="token punctuation">.</span><span class="token function">request</span><span class="token punctuation">(</span><span class="token punctuation">{</span></pre></td></tr><tr><td data-num="6"></td><td><pre>      <span class="token literal-property property">url</span><span class="token operator">:</span> <span class="token string">'https://www.escook.cn/api/color'</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="7"></td><td><pre>      <span class="token literal-property property">method</span><span class="token operator">:</span> <span class="token string">"GET"</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="8"></td><td><pre>      <span class="token function-variable function">success</span><span class="token operator">:</span> <span class="token punctuation">(</span><span class="token parameter">res</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span></pre></td></tr><tr><td data-num="9"></td><td><pre>          <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">setData</span><span class="token punctuation">(</span><span class="token punctuation">{</span></pre></td></tr><tr><td data-num="10"></td><td><pre>              <span class="token literal-property property">colorList</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token operator">...</span><span class="token keyword">this</span><span class="token punctuation">.</span>data<span class="token punctuation">.</span>colorList<span class="token punctuation">,</span> <span class="token operator">...</span>res<span class="token punctuation">.</span>data<span class="token punctuation">.</span>data<span class="token punctuation">]</span></pre></td></tr><tr><td data-num="11"></td><td><pre>          <span class="token punctuation">}</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="12"></td><td><pre>      <span class="token punctuation">}</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="13"></td><td><pre>      <span class="token function-variable function">complete</span><span class="token operator">:</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span></pre></td></tr><tr><td data-num="14"></td><td><pre>          wx<span class="token punctuation">.</span><span class="token function">hideLoading</span><span class="token punctuation">(</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="15"></td><td><pre>      <span class="token punctuation">}</span></pre></td></tr><tr><td data-num="16"></td><td><pre>  <span class="token punctuation">}</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="17"></td><td><pre><span class="token punctuation">}</span><span class="token punctuation">,</span></pre></td></tr></tbody></table></figure><hr>
+<h1 id="生命周期"><a class="markdownIt-Anchor" href="#生命周期">#</a> 生命周期</h1>
+<p>指一个对象从 创建 -&gt; 运行 -&gt; 销毁 的整个阶段，强调的是一个时间段</p>
+<ol>
+<li>应用的生命周期函数</li>
+</ol>
+<p>小程序的生命周期函数需要在 app.js 中进行申明</p>
+<figure class="highlight js"><figcaption data-lang="JavaScript"></figcaption><table><tbody><tr><td data-num="1"></td><td><pre><span class="token function">App</span><span class="token punctuation">(</span><span class="token punctuation">{</span></pre></td></tr><tr><td data-num="2"></td><td><pre>  <span class="token comment">//  小程序初始化完成时，执行此函数，全局只触发一次，可以做初始化的工作</span></pre></td></tr><tr><td data-num="3"></td><td><pre>  <span class="token function">onLaunch</span><span class="token punctuation">(</span><span class="token parameter">options</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>，</pre></td></tr><tr><td data-num="4"></td><td><pre>     </pre></td></tr><tr><td data-num="5"></td><td><pre>  <span class="token comment">//  小程序启动。或从后台进入前台显示时触发</span></pre></td></tr><tr><td data-num="6"></td><td><pre>  <span class="token function">onShow</span><span class="token punctuation">(</span><span class="token parameter">options</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="7"></td><td><pre></pre></td></tr><tr><td data-num="8"></td><td><pre>  <span class="token comment">// 小程序从前台进入后台时触发</span></pre></td></tr><tr><td data-num="9"></td><td><pre>  <span class="token function">onHide</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span><span class="token punctuation">}</span></pre></td></tr><tr><td data-num="10"></td><td><pre></pre></td></tr><tr><td data-num="11"></td><td><pre><span class="token punctuation">}</span><span class="token punctuation">)</span></pre></td></tr></tbody></table></figure><ol start="2">
+<li>页面的生命周期函数</li>
+</ol>
+<p>小程序的页面生命周期函数需要在页面的.js 文件中进行声明</p>
+<figure class="highlight js"><figcaption data-lang="JavaScript"></figcaption><table><tbody><tr><td data-num="1"></td><td><pre><span class="token function">Page</span><span class="token punctuation">(</span><span class="token punctuation">{</span></pre></td></tr><tr><td data-num="2"></td><td><pre>  <span class="token function">onLoad</span><span class="token punctuation">(</span><span class="token parameter">options</span><span class="token punctuation">)</span><span class="token punctuation">{</span><span class="token punctuation">}</span> <span class="token comment">// 监听页面加载，一个页面只调用一次</span></pre></td></tr><tr><td data-num="3"></td><td><pre>  <span class="token function">onShow</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span><span class="token punctuation">}</span>        <span class="token comment">// 监听页面显示</span></pre></td></tr><tr><td data-num="4"></td><td><pre>  <span class="token function">onReady</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span><span class="token punctuation">}</span>       <span class="token comment">// 监听页面初次渲染完成，一个页面只调用一次</span></pre></td></tr><tr><td data-num="5"></td><td><pre>  <span class="token function">onHide</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span><span class="token punctuation">}</span>        <span class="token comment">// 监听页面隐藏</span></pre></td></tr><tr><td data-num="6"></td><td><pre>  <span class="token function">onUnload</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span><span class="token punctuation">}</span>      <span class="token comment">// 监听页面卸载，一个页面只调用一次</span></pre></td></tr><tr><td data-num="7"></td><td><pre><span class="token punctuation">}</span><span class="token punctuation">)</span></pre></td></tr></tbody></table></figure><hr>
+<h1 id="wxs脚本"><a class="markdownIt-Anchor" href="#wxs脚本">#</a> WXS 脚本</h1>
+<p>wxs 代码可以编写在 wxml 文件的  <code>&lt;wxs&gt;</code>  标签中，就好像 html 中的  <code>&lt;script&gt;</code>  标签内一样</p>
+<ol>
+<li>内嵌 wxs 脚本<br>
+ wxml 文件中的每个<wxs></wxs>标签，必须提供 module 属性 ，用来指定当前 wxs 的模块名称 方便 wxml 中访问模块中的成员</li>
+</ol>
+<figure class="highlight js"><figcaption data-lang="JavaScript"></figcaption><table><tbody><tr><td data-num="1"></td><td><pre><span class="token operator">&lt;</span>view<span class="token operator">&gt;</span><span class="token operator">&lt;</span><span class="token operator">!</span><span class="token operator">--</span>swig￼<span class="token number">6</span><span class="token operator">--</span><span class="token operator">&gt;</span><span class="token operator">&lt;</span><span class="token operator">/</span>view<span class="token operator">&gt;</span></pre></td></tr><tr><td data-num="2"></td><td><pre></pre></td></tr><tr><td data-num="3"></td><td><pre><span class="token operator">&lt;</span>wxs module<span class="token operator">=</span><span class="token string">"demo"</span><span class="token operator">&gt;</span></pre></td></tr><tr><td data-num="4"></td><td><pre>    <span class="token comment">// 将文本转为大写 如 zs=&gt; ZS</span></pre></td></tr><tr><td data-num="5"></td><td><pre>    module<span class="token punctuation">.</span>exports<span class="token punctuation">.</span><span class="token function-variable function">toUpper</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">str</span><span class="token punctuation">)</span> <span class="token punctuation">{</span></pre></td></tr><tr><td data-num="6"></td><td><pre>        <span class="token keyword">return</span> str<span class="token punctuation">.</span><span class="token function">toUpperCase</span><span class="token punctuation">(</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="7"></td><td><pre>    <span class="token punctuation">}</span></pre></td></tr><tr><td data-num="8"></td><td><pre><span class="token operator">&lt;</span><span class="token operator">/</span>wxs<span class="token operator">&gt;</span></pre></td></tr></tbody></table></figure><p>一般用来当过滤器来使用</p>
+<ol start="2">
+<li>定义外联的 wxs 脚本</li>
+</ol>
+<p>就好像 javascript 可以编写在.js 后缀的文件中…</p>
+<figure class="highlight js"><figcaption data-lang="JavaScript"></figcaption><table><tbody><tr><td data-num="1"></td><td><pre><span class="token comment">//tools.wxs 文件</span></pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token comment">// 字母小写</span></pre></td></tr><tr><td data-num="3"></td><td><pre><span class="token keyword">function</span> <span class="token function">toLower</span><span class="token punctuation">(</span><span class="token parameter">str</span><span class="token punctuation">)</span><span class="token punctuation">{</span></pre></td></tr><tr><td data-num="4"></td><td><pre>  <span class="token keyword">return</span> str<span class="token punctuation">.</span><span class="token function">toLowerCase</span><span class="token punctuation">(</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="5"></td><td><pre><span class="token punctuation">}</span></pre></td></tr><tr><td data-num="6"></td><td><pre></pre></td></tr><tr><td data-num="7"></td><td><pre>module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span></pre></td></tr><tr><td data-num="8"></td><td><pre>  <span class="token literal-property property">toLower</span><span class="token operator">:</span> toLower</pre></td></tr><tr><td data-num="9"></td><td><pre><span class="token punctuation">}</span></pre></td></tr></tbody></table></figure><ol start="3">
+<li>使用外联的 wxs 脚本</li>
+</ol>
+<ul>
+<li>module 用来指定模块的名称</li>
+<li>src 用来指定要引入的脚本路径，必须是相对路径</li>
+</ul>
+<figure class="highlight html"><figcaption data-lang="HTML"></figcaption><table><tbody><tr><td data-num="1"></td><td><pre><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>view</span><span class="token punctuation">&gt;</span></span> {m2.toLower("LS")}<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>view</span><span class="token punctuation">&gt;</span></span></pre></td></tr><tr><td data-num="2"></td><td><pre></pre></td></tr><tr><td data-num="3"></td><td><pre><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>wxs</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>../../utils/tools.wxs<span class="token punctuation">"</span></span> <span class="token attr-name">module</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>m2<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>wxs</span><span class="token punctuation">&gt;</span></span></pre></td></tr></tbody></table></figure>
       <div class="tags">
           <a href="/tags/%E5%89%8D%E7%AB%AF/" rel="tag"><i class="ic i-tag"></i> 前端</a>
           <a href="/tags/%E5%B0%8F%E7%A8%8B%E5%BA%8F/" rel="tag"><i class="ic i-tag"></i> 小程序</a>
@@ -506,7 +666,7 @@ MrNobody's Blog = 保持呼吸 不要断气</title>
       <i class="ic i-calendar-check"></i>
     </span>
     <span class="text">更新于</span>
-    <time title="修改时间：2022-08-25 19:13:49" itemprop="dateModified" datetime="2022-08-25T19:13:49+08:00">2022-08-25</time>
+    <time title="修改时间：2022-08-28 20:04:28" itemprop="dateModified" datetime="2022-08-28T20:04:28+08:00">2022-08-28</time>
   </span>
 </div>
 
@@ -561,7 +721,7 @@ MrNobody's Blog = 保持呼吸 不要断气</title>
     <div class="item left">
       
 
-  <a href="/2022/08/10/%E9%95%BF%E6%B2%99%E4%B9%8B%E6%97%85/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva1.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipexoj0moj20zk0m8kgu.jpg" title="长沙之旅">
+  <a href="/2022/08/10/%E9%95%BF%E6%B2%99%E4%B9%8B%E6%97%85/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva3.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giclgi503lj20zk0m8hdt.jpg" title="长沙之旅">
   <span class="type">上一篇</span>
   <span class="category"><i class="ic i-flag"></i> 生活</span>
   <h3>长沙之旅</h3>
@@ -571,7 +731,7 @@ MrNobody's Blog = 保持呼吸 不要断气</title>
     <div class="item right">
       
 
-  <a href="/2022/08/29/%E5%BC%80%E5%AD%A6%E5%89%8D/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva1.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giclwrdwyaj20zk0m8are.jpg" title="开学前">
+  <a href="/2022/08/29/%E5%BC%80%E5%AD%A6%E5%89%8D/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva3.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipeun65urj20zk0m81ii.jpg" title="开学前">
   <span class="type">下一篇</span>
   <span class="category"><i class="ic i-flag"></i> 生活</span>
   <h3>开学前</h3>
@@ -593,7 +753,7 @@ MrNobody's Blog = 保持呼吸 不要断气</title>
   <div class="panels">
     <div class="inner">
       <div class="contents panel pjax" data-title="文章目录">
-          <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#wxml-%E5%92%8C-html-%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="toc-number">1.</span> <span class="toc-text"> WXML 和 HTMl 的区别</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#wxss"><span class="toc-number">2.</span> <span class="toc-text"> WXSS</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8C%BA%E5%88%AB"><span class="toc-number">2.1.</span> <span class="toc-text"> 区别</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%BB%84%E4%BB%B6"><span class="toc-number">3.</span> <span class="toc-text"> 组件</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B8%B8%E8%A7%81%E7%9A%84%E7%BB%84%E4%BB%B6"><span class="toc-number">3.1.</span> <span class="toc-text"> 常见的组件</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#wxml-%E6%A8%A1%E6%9D%BF%E8%AF%AD%E6%B3%95"><span class="toc-number">4.</span> <span class="toc-text"> WXML 模板语法</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E7%BB%91%E5%AE%9A"><span class="toc-number">4.1.</span> <span class="toc-text"> 数据绑定</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8B%E4%BB%B6%E7%BB%91%E5%AE%9A"><span class="toc-number">4.2.</span> <span class="toc-text"> 事件绑定</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9D%A1%E4%BB%B6%E6%B8%B2%E6%9F%93"><span class="toc-number">4.3.</span> <span class="toc-text"> 条件渲染</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%97%E8%A1%A8%E6%B8%B2%E6%9F%93"><span class="toc-number">4.4.</span> <span class="toc-text"> 列表渲染</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%85%A8%E5%B1%80%E9%85%8D%E7%BD%AE"><span class="toc-number">5.</span> <span class="toc-text"> 全局配置</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B8%B8%E7%94%A8%E9%85%8D%E7%BD%AE%E9%A1%B9%E7%9B%AE"><span class="toc-number">5.1.</span> <span class="toc-text"> 常用配置项目</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#window%E8%8A%82%E7%82%B9%E5%B8%B8%E7%94%A8%E7%9A%84%E9%85%8D%E7%BD%AE%E9%A1%B9"><span class="toc-number">5.2.</span> <span class="toc-text"> window 节点常用的配置项</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#tabbar"><span class="toc-number">5.3.</span> <span class="toc-text"> tabBar</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#tabbar%E7%9A%846%E4%B8%AA%E7%BB%84%E6%88%90%E9%83%A8%E5%88%86"><span class="toc-number">5.3.1.</span> <span class="toc-text"> tabBar 的 6 个组成部分</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#tabbar%E8%8A%82%E7%82%B9%E9%85%8D%E7%BD%AE%E9%A1%B9"><span class="toc-number">5.3.2.</span> <span class="toc-text"> tabBar 节点配置项</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%BD%91%E7%BB%9C%E6%95%B0%E6%8D%AE%E8%AF%B7%E6%B1%82"><span class="toc-number">6.</span> <span class="toc-text"> 网络数据请求</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%99%90%E5%88%B6"><span class="toc-number">6.1.</span> <span class="toc-text"> 限制</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8F%91%E8%B5%B7%E8%AF%B7%E6%B1%82"><span class="toc-number">6.2.</span> <span class="toc-text"> 发起请求</span></a></li></ol></li></ol>
+          <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#wxml-%E5%92%8C-html-%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="toc-number">1.</span> <span class="toc-text"> WXML 和 HTMl 的区别</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#wxss"><span class="toc-number">2.</span> <span class="toc-text"> WXSS</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8C%BA%E5%88%AB"><span class="toc-number">2.1.</span> <span class="toc-text"> 区别</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%BB%84%E4%BB%B6"><span class="toc-number">3.</span> <span class="toc-text"> 组件</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B8%B8%E8%A7%81%E7%9A%84%E7%BB%84%E4%BB%B6"><span class="toc-number">3.1.</span> <span class="toc-text"> 常见的组件</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#wxml-%E6%A8%A1%E6%9D%BF%E8%AF%AD%E6%B3%95"><span class="toc-number">4.</span> <span class="toc-text"> WXML 模板语法</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E7%BB%91%E5%AE%9A"><span class="toc-number">4.1.</span> <span class="toc-text"> 数据绑定</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8B%E4%BB%B6%E7%BB%91%E5%AE%9A"><span class="toc-number">4.2.</span> <span class="toc-text"> 事件绑定</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9D%A1%E4%BB%B6%E6%B8%B2%E6%9F%93"><span class="toc-number">4.3.</span> <span class="toc-text"> 条件渲染</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%97%E8%A1%A8%E6%B8%B2%E6%9F%93"><span class="toc-number">4.4.</span> <span class="toc-text"> 列表渲染</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%85%A8%E5%B1%80%E9%85%8D%E7%BD%AE"><span class="toc-number">5.</span> <span class="toc-text"> 全局配置</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B8%B8%E7%94%A8%E9%85%8D%E7%BD%AE%E9%A1%B9%E7%9B%AE"><span class="toc-number">5.1.</span> <span class="toc-text"> 常用配置项目</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#window%E8%8A%82%E7%82%B9%E5%B8%B8%E7%94%A8%E7%9A%84%E9%85%8D%E7%BD%AE%E9%A1%B9"><span class="toc-number">5.2.</span> <span class="toc-text"> window 节点常用的配置项</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#tabbar"><span class="toc-number">5.3.</span> <span class="toc-text"> tabBar</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#tabbar%E7%9A%846%E4%B8%AA%E7%BB%84%E6%88%90%E9%83%A8%E5%88%86"><span class="toc-number">5.3.1.</span> <span class="toc-text"> tabBar 的 6 个组成部分</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#tabbar%E8%8A%82%E7%82%B9%E9%85%8D%E7%BD%AE%E9%A1%B9"><span class="toc-number">5.3.2.</span> <span class="toc-text"> tabBar 节点配置项</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%BD%91%E7%BB%9C%E6%95%B0%E6%8D%AE%E8%AF%B7%E6%B1%82"><span class="toc-number">6.</span> <span class="toc-text"> 网络数据请求</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%99%90%E5%88%B6"><span class="toc-number">6.1.</span> <span class="toc-text"> 限制</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8F%91%E8%B5%B7%E8%AF%B7%E6%B1%82"><span class="toc-number">6.2.</span> <span class="toc-text"> 发起请求</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E9%A1%B5%E9%9D%A2%E5%AF%BC%E8%88%AA"><span class="toc-number">7.</span> <span class="toc-text"> 页面导航</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A3%B0%E6%98%8E%E5%BC%8F%E5%AF%BC%E8%88%AA"><span class="toc-number">7.1.</span> <span class="toc-text"> 声明式导航</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AF%BC%E8%88%AA%E5%88%B0-tabbar-%E9%A1%B5%E9%9D%A2"><span class="toc-number">7.1.1.</span> <span class="toc-text"> 导航到 tabBar 页面</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%B7%B3%E8%BD%AC%E5%88%B0%E9%9D%9E-tabbar%E9%A1%B5%E9%9D%A2"><span class="toc-number">7.1.2.</span> <span class="toc-text"> 跳转到非 tabBar 页面</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%90%8E%E9%80%80%E5%AF%BC%E8%88%AA"><span class="toc-number">7.1.3.</span> <span class="toc-text"> 后退导航</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BC%96%E7%A8%8B%E5%BC%8F%E5%AF%BC%E8%88%AA"><span class="toc-number">7.2.</span> <span class="toc-text"> 编程式导航</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%B7%B3%E8%BD%AC%E5%88%B0-tabbar-%E9%A1%B5%E9%9D%A2"><span class="toc-number">7.2.1.</span> <span class="toc-text"> 跳转到 tabBar 页面</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%B7%B3%E8%BD%AC%E5%88%B0%E9%9D%9Etabbar%E9%A1%B5%E9%9D%A2"><span class="toc-number">7.2.2.</span> <span class="toc-text"> 跳转到非 tabBar 页面</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%90%8E%E9%80%80%E5%AF%BC%E8%88%AA-2"><span class="toc-number">7.2.3.</span> <span class="toc-text"> 后退导航</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AF%BC%E8%88%AA%E4%BC%A0%E5%8F%82"><span class="toc-number">7.3.</span> <span class="toc-text"> 导航传参</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E9%A1%B5%E9%9D%A2%E4%BA%8B%E4%BB%B6"><span class="toc-number">8.</span> <span class="toc-text"> 页面事件</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%8B%E6%8B%89%E5%88%B7%E6%96%B0%E4%BA%8B%E4%BB%B6"><span class="toc-number">8.1.</span> <span class="toc-text"> 下拉刷新事件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%8A%E6%8B%89%E8%A7%A6%E5%BA%95%E4%BA%8B%E4%BB%B6"><span class="toc-number">8.2.</span> <span class="toc-text"> 上拉触底事件</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F"><span class="toc-number">9.</span> <span class="toc-text"> 生命周期</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#wxs%E8%84%9A%E6%9C%AC"><span class="toc-number">10.</span> <span class="toc-text"> WXS 脚本</span></a></li></ol>
       </div>
       <div class="related panel pjax" data-title="系列文章">
         <ul>
@@ -717,6 +877,16 @@ MrNobody's Blog = 保持呼吸 不要断气</title>
 <a href="/categories/web%E5%89%8D%E7%AB%AF/" title="分类于 web前端">web前端</a>
 </div>
 
+    <span><a href="/2022/04/24/axios%E6%8B%A6%E6%88%AA%E5%99%A8/" title="axios拦截器">axios拦截器</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/web%E5%89%8D%E7%AB%AF/" title="分类于 web前端">web前端</a>
+</div>
+
     <span><a href="/2022/08/04/Vue%E6%87%92%E5%8A%A0%E8%BD%BD/" title="Vue懒加载">Vue懒加载</a></span>
   </li>
 
@@ -727,17 +897,7 @@ MrNobody's Blog = 保持呼吸 不要断气</title>
 <a href="/categories/web%E5%89%8D%E7%AB%AF/" title="分类于 web前端">web前端</a>
 </div>
 
-    <span><a href="/2022/04/01/Vue%E7%BB%84%E4%BB%B6%E5%92%8Cprops/" title="Vue组件和props">Vue组件和props</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/%E7%94%9F%E6%B4%BB/" title="分类于 生活">生活</a>
-</div>
-
-    <span><a href="/2022/04/23/%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%8B%86%E6%9C%BA/" title="第一次拆机">第一次拆机</a></span>
+    <span><a href="/2022/05/30/Vuex%E6%8C%81%E4%B9%85%E5%8C%96/" title="Vuex持久化">Vuex持久化</a></span>
   </li>
 
       
@@ -747,27 +907,7 @@ MrNobody's Blog = 保持呼吸 不要断气</title>
 <a href="/categories/web%E5%89%8D%E7%AB%AF/" title="分类于 web前端">web前端</a>
 </div>
 
-    <span><a href="/2022/03/26/Vue%E6%8C%87%E4%BB%A4/" title="Vue指令">Vue指令</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/%E7%94%9F%E6%B4%BB/" title="分类于 生活">生活</a>
-</div>
-
-    <span><a href="/2022/04/02/Markor/" title="Markor">Markor</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/%E7%94%9F%E6%B4%BB/" title="分类于 生活">生活</a>
-</div>
-
-    <span><a href="/2022/05/17/%E5%BE%85%E5%8A%9E%E4%BA%8B%E9%A1%B9/" title="待办事项">待办事项</a></span>
+    <span><a href="/2022/04/19/axios/" title="axios">axios</a></span>
   </li>
 
       
@@ -787,7 +927,37 @@ MrNobody's Blog = 保持呼吸 不要断气</title>
 <a href="/categories/%E7%94%9F%E6%B4%BB/" title="分类于 生活">生活</a>
 </div>
 
-    <span><a href="/2022/08/10/%E9%95%BF%E6%B2%99%E4%B9%8B%E6%97%85/" title="长沙之旅">长沙之旅</a></span>
+    <span><a href="/2022/04/25/%E6%B5%85%E5%BA%A6%E7%9D%A1%E7%9C%A0/" title="浅度睡眠">浅度睡眠</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/web%E5%89%8D%E7%AB%AF/" title="分类于 web前端">web前端</a>
+</div>
+
+    <span><a href="/2022/04/21/%E9%BB%91%E9%A9%AC%E7%A8%8B%E5%BA%8F%E5%91%98-%E7%94%B5%E5%95%86%E7%AE%A1%E7%90%86%E7%9F%A5%E8%AF%86%E6%80%BB%E7%BB%93/" title="黑马程序员-电商管理知识总结">黑马程序员-电商管理知识总结</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E7%94%9F%E6%B4%BB/" title="分类于 生活">生活</a>
+</div>
+
+    <span><a href="/2022/03/25/%E4%B8%8D%E8%A6%81%E8%A2%AB%E5%A4%96%E8%A1%A8%E8%BF%B7%E6%83%91/" title="不要被外表迷惑">不要被外表迷惑</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/web%E5%89%8D%E7%AB%AF/" title="分类于 web前端">web前端</a>
+</div>
+
+    <span><a href="/2022/05/20/vue3-vuex/" title="Vue3-vuex">Vue3-vuex</a></span>
   </li>
 
       
@@ -798,16 +968,6 @@ MrNobody's Blog = 保持呼吸 不要断气</title>
 </div>
 
     <span><a href="/2022/04/10/Vue%E8%AE%A1%E7%AE%97%E5%B1%9E%E6%80%A7-%E8%87%AA%E5%AE%9A%E4%B9%89%E4%BA%8B%E4%BB%B6-watch%E7%9B%91%E5%90%AC%E5%99%A8/" title="Vue计算属性-自定义事件-watch监听器">Vue计算属性-自定义事件-watch监听器</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/%E7%94%9F%E6%B4%BB/" title="分类于 生活">生活</a>
-</div>
-
-    <span><a href="/2022/05/10/%E7%BD%91%E7%AB%99%E8%AE%BE%E8%AE%A1%E5%A4%A7%E8%B5%9B/" title="网站设计大赛">网站设计大赛</a></span>
   </li>
 
   </ul>
@@ -828,13 +988,13 @@ MrNobody's Blog = 保持呼吸 不要断气</title>
     <span class="post-meta-item-icon">
       <i class="ic i-chart-area"></i>
     </span>
-    <span title="站点总字数">75k 字</span>
+    <span title="站点总字数">78k 字</span>
 
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="ic i-coffee"></i>
     </span>
-    <span title="站点阅读时长">1:08</span>
+    <span title="站点阅读时长">1:11</span>
   </div>
   <div class="powered-by">
     基于 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & Theme.<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2FtZWhpbWUvaGV4by10aGVtZS1zaG9rYQ==">Shoka</span>
