@@ -289,26 +289,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Vuex持久化</title>
-    <url>/2022/05/30/Vuex%E6%8C%81%E4%B9%85%E5%8C%96/</url>
-    <content><![CDATA[<h1 id="vuex持久化"><a class="markdownIt-Anchor" href="#vuex持久化">#</a> vuex 持久化</h1>
-<p>vuex 可以进行全局的状态管理，在开发的过程中，用户的各种信息（<strong>用户名</strong>，<strong>token</strong>，<strong>头像</strong>），需要 vuex 中存储，并且本地存储，我们可以安装一个 vuex 的插件 <code>vuex-persistedstate</code>  来支持 vuex 的状态持久化，免去自己存储的环节。</p>
-<ol>
-<li>安装 <code>vuex-persistedstate</code>  来支持 vuex 的状态持久化</li>
-</ol>
-<figure class="highlight js"><figcaption data-lang="JavaScript"></figcaption><table><tbody><tr><td data-num="1"></td><td><pre>npm i vuex<span class="token operator">-</span>persistedstate</pre></td></tr></tbody></table></figure><ol start="2">
-<li>在 <code>store/index.js</code>  中导入和配置</li>
-</ol>
-<figure class="highlight js"><figcaption data-lang="JavaScript"></figcaption><table><tbody><tr><td data-num="1"></td><td><pre><span class="token keyword">import</span> <span class="token punctuation">{</span>createStore<span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'vuex'</span></pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token keyword">import</span> <span class="token punctuation">{</span>modulesA<span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">"@/store/modules/modulesA"</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="3"></td><td><pre><span class="token keyword">import</span> createPersistedState <span class="token keyword">from</span> <span class="token string">'vuex-persistedstate'</span></pre></td></tr><tr><td data-num="4"></td><td><pre></pre></td></tr><tr><td data-num="5"></td><td><pre><span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token function">createStore</span><span class="token punctuation">(</span><span class="token punctuation">{</span></pre></td></tr><tr><td data-num="6"></td><td><pre>    <span class="token literal-property property">modules</span><span class="token operator">:</span> <span class="token punctuation">{</span></pre></td></tr><tr><td data-num="7"></td><td><pre>        modulesA</pre></td></tr><tr><td data-num="8"></td><td><pre>    <span class="token punctuation">}</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="9"></td><td><pre>    <span class="token comment">// 配置插件</span></pre></td></tr><tr><td data-num="10"></td><td><pre>    <span class="token literal-property property">plugins</span><span class="token operator">:</span> <span class="token punctuation">[</span></pre></td></tr><tr><td data-num="11"></td><td><pre>        <span class="token function">createPersistedState</span><span class="token punctuation">(</span><span class="token punctuation">{</span></pre></td></tr><tr><td data-num="12"></td><td><pre>            <span class="token comment">// 本地存储的名字</span></pre></td></tr><tr><td data-num="13"></td><td><pre>            <span class="token literal-property property">key</span><span class="token operator">:</span> <span class="token string">'demo-store'</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="14"></td><td><pre>            <span class="token comment">// 指定需要存储的模块</span></pre></td></tr><tr><td data-num="15"></td><td><pre>            <span class="token literal-property property">path</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">'modulesA'</span><span class="token punctuation">]</span></pre></td></tr><tr><td data-num="16"></td><td><pre>        <span class="token punctuation">}</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="17"></td><td><pre>    <span class="token punctuation">]</span></pre></td></tr><tr><td data-num="18"></td><td><pre><span class="token punctuation">}</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="19"></td><td><pre><span class="token comment">// 默认是存储到 localStorage</span></pre></td></tr></tbody></table></figure>]]></content>
-      <categories>
-        <category>web前端</category>
-      </categories>
-      <tags>
-        <tag>前端</tag>
-        <tag>Vue</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Vue动画</title>
     <url>/2022/08/01/Vue%E5%8A%A8%E7%94%BB/</url>
     <content><![CDATA[<p>当 vue 中，显示隐藏，创建移除，一个元素或者一个组件的时候，可以通过 <code>transition</code>  实现动画。</p>
@@ -395,6 +375,86 @@
 </ol>
 <figure class="highlight js"><figcaption data-lang="JavaScript"></figcaption><table><tbody><tr><td data-num="1"></td><td><pre><span class="token operator">&lt;</span>div<span class="token operator">&gt;</span></pre></td></tr><tr><td data-num="2"></td><td><pre> <span class="token operator">&lt;</span>img alt<span class="token operator">=</span><span class="token string">""</span> v<span class="token operator">-</span>lazy<span class="token operator">=</span><span class="token string">"list.picture"</span> <span class="token operator">/</span><span class="token operator">&gt;</span></pre></td></tr><tr><td data-num="3"></td><td><pre><span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">&gt;</span></pre></td></tr></tbody></table></figure><p>4. 上一个方法可以看见加载失败的图片，这个方法不可以，在没有找到更好的方法之前，还是先用上一个方法吧。</p>
 ]]></content>
+      <categories>
+        <category>web前端</category>
+      </categories>
+      <tags>
+        <tag>前端</tag>
+        <tag>Vue</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Vue指令</title>
+    <url>/2022/03/26/Vue%E6%8C%87%E4%BB%A4/</url>
+    <content><![CDATA[<h3 id="vue指令"><a class="markdownIt-Anchor" href="#vue指令">#</a> Vue 指令</h3>
+<p>虽然学习完了 Vue，但还有许多地方木有掌握，所以今天就来复习一下 Vue 还没有掌握的指令</p>
+<ul>
+<li>
+<p>按键修饰符</p>
+</li>
+<li>
+<p>条件渲染指令</p>
+</li>
+<li>
+<p>循环渲染指令</p>
+<p>虽然只有一些内容，但还是要认真的写下去，不然就得去平板看我写的丑不拉几的字，我实在不忍心看下去，这也是在这里复习的原因之一。</p>
+</li>
+</ul>
+<hr>
+<h4 id="按键修饰符"><a class="markdownIt-Anchor" href="#按键修饰符">#</a> 按键修饰符</h4>
+<p>在监听<strong>键盘</strong>事件的时候，我们需要判断详细的按键，此时，可以为<strong>键盘相关的事件</strong>添加<strong>按键修饰符</strong></p>
+<p>举一个非常简单的案例，当我们在登录页面输入完密码之后，按下<strong>回车键</strong>后使用 Ajax 发送数据 如何实现捏？</p>
+<p>我们可以使用  <code>@keyup</code>  事件</p>
+<p><code>&lt;input type="password" @keyup.enter="commitAjax"&gt;</code></p>
+<p>这样在 input 表单中按下回车键就可以触发方法了 非常的方便，学废了。</p>
+<hr>
+<h4 id="条件渲染指令"><a class="markdownIt-Anchor" href="#条件渲染指令">#</a> 条件渲染指令</h4>
+<p>这个好像挺简单的，既然打出来了，全当复习用了<br>
+这个东西主要用来辅助开发者<strong>按需控制 DOM 的显示与隐藏</strong><br>
+但是条件渲染指令有<strong>两个</strong></p>
+<ul>
+<li>v-if</li>
+<li>v-show</li>
+</ul>
+<p>两者区别不大 但还是要讲一讲</p>
+<p>继续举一个简单地例子</p>
+<figure class="highlight html"><figcaption data-lang="HTML"></figcaption><table><tbody><tr><td data-num="1"></td><td><pre><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">v-if</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>flag<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>这是被 v-if 控制的元素<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span></pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token comment">&lt;!-- ------- 当 flag 为 false 的时候两者都会隐藏 但是隐藏的方法不一样 -------- --&gt;</span></pre></td></tr><tr><td data-num="3"></td><td><pre><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">v-show</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>flag<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>这是被 v-show 控制的元素<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span></pre></td></tr></tbody></table></figure><p>v-if 会<strong>动态创建元素</strong>或者<strong>移除</strong><br>
+ v-show 则是给元素添加  <code>display:none;</code>  样式 来实现元素的显示和隐藏</p>
+<p><strong>差点忘记了还有一个 v-else</strong></p>
+<p>v-else 指令<strong>必须搭配</strong> v-if 来进行使用 否则将不会被识别 来看个简单地例子就会了</p>
+<figure class="highlight html"><figcaption data-lang="HTML"></figcaption><table><tbody><tr><td data-num="1"></td><td><pre><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">v-if</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>type === <span class="token punctuation">'</span>A<span class="token punctuation">'</span><span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>优秀<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></pre></td></tr><tr><td data-num="2"></td><td><pre>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">v-else-if</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>type === <span class="token punctuation">'</span>B<span class="token punctuation">'</span><span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>良好<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></pre></td></tr><tr><td data-num="3"></td><td><pre>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">v-else-if</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>type === <span class="token punctuation">'</span>C<span class="token punctuation">'</span><span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>一般<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></pre></td></tr><tr><td data-num="4"></td><td><pre>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">v-else</span><span class="token punctuation">&gt;</span></span>差<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></pre></td></tr></tbody></table></figure><p>是不是很简单呢</p>
+<hr>
+<h4 id="循环渲染指令"><a class="markdownIt-Anchor" href="#循环渲染指令">#</a> 循环渲染指令</h4>
+<p>实际上这个才是我要复习的内容，前面两个都太简单了，虽然这个也是，看看文档就会了，但是为了以后不用看文档，所以才认真写一写吧</p>
+<p><strong>V-for</strong> 列表渲染指令，用于开发者<strong>基于一个数组来循环渲染一个列表结构</strong></p>
+<p>先来看看代码</p>
+<figure class="highlight javascript"><figcaption data-lang="javascript"></figcaption><table><tbody><tr><td data-num="1"></td><td><pre><span class="token literal-property property">data</span><span class="token operator">:</span><span class="token punctuation">{</span></pre></td></tr><tr><td data-num="2"></td><td><pre>  <span class="token comment">// 列表数据</span></pre></td></tr><tr><td data-num="3"></td><td><pre>  list<span class="token punctuation">[</span></pre></td></tr><tr><td data-num="4"></td><td><pre>    <span class="token punctuation">{</span><span class="token literal-property property">id</span><span class="token operator">:</span> <span class="token number">1</span> <span class="token punctuation">,</span><span class="token literal-property property">name</span><span class="token operator">:</span> <span class="token string">'木子日天'</span> <span class="token punctuation">}</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="5"></td><td><pre>    <span class="token punctuation">{</span><span class="token literal-property property">id</span><span class="token operator">:</span> <span class="token number">2</span> <span class="token punctuation">,</span><span class="token literal-property property">name</span><span class="token operator">:</span> <span class="token string">'李日天'</span> <span class="token punctuation">}</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="6"></td><td><pre>    <span class="token punctuation">{</span><span class="token literal-property property">id</span><span class="token operator">:</span> <span class="token number">3</span> <span class="token punctuation">,</span><span class="token literal-property property">name</span><span class="token operator">:</span> <span class="token string">'木子昊'</span> <span class="token punctuation">}</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="7"></td><td><pre>  <span class="token punctuation">]</span></pre></td></tr><tr><td data-num="8"></td><td><pre><span class="token punctuation">}</span></pre></td></tr></tbody></table></figure><p>要循环那个 DOM 就给那个加上  <code>v-for="item in list"</code></p>
+<figure class="highlight html"><figcaption data-lang="HTML"></figcaption><table><tbody><tr><td data-num="1"></td><td><pre><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">v-for</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">'</span>item in list<span class="token punctuation">'</span></span><span class="token punctuation">&gt;</span></span></pre></td></tr><tr><td data-num="2"></td><td><pre>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span> { item.id } ,{ item.name }<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span></pre></td></tr><tr><td data-num="3"></td><td><pre></pre></td></tr><tr><td data-num="4"></td><td><pre><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></pre></td></tr></tbody></table></figure><p>item 是循环的每一项<br>
+ list 是被循环的数组</p>
+<p>结果就是</p>
+<figure class="highlight javascript"><figcaption data-lang="javascript"></figcaption><table><tbody><tr><td data-num="1"></td><td><pre><span class="token number">1</span><span class="token punctuation">,</span>木子日天</pre></td></tr><tr><td data-num="2"></td><td><pre>  <span class="token number">2</span><span class="token punctuation">,</span>李日天</pre></td></tr><tr><td data-num="3"></td><td><pre>  <span class="token number">3</span><span class="token punctuation">,</span>木子昊</pre></td></tr></tbody></table></figure><p>使用了 v-for 指定那么一定要绑定一个 <strong>:key 属性</strong></p>
+<figure class="highlight html"><figcaption data-lang="HTML"></figcaption><table><tbody><tr><td data-num="1"></td><td><pre><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">v-for</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>item in list<span class="token punctuation">"</span></span> <span class="token attr-name">:key</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>item.id<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span></pre></td></tr><tr><td data-num="2"></td><td><pre>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>{ item.id } ,{ item.name }<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span></pre></td></tr><tr><td data-num="3"></td><td><pre><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></pre></td></tr></tbody></table></figure><p>就酱紫 拜拜</p>
+]]></content>
+      <categories>
+        <category>web前端</category>
+      </categories>
+      <tags>
+        <tag>前端</tag>
+        <tag>Vue</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Vuex持久化</title>
+    <url>/2022/05/30/Vuex%E6%8C%81%E4%B9%85%E5%8C%96/</url>
+    <content><![CDATA[<h1 id="vuex持久化"><a class="markdownIt-Anchor" href="#vuex持久化">#</a> vuex 持久化</h1>
+<p>vuex 可以进行全局的状态管理，在开发的过程中，用户的各种信息（<strong>用户名</strong>，<strong>token</strong>，<strong>头像</strong>），需要 vuex 中存储，并且本地存储，我们可以安装一个 vuex 的插件 <code>vuex-persistedstate</code>  来支持 vuex 的状态持久化，免去自己存储的环节。</p>
+<ol>
+<li>安装 <code>vuex-persistedstate</code>  来支持 vuex 的状态持久化</li>
+</ol>
+<figure class="highlight js"><figcaption data-lang="JavaScript"></figcaption><table><tbody><tr><td data-num="1"></td><td><pre>npm i vuex<span class="token operator">-</span>persistedstate</pre></td></tr></tbody></table></figure><ol start="2">
+<li>在 <code>store/index.js</code>  中导入和配置</li>
+</ol>
+<figure class="highlight js"><figcaption data-lang="JavaScript"></figcaption><table><tbody><tr><td data-num="1"></td><td><pre><span class="token keyword">import</span> <span class="token punctuation">{</span>createStore<span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'vuex'</span></pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token keyword">import</span> <span class="token punctuation">{</span>modulesA<span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">"@/store/modules/modulesA"</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="3"></td><td><pre><span class="token keyword">import</span> createPersistedState <span class="token keyword">from</span> <span class="token string">'vuex-persistedstate'</span></pre></td></tr><tr><td data-num="4"></td><td><pre></pre></td></tr><tr><td data-num="5"></td><td><pre><span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token function">createStore</span><span class="token punctuation">(</span><span class="token punctuation">{</span></pre></td></tr><tr><td data-num="6"></td><td><pre>    <span class="token literal-property property">modules</span><span class="token operator">:</span> <span class="token punctuation">{</span></pre></td></tr><tr><td data-num="7"></td><td><pre>        modulesA</pre></td></tr><tr><td data-num="8"></td><td><pre>    <span class="token punctuation">}</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="9"></td><td><pre>    <span class="token comment">// 配置插件</span></pre></td></tr><tr><td data-num="10"></td><td><pre>    <span class="token literal-property property">plugins</span><span class="token operator">:</span> <span class="token punctuation">[</span></pre></td></tr><tr><td data-num="11"></td><td><pre>        <span class="token function">createPersistedState</span><span class="token punctuation">(</span><span class="token punctuation">{</span></pre></td></tr><tr><td data-num="12"></td><td><pre>            <span class="token comment">// 本地存储的名字</span></pre></td></tr><tr><td data-num="13"></td><td><pre>            <span class="token literal-property property">key</span><span class="token operator">:</span> <span class="token string">'demo-store'</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="14"></td><td><pre>            <span class="token comment">// 指定需要存储的模块</span></pre></td></tr><tr><td data-num="15"></td><td><pre>            <span class="token literal-property property">path</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">'modulesA'</span><span class="token punctuation">]</span></pre></td></tr><tr><td data-num="16"></td><td><pre>        <span class="token punctuation">}</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="17"></td><td><pre>    <span class="token punctuation">]</span></pre></td></tr><tr><td data-num="18"></td><td><pre><span class="token punctuation">}</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="19"></td><td><pre><span class="token comment">// 默认是存储到 localStorage</span></pre></td></tr></tbody></table></figure>]]></content>
       <categories>
         <category>web前端</category>
       </categories>
@@ -571,57 +631,55 @@
       </tags>
   </entry>
   <entry>
-    <title>Vue指令</title>
-    <url>/2022/03/26/Vue%E6%8C%87%E4%BB%A4/</url>
-    <content><![CDATA[<h3 id="vue指令"><a class="markdownIt-Anchor" href="#vue指令">#</a> Vue 指令</h3>
-<p>虽然学习完了 Vue，但还有许多地方木有掌握，所以今天就来复习一下 Vue 还没有掌握的指令</p>
+    <title>Vue计算属性-自定义事件-watch监听器</title>
+    <url>/2022/04/10/Vue%E8%AE%A1%E7%AE%97%E5%B1%9E%E6%80%A7-%E8%87%AA%E5%AE%9A%E4%B9%89%E4%BA%8B%E4%BB%B6-watch%E7%9B%91%E5%90%AC%E5%99%A8/</url>
+    <content><![CDATA[<h3 id="计算属性"><a class="markdownIt-Anchor" href="#计算属性">#</a> 计算属性</h3>
+<p>计算属性<span style="color:red">本质上</span>就是一个<span style="color:red">function 函数</span>, 它可以<span style="color:red">实时监听</span>data 中数据的变化，并<span style="color:red">return 一个计算后的新值</span>，供组件渲染 DOM 时使用</p>
+<h4 id="声明计算属性"><a class="markdownIt-Anchor" href="#声明计算属性">#</a> 声明计算属性</h4>
+<p>计算属性需要以<span style="color:red">function 函数</span>的形式声明到组件的<span style="color:red">computed 节点中</span>，示例代码如下</p>
+<figure class="highlight javascript"><figcaption data-lang="javascript"></figcaption><table><tbody><tr><td data-num="1"></td><td><pre><span class="token operator">&lt;</span>input type<span class="token operator">=</span><span class="token string">"text"</span> v<span class="token operator">-</span>model<span class="token punctuation">.</span>number<span class="token operator">=</span><span class="token string">"count"</span><span class="token operator">&gt;</span></pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token operator">&lt;</span>p<span class="token operator">&gt;</span><span class="token punctuation">{</span>count<span class="token punctuation">}</span>乘以 <span class="token number">2</span> 的值为：<span class="token punctuation">{</span> plus <span class="token punctuation">}</span> <span class="token operator">&lt;</span><span class="token operator">/</span>p<span class="token operator">&gt;</span></pre></td></tr><tr><td data-num="3"></td><td><pre></pre></td></tr><tr><td data-num="4"></td><td><pre></pre></td></tr><tr><td data-num="5"></td><td><pre><span class="token operator">&lt;</span>script<span class="token operator">&gt;</span></pre></td></tr><tr><td data-num="6"></td><td><pre>  <span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span></pre></td></tr><tr><td data-num="7"></td><td><pre>    <span class="token function">data</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span></pre></td></tr><tr><td data-num="8"></td><td><pre>      <span class="token keyword">return</span><span class="token punctuation">{</span></pre></td></tr><tr><td data-num="9"></td><td><pre>        <span class="token literal-property property">count</span><span class="token operator">:</span><span class="token number">1</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="10"></td><td><pre>      <span class="token punctuation">}</span></pre></td></tr><tr><td data-num="11"></td><td><pre>    <span class="token punctuation">}</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="12"></td><td><pre>    <span class="token literal-property property">computed</span><span class="token operator">:</span><span class="token punctuation">{</span></pre></td></tr><tr><td data-num="13"></td><td><pre>      <span class="token function">plus</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span> <span class="token comment">// 计算属性，监听 data 中 count 的变化，自动计算出 count * 2 之后的新值</span></pre></td></tr><tr><td data-num="14"></td><td><pre>        <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span>count <span class="token operator">*</span> <span class="token number">2</span></pre></td></tr><tr><td data-num="15"></td><td><pre>      <span class="token punctuation">}</span></pre></td></tr><tr><td data-num="16"></td><td><pre>    <span class="token punctuation">}</span></pre></td></tr><tr><td data-num="17"></td><td><pre>  <span class="token punctuation">}</span></pre></td></tr><tr><td data-num="18"></td><td><pre><span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">&gt;</span></pre></td></tr></tbody></table></figure><h4 id="计算属性的span-stylecolorred使用注意点span"><a class="markdownIt-Anchor" href="#计算属性的span-stylecolorred使用注意点span">#</a> 计算属性的<span style="color:red">使用注意点</span></h4>
+<ol>
+<li>计算属性<span style="color:red">必须定义在 computed 节点中</span></li>
+<li>计算属性<span style="color:red">必须是一个 function 的函数</span></li>
+<li>计算属性<span style="color:red">必须有 return 返回值！！</span></li>
+<li>计算属性<span style="color:red">必须当作普通属性使用</span></li>
+</ol>
+<h4 id="计算属性-vs-方法"><a class="markdownIt-Anchor" href="#计算属性-vs-方法">#</a> 计算属性 vs 方法</h4>
+<p>相对于方法来说，<span style="color:red">计算属性会缓存计算的结果</span>，只有计算属性的<span style="color:red">依赖项发生变化时</span>，才会<span style="color:red">重新进行运算</span>，因此计算属性的性能更好</p>
+<hr>
+<h3 id="自定义事件"><a class="markdownIt-Anchor" href="#自定义事件">#</a> 自定义事件</h3>
+<p>在封装组件时，为了让<span style="color:red">组件的使用者</span>可以<span style="color:red">监听到组件内状态的变化</span>，此时需要用到<span style="color:red">组件的自定义事件</span></p>
+<h4 id="自定义事件的3个使用步骤"><a class="markdownIt-Anchor" href="#自定义事件的3个使用步骤">#</a> 自定义事件的 3 个使用步骤</h4>
 <ul>
-<li>
-<p>按键修饰符</p>
-</li>
-<li>
-<p>条件渲染指令</p>
-</li>
-<li>
-<p>循环渲染指令</p>
-<p>虽然只有一些内容，但还是要认真的写下去，不然就得去平板看我写的丑不拉几的字，我实在不忍心看下去，这也是在这里复习的原因之一。</p>
-</li>
+<li>在封装组件时</li>
 </ul>
-<hr>
-<h4 id="按键修饰符"><a class="markdownIt-Anchor" href="#按键修饰符">#</a> 按键修饰符</h4>
-<p>在监听<strong>键盘</strong>事件的时候，我们需要判断详细的按键，此时，可以为<strong>键盘相关的事件</strong>添加<strong>按键修饰符</strong></p>
-<p>举一个非常简单的案例，当我们在登录页面输入完密码之后，按下<strong>回车键</strong>后使用 Ajax 发送数据 如何实现捏？</p>
-<p>我们可以使用  <code>@keyup</code>  事件</p>
-<p><code>&lt;input type="password" @keyup.enter="commitAjax"&gt;</code></p>
-<p>这样在 input 表单中按下回车键就可以触发方法了 非常的方便，学废了。</p>
-<hr>
-<h4 id="条件渲染指令"><a class="markdownIt-Anchor" href="#条件渲染指令">#</a> 条件渲染指令</h4>
-<p>这个好像挺简单的，既然打出来了，全当复习用了<br>
-这个东西主要用来辅助开发者<strong>按需控制 DOM 的显示与隐藏</strong><br>
-但是条件渲染指令有<strong>两个</strong></p>
-<ul>
-<li>v-if</li>
-<li>v-show</li>
+<h5 id="span-stylecolorred声明span自定义事件"><a class="markdownIt-Anchor" href="#span-stylecolorred声明span自定义事件">#</a> <span style="color:red">声明</span>自定义事件</h5>
+<p>开发者为自定义组件封装的<span style="color:red">自定义事件</span>，必须事先在<span style="color:red">emits</span>节点中声明</p>
+<figure class="highlight javascript"><figcaption data-lang="javascript"></figcaption><table><tbody><tr><td data-num="1"></td><td><pre><span class="token keyword">export</span> <span class="token keyword">default</span><span class="token punctuation">{</span></pre></td></tr><tr><td data-num="2"></td><td><pre>    <span class="token comment">// 1. 声明自定义事件</span></pre></td></tr><tr><td data-num="3"></td><td><pre>    <span class="token literal-property property">emits</span><span class="token operator">:</span><span class="token punctuation">[</span><span class="token string">'change'</span><span class="token punctuation">]</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="4"></td><td><pre>  <span class="token punctuation">}</span></pre></td></tr></tbody></table></figure><h5 id="span-stylecolorred触发span自定义事件"><a class="markdownIt-Anchor" href="#span-stylecolorred触发span自定义事件">#</a> <span style="color:red">触发</span>自定义事件</h5>
+<p>在<span style="color:red">emits</span>节点下声明的自定义事件，可以通过<span style="color:red">this.$emit</span>(‘自定义事件的名称’) 方法进行触发</p>
+<figure class="highlight javascript"><figcaption data-lang="javascript"></figcaption><table><tbody><tr><td data-num="1"></td><td><pre><span class="token operator">&lt;</span>template<span class="token operator">&gt;</span></pre></td></tr><tr><td data-num="2"></td><td><pre>  <span class="token operator">&lt;</span>div<span class="token operator">&gt;</span></pre></td></tr><tr><td data-num="3"></td><td><pre>    <span class="token operator">&lt;</span>p<span class="token operator">&gt;</span>count的值是：<span class="token operator">&lt;</span><span class="token operator">!</span><span class="token operator">--</span>swig￼<span class="token number">0</span><span class="token operator">--</span><span class="token operator">&gt;</span><span class="token operator">&lt;</span><span class="token operator">/</span>p<span class="token operator">&gt;</span></pre></td></tr><tr><td data-num="4"></td><td><pre>    <span class="token operator">&lt;</span>button @click<span class="token operator">=</span><span class="token string">"add"</span><span class="token operator">&gt;</span><span class="token operator">+</span><span class="token number">1</span><span class="token operator">&lt;</span><span class="token operator">/</span>button<span class="token operator">&gt;</span></pre></td></tr><tr><td data-num="5"></td><td><pre>  <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">&gt;</span></pre></td></tr><tr><td data-num="6"></td><td><pre><span class="token operator">&lt;</span><span class="token operator">/</span>template<span class="token operator">&gt;</span></pre></td></tr><tr><td data-num="7"></td><td><pre></pre></td></tr><tr><td data-num="8"></td><td><pre><span class="token operator">&lt;</span>script<span class="token operator">&gt;</span></pre></td></tr><tr><td data-num="9"></td><td><pre><span class="token keyword">export</span> <span class="token keyword">default</span><span class="token punctuation">{</span></pre></td></tr><tr><td data-num="10"></td><td><pre>  <span class="token comment">// 1. 声明自定义事件</span></pre></td></tr><tr><td data-num="11"></td><td><pre>  <span class="token literal-property property">emits</span><span class="token operator">:</span><span class="token punctuation">[</span><span class="token string">'countChange'</span><span class="token punctuation">]</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="12"></td><td><pre></pre></td></tr><tr><td data-num="13"></td><td><pre>  <span class="token literal-property property">methods</span><span class="token operator">:</span> <span class="token punctuation">{</span></pre></td></tr><tr><td data-num="14"></td><td><pre>    <span class="token function">add</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span></pre></td></tr><tr><td data-num="15"></td><td><pre>      <span class="token keyword">this</span><span class="token punctuation">.</span>count<span class="token operator">++</span></pre></td></tr><tr><td data-num="16"></td><td><pre>      <span class="token comment">// 2.this.$emit () 触发自定义事件</span></pre></td></tr><tr><td data-num="17"></td><td><pre>      <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">$emit</span><span class="token punctuation">(</span><span class="token string">'countChange'</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="18"></td><td><pre>    <span class="token punctuation">}</span></pre></td></tr><tr><td data-num="19"></td><td><pre>  <span class="token punctuation">}</span></pre></td></tr><tr><td data-num="20"></td><td><pre><span class="token punctuation">}</span></pre></td></tr><tr><td data-num="21"></td><td><pre><span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">&gt;</span></pre></td></tr></tbody></table></figure><ul>
+<li>在使用组件时</li>
 </ul>
-<p>两者区别不大 但还是要讲一讲</p>
-<p>继续举一个简单地例子</p>
-<figure class="highlight html"><figcaption data-lang="HTML"></figcaption><table><tbody><tr><td data-num="1"></td><td><pre><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">v-if</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>flag<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>这是被 v-if 控制的元素<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span></pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token comment">&lt;!-- ------- 当 flag 为 false 的时候两者都会隐藏 但是隐藏的方法不一样 -------- --&gt;</span></pre></td></tr><tr><td data-num="3"></td><td><pre><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">v-show</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>flag<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>这是被 v-show 控制的元素<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span></pre></td></tr></tbody></table></figure><p>v-if 会<strong>动态创建元素</strong>或者<strong>移除</strong><br>
- v-show 则是给元素添加  <code>display:none;</code>  样式 来实现元素的显示和隐藏</p>
-<p><strong>差点忘记了还有一个 v-else</strong></p>
-<p>v-else 指令<strong>必须搭配</strong> v-if 来进行使用 否则将不会被识别 来看个简单地例子就会了</p>
-<figure class="highlight html"><figcaption data-lang="HTML"></figcaption><table><tbody><tr><td data-num="1"></td><td><pre><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">v-if</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>type === <span class="token punctuation">'</span>A<span class="token punctuation">'</span><span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>优秀<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></pre></td></tr><tr><td data-num="2"></td><td><pre>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">v-else-if</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>type === <span class="token punctuation">'</span>B<span class="token punctuation">'</span><span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>良好<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></pre></td></tr><tr><td data-num="3"></td><td><pre>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">v-else-if</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>type === <span class="token punctuation">'</span>C<span class="token punctuation">'</span><span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>一般<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></pre></td></tr><tr><td data-num="4"></td><td><pre>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">v-else</span><span class="token punctuation">&gt;</span></span>差<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></pre></td></tr></tbody></table></figure><p>是不是很简单呢</p>
-<hr>
-<h4 id="循环渲染指令"><a class="markdownIt-Anchor" href="#循环渲染指令">#</a> 循环渲染指令</h4>
-<p>实际上这个才是我要复习的内容，前面两个都太简单了，虽然这个也是，看看文档就会了，但是为了以后不用看文档，所以才认真写一写吧</p>
-<p><strong>V-for</strong> 列表渲染指令，用于开发者<strong>基于一个数组来循环渲染一个列表结构</strong></p>
-<p>先来看看代码</p>
-<figure class="highlight javascript"><figcaption data-lang="javascript"></figcaption><table><tbody><tr><td data-num="1"></td><td><pre><span class="token literal-property property">data</span><span class="token operator">:</span><span class="token punctuation">{</span></pre></td></tr><tr><td data-num="2"></td><td><pre>  <span class="token comment">// 列表数据</span></pre></td></tr><tr><td data-num="3"></td><td><pre>  list<span class="token punctuation">[</span></pre></td></tr><tr><td data-num="4"></td><td><pre>    <span class="token punctuation">{</span><span class="token literal-property property">id</span><span class="token operator">:</span> <span class="token number">1</span> <span class="token punctuation">,</span><span class="token literal-property property">name</span><span class="token operator">:</span> <span class="token string">'木子日天'</span> <span class="token punctuation">}</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="5"></td><td><pre>    <span class="token punctuation">{</span><span class="token literal-property property">id</span><span class="token operator">:</span> <span class="token number">2</span> <span class="token punctuation">,</span><span class="token literal-property property">name</span><span class="token operator">:</span> <span class="token string">'李日天'</span> <span class="token punctuation">}</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="6"></td><td><pre>    <span class="token punctuation">{</span><span class="token literal-property property">id</span><span class="token operator">:</span> <span class="token number">3</span> <span class="token punctuation">,</span><span class="token literal-property property">name</span><span class="token operator">:</span> <span class="token string">'木子昊'</span> <span class="token punctuation">}</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="7"></td><td><pre>  <span class="token punctuation">]</span></pre></td></tr><tr><td data-num="8"></td><td><pre><span class="token punctuation">}</span></pre></td></tr></tbody></table></figure><p>要循环那个 DOM 就给那个加上  <code>v-for="item in list"</code></p>
-<figure class="highlight html"><figcaption data-lang="HTML"></figcaption><table><tbody><tr><td data-num="1"></td><td><pre><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">v-for</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">'</span>item in list<span class="token punctuation">'</span></span><span class="token punctuation">&gt;</span></span></pre></td></tr><tr><td data-num="2"></td><td><pre>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span> { item.id } ,{ item.name }<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span></pre></td></tr><tr><td data-num="3"></td><td><pre></pre></td></tr><tr><td data-num="4"></td><td><pre><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></pre></td></tr></tbody></table></figure><p>item 是循环的每一项<br>
- list 是被循环的数组</p>
-<p>结果就是</p>
-<figure class="highlight javascript"><figcaption data-lang="javascript"></figcaption><table><tbody><tr><td data-num="1"></td><td><pre><span class="token number">1</span><span class="token punctuation">,</span>木子日天</pre></td></tr><tr><td data-num="2"></td><td><pre>  <span class="token number">2</span><span class="token punctuation">,</span>李日天</pre></td></tr><tr><td data-num="3"></td><td><pre>  <span class="token number">3</span><span class="token punctuation">,</span>木子昊</pre></td></tr></tbody></table></figure><p>使用了 v-for 指定那么一定要绑定一个 <strong>:key 属性</strong></p>
-<figure class="highlight html"><figcaption data-lang="HTML"></figcaption><table><tbody><tr><td data-num="1"></td><td><pre><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">v-for</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>item in list<span class="token punctuation">"</span></span> <span class="token attr-name">:key</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>item.id<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span></pre></td></tr><tr><td data-num="2"></td><td><pre>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>{ item.id } ,{ item.name }<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span></pre></td></tr><tr><td data-num="3"></td><td><pre><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></pre></td></tr></tbody></table></figure><p>就酱紫 拜拜</p>
-]]></content>
+<h5 id="span-stylecolorred监听span自定义事件"><a class="markdownIt-Anchor" href="#span-stylecolorred监听span自定义事件">#</a> <span style="color:red">监听</span>自定义事件</h5>
+<p>在使用自定义的组件时，可以通过<span style="color:red">v-on</span>的形式<span style="color:red">监听自定义事件</span>。</p>
+<figure class="highlight javascript"><figcaption data-lang="javascript"></figcaption><table><tbody><tr><td data-num="1"></td><td><pre><span class="token operator">&lt;</span>Counter @countChange<span class="token operator">=</span><span class="token string">"getCount"</span><span class="token operator">&gt;</span><span class="token operator">&lt;</span><span class="token operator">/</span>Counter<span class="token operator">&gt;</span></pre></td></tr><tr><td data-num="2"></td><td><pre></pre></td></tr><tr><td data-num="3"></td><td><pre>    <span class="token literal-property property">methods</span><span class="token operator">:</span> <span class="token punctuation">{</span></pre></td></tr><tr><td data-num="4"></td><td><pre>    <span class="token function">getCount</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span></pre></td></tr><tr><td data-num="5"></td><td><pre>      console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'触发countChange事件'</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="6"></td><td><pre>    <span class="token punctuation">}</span></pre></td></tr><tr><td data-num="7"></td><td><pre>  <span class="token punctuation">}</span></pre></td></tr></tbody></table></figure><h4 id="自定义事件span-stylecolorred传参span"><a class="markdownIt-Anchor" href="#自定义事件span-stylecolorred传参span">#</a> 自定义事件<span style="color:red">传参</span>。</h4>
+<p>在调用<span style="color:red">this.$emit()</span>方法触发自定义事件时，可以通过<span style="color:red">第二个参数</span>为自定义事件传参</p>
+<figure class="highlight javascript"><figcaption data-lang="javascript"></figcaption><table><tbody><tr><td data-num="1"></td><td><pre><span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">$emit</span><span class="token punctuation">(</span><span class="token string">'countChange'</span><span class="token punctuation">,</span> <span class="token keyword">this</span><span class="token punctuation">.</span>count<span class="token punctuation">)</span> <span class="token comment">//  触发自定义事件时，通过第二个参数传参</span></pre></td></tr><tr><td data-num="2"></td><td><pre></pre></td></tr><tr><td data-num="3"></td><td><pre>  <span class="token operator">===</span><span class="token operator">===</span><span class="token operator">===</span><span class="token operator">===</span><span class="token operator">===</span><span class="token operator">===</span><span class="token operator">===</span><span class="token operator">=</span></pre></td></tr><tr><td data-num="4"></td><td><pre>  <span class="token comment">// 外界在监听 countChange 自定义事件时候可以通过事件处理函数的形参拿到最新的 count 值</span></pre></td></tr><tr><td data-num="5"></td><td><pre>    <span class="token function">getCount</span><span class="token punctuation">(</span><span class="token parameter">val</span><span class="token punctuation">)</span> <span class="token punctuation">{</span></pre></td></tr><tr><td data-num="6"></td><td><pre>      console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'触发countChange事件,count值为:'</span> <span class="token operator">+</span> val<span class="token punctuation">)</span></pre></td></tr><tr><td data-num="7"></td><td><pre>    <span class="token punctuation">}</span></pre></td></tr></tbody></table></figure><hr>
+<h3 id="watch-监听器"><a class="markdownIt-Anchor" href="#watch-监听器">#</a> watch 监听器</h3>
+<p><span style="color:red">watch 侦听器</span>允许开发者监视数据的变化，从而<span style="color:red">针对数据的变化做待定的操作</span>。例如监视用户名的变化并发起请求，判断用户是否可用。</p>
+<h4 id="watch侦听器的基本语法"><a class="markdownIt-Anchor" href="#watch侦听器的基本语法">#</a> watch 侦听器的基本语法</h4>
+<p>开发者需要<span style="color:red">在 watch 节点下</span>，定义自己的侦听器，要监听那个数据项的变化，就把那个数据项的名字作为方法的名称。</p>
+<p>形参列表中，第一个参数代表 变化后的新值 ，第二个参数是 变化之前的旧值</p>
+<figure class="highlight javascript"><figcaption data-lang="javascript"></figcaption><table><tbody><tr><td data-num="1"></td><td><pre><span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span></pre></td></tr><tr><td data-num="2"></td><td><pre></pre></td></tr><tr><td data-num="3"></td><td><pre>  <span class="token function">data</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span></pre></td></tr><tr><td data-num="4"></td><td><pre>    <span class="token keyword">return</span> <span class="token punctuation">{</span></pre></td></tr><tr><td data-num="5"></td><td><pre>      <span class="token literal-property property">username</span><span class="token operator">:</span> <span class="token string">''</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="6"></td><td><pre>    <span class="token punctuation">}</span></pre></td></tr><tr><td data-num="7"></td><td><pre>  <span class="token punctuation">}</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="8"></td><td><pre>  <span class="token literal-property property">watch</span><span class="token operator">:</span> <span class="token punctuation">{</span></pre></td></tr><tr><td data-num="9"></td><td><pre>    <span class="token function">username</span><span class="token punctuation">(</span><span class="token parameter">newVal<span class="token punctuation">,</span> oldVal</span><span class="token punctuation">)</span> <span class="token punctuation">{</span></pre></td></tr><tr><td data-num="10"></td><td><pre>      console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'新：'</span> <span class="token operator">+</span> newVal<span class="token punctuation">,</span> <span class="token string">'旧：'</span> <span class="token operator">+</span> oldVal<span class="token punctuation">)</span></pre></td></tr><tr><td data-num="11"></td><td><pre>    <span class="token punctuation">}</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="12"></td><td><pre>  <span class="token punctuation">}</span></pre></td></tr><tr><td data-num="13"></td><td><pre><span class="token punctuation">}</span></pre></td></tr></tbody></table></figure><h4 id="小案例检测用户名是否可用"><a class="markdownIt-Anchor" href="#小案例检测用户名是否可用">#</a> 小案例：检测用户名是否可用</h4>
+<p>监听 username 值的变化，并使用 axios 发起 Ajax 请求，检测当前输入的用户名是否可用</p>
+<figure class="highlight javascript"><figcaption data-lang="javascript"></figcaption><table><tbody><tr><td data-num="1"></td><td><pre><span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span></pre></td></tr><tr><td data-num="2"></td><td><pre>  <span class="token function">data</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span></pre></td></tr><tr><td data-num="3"></td><td><pre>    <span class="token keyword">return</span> <span class="token punctuation">{</span></pre></td></tr><tr><td data-num="4"></td><td><pre>      <span class="token literal-property property">username</span><span class="token operator">:</span> <span class="token string">''</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="5"></td><td><pre>      <span class="token literal-property property">available</span><span class="token operator">:</span> <span class="token string">' '</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="6"></td><td><pre>    <span class="token punctuation">}</span></pre></td></tr><tr><td data-num="7"></td><td><pre>  <span class="token punctuation">}</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="8"></td><td><pre><span class="token comment">//  侦听器</span></pre></td></tr><tr><td data-num="9"></td><td><pre>  <span class="token literal-property property">watch</span><span class="token operator">:</span> <span class="token punctuation">{</span></pre></td></tr><tr><td data-num="10"></td><td><pre>    <span class="token keyword">async</span> <span class="token function">username</span><span class="token punctuation">(</span><span class="token parameter">newVal<span class="token punctuation">,</span> oldVal</span><span class="token punctuation">)</span> <span class="token punctuation">{</span></pre></td></tr><tr><td data-num="11"></td><td><pre>      <span class="token keyword">const</span> <span class="token punctuation">{</span><span class="token literal-property property">data</span><span class="token operator">:</span> res<span class="token punctuation">}</span> <span class="token operator">=</span> <span class="token keyword">await</span> axios<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">https://www.escook.cn/api/finduser/</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>newVal<span class="token interpolation-punctuation punctuation">}</span></span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="12"></td><td><pre>      <span class="token keyword">this</span><span class="token punctuation">.</span>available <span class="token operator">=</span> res<span class="token punctuation">.</span>message<span class="token punctuation">;</span></pre></td></tr><tr><td data-num="13"></td><td><pre>    <span class="token punctuation">}</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="14"></td><td><pre>  <span class="token punctuation">}</span></pre></td></tr><tr><td data-num="15"></td><td><pre><span class="token punctuation">}</span></pre></td></tr></tbody></table></figure><h4 id="immediate选项"><a class="markdownIt-Anchor" href="#immediate选项">#</a> immediate 选项</h4>
+<p>默认情况下，组件在初次加载完毕后不会调用 watch 侦听器。如果想让 watch 侦听器<span style="color:red">立即被调用</span>，则需要使用<span style="color:red">immediate</span>选项。</p>
+<p>非常简单 watch 节点里加一个 <code>immediate:true</code>  即可</p>
+<figure class="highlight javascript"><figcaption data-lang="javascript"></figcaption><table><tbody><tr><td data-num="1"></td><td><pre><span class="token literal-property property">watch</span><span class="token operator">:</span> <span class="token punctuation">{</span></pre></td></tr><tr><td data-num="2"></td><td><pre></pre></td></tr><tr><td data-num="3"></td><td><pre>    <span class="token keyword">async</span> <span class="token function">username</span><span class="token punctuation">(</span><span class="token parameter">newVal<span class="token punctuation">,</span> oldVal</span><span class="token punctuation">)</span> <span class="token punctuation">{</span></pre></td></tr><tr><td data-num="4"></td><td><pre>      <span class="token keyword">const</span> <span class="token punctuation">{</span><span class="token literal-property property">data</span><span class="token operator">:</span> res<span class="token punctuation">}</span> <span class="token operator">=</span> <span class="token keyword">await</span> axios<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">https://www.escook.cn/api/finduser/</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>newVal<span class="token interpolation-punctuation punctuation">}</span></span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="5"></td><td><pre>      <span class="token keyword">this</span><span class="token punctuation">.</span>available <span class="token operator">=</span> res<span class="token punctuation">.</span>message<span class="token punctuation">;</span></pre></td></tr><tr><td data-num="6"></td><td><pre>      </pre></td></tr><tr><td data-num="7"></td><td><pre>    <span class="token punctuation">}</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="8"></td><td><pre></pre></td></tr><tr><td data-num="9"></td><td><pre>    <span class="token comment">//  组件加载完毕后立即调用一次当前的 watch 侦听器</span></pre></td></tr><tr><td data-num="10"></td><td><pre>    <span class="token literal-property property">immediate</span><span class="token operator">:</span><span class="token boolean">true</span></pre></td></tr><tr><td data-num="11"></td><td><pre>  <span class="token punctuation">}</span></pre></td></tr></tbody></table></figure><h4 id="deep选项"><a class="markdownIt-Anchor" href="#deep选项">#</a> deep 选项</h4>
+<p>当<span style="color:red">watch 侦听的是一个对象</span>，如果<span style="color:red">对象中属性值发生了变化</span>，则<span style="color:red">无法被监听到</span>。此时需要使用<span style="color:red">deep 选项</span></p>
+<figure class="highlight javascript"><figcaption data-lang="javascript"></figcaption><table><tbody><tr><td data-num="1"></td><td><pre><span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span></pre></td></tr><tr><td data-num="2"></td><td><pre>  <span class="token function">data</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span></pre></td></tr><tr><td data-num="3"></td><td><pre>    <span class="token keyword">return</span> <span class="token punctuation">{</span></pre></td></tr><tr><td data-num="4"></td><td><pre>      <span class="token literal-property property">username</span><span class="token operator">:</span> <span class="token string">''</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="5"></td><td><pre>      <span class="token literal-property property">available</span><span class="token operator">:</span> <span class="token string">' '</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="6"></td><td><pre>      <span class="token literal-property property">info</span><span class="token operator">:</span> <span class="token punctuation">{</span></pre></td></tr><tr><td data-num="7"></td><td><pre>        <span class="token literal-property property">username</span><span class="token operator">:</span> <span class="token string">'zs'</span></pre></td></tr><tr><td data-num="8"></td><td><pre>      <span class="token punctuation">}</span></pre></td></tr><tr><td data-num="9"></td><td><pre>    <span class="token punctuation">}</span></pre></td></tr><tr><td data-num="10"></td><td><pre>  <span class="token punctuation">}</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="11"></td><td><pre>  <span class="token literal-property property">watch</span><span class="token operator">:</span> <span class="token punctuation">{</span></pre></td></tr><tr><td data-num="12"></td><td><pre>    <span class="token literal-property property">info</span><span class="token operator">:</span> <span class="token punctuation">{</span></pre></td></tr><tr><td data-num="13"></td><td><pre>      <span class="token comment">//handler 属性是固定写法：当 username 发生了变化，调用 handler</span></pre></td></tr><tr><td data-num="14"></td><td><pre>      <span class="token keyword">async</span> <span class="token function">handle</span><span class="token punctuation">(</span><span class="token parameter">newVal</span><span class="token punctuation">)</span> <span class="token punctuation">{</span></pre></td></tr><tr><td data-num="15"></td><td><pre>        <span class="token keyword">const</span> <span class="token punctuation">{</span><span class="token literal-property property">data</span><span class="token operator">:</span> res<span class="token punctuation">}</span> <span class="token operator">=</span> <span class="token keyword">await</span> axios<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">https://www.escook.cn/api/finduser/</span><span class="token template-punctuation string">`</span></span> <span class="token operator">+</span> newVal<span class="token punctuation">)</span></pre></td></tr><tr><td data-num="16"></td><td><pre>        <span class="token keyword">this</span><span class="token punctuation">.</span>available <span class="token operator">=</span> res<span class="token punctuation">.</span>message<span class="token punctuation">;</span></pre></td></tr><tr><td data-num="17"></td><td><pre>      <span class="token punctuation">}</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="18"></td><td><pre>      <span class="token literal-property property">deep</span><span class="token operator">:</span> <span class="token boolean">true</span></pre></td></tr><tr><td data-num="19"></td><td><pre>    <span class="token punctuation">}</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="20"></td><td><pre>  <span class="token punctuation">}</span></pre></td></tr><tr><td data-num="21"></td><td><pre><span class="token punctuation">}</span></pre></td></tr></tbody></table></figure><h4 id="监听对象单个属性的变化"><a class="markdownIt-Anchor" href="#监听对象单个属性的变化">#</a> 监听对象单个属性的变化</h4>
+<p>只想监听 info.username 的属性变化，可以把这个访问列声明过来即可</p>
+<figure class="highlight javascript"><figcaption data-lang="javascript"></figcaption><table><tbody><tr><td data-num="1"></td><td><pre><span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span></pre></td></tr><tr><td data-num="2"></td><td><pre>  <span class="token function">data</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span></pre></td></tr><tr><td data-num="3"></td><td><pre>    <span class="token keyword">return</span> <span class="token punctuation">{</span></pre></td></tr><tr><td data-num="4"></td><td><pre>      <span class="token literal-property property">username</span><span class="token operator">:</span> <span class="token string">''</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="5"></td><td><pre>      <span class="token literal-property property">available</span><span class="token operator">:</span> <span class="token string">' '</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="6"></td><td><pre>      <span class="token literal-property property">info</span><span class="token operator">:</span> <span class="token punctuation">{</span></pre></td></tr><tr><td data-num="7"></td><td><pre>        <span class="token literal-property property">username</span><span class="token operator">:</span> <span class="token string">'zs'</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="8"></td><td><pre>        <span class="token literal-property property">password</span><span class="token operator">:</span><span class="token string">''</span></pre></td></tr><tr><td data-num="9"></td><td><pre>      <span class="token punctuation">}</span></pre></td></tr><tr><td data-num="10"></td><td><pre>    <span class="token punctuation">}</span></pre></td></tr><tr><td data-num="11"></td><td><pre>  <span class="token punctuation">}</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="12"></td><td><pre></pre></td></tr><tr><td data-num="13"></td><td><pre><span class="token comment">//  侦听器</span></pre></td></tr><tr><td data-num="14"></td><td><pre>  <span class="token literal-property property">watch</span><span class="token operator">:</span> <span class="token punctuation">{</span></pre></td></tr><tr><td data-num="15"></td><td><pre>    <span class="token string-property property">'info.username'</span><span class="token operator">:</span> <span class="token punctuation">{</span> <span class="token comment">// 只想监听 info.username 属性值的变化</span></pre></td></tr><tr><td data-num="16"></td><td><pre>      <span class="token keyword">async</span> <span class="token function">handle</span><span class="token punctuation">(</span><span class="token parameter">newVal</span><span class="token punctuation">)</span> <span class="token punctuation">{</span></pre></td></tr><tr><td data-num="17"></td><td><pre>        <span class="token keyword">const</span> <span class="token punctuation">{</span><span class="token literal-property property">data</span><span class="token operator">:</span> res<span class="token punctuation">}</span> <span class="token operator">=</span> <span class="token keyword">await</span> axios<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">https://www.escook.cn/api/finduser/</span><span class="token template-punctuation string">`</span></span> <span class="token operator">+</span> newVal<span class="token punctuation">)</span></pre></td></tr><tr><td data-num="18"></td><td><pre>        <span class="token keyword">this</span><span class="token punctuation">.</span>available <span class="token operator">=</span> res<span class="token punctuation">.</span>message<span class="token punctuation">;</span></pre></td></tr><tr><td data-num="19"></td><td><pre>      <span class="token punctuation">}</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="20"></td><td><pre>      <span class="token literal-property property">deep</span><span class="token operator">:</span> <span class="token boolean">true</span></pre></td></tr><tr><td data-num="21"></td><td><pre>    <span class="token punctuation">}</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="22"></td><td><pre>  <span class="token punctuation">}</span></pre></td></tr><tr><td data-num="23"></td><td><pre><span class="token punctuation">}</span></pre></td></tr></tbody></table></figure>]]></content>
       <categories>
         <category>web前端</category>
       </categories>
@@ -780,64 +838,6 @@
       <tags>
         <tag>前端</tag>
         <tag>Ajax</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Vue计算属性-自定义事件-watch监听器</title>
-    <url>/2022/04/10/Vue%E8%AE%A1%E7%AE%97%E5%B1%9E%E6%80%A7-%E8%87%AA%E5%AE%9A%E4%B9%89%E4%BA%8B%E4%BB%B6-watch%E7%9B%91%E5%90%AC%E5%99%A8/</url>
-    <content><![CDATA[<h3 id="计算属性"><a class="markdownIt-Anchor" href="#计算属性">#</a> 计算属性</h3>
-<p>计算属性<span style="color:red">本质上</span>就是一个<span style="color:red">function 函数</span>, 它可以<span style="color:red">实时监听</span>data 中数据的变化，并<span style="color:red">return 一个计算后的新值</span>，供组件渲染 DOM 时使用</p>
-<h4 id="声明计算属性"><a class="markdownIt-Anchor" href="#声明计算属性">#</a> 声明计算属性</h4>
-<p>计算属性需要以<span style="color:red">function 函数</span>的形式声明到组件的<span style="color:red">computed 节点中</span>，示例代码如下</p>
-<figure class="highlight javascript"><figcaption data-lang="javascript"></figcaption><table><tbody><tr><td data-num="1"></td><td><pre><span class="token operator">&lt;</span>input type<span class="token operator">=</span><span class="token string">"text"</span> v<span class="token operator">-</span>model<span class="token punctuation">.</span>number<span class="token operator">=</span><span class="token string">"count"</span><span class="token operator">&gt;</span></pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token operator">&lt;</span>p<span class="token operator">&gt;</span><span class="token punctuation">{</span>count<span class="token punctuation">}</span>乘以 <span class="token number">2</span> 的值为：<span class="token punctuation">{</span> plus <span class="token punctuation">}</span> <span class="token operator">&lt;</span><span class="token operator">/</span>p<span class="token operator">&gt;</span></pre></td></tr><tr><td data-num="3"></td><td><pre></pre></td></tr><tr><td data-num="4"></td><td><pre></pre></td></tr><tr><td data-num="5"></td><td><pre><span class="token operator">&lt;</span>script<span class="token operator">&gt;</span></pre></td></tr><tr><td data-num="6"></td><td><pre>  <span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span></pre></td></tr><tr><td data-num="7"></td><td><pre>    <span class="token function">data</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span></pre></td></tr><tr><td data-num="8"></td><td><pre>      <span class="token keyword">return</span><span class="token punctuation">{</span></pre></td></tr><tr><td data-num="9"></td><td><pre>        <span class="token literal-property property">count</span><span class="token operator">:</span><span class="token number">1</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="10"></td><td><pre>      <span class="token punctuation">}</span></pre></td></tr><tr><td data-num="11"></td><td><pre>    <span class="token punctuation">}</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="12"></td><td><pre>    <span class="token literal-property property">computed</span><span class="token operator">:</span><span class="token punctuation">{</span></pre></td></tr><tr><td data-num="13"></td><td><pre>      <span class="token function">plus</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span> <span class="token comment">// 计算属性，监听 data 中 count 的变化，自动计算出 count * 2 之后的新值</span></pre></td></tr><tr><td data-num="14"></td><td><pre>        <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span>count <span class="token operator">*</span> <span class="token number">2</span></pre></td></tr><tr><td data-num="15"></td><td><pre>      <span class="token punctuation">}</span></pre></td></tr><tr><td data-num="16"></td><td><pre>    <span class="token punctuation">}</span></pre></td></tr><tr><td data-num="17"></td><td><pre>  <span class="token punctuation">}</span></pre></td></tr><tr><td data-num="18"></td><td><pre><span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">&gt;</span></pre></td></tr></tbody></table></figure><h4 id="计算属性的span-stylecolorred使用注意点span"><a class="markdownIt-Anchor" href="#计算属性的span-stylecolorred使用注意点span">#</a> 计算属性的<span style="color:red">使用注意点</span></h4>
-<ol>
-<li>计算属性<span style="color:red">必须定义在 computed 节点中</span></li>
-<li>计算属性<span style="color:red">必须是一个 function 的函数</span></li>
-<li>计算属性<span style="color:red">必须有 return 返回值！！</span></li>
-<li>计算属性<span style="color:red">必须当作普通属性使用</span></li>
-</ol>
-<h4 id="计算属性-vs-方法"><a class="markdownIt-Anchor" href="#计算属性-vs-方法">#</a> 计算属性 vs 方法</h4>
-<p>相对于方法来说，<span style="color:red">计算属性会缓存计算的结果</span>，只有计算属性的<span style="color:red">依赖项发生变化时</span>，才会<span style="color:red">重新进行运算</span>，因此计算属性的性能更好</p>
-<hr>
-<h3 id="自定义事件"><a class="markdownIt-Anchor" href="#自定义事件">#</a> 自定义事件</h3>
-<p>在封装组件时，为了让<span style="color:red">组件的使用者</span>可以<span style="color:red">监听到组件内状态的变化</span>，此时需要用到<span style="color:red">组件的自定义事件</span></p>
-<h4 id="自定义事件的3个使用步骤"><a class="markdownIt-Anchor" href="#自定义事件的3个使用步骤">#</a> 自定义事件的 3 个使用步骤</h4>
-<ul>
-<li>在封装组件时</li>
-</ul>
-<h5 id="span-stylecolorred声明span自定义事件"><a class="markdownIt-Anchor" href="#span-stylecolorred声明span自定义事件">#</a> <span style="color:red">声明</span>自定义事件</h5>
-<p>开发者为自定义组件封装的<span style="color:red">自定义事件</span>，必须事先在<span style="color:red">emits</span>节点中声明</p>
-<figure class="highlight javascript"><figcaption data-lang="javascript"></figcaption><table><tbody><tr><td data-num="1"></td><td><pre><span class="token keyword">export</span> <span class="token keyword">default</span><span class="token punctuation">{</span></pre></td></tr><tr><td data-num="2"></td><td><pre>    <span class="token comment">// 1. 声明自定义事件</span></pre></td></tr><tr><td data-num="3"></td><td><pre>    <span class="token literal-property property">emits</span><span class="token operator">:</span><span class="token punctuation">[</span><span class="token string">'change'</span><span class="token punctuation">]</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="4"></td><td><pre>  <span class="token punctuation">}</span></pre></td></tr></tbody></table></figure><h5 id="span-stylecolorred触发span自定义事件"><a class="markdownIt-Anchor" href="#span-stylecolorred触发span自定义事件">#</a> <span style="color:red">触发</span>自定义事件</h5>
-<p>在<span style="color:red">emits</span>节点下声明的自定义事件，可以通过<span style="color:red">this.$emit</span>(‘自定义事件的名称’) 方法进行触发</p>
-<figure class="highlight javascript"><figcaption data-lang="javascript"></figcaption><table><tbody><tr><td data-num="1"></td><td><pre><span class="token operator">&lt;</span>template<span class="token operator">&gt;</span></pre></td></tr><tr><td data-num="2"></td><td><pre>  <span class="token operator">&lt;</span>div<span class="token operator">&gt;</span></pre></td></tr><tr><td data-num="3"></td><td><pre>    <span class="token operator">&lt;</span>p<span class="token operator">&gt;</span>count的值是：<span class="token operator">&lt;</span><span class="token operator">!</span><span class="token operator">--</span>swig￼<span class="token number">0</span><span class="token operator">--</span><span class="token operator">&gt;</span><span class="token operator">&lt;</span><span class="token operator">/</span>p<span class="token operator">&gt;</span></pre></td></tr><tr><td data-num="4"></td><td><pre>    <span class="token operator">&lt;</span>button @click<span class="token operator">=</span><span class="token string">"add"</span><span class="token operator">&gt;</span><span class="token operator">+</span><span class="token number">1</span><span class="token operator">&lt;</span><span class="token operator">/</span>button<span class="token operator">&gt;</span></pre></td></tr><tr><td data-num="5"></td><td><pre>  <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">&gt;</span></pre></td></tr><tr><td data-num="6"></td><td><pre><span class="token operator">&lt;</span><span class="token operator">/</span>template<span class="token operator">&gt;</span></pre></td></tr><tr><td data-num="7"></td><td><pre></pre></td></tr><tr><td data-num="8"></td><td><pre><span class="token operator">&lt;</span>script<span class="token operator">&gt;</span></pre></td></tr><tr><td data-num="9"></td><td><pre><span class="token keyword">export</span> <span class="token keyword">default</span><span class="token punctuation">{</span></pre></td></tr><tr><td data-num="10"></td><td><pre>  <span class="token comment">// 1. 声明自定义事件</span></pre></td></tr><tr><td data-num="11"></td><td><pre>  <span class="token literal-property property">emits</span><span class="token operator">:</span><span class="token punctuation">[</span><span class="token string">'countChange'</span><span class="token punctuation">]</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="12"></td><td><pre></pre></td></tr><tr><td data-num="13"></td><td><pre>  <span class="token literal-property property">methods</span><span class="token operator">:</span> <span class="token punctuation">{</span></pre></td></tr><tr><td data-num="14"></td><td><pre>    <span class="token function">add</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span></pre></td></tr><tr><td data-num="15"></td><td><pre>      <span class="token keyword">this</span><span class="token punctuation">.</span>count<span class="token operator">++</span></pre></td></tr><tr><td data-num="16"></td><td><pre>      <span class="token comment">// 2.this.$emit () 触发自定义事件</span></pre></td></tr><tr><td data-num="17"></td><td><pre>      <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">$emit</span><span class="token punctuation">(</span><span class="token string">'countChange'</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="18"></td><td><pre>    <span class="token punctuation">}</span></pre></td></tr><tr><td data-num="19"></td><td><pre>  <span class="token punctuation">}</span></pre></td></tr><tr><td data-num="20"></td><td><pre><span class="token punctuation">}</span></pre></td></tr><tr><td data-num="21"></td><td><pre><span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">&gt;</span></pre></td></tr></tbody></table></figure><ul>
-<li>在使用组件时</li>
-</ul>
-<h5 id="span-stylecolorred监听span自定义事件"><a class="markdownIt-Anchor" href="#span-stylecolorred监听span自定义事件">#</a> <span style="color:red">监听</span>自定义事件</h5>
-<p>在使用自定义的组件时，可以通过<span style="color:red">v-on</span>的形式<span style="color:red">监听自定义事件</span>。</p>
-<figure class="highlight javascript"><figcaption data-lang="javascript"></figcaption><table><tbody><tr><td data-num="1"></td><td><pre><span class="token operator">&lt;</span>Counter @countChange<span class="token operator">=</span><span class="token string">"getCount"</span><span class="token operator">&gt;</span><span class="token operator">&lt;</span><span class="token operator">/</span>Counter<span class="token operator">&gt;</span></pre></td></tr><tr><td data-num="2"></td><td><pre></pre></td></tr><tr><td data-num="3"></td><td><pre>    <span class="token literal-property property">methods</span><span class="token operator">:</span> <span class="token punctuation">{</span></pre></td></tr><tr><td data-num="4"></td><td><pre>    <span class="token function">getCount</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span></pre></td></tr><tr><td data-num="5"></td><td><pre>      console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'触发countChange事件'</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="6"></td><td><pre>    <span class="token punctuation">}</span></pre></td></tr><tr><td data-num="7"></td><td><pre>  <span class="token punctuation">}</span></pre></td></tr></tbody></table></figure><h4 id="自定义事件span-stylecolorred传参span"><a class="markdownIt-Anchor" href="#自定义事件span-stylecolorred传参span">#</a> 自定义事件<span style="color:red">传参</span>。</h4>
-<p>在调用<span style="color:red">this.$emit()</span>方法触发自定义事件时，可以通过<span style="color:red">第二个参数</span>为自定义事件传参</p>
-<figure class="highlight javascript"><figcaption data-lang="javascript"></figcaption><table><tbody><tr><td data-num="1"></td><td><pre><span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">$emit</span><span class="token punctuation">(</span><span class="token string">'countChange'</span><span class="token punctuation">,</span> <span class="token keyword">this</span><span class="token punctuation">.</span>count<span class="token punctuation">)</span> <span class="token comment">//  触发自定义事件时，通过第二个参数传参</span></pre></td></tr><tr><td data-num="2"></td><td><pre></pre></td></tr><tr><td data-num="3"></td><td><pre>  <span class="token operator">===</span><span class="token operator">===</span><span class="token operator">===</span><span class="token operator">===</span><span class="token operator">===</span><span class="token operator">===</span><span class="token operator">===</span><span class="token operator">=</span></pre></td></tr><tr><td data-num="4"></td><td><pre>  <span class="token comment">// 外界在监听 countChange 自定义事件时候可以通过事件处理函数的形参拿到最新的 count 值</span></pre></td></tr><tr><td data-num="5"></td><td><pre>    <span class="token function">getCount</span><span class="token punctuation">(</span><span class="token parameter">val</span><span class="token punctuation">)</span> <span class="token punctuation">{</span></pre></td></tr><tr><td data-num="6"></td><td><pre>      console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'触发countChange事件,count值为:'</span> <span class="token operator">+</span> val<span class="token punctuation">)</span></pre></td></tr><tr><td data-num="7"></td><td><pre>    <span class="token punctuation">}</span></pre></td></tr></tbody></table></figure><hr>
-<h3 id="watch-监听器"><a class="markdownIt-Anchor" href="#watch-监听器">#</a> watch 监听器</h3>
-<p><span style="color:red">watch 侦听器</span>允许开发者监视数据的变化，从而<span style="color:red">针对数据的变化做待定的操作</span>。例如监视用户名的变化并发起请求，判断用户是否可用。</p>
-<h4 id="watch侦听器的基本语法"><a class="markdownIt-Anchor" href="#watch侦听器的基本语法">#</a> watch 侦听器的基本语法</h4>
-<p>开发者需要<span style="color:red">在 watch 节点下</span>，定义自己的侦听器，要监听那个数据项的变化，就把那个数据项的名字作为方法的名称。</p>
-<p>形参列表中，第一个参数代表 变化后的新值 ，第二个参数是 变化之前的旧值</p>
-<figure class="highlight javascript"><figcaption data-lang="javascript"></figcaption><table><tbody><tr><td data-num="1"></td><td><pre><span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span></pre></td></tr><tr><td data-num="2"></td><td><pre></pre></td></tr><tr><td data-num="3"></td><td><pre>  <span class="token function">data</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span></pre></td></tr><tr><td data-num="4"></td><td><pre>    <span class="token keyword">return</span> <span class="token punctuation">{</span></pre></td></tr><tr><td data-num="5"></td><td><pre>      <span class="token literal-property property">username</span><span class="token operator">:</span> <span class="token string">''</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="6"></td><td><pre>    <span class="token punctuation">}</span></pre></td></tr><tr><td data-num="7"></td><td><pre>  <span class="token punctuation">}</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="8"></td><td><pre>  <span class="token literal-property property">watch</span><span class="token operator">:</span> <span class="token punctuation">{</span></pre></td></tr><tr><td data-num="9"></td><td><pre>    <span class="token function">username</span><span class="token punctuation">(</span><span class="token parameter">newVal<span class="token punctuation">,</span> oldVal</span><span class="token punctuation">)</span> <span class="token punctuation">{</span></pre></td></tr><tr><td data-num="10"></td><td><pre>      console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'新：'</span> <span class="token operator">+</span> newVal<span class="token punctuation">,</span> <span class="token string">'旧：'</span> <span class="token operator">+</span> oldVal<span class="token punctuation">)</span></pre></td></tr><tr><td data-num="11"></td><td><pre>    <span class="token punctuation">}</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="12"></td><td><pre>  <span class="token punctuation">}</span></pre></td></tr><tr><td data-num="13"></td><td><pre><span class="token punctuation">}</span></pre></td></tr></tbody></table></figure><h4 id="小案例检测用户名是否可用"><a class="markdownIt-Anchor" href="#小案例检测用户名是否可用">#</a> 小案例：检测用户名是否可用</h4>
-<p>监听 username 值的变化，并使用 axios 发起 Ajax 请求，检测当前输入的用户名是否可用</p>
-<figure class="highlight javascript"><figcaption data-lang="javascript"></figcaption><table><tbody><tr><td data-num="1"></td><td><pre><span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span></pre></td></tr><tr><td data-num="2"></td><td><pre>  <span class="token function">data</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span></pre></td></tr><tr><td data-num="3"></td><td><pre>    <span class="token keyword">return</span> <span class="token punctuation">{</span></pre></td></tr><tr><td data-num="4"></td><td><pre>      <span class="token literal-property property">username</span><span class="token operator">:</span> <span class="token string">''</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="5"></td><td><pre>      <span class="token literal-property property">available</span><span class="token operator">:</span> <span class="token string">' '</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="6"></td><td><pre>    <span class="token punctuation">}</span></pre></td></tr><tr><td data-num="7"></td><td><pre>  <span class="token punctuation">}</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="8"></td><td><pre><span class="token comment">//  侦听器</span></pre></td></tr><tr><td data-num="9"></td><td><pre>  <span class="token literal-property property">watch</span><span class="token operator">:</span> <span class="token punctuation">{</span></pre></td></tr><tr><td data-num="10"></td><td><pre>    <span class="token keyword">async</span> <span class="token function">username</span><span class="token punctuation">(</span><span class="token parameter">newVal<span class="token punctuation">,</span> oldVal</span><span class="token punctuation">)</span> <span class="token punctuation">{</span></pre></td></tr><tr><td data-num="11"></td><td><pre>      <span class="token keyword">const</span> <span class="token punctuation">{</span><span class="token literal-property property">data</span><span class="token operator">:</span> res<span class="token punctuation">}</span> <span class="token operator">=</span> <span class="token keyword">await</span> axios<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">https://www.escook.cn/api/finduser/</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>newVal<span class="token interpolation-punctuation punctuation">}</span></span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="12"></td><td><pre>      <span class="token keyword">this</span><span class="token punctuation">.</span>available <span class="token operator">=</span> res<span class="token punctuation">.</span>message<span class="token punctuation">;</span></pre></td></tr><tr><td data-num="13"></td><td><pre>    <span class="token punctuation">}</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="14"></td><td><pre>  <span class="token punctuation">}</span></pre></td></tr><tr><td data-num="15"></td><td><pre><span class="token punctuation">}</span></pre></td></tr></tbody></table></figure><h4 id="immediate选项"><a class="markdownIt-Anchor" href="#immediate选项">#</a> immediate 选项</h4>
-<p>默认情况下，组件在初次加载完毕后不会调用 watch 侦听器。如果想让 watch 侦听器<span style="color:red">立即被调用</span>，则需要使用<span style="color:red">immediate</span>选项。</p>
-<p>非常简单 watch 节点里加一个 <code>immediate:true</code>  即可</p>
-<figure class="highlight javascript"><figcaption data-lang="javascript"></figcaption><table><tbody><tr><td data-num="1"></td><td><pre><span class="token literal-property property">watch</span><span class="token operator">:</span> <span class="token punctuation">{</span></pre></td></tr><tr><td data-num="2"></td><td><pre></pre></td></tr><tr><td data-num="3"></td><td><pre>    <span class="token keyword">async</span> <span class="token function">username</span><span class="token punctuation">(</span><span class="token parameter">newVal<span class="token punctuation">,</span> oldVal</span><span class="token punctuation">)</span> <span class="token punctuation">{</span></pre></td></tr><tr><td data-num="4"></td><td><pre>      <span class="token keyword">const</span> <span class="token punctuation">{</span><span class="token literal-property property">data</span><span class="token operator">:</span> res<span class="token punctuation">}</span> <span class="token operator">=</span> <span class="token keyword">await</span> axios<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">https://www.escook.cn/api/finduser/</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>newVal<span class="token interpolation-punctuation punctuation">}</span></span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="5"></td><td><pre>      <span class="token keyword">this</span><span class="token punctuation">.</span>available <span class="token operator">=</span> res<span class="token punctuation">.</span>message<span class="token punctuation">;</span></pre></td></tr><tr><td data-num="6"></td><td><pre>      </pre></td></tr><tr><td data-num="7"></td><td><pre>    <span class="token punctuation">}</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="8"></td><td><pre></pre></td></tr><tr><td data-num="9"></td><td><pre>    <span class="token comment">//  组件加载完毕后立即调用一次当前的 watch 侦听器</span></pre></td></tr><tr><td data-num="10"></td><td><pre>    <span class="token literal-property property">immediate</span><span class="token operator">:</span><span class="token boolean">true</span></pre></td></tr><tr><td data-num="11"></td><td><pre>  <span class="token punctuation">}</span></pre></td></tr></tbody></table></figure><h4 id="deep选项"><a class="markdownIt-Anchor" href="#deep选项">#</a> deep 选项</h4>
-<p>当<span style="color:red">watch 侦听的是一个对象</span>，如果<span style="color:red">对象中属性值发生了变化</span>，则<span style="color:red">无法被监听到</span>。此时需要使用<span style="color:red">deep 选项</span></p>
-<figure class="highlight javascript"><figcaption data-lang="javascript"></figcaption><table><tbody><tr><td data-num="1"></td><td><pre><span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span></pre></td></tr><tr><td data-num="2"></td><td><pre>  <span class="token function">data</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span></pre></td></tr><tr><td data-num="3"></td><td><pre>    <span class="token keyword">return</span> <span class="token punctuation">{</span></pre></td></tr><tr><td data-num="4"></td><td><pre>      <span class="token literal-property property">username</span><span class="token operator">:</span> <span class="token string">''</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="5"></td><td><pre>      <span class="token literal-property property">available</span><span class="token operator">:</span> <span class="token string">' '</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="6"></td><td><pre>      <span class="token literal-property property">info</span><span class="token operator">:</span> <span class="token punctuation">{</span></pre></td></tr><tr><td data-num="7"></td><td><pre>        <span class="token literal-property property">username</span><span class="token operator">:</span> <span class="token string">'zs'</span></pre></td></tr><tr><td data-num="8"></td><td><pre>      <span class="token punctuation">}</span></pre></td></tr><tr><td data-num="9"></td><td><pre>    <span class="token punctuation">}</span></pre></td></tr><tr><td data-num="10"></td><td><pre>  <span class="token punctuation">}</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="11"></td><td><pre>  <span class="token literal-property property">watch</span><span class="token operator">:</span> <span class="token punctuation">{</span></pre></td></tr><tr><td data-num="12"></td><td><pre>    <span class="token literal-property property">info</span><span class="token operator">:</span> <span class="token punctuation">{</span></pre></td></tr><tr><td data-num="13"></td><td><pre>      <span class="token comment">//handler 属性是固定写法：当 username 发生了变化，调用 handler</span></pre></td></tr><tr><td data-num="14"></td><td><pre>      <span class="token keyword">async</span> <span class="token function">handle</span><span class="token punctuation">(</span><span class="token parameter">newVal</span><span class="token punctuation">)</span> <span class="token punctuation">{</span></pre></td></tr><tr><td data-num="15"></td><td><pre>        <span class="token keyword">const</span> <span class="token punctuation">{</span><span class="token literal-property property">data</span><span class="token operator">:</span> res<span class="token punctuation">}</span> <span class="token operator">=</span> <span class="token keyword">await</span> axios<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">https://www.escook.cn/api/finduser/</span><span class="token template-punctuation string">`</span></span> <span class="token operator">+</span> newVal<span class="token punctuation">)</span></pre></td></tr><tr><td data-num="16"></td><td><pre>        <span class="token keyword">this</span><span class="token punctuation">.</span>available <span class="token operator">=</span> res<span class="token punctuation">.</span>message<span class="token punctuation">;</span></pre></td></tr><tr><td data-num="17"></td><td><pre>      <span class="token punctuation">}</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="18"></td><td><pre>      <span class="token literal-property property">deep</span><span class="token operator">:</span> <span class="token boolean">true</span></pre></td></tr><tr><td data-num="19"></td><td><pre>    <span class="token punctuation">}</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="20"></td><td><pre>  <span class="token punctuation">}</span></pre></td></tr><tr><td data-num="21"></td><td><pre><span class="token punctuation">}</span></pre></td></tr></tbody></table></figure><h4 id="监听对象单个属性的变化"><a class="markdownIt-Anchor" href="#监听对象单个属性的变化">#</a> 监听对象单个属性的变化</h4>
-<p>只想监听 info.username 的属性变化，可以把这个访问列声明过来即可</p>
-<figure class="highlight javascript"><figcaption data-lang="javascript"></figcaption><table><tbody><tr><td data-num="1"></td><td><pre><span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span></pre></td></tr><tr><td data-num="2"></td><td><pre>  <span class="token function">data</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span></pre></td></tr><tr><td data-num="3"></td><td><pre>    <span class="token keyword">return</span> <span class="token punctuation">{</span></pre></td></tr><tr><td data-num="4"></td><td><pre>      <span class="token literal-property property">username</span><span class="token operator">:</span> <span class="token string">''</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="5"></td><td><pre>      <span class="token literal-property property">available</span><span class="token operator">:</span> <span class="token string">' '</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="6"></td><td><pre>      <span class="token literal-property property">info</span><span class="token operator">:</span> <span class="token punctuation">{</span></pre></td></tr><tr><td data-num="7"></td><td><pre>        <span class="token literal-property property">username</span><span class="token operator">:</span> <span class="token string">'zs'</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="8"></td><td><pre>        <span class="token literal-property property">password</span><span class="token operator">:</span><span class="token string">''</span></pre></td></tr><tr><td data-num="9"></td><td><pre>      <span class="token punctuation">}</span></pre></td></tr><tr><td data-num="10"></td><td><pre>    <span class="token punctuation">}</span></pre></td></tr><tr><td data-num="11"></td><td><pre>  <span class="token punctuation">}</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="12"></td><td><pre></pre></td></tr><tr><td data-num="13"></td><td><pre><span class="token comment">//  侦听器</span></pre></td></tr><tr><td data-num="14"></td><td><pre>  <span class="token literal-property property">watch</span><span class="token operator">:</span> <span class="token punctuation">{</span></pre></td></tr><tr><td data-num="15"></td><td><pre>    <span class="token string-property property">'info.username'</span><span class="token operator">:</span> <span class="token punctuation">{</span> <span class="token comment">// 只想监听 info.username 属性值的变化</span></pre></td></tr><tr><td data-num="16"></td><td><pre>      <span class="token keyword">async</span> <span class="token function">handle</span><span class="token punctuation">(</span><span class="token parameter">newVal</span><span class="token punctuation">)</span> <span class="token punctuation">{</span></pre></td></tr><tr><td data-num="17"></td><td><pre>        <span class="token keyword">const</span> <span class="token punctuation">{</span><span class="token literal-property property">data</span><span class="token operator">:</span> res<span class="token punctuation">}</span> <span class="token operator">=</span> <span class="token keyword">await</span> axios<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">https://www.escook.cn/api/finduser/</span><span class="token template-punctuation string">`</span></span> <span class="token operator">+</span> newVal<span class="token punctuation">)</span></pre></td></tr><tr><td data-num="18"></td><td><pre>        <span class="token keyword">this</span><span class="token punctuation">.</span>available <span class="token operator">=</span> res<span class="token punctuation">.</span>message<span class="token punctuation">;</span></pre></td></tr><tr><td data-num="19"></td><td><pre>      <span class="token punctuation">}</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="20"></td><td><pre>      <span class="token literal-property property">deep</span><span class="token operator">:</span> <span class="token boolean">true</span></pre></td></tr><tr><td data-num="21"></td><td><pre>    <span class="token punctuation">}</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="22"></td><td><pre>  <span class="token punctuation">}</span></pre></td></tr><tr><td data-num="23"></td><td><pre><span class="token punctuation">}</span></pre></td></tr></tbody></table></figure>]]></content>
-      <categories>
-        <category>web前端</category>
-      </categories>
-      <tags>
-        <tag>前端</tag>
-        <tag>Vue</tag>
       </tags>
   </entry>
   <entry>
@@ -1169,6 +1169,20 @@
       </tags>
   </entry>
   <entry>
+    <title>不要被外表迷惑</title>
+    <url>/2022/03/25/%E4%B8%8D%E8%A6%81%E8%A2%AB%E5%A4%96%E8%A1%A8%E8%BF%B7%E6%83%91/</url>
+    <content><![CDATA[<p>本来这个博客很早就可以完成的，都怪我被迷惑了，因为那个网站实在是太漂亮了，我也想整一个 就是<span class="exturl" data-url="aHR0cHM6Ly90b21vdG9lcy5jb20v">这个网站 (可以点我)</span>，他实在是太漂亮了，原来网站可以这么漂亮，所以我决定使用这个网站，但是发现他的配置文件完全看不懂，我实在是太菜了。</p>
+<p>感觉自己白学前端了，所以我下定决心，毕业以后一定不要做<s>程序员</s>  还是去送外卖好了 QWQ, 所以今天我学废了，自己垃圾就不要去看大佬作品，否则会怀疑人生，马上自闭。</p>
+<p>就酱紫，拜拜～～</p>
+]]></content>
+      <categories>
+        <category>生活</category>
+      </categories>
+      <tags>
+        <tag>智障</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>什么什么什么</title>
     <url>/2022/06/19/%E4%BB%80%E4%B9%88%E4%BB%80%E4%B9%88%E4%BB%80%E4%B9%88/</url>
     <content><![CDATA[<h3 id="通宵"><a class="markdownIt-Anchor" href="#通宵">#</a> 通宵</h3>
@@ -1211,20 +1225,6 @@
 <p>过了好一会我们准备回工作室了，结果发现二楼大门被锁了。。通常是一楼被锁的，我们可以从食堂小门进去，但是二楼被锁了实在就无能为力了。期间尝试了很多方法进去，结果也就我能实现，可以从厕所那里爬过去，也就爬两个小房间的高度，然后抓着钢管到男厕所窗口就可以了，我示范了一遍给他们看，但是到钢管哪里我就没爬了，太黑了，为了安全考虑我和他们一起回宿舍了，还是熟悉的位置，我第一个爬上去了，能感觉到树枝被裁剪了许多，相比之前爬难了一点点点点，但是对于他们来说就特别困难了，努力了半天，他们终于也上来了，看得我心惊胆跳的，真是捏了一把汗，如果失误了从上面摔下来，也就一条腿骨折而已，如果没站稳脑袋磕到石头了也就一辈子躺床上罢了。安全的回到了宿舍，可是 胃痛患者 并不想回自己宿舍，因为和室友关系不好什么的，所以我善心大方收留了他 ，也就是这个决定，让我尬死了一晚上</p>
 <p>那个时候太热了，又热又闷的，我想去开空调，但是空调线没插，我想过去插线，可是那边室友已经睡着了，所以结局很明了，我把线插好了，也把室友吵醒了被骂了一顿，可以说是我今年最尬的时候了，那晚过的很煎熬，果然我还是比较适合一个人睡，如果<span style="color:#ccc">废宅充电器</span>在的话就好了，他可以一晚上不睡，然后让<span style="color:skyblue">胃痛患者</span>睡他床，不过想想也不可能，因为不知道他们宿舍怎么上二楼，不过我以后再也不会让别人和我一起挤那么小的床睡觉了。拜拜</p>
 <p>这次写的太粗略了，很多细节都没有写，可能是这一篇生活写的太多了，而且现在已经 12：48 了，明天还得早起做核酸，，等过几年我突然想起来了更多细节，也许会补充上去吧？也许。</p>
-]]></content>
-      <categories>
-        <category>生活</category>
-      </categories>
-      <tags>
-        <tag>智障</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>不要被外表迷惑</title>
-    <url>/2022/03/25/%E4%B8%8D%E8%A6%81%E8%A2%AB%E5%A4%96%E8%A1%A8%E8%BF%B7%E6%83%91/</url>
-    <content><![CDATA[<p>本来这个博客很早就可以完成的，都怪我被迷惑了，因为那个网站实在是太漂亮了，我也想整一个 就是<span class="exturl" data-url="aHR0cHM6Ly90b21vdG9lcy5jb20v">这个网站 (可以点我)</span>，他实在是太漂亮了，原来网站可以这么漂亮，所以我决定使用这个网站，但是发现他的配置文件完全看不懂，我实在是太菜了。</p>
-<p>感觉自己白学前端了，所以我下定决心，毕业以后一定不要做<s>程序员</s>  还是去送外卖好了 QWQ, 所以今天我学废了，自己垃圾就不要去看大佬作品，否则会怀疑人生，马上自闭。</p>
-<p>就酱紫，拜拜～～</p>
 ]]></content>
       <categories>
         <category>生活</category>
@@ -1333,47 +1333,6 @@
       <tags>
         <tag>自言自语</tag>
         <tag>周记</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>待办事项</title>
-    <url>/2022/05/17/%E5%BE%85%E5%8A%9E%E4%BA%8B%E9%A1%B9/</url>
-    <content><![CDATA[<h1 class="rainbow" id="待办事项"><a class="markdownIt-Anchor" href="#待办事项">#</a> 待办事项</h1>
-<ul class="task-list">
-<li class="task-list-item"><input type="checkbox" id="cbx_0" disabled="true"><label for="cbx_0"> 看完《美丽新世界》</label></li>
-<li class="task-list-item"><input type="checkbox" id="cbx_1" disabled="true"><label for="cbx_1"> 看完《百年孤独》</label></li>
-<li class="task-list-item"><input type="checkbox" id="cbx_2" disabled="true"><label for="cbx_2"> 看完《我们》</label></li>
-<li class="task-list-item"><input type="checkbox" id="cbx_3" disabled="true"><label for="cbx_3"> 看完《九型人格》</label></li>
-<li class="task-list-item"><input type="checkbox" id="cbx_4" disabled="true"><label for="cbx_4"> 小兔鲜儿</label></li>
-<li class="task-list-item"><input type="checkbox" id="cbx_5" disabled="true"><label for="cbx_5"> 黑马程序员电商</label></li>
-</ul>
-<h1 class="pink" id="已完成"><a class="markdownIt-Anchor" href="#已完成">#</a> 已完成</h1>
-<ul class="task-list">
-<li class="task-list-item"><input type="checkbox" id="cbx_6" checked="true" disabled="true"><label for="cbx_6"> 微信小程序</label></li>
-<li class="task-list-item"><input type="checkbox" id="cbx_7" checked="true" disabled="true"><label for="cbx_7"> 看完《一九八四》</label></li>
-<li class="task-list-item"><input type="checkbox" id="cbx_8" checked="true" disabled="true"><label for="cbx_8"> 复习 vuex 基础和 modules</label></li>
-<li class="task-list-item"><input type="checkbox" id="cbx_9" checked="true" disabled="true"><label for="cbx_9"> vuex 持久化</label></li>
-</ul>
-<!-- 
-- [ ] 这是一个小叉叉
-- [x] 这是一个红色勾勾
-
-{.danger}
-
-- [ ] 未完成
-- [x] 完成
-
-{.primary}
-
-- [ ] 未完成
-- [x] 默认颜色 
-
--->]]></content>
-      <categories>
-        <category>生活</category>
-      </categories>
-      <tags>
-        <tag>待办</tag>
       </tags>
   </entry>
   <entry>
@@ -2043,6 +2002,45 @@
       </tags>
   </entry>
   <entry>
+    <title>开学前</title>
+    <url>/2022/08/29/%E5%BC%80%E5%AD%A6%E5%89%8D/</url>
+    <content><![CDATA[<p>烦内，再过几天该开学了，回想整个暑假，好像都没有干什么就结束了，虽然这次假期休息的时间是最长的，但我还是觉得时间过得太快辣。有没有一种可能，就是和我凌晨 3 点睡，中午 12 点起有关系。明明想好了开学前十天把生物钟调整好，但我现在居然在等我的羊肉串，而且我还刚吃了一小碗泡面，不知道为什么最近胃口特别好… 羊肉串好了，吃完再写，º﹃º</p>
+<p>吃饱了，开始困起来了，每次吃饱的时候就特别特别特别困，好像在哪里听说过是我脑子里的细胞去我肚子里帮助消化之类的说法，不知道是不是这个原因。困是困了，但是不想睡觉，虽然想睡也睡不着，最近睡眠质量又开始下降了，不想睡占一半，想睡睡不着又占一半，我想了一下，也许有人和我一张床睡的话会比较好些，因为我会配合对方的睡眠习惯和时间，或者是有可能怕吵醒对方。哈哈，不过近几年还是别想这些了。睡眠质量下降了，做梦的频率也多了很多，也发现了做梦需要的条件，大概就是需要睡觉中途醒一次，接着继续睡，环境需要在比较冷的地方，接着就会在第二次睡眠中进入梦境了，我很喜欢做梦，因为它没办法预测，不知道自己会梦见什么，但我最近梦到的都是可能会发生的事情，比如我和谁去吃夜市，和谁滑滑板，和谁去逛街，梦见因为疫情好久没见的外婆表妹之类的。最近梦到的是去好朋友家喝茶，并且她爸妈也在… 很多次做的梦过几分钟就忘了，也许有一天我会新建一个  <code>梦</code>  的分类来记录到博客里，因为梦实在是太有意思了，但好像能写的不算多，因为我梦到的尺度好像会比较大哈哈哈哈.</p>
+<p>妈的说起喝茶，上次从湖南回南昌都到 X 家楼下了还不让我去她家喝茶，只让 S 去，妈的太过分了，我只是想和叔叔阿姨聊个天，喝个茶，撸下她家的猫，尝一尝她调的酒，如果能蹭就蹭一下饭而已。我也问过 S 可不可以去她家喝茶，她好像是说去了怕她爸妈认为我和她有戏之类的来拒绝我，这样拒绝我还是能接受的，但我要是有机会我还是会去她家喝茶的！我只是想嫖点东西而已，真的 QWQ，我还问过其他的人，一个是怕父母打断腿，一个说不想理我，还有一个直接让我滚，呜呜，如果是<span style="color:#49b1f5">ButterFlyFish</span>的话应该是有戏的，但是家离得太远了，等有机会她和她妈妈视频我可以露个脸打个招呼，逗一下家长玩。</p>
+<p>本以为熬夜到中午，不吃早饭我体重又要下降，但是最近去家里称了一下体重，发现终于到了我一直想要的  <code>100斤</code>  ，可能是我最近零食吃的比较多，买了一些自己想吃的薯片，巧克力饼干，还有冰糖杨梅之类的，特别是冰糖杨梅，真巨好吃，我特别喜欢吃糖，特别是软糖，就是毛毛虫软糖，qq 糖，或者可乐软糖之类的，虽然我很喜欢吃，但吃的次数特别少，少到几乎都是别人买了棒棒糖给我吃，或者我去商店才买一次，频率大概是两三个月吃一次的程度。这么少吃糖的主要原因是害怕长痘痘，但通过最近吃零食来看，并没有那么严重，脸上除了黑头几乎没有可以挤的痘痘了，有可能是痘痘都跑到背上去了。。说的好像也没错，自从我背上有痘痘后脸上就不长了，不知道这个对我来说是好事还是坏事，应该算是好事吧，哈哈哈。</p>
+<p>说起零食，我是在奶奶家附近的零食店买的，到现在为止一共去了三次，第一次是去长沙之前路上吃的，由于和零食店的姐姐没沟通好，导致我充了钱，所以第一次只花了一半，第二次是过了一段时间了，我想起要把余额清零，所以打开计算器每拿一个零食就算一次，然后完美的清零了，那个姐姐还不相信，看了一眼订单余额，晚上回去她通过订单上的电话发短信要加我微信，我以为是朋友捣乱，所以刁难了她许久，还问她是不是间谍之类的… 直到她说她是零食店的姐姐后。。。直接把我尬住了，虽然我是想要个大一点的姐姐，不过貌似她特别被动，也不会找话题，我也太懒了，就没和她聊了，第三次是我滑滑板饿了，打算吃羊肉串，但是又有点小贵，所以干脆去零食店买泡面和零食得了，所以就有了今天我吃了泡面还是想吃羊肉串的场景… 考虑到我会吃零食增重，也许会在去学校的前一天买一些 (拿得下的话)</p>
+<p>前段时间经常去网吧和<span style="color:#ccc">充电器</span>玩 csgo，说是经常，实际上只去了两次，去不去玩其实都没区别，只是害怕我玩枪的技术下降了，哈哈哈，还有一个原因是上完网后可以滑滑板回家，从网吧到家，有一段特别长的下坡，蹬都不用蹬，滑的过程特别舒服，虽然下坡完后又是一段特别长的上坡… 但还是值得的，想了一下我应该不会把滑板带去学校了，学校的人实在是太多了，路也不算好，能滑的地方太少了，车还巨多，明明在学校里面，仿佛和在外面没什么区别，最主要的是工作室有电动滑板车可以代步… 但是韬哥走了，要是车坏了真不知道找谁修，虽然这个车很耐操，从杨老师继承到我，直到现在还是好好的。还有一个原因就是我开学只要上两个月的课就可以滚蛋了，让我来算一算两个月，9 个星期，60 天，1440 小时，86400 分钟，5184000 秒，哈哈哈哈！也就是说再过 5184000 秒我就可以跑路了，这样一想我就开始期待开学了，就酱紫，掰掰。最后来听首歌～</p>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=3&amp;id=2065979054&amp;auto=1&amp;height=66"></iframe>
+<details class="danger"><summary>歌词</summary><div>
+<p><span class="label danger">fly me to the moon</span></p>
+<p>Fly me to the moon, and let me play among the stars.<br>
+ 带我飞向月球 并让我在群星之间嬉戏<br>
+ Let me see what spring is like on Jupiter and Mars.<br>
+ 让我看看在木星和火星上的春天是怎样的<br>
+ In other words hold my hand!<br>
+ 换句话说，请握住我的手<br>
+ In other words darling kiss me!<br>
+ 换句话说，亲爱的，吻我<br>
+ Fill my heart with song,and let me sing forever more.<br>
+ 让我的心灵充满歌声并让我永远歌唱<br>
+ You are all I long for all I worship and adore.<br>
+ 你是我所有的渴望 我所敬仰与热爱的一切<br>
+ In other words please be true!<br>
+ 换句话说，请真心对我<br>
+ In other words I love you!<br>
+ 换句话说，我爱你</p>
+</div></details>
+]]></content>
+      <categories>
+        <category>生活</category>
+      </categories>
+      <tags>
+        <tag>自言自语</tag>
+        <tag>生活</tag>
+        <tag>周记</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>快节奏生活</title>
     <url>/2022/12/14/%E5%BF%AB%E8%8A%82%E5%A5%8F%E7%94%9F%E6%B4%BB/</url>
     <content><![CDATA[<h1 id="快节奏生活"><a class="markdownIt-Anchor" href="#快节奏生活">#</a> 快节奏生活</h1>
@@ -2070,6 +2068,47 @@
         <tag>自言自语</tag>
         <tag>生活</tag>
         <tag>周记</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>待办事项</title>
+    <url>/2022/05/17/%E5%BE%85%E5%8A%9E%E4%BA%8B%E9%A1%B9/</url>
+    <content><![CDATA[<h1 class="rainbow" id="待办事项"><a class="markdownIt-Anchor" href="#待办事项">#</a> 待办事项</h1>
+<ul class="task-list">
+<li class="task-list-item"><input type="checkbox" id="cbx_0" disabled="true"><label for="cbx_0"> 看完《美丽新世界》</label></li>
+<li class="task-list-item"><input type="checkbox" id="cbx_1" disabled="true"><label for="cbx_1"> 看完《百年孤独》</label></li>
+<li class="task-list-item"><input type="checkbox" id="cbx_2" disabled="true"><label for="cbx_2"> 看完《我们》</label></li>
+<li class="task-list-item"><input type="checkbox" id="cbx_3" disabled="true"><label for="cbx_3"> 看完《九型人格》</label></li>
+<li class="task-list-item"><input type="checkbox" id="cbx_4" disabled="true"><label for="cbx_4"> 小兔鲜儿</label></li>
+<li class="task-list-item"><input type="checkbox" id="cbx_5" disabled="true"><label for="cbx_5"> 黑马程序员电商</label></li>
+</ul>
+<h1 class="pink" id="已完成"><a class="markdownIt-Anchor" href="#已完成">#</a> 已完成</h1>
+<ul class="task-list">
+<li class="task-list-item"><input type="checkbox" id="cbx_6" checked="true" disabled="true"><label for="cbx_6"> 微信小程序</label></li>
+<li class="task-list-item"><input type="checkbox" id="cbx_7" checked="true" disabled="true"><label for="cbx_7"> 看完《一九八四》</label></li>
+<li class="task-list-item"><input type="checkbox" id="cbx_8" checked="true" disabled="true"><label for="cbx_8"> 复习 vuex 基础和 modules</label></li>
+<li class="task-list-item"><input type="checkbox" id="cbx_9" checked="true" disabled="true"><label for="cbx_9"> vuex 持久化</label></li>
+</ul>
+<!-- 
+- [ ] 这是一个小叉叉
+- [x] 这是一个红色勾勾
+
+{.danger}
+
+- [ ] 未完成
+- [x] 完成
+
+{.primary}
+
+- [ ] 未完成
+- [x] 默认颜色 
+
+-->]]></content>
+      <categories>
+        <category>生活</category>
+      </categories>
+      <tags>
+        <tag>待办</tag>
       </tags>
   </entry>
   <entry>
@@ -2104,29 +2143,6 @@
       </tags>
   </entry>
   <entry>
-    <title>无尽旅途</title>
-    <url>/2022/12/19/%E6%97%A0%E5%B0%BD%E6%97%85%E9%80%94/</url>
-    <content><![CDATA[<p>在很早的时候我在 b 站看过一个视频，是一个世界渲染大赛，主题是 <code>无尽旅途</code> ，就是下面的视频。</p>
-<style>.bbplayer{width: 100%; max-width: 850px; margin: auto}</style><div class="bbplayer"><iframe class="bbplayer" id="mmedia-IKBlqPzwKXueIEHo" src="https://player.bilibili.com/player.html?bvid=BV1KP4y137s6&amp;page=1&amp;high_quality=1&amp;danmaku=true" allowfullscreen="allowfullscreen" scrolling="no" border="0" frameborder="0" framespacing="0" sandbox="allow-top-navigation allow-same-origin allow-forms allow-scripts allow-popups"></iframe></div><script> document.getElementById("mmedia-IKBlqPzwKXueIEHo").style.height=document.getElementById("mmedia-IKBlqPzwKXueIEHo").scrollWidth*0.76+"px";
-    window.onresize = function(){
-      document.getElementById("mmedia-IKBlqPzwKXueIEHo").style.height=document.getElementById("mmedia-IKBlqPzwKXueIEHo").scrollWidth*0.76+"px";
-    }; </script>
-<p>我很喜欢这种类型的视频，但是我的语文水平实在是太差了，不知道该怎么去形容，让我想起了小学时候我爸爸问我语文的阅读理解怎么这么差，我说我明白那是什么意思，只是不知道怎么表达出来而已。我喜欢这种在去某一个地方过程中等待的感觉，比如早些时候独自坐火车去合肥的时候，这种感觉，孤独，未知，安静。而我却很享受这些感觉。在高中时候我经常和某人看关于太空的电影，通常电影中都会有去某一个星球的过程，而这个过程就会给我这种感觉。如果在早几年也许我会分享这个视频，但是我已经没有这种分享欲了，即使是给别人看也不会抱太大的期望，我记得我向别人推荐过我最喜欢的两个动漫，分别是 <code>星际牛仔</code> 和 <code>混沌武士</code> ，不过我分享过的人没有人去看，即使是我最好的朋友，当时确实给我一种很失望的感觉，不过我现在倒是不会在乎那么多，毕竟每个人喜欢的东西不同。</p>
-<p>今天凌晨好像是世界杯结束了，阿根廷赢了，各种软件都推送给我梅西和世界杯的视频，朋友圈也刷屏式的更新，我不觉得热闹，只感觉厌烦，不明白是因为讨厌跟风还是因为自己，我没有关注世界杯，想起了上次世界杯，也就是四年前 (时间过得真快妈的)。那个时候队友们通宵看球，还算热闹，不过我还是没有参与进去，但是感受到了气氛，也算是开心。今年有人在家围在一起看球，有人在酒吧不怕疫情看球，有人打开腾讯会议一起看球，而我在玩荒野大镖客，那为什么不玩 APEX，因为我删了 qwq，如果不删我想我现在玩的不是博客了。 反正昨天过的挺无聊的，只能看着别人热闹，或者天天都挺无聊，但我已经对这种东西产生抗体了，反正也无所谓了，原本计划着出去玩，没想到疫情蔓延的这么快，被感染的同学戴着口罩躺着床上说着快死人一般的语气说着自己不行了，还有的同学一家人只剩下自己没被感染，到这个时候我也想不明白为什么一些媒体还要开玩笑似的淡化疫情。</p>
-<p>想起来了我还有一个亲妹妹，前两天她回来了，在奶奶家和我一起吃饭，我以前对她一直都不好，说是妹妹更像是陌生人，所以我打算弥补她，对她好些，多和她说说话，这样想想我亏欠的人还挺多。最近有朋友对我说 <code>好安静</code> ， <code>我以为我们永远有话讲</code> ，把整我沉默了好一会，但是还是被我转移话题逃了出去。我也不知道我想说什么，也许对于线上的聊天，我更喜欢线下，或者我在她面前放不开，有很多我在其他人面前能开的玩笑不敢在她身上开，最主要的原因好像还是我很早以前做了伤害人家的事，但那个事的细节我也记不太清，也不是很想记起，等真正能见面的时候我应该会好好的谈一谈。记得暑假时有朋友说我该社交了，我当时的回答好像是选择性社交，其实好像是我不愿意去交新的朋友了，不是因为我交不到，我相信我的社交能力和说废话的能力还是蛮厉害的，只是我觉得我不需要那么多朋友，有的人觉得多个朋友多一条路，我觉得都没有错，关键是我没那么多心思去搞好那么多的关系，有时候我看见别人的微信联系人有上千个人，这个时候我就打开了我的微信，158 人，还要减去代做的，打印店的，待删除的，实际上也蛮多的，有 100 来人，微信联系人多好像也不代表自己朋友多，只是能联系的人多而已，好像说了很多没用的废话，算了。</p>
-<p>今天多了一个新的标签 叫做胡思乱想，原因是我昨天下午睡午觉时楼上还是隔壁哪个地方有人家暴，我只能听声音来判断，一个男的边骂边砸凳子，后面扇了女的一巴掌，巴掌声后紧接着的是女的尖叫声，我感觉事情有点严重了，于是起来和我爷爷奶奶说，不过他们听力不太好，我回房间后也没啥动静了，只是男的骂骂咧咧的声音没有停下来，然后我闭上眼睛开始乱想：我找到了家暴男，然后告诉他有什么事别动手，他不听，我报警，他被抓，我回家，他出狱，来找我，带着刀，我出门，倒垃圾，遇见他，一刀两刀三刀，我挂了。</p>
-<p>真有意思，老是想一些奇怪的东西，以后有什么想法了就写博客里，就这样，我该睡一觉再起来复习专升本了，写这个博客的原因只是测试一下视频的插件能不能正常使用，看来是可以的，针不戳，反正我也不指望看到这篇博客的人去看，只不过是用来取文章名字和测试的而已，就这样，拜拜。</p>
-]]></content>
-      <categories>
-        <category>生活</category>
-      </categories>
-      <tags>
-        <tag>生活</tag>
-        <tag>周记</tag>
-        <tag>胡思乱想</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>新的主题:shoka</title>
     <url>/2022/05/08/%E6%96%B0%E7%9A%84%E4%B8%BB%E9%A2%98-shoka/</url>
     <content><![CDATA[<h3 id="shoka"><a class="markdownIt-Anchor" href="#shoka">#</a> shoka</h3>
@@ -2141,6 +2157,29 @@
       <tags>
         <tag>网站</tag>
         <tag>工具</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>无尽旅途</title>
+    <url>/2022/12/19/%E6%97%A0%E5%B0%BD%E6%97%85%E9%80%94/</url>
+    <content><![CDATA[<p>在很早的时候我在 b 站看过一个视频，是一个世界渲染大赛，主题是 <code>无尽旅途</code> ，就是下面的视频。</p>
+<style>.bbplayer{width: 100%; max-width: 850px; margin: auto}</style><div class="bbplayer"><iframe class="bbplayer" id="mmedia-cSfRCguCffNhkyhy" src="https://player.bilibili.com/player.html?bvid=BV1KP4y137s6&amp;page=1&amp;high_quality=1&amp;danmaku=true" allowfullscreen="allowfullscreen" scrolling="no" border="0" frameborder="0" framespacing="0" sandbox="allow-top-navigation allow-same-origin allow-forms allow-scripts allow-popups"></iframe></div><script> document.getElementById("mmedia-cSfRCguCffNhkyhy").style.height=document.getElementById("mmedia-cSfRCguCffNhkyhy").scrollWidth*0.76+"px";
+    window.onresize = function(){
+      document.getElementById("mmedia-cSfRCguCffNhkyhy").style.height=document.getElementById("mmedia-cSfRCguCffNhkyhy").scrollWidth*0.76+"px";
+    }; </script>
+<p>我很喜欢这种类型的视频，但是我的语文水平实在是太差了，不知道该怎么去形容，让我想起了小学时候我爸爸问我语文的阅读理解怎么这么差，我说我明白那是什么意思，只是不知道怎么表达出来而已。我喜欢这种在去某一个地方过程中等待的感觉，比如早些时候独自坐火车去合肥的时候，这种感觉，孤独，未知，安静。而我却很享受这些感觉。在高中时候我经常和某人看关于太空的电影，通常电影中都会有去某一个星球的过程，而这个过程就会给我这种感觉。如果在早几年也许我会分享这个视频，但是我已经没有这种分享欲了，即使是给别人看也不会抱太大的期望，我记得我向别人推荐过我最喜欢的两个动漫，分别是 <code>星际牛仔</code> 和 <code>混沌武士</code> ，不过我分享过的人没有人去看，即使是我最好的朋友，当时确实给我一种很失望的感觉，不过我现在倒是不会在乎那么多，毕竟每个人喜欢的东西不同。</p>
+<p>今天凌晨好像是世界杯结束了，阿根廷赢了，各种软件都推送给我梅西和世界杯的视频，朋友圈也刷屏式的更新，我不觉得热闹，只感觉厌烦，不明白是因为讨厌跟风还是因为自己，我没有关注世界杯，想起了上次世界杯，也就是四年前 (时间过得真快妈的)。那个时候队友们通宵看球，还算热闹，不过我还是没有参与进去，但是感受到了气氛，也算是开心。今年有人在家围在一起看球，有人在酒吧不怕疫情看球，有人打开腾讯会议一起看球，而我在玩荒野大镖客，那为什么不玩 APEX，因为我删了 qwq，如果不删我想我现在玩的不是博客了。 反正昨天过的挺无聊的，只能看着别人热闹，或者天天都挺无聊，但我已经对这种东西产生抗体了，反正也无所谓了，原本计划着出去玩，没想到疫情蔓延的这么快，被感染的同学戴着口罩躺着床上说着快死人一般的语气说着自己不行了，还有的同学一家人只剩下自己没被感染，到这个时候我也想不明白为什么一些媒体还要开玩笑似的淡化疫情。</p>
+<p>想起来了我还有一个亲妹妹，前两天她回来了，在奶奶家和我一起吃饭，我以前对她一直都不好，说是妹妹更像是陌生人，所以我打算弥补她，对她好些，多和她说说话，这样想想我亏欠的人还挺多。最近有朋友对我说 <code>好安静</code> ， <code>我以为我们永远有话讲</code> ，把整我沉默了好一会，但是还是被我转移话题逃了出去。我也不知道我想说什么，也许对于线上的聊天，我更喜欢线下，或者我在她面前放不开，有很多我在其他人面前能开的玩笑不敢在她身上开，最主要的原因好像还是我很早以前做了伤害人家的事，但那个事的细节我也记不太清，也不是很想记起，等真正能见面的时候我应该会好好的谈一谈。记得暑假时有朋友说我该社交了，我当时的回答好像是选择性社交，其实好像是我不愿意去交新的朋友了，不是因为我交不到，我相信我的社交能力和说废话的能力还是蛮厉害的，只是我觉得我不需要那么多朋友，有的人觉得多个朋友多一条路，我觉得都没有错，关键是我没那么多心思去搞好那么多的关系，有时候我看见别人的微信联系人有上千个人，这个时候我就打开了我的微信，158 人，还要减去代做的，打印店的，待删除的，实际上也蛮多的，有 100 来人，微信联系人多好像也不代表自己朋友多，只是能联系的人多而已，好像说了很多没用的废话，算了。</p>
+<p>今天多了一个新的标签 叫做胡思乱想，原因是我昨天下午睡午觉时楼上还是隔壁哪个地方有人家暴，我只能听声音来判断，一个男的边骂边砸凳子，后面扇了女的一巴掌，巴掌声后紧接着的是女的尖叫声，我感觉事情有点严重了，于是起来和我爷爷奶奶说，不过他们听力不太好，我回房间后也没啥动静了，只是男的骂骂咧咧的声音没有停下来，然后我闭上眼睛开始乱想：我找到了家暴男，然后告诉他有什么事别动手，他不听，我报警，他被抓，我回家，他出狱，来找我，带着刀，我出门，倒垃圾，遇见他，一刀两刀三刀，我挂了。</p>
+<p>真有意思，老是想一些奇怪的东西，以后有什么想法了就写博客里，就这样，我该睡一觉再起来复习专升本了，写这个博客的原因只是测试一下视频的插件能不能正常使用，看来是可以的，针不戳，反正我也不指望看到这篇博客的人去看，只不过是用来取文章名字和测试的而已，就这样，拜拜。</p>
+]]></content>
+      <categories>
+        <category>生活</category>
+      </categories>
+      <tags>
+        <tag>生活</tag>
+        <tag>周记</tag>
+        <tag>胡思乱想</tag>
       </tags>
   </entry>
   <entry>
@@ -2238,51 +2277,6 @@
       </tags>
   </entry>
   <entry>
-    <title>百年孤独</title>
-    <url>/2022/10/22/%E7%99%BE%E5%B9%B4%E5%AD%A4%E7%8B%AC/</url>
-    <content><![CDATA[<p>过去都是假的，回忆是一条没有归途的路，以往的一切春天都无法复原，即使最狂热最坚贞的爱情，归根结底也不过是一种瞬息即逝的现实，唯有孤独永恒。</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>开学前</title>
-    <url>/2022/08/29/%E5%BC%80%E5%AD%A6%E5%89%8D/</url>
-    <content><![CDATA[<p>烦内，再过几天该开学了，回想整个暑假，好像都没有干什么就结束了，虽然这次假期休息的时间是最长的，但我还是觉得时间过得太快辣。有没有一种可能，就是和我凌晨 3 点睡，中午 12 点起有关系。明明想好了开学前十天把生物钟调整好，但我现在居然在等我的羊肉串，而且我还刚吃了一小碗泡面，不知道为什么最近胃口特别好… 羊肉串好了，吃完再写，º﹃º</p>
-<p>吃饱了，开始困起来了，每次吃饱的时候就特别特别特别困，好像在哪里听说过是我脑子里的细胞去我肚子里帮助消化之类的说法，不知道是不是这个原因。困是困了，但是不想睡觉，虽然想睡也睡不着，最近睡眠质量又开始下降了，不想睡占一半，想睡睡不着又占一半，我想了一下，也许有人和我一张床睡的话会比较好些，因为我会配合对方的睡眠习惯和时间，或者是有可能怕吵醒对方。哈哈，不过近几年还是别想这些了。睡眠质量下降了，做梦的频率也多了很多，也发现了做梦需要的条件，大概就是需要睡觉中途醒一次，接着继续睡，环境需要在比较冷的地方，接着就会在第二次睡眠中进入梦境了，我很喜欢做梦，因为它没办法预测，不知道自己会梦见什么，但我最近梦到的都是可能会发生的事情，比如我和谁去吃夜市，和谁滑滑板，和谁去逛街，梦见因为疫情好久没见的外婆表妹之类的。最近梦到的是去好朋友家喝茶，并且她爸妈也在… 很多次做的梦过几分钟就忘了，也许有一天我会新建一个  <code>梦</code>  的分类来记录到博客里，因为梦实在是太有意思了，但好像能写的不算多，因为我梦到的尺度好像会比较大哈哈哈哈.</p>
-<p>妈的说起喝茶，上次从湖南回南昌都到 X 家楼下了还不让我去她家喝茶，只让 S 去，妈的太过分了，我只是想和叔叔阿姨聊个天，喝个茶，撸下她家的猫，尝一尝她调的酒，如果能蹭就蹭一下饭而已。我也问过 S 可不可以去她家喝茶，她好像是说去了怕她爸妈认为我和她有戏之类的来拒绝我，这样拒绝我还是能接受的，但我要是有机会我还是会去她家喝茶的！我只是想嫖点东西而已，真的 QWQ，我还问过其他的人，一个是怕父母打断腿，一个说不想理我，还有一个直接让我滚，呜呜，如果是<span style="color:#49b1f5">ButterFlyFish</span>的话应该是有戏的，但是家离得太远了，等有机会她和她妈妈视频我可以露个脸打个招呼，逗一下家长玩。</p>
-<p>本以为熬夜到中午，不吃早饭我体重又要下降，但是最近去家里称了一下体重，发现终于到了我一直想要的  <code>100斤</code>  ，可能是我最近零食吃的比较多，买了一些自己想吃的薯片，巧克力饼干，还有冰糖杨梅之类的，特别是冰糖杨梅，真巨好吃，我特别喜欢吃糖，特别是软糖，就是毛毛虫软糖，qq 糖，或者可乐软糖之类的，虽然我很喜欢吃，但吃的次数特别少，少到几乎都是别人买了棒棒糖给我吃，或者我去商店才买一次，频率大概是两三个月吃一次的程度。这么少吃糖的主要原因是害怕长痘痘，但通过最近吃零食来看，并没有那么严重，脸上除了黑头几乎没有可以挤的痘痘了，有可能是痘痘都跑到背上去了。。说的好像也没错，自从我背上有痘痘后脸上就不长了，不知道这个对我来说是好事还是坏事，应该算是好事吧，哈哈哈。</p>
-<p>说起零食，我是在奶奶家附近的零食店买的，到现在为止一共去了三次，第一次是去长沙之前路上吃的，由于和零食店的姐姐没沟通好，导致我充了钱，所以第一次只花了一半，第二次是过了一段时间了，我想起要把余额清零，所以打开计算器每拿一个零食就算一次，然后完美的清零了，那个姐姐还不相信，看了一眼订单余额，晚上回去她通过订单上的电话发短信要加我微信，我以为是朋友捣乱，所以刁难了她许久，还问她是不是间谍之类的… 直到她说她是零食店的姐姐后。。。直接把我尬住了，虽然我是想要个大一点的姐姐，不过貌似她特别被动，也不会找话题，我也太懒了，就没和她聊了，第三次是我滑滑板饿了，打算吃羊肉串，但是又有点小贵，所以干脆去零食店买泡面和零食得了，所以就有了今天我吃了泡面还是想吃羊肉串的场景… 考虑到我会吃零食增重，也许会在去学校的前一天买一些 (拿得下的话)</p>
-<p>前段时间经常去网吧和<span style="color:#ccc">充电器</span>玩 csgo，说是经常，实际上只去了两次，去不去玩其实都没区别，只是害怕我玩枪的技术下降了，哈哈哈，还有一个原因是上完网后可以滑滑板回家，从网吧到家，有一段特别长的下坡，蹬都不用蹬，滑的过程特别舒服，虽然下坡完后又是一段特别长的上坡… 但还是值得的，想了一下我应该不会把滑板带去学校了，学校的人实在是太多了，路也不算好，能滑的地方太少了，车还巨多，明明在学校里面，仿佛和在外面没什么区别，最主要的是工作室有电动滑板车可以代步… 但是韬哥走了，要是车坏了真不知道找谁修，虽然这个车很耐操，从杨老师继承到我，直到现在还是好好的。还有一个原因就是我开学只要上两个月的课就可以滚蛋了，让我来算一算两个月，9 个星期，60 天，1440 小时，86400 分钟，5184000 秒，哈哈哈哈！也就是说再过 5184000 秒我就可以跑路了，这样一想我就开始期待开学了，就酱紫，掰掰。最后来听首歌～</p>
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=3&amp;id=2065979054&amp;auto=1&amp;height=66"></iframe>
-<details class="danger"><summary>歌词</summary><div>
-<p><span class="label danger">fly me to the moon</span></p>
-<p>Fly me to the moon, and let me play among the stars.<br>
- 带我飞向月球 并让我在群星之间嬉戏<br>
- Let me see what spring is like on Jupiter and Mars.<br>
- 让我看看在木星和火星上的春天是怎样的<br>
- In other words hold my hand!<br>
- 换句话说，请握住我的手<br>
- In other words darling kiss me!<br>
- 换句话说，亲爱的，吻我<br>
- Fill my heart with song,and let me sing forever more.<br>
- 让我的心灵充满歌声并让我永远歌唱<br>
- You are all I long for all I worship and adore.<br>
- 你是我所有的渴望 我所敬仰与热爱的一切<br>
- In other words please be true!<br>
- 换句话说，请真心对我<br>
- In other words I love you!<br>
- 换句话说，我爱你</p>
-</div></details>
-]]></content>
-      <categories>
-        <category>生活</category>
-      </categories>
-      <tags>
-        <tag>自言自语</tag>
-        <tag>生活</tag>
-        <tag>周记</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>熬夜之旅</title>
     <url>/2022/04/01/%E7%86%AC%E5%A4%9C%E4%B9%8B%E6%97%85/</url>
     <content><![CDATA[<h3 id="熬夜之旅"><a class="markdownIt-Anchor" href="#熬夜之旅">#</a> 熬夜之旅</h3>
@@ -2301,6 +2295,12 @@
         <tag>智障</tag>
         <tag>自言自语</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>百年孤独</title>
+    <url>/2022/10/22/%E7%99%BE%E5%B9%B4%E5%AD%A4%E7%8B%AC/</url>
+    <content><![CDATA[<p>过去都是假的，回忆是一条没有归途的路，以往的一切春天都无法复原，即使最狂热最坚贞的爱情，归根结底也不过是一种瞬息即逝的现实，唯有孤独永恒。</p>
+]]></content>
   </entry>
   <entry>
     <title>睡前要不要喝水捏</title>
@@ -2498,39 +2498,6 @@
       </categories>
       <tags>
         <tag>网站</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>长沙之旅</title>
-    <url>/2022/08/10/%E9%95%BF%E6%B2%99%E4%B9%8B%E6%97%85/</url>
-    <content><![CDATA[<p>仿佛做了一个很长的梦，醒后特别疲惫，打开相册和微信后，发现一切又是真实发生的，那就是我 7 号去了长沙，和我的两位初中同学，简称 X 和 S，明明是八个人的群，五个女生，三个男生，今年出来玩的只有三个人，其他人不是工作了就是家里管得严，想到这些后更加坚定了我要去玩的想法，用不了多久我也将成为他们的一份子，忙于工作和其他事，抽不出时间和好友享受生活。</p>
-<p>这次去长沙可以说是我真正意义上和好朋友出去旅游，也是第一次和两个女生去旅游，可以说是非常幸福的一件事情，因为我不用担心去哪里玩，也不需要准备太多的东西，她们该准备的都会准备好，而我需要做的事情就是帮她们拿这些东西就是，7 号晚上八点半，我与 X 一同去南昌西站乘坐高铁，而 S 是从广州出发去长沙，如果不是疫情，也许我会和 X 或者其他的字母一起去广州找 S 玩，去跳伞，看海，尝试各种新鲜的事情，但不是所有事都能如愿，能去长沙就已经很满足了。</p>
-<p>去长沙的高铁上我和 X 边吃零食边看《招魂 2》，大概算一下，她吃了我买的四包波力海苔，半包草莓巧克力棒，一小瓶旺仔牛奶，半包乐事薯片，如果不是我带的少，我相信她还能接着吃下去，大概过了一个半小时就到了长沙，然后等 S 来后一起把包丢在我身上就一起去做核酸，接着就是打车去宾馆，凌晨 12 点左右到，然后去宾馆下面吃羊肉串，天哪巨好吃，知道为什么吗，因为巨好吃！ 哈哈，其实是放多了料，我口味又比较重，加上只有一块肥肉。</p>
-<p>接着又发生了在长沙的第一件比较有意思的事情，就是坐在我后面那桌的人喝多了，和自己的同伴发生了冲突，把桌子都掀了，酒瓶都拿在手里了，S 和 X 都对我招手，让我赶紧到她们那边去，而我还沉浸在羊肉串的美味里无法自拔，还是一边看他们边吃，直到 S 叫出声了，都爬到 X 的身上了，我才坐到 S 的位置上去，后面也没干起来，被他的同伴拉走了，这件事情的受害者是在睡觉的新疆小女孩，被锤了两拳还没碎的玻璃桌子，还有被 S 和 X 嘲笑的我。不知道发生了什么事情，她们说我边吃羊肉串边看他们发生冲突的场景特别出戏，又搞笑又害怕酒瓶砸在我头上。她们就这样笑到回酒店，我唯一注意的事情是捶桌子的人还为吵醒小朋友睡觉而感到抱歉。</p>
-<p>回宾馆后已经一点左右了，她们发现宾馆房间的光线照在床上特别好看，然后就想拍照了，这个床上比较热，让我来睡这张床，但是她们又要拍照，所以我只能去她们要睡的床上趴着，她们就这样拍到了凌晨三点钟，我因为打不过就加入了她们，也拍了几张我特别好看的照片，和两个我吐槽她们的视频，然后睡了，到了早上六点，睡了三个小时左右，就大概睡不着了，我和 S 吵醒了 X，X 也睡不着了，给我喷了一身防晒霜，滴了两下眼药水就准备出发去橘子洲看毛爷爷了。</p>
-<p>人真的特别多，原本以为早上大家都起不来，结果却相反，不管是上地铁，坐地铁还是下地铁，人都不带少的，大部分人的目的都是去看毛爷爷，到站后我们三个韭菜一起花了 120 元做观光车到毛爷爷头像下拍照，真的巨热，人又巨多，X 的墨镜轮了一圈到我，给我拍了一张巨傻逼的照片，她们又说我拍的巨帅，虽然我觉得不好看，但我还是留了下来，再叫路人给我们三个一起拍了一张，我和 S 因为没有墨镜，所以只有 X 拍的巨好看，我们两个只能拿手遮着阳光跟个弱智一样。完事后准备去岳麓山的，排队时听他们说买到票还要去上面排两小时才能做到缆车，然后我们果断放弃回酒店睡大觉。</p>
-<p>因为茶颜悦色就在酒店的下面，也是刚开门，所以我没有排队就买到了，确实蛮好喝的，我喝的是椰子什么东东，她们的我也尝了一口，蛮清爽的，吃过午饭后问她们还想不想喝，然后我又接着去买，但是人变多了，我大概等了半小时多才买到，上去后尝了一口，我的妈啊那个奶油真的太腻了，我这杯就喝了三分之一就没喝了。给我留下了深刻的印象和阴影，然后好像是我躺在她们两个中间睡午觉，已经记不起是 8 号还是 9 号了，又好像两天都睡过。</p>
-<p>现在脑袋已经过载了，稍微细一点的事情都记不起来了，那就总结一下吧，这个地方对我来说不算好玩，但是有了两个大爷来说充满了乐趣，用她们的洗发水和洗面奶，让我充满了女人味，直到现在我洗了两次澡味道还没有洗掉，还有是去湖南博物馆我在中间拉着她们两个的手看文物，这个情况我从小就希望发生，不过是想要两个照顾弟弟姐姐来，没想过是拉着两个好朋友的手，真没想到这次去玩是我的人生巅峰。唯一难受的是需要帮一下她们拿包和给她们扇风，还需要给她们拍照，和有足够的耐心等她们拍照。不过我也被照顾了许多，累了她们也会拽着我走，会给我靠着，打车钱还没让我出，还买了许多小吃给我吃。</p>
-<p>这次去玩大概花了一千左右，我记了金额较大的数字，零零碎碎的小钱没有算上去。</p>
-<ul>
-<li><code>来回的车票 314</code></li>
-<li><code>两个晚上的宾馆 267.4</code></li>
-<li><code>打车费 16.6</code></li>
-<li><code>橘子洲观光车 40 -没用学生票</code></li>
-<li><code>六杯茶颜悦色 97</code></li>
-<li><code>下馆子 75.3</code></li>
-<li><code>博物馆两个特展学生票 40</code></li>
-<li><code>离开湖南的最后一餐火锅 90.3</code></li>
-</ul>
-<p>一共是  <code>940.6</code> , 学到的东西是吃火锅不要点生菜和牛肉丸 TAT，和她们出去玩确实很不错，需要 AA 的钱她们都会立马转，问她们去吃什么立马都会决定好，很少听到过 <code>随便</code> ， <code>都行</code> ，这几个字，做事也不会拖泥带水，拍的照片非常好看，P 图技术特别牛逼，在回南昌的高铁上看她们 P 了十几分钟才一张照片给我极大地震撼，让我感到非常羞愧，因为我会吐槽她们的朋友圈照片，嘴下从不留情，要多贱有多贱，现在带入进去就是我辛辛苦苦做了一个网页，被人一句话好丑，这里不行，那里不行，血压直接飙升。所以她们要是再发朋友圈我一定会好好欣赏，然后夸一下她们，会评论 <code>姐姐本来就很好看，根本就不用花半小时来P图</code> ，让她们感受人间险恶，哈哈哈哈，就这样，玩的很开心，掰掰  😋 ~</p>
-]]></content>
-      <categories>
-        <category>生活</category>
-      </categories>
-      <tags>
-        <tag>生活</tag>
-        <tag>周记</tag>
-        <tag>旅游</tag>
       </tags>
   </entry>
   <entry>
@@ -2840,9 +2807,9 @@
 </ol>
 <h1 id="多选题"><a class="markdownIt-Anchor" href="#多选题">#</a> 多选题</h1>
 <!-- # 测试 -->
-<!-- <style>.bbplayer{width: 100%; max-width: 850px; margin: auto}</style><div class="bbplayer"><iframe class="bbplayer" id="mmedia-DOkDnvhZICUOTJdT" src="https://player.bilibili.com/player.html?bvid=BV1KP4y137s6&page=1&high_quality=1&danmaku=true" allowfullscreen="allowfullscreen" scrolling="no" border="0" frameborder="0" framespacing="0" sandbox="allow-top-navigation allow-same-origin allow-forms allow-scripts allow-popups"></iframe></div><script> document.getElementById("mmedia-DOkDnvhZICUOTJdT").style.height=document.getElementById("mmedia-DOkDnvhZICUOTJdT").scrollWidth*0.76+"px";
+<!-- <style>.bbplayer{width: 100%; max-width: 850px; margin: auto}</style><div class="bbplayer"><iframe class="bbplayer" id="mmedia-DrbtWvGxxEzHzKDY" src="https://player.bilibili.com/player.html?bvid=BV1KP4y137s6&page=1&high_quality=1&danmaku=true" allowfullscreen="allowfullscreen" scrolling="no" border="0" frameborder="0" framespacing="0" sandbox="allow-top-navigation allow-same-origin allow-forms allow-scripts allow-popups"></iframe></div><script> document.getElementById("mmedia-DrbtWvGxxEzHzKDY").style.height=document.getElementById("mmedia-DrbtWvGxxEzHzKDY").scrollWidth*0.76+"px";
     window.onresize = function(){
-      document.getElementById("mmedia-DOkDnvhZICUOTJdT").style.height=document.getElementById("mmedia-DOkDnvhZICUOTJdT").scrollWidth*0.76+"px";
+      document.getElementById("mmedia-DrbtWvGxxEzHzKDY").style.height=document.getElementById("mmedia-DrbtWvGxxEzHzKDY").scrollWidth*0.76+"px";
     }; </script> -->
 ]]></content>
       <categories>
@@ -2850,6 +2817,39 @@
       </categories>
       <tags>
         <tag>专升本</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>长沙之旅</title>
+    <url>/2022/08/10/%E9%95%BF%E6%B2%99%E4%B9%8B%E6%97%85/</url>
+    <content><![CDATA[<p>仿佛做了一个很长的梦，醒后特别疲惫，打开相册和微信后，发现一切又是真实发生的，那就是我 7 号去了长沙，和我的两位初中同学，简称 X 和 S，明明是八个人的群，五个女生，三个男生，今年出来玩的只有三个人，其他人不是工作了就是家里管得严，想到这些后更加坚定了我要去玩的想法，用不了多久我也将成为他们的一份子，忙于工作和其他事，抽不出时间和好友享受生活。</p>
+<p>这次去长沙可以说是我真正意义上和好朋友出去旅游，也是第一次和两个女生去旅游，可以说是非常幸福的一件事情，因为我不用担心去哪里玩，也不需要准备太多的东西，她们该准备的都会准备好，而我需要做的事情就是帮她们拿这些东西就是，7 号晚上八点半，我与 X 一同去南昌西站乘坐高铁，而 S 是从广州出发去长沙，如果不是疫情，也许我会和 X 或者其他的字母一起去广州找 S 玩，去跳伞，看海，尝试各种新鲜的事情，但不是所有事都能如愿，能去长沙就已经很满足了。</p>
+<p>去长沙的高铁上我和 X 边吃零食边看《招魂 2》，大概算一下，她吃了我买的四包波力海苔，半包草莓巧克力棒，一小瓶旺仔牛奶，半包乐事薯片，如果不是我带的少，我相信她还能接着吃下去，大概过了一个半小时就到了长沙，然后等 S 来后一起把包丢在我身上就一起去做核酸，接着就是打车去宾馆，凌晨 12 点左右到，然后去宾馆下面吃羊肉串，天哪巨好吃，知道为什么吗，因为巨好吃！ 哈哈，其实是放多了料，我口味又比较重，加上只有一块肥肉。</p>
+<p>接着又发生了在长沙的第一件比较有意思的事情，就是坐在我后面那桌的人喝多了，和自己的同伴发生了冲突，把桌子都掀了，酒瓶都拿在手里了，S 和 X 都对我招手，让我赶紧到她们那边去，而我还沉浸在羊肉串的美味里无法自拔，还是一边看他们边吃，直到 S 叫出声了，都爬到 X 的身上了，我才坐到 S 的位置上去，后面也没干起来，被他的同伴拉走了，这件事情的受害者是在睡觉的新疆小女孩，被锤了两拳还没碎的玻璃桌子，还有被 S 和 X 嘲笑的我。不知道发生了什么事情，她们说我边吃羊肉串边看他们发生冲突的场景特别出戏，又搞笑又害怕酒瓶砸在我头上。她们就这样笑到回酒店，我唯一注意的事情是捶桌子的人还为吵醒小朋友睡觉而感到抱歉。</p>
+<p>回宾馆后已经一点左右了，她们发现宾馆房间的光线照在床上特别好看，然后就想拍照了，这个床上比较热，让我来睡这张床，但是她们又要拍照，所以我只能去她们要睡的床上趴着，她们就这样拍到了凌晨三点钟，我因为打不过就加入了她们，也拍了几张我特别好看的照片，和两个我吐槽她们的视频，然后睡了，到了早上六点，睡了三个小时左右，就大概睡不着了，我和 S 吵醒了 X，X 也睡不着了，给我喷了一身防晒霜，滴了两下眼药水就准备出发去橘子洲看毛爷爷了。</p>
+<p>人真的特别多，原本以为早上大家都起不来，结果却相反，不管是上地铁，坐地铁还是下地铁，人都不带少的，大部分人的目的都是去看毛爷爷，到站后我们三个韭菜一起花了 120 元做观光车到毛爷爷头像下拍照，真的巨热，人又巨多，X 的墨镜轮了一圈到我，给我拍了一张巨傻逼的照片，她们又说我拍的巨帅，虽然我觉得不好看，但我还是留了下来，再叫路人给我们三个一起拍了一张，我和 S 因为没有墨镜，所以只有 X 拍的巨好看，我们两个只能拿手遮着阳光跟个弱智一样。完事后准备去岳麓山的，排队时听他们说买到票还要去上面排两小时才能做到缆车，然后我们果断放弃回酒店睡大觉。</p>
+<p>因为茶颜悦色就在酒店的下面，也是刚开门，所以我没有排队就买到了，确实蛮好喝的，我喝的是椰子什么东东，她们的我也尝了一口，蛮清爽的，吃过午饭后问她们还想不想喝，然后我又接着去买，但是人变多了，我大概等了半小时多才买到，上去后尝了一口，我的妈啊那个奶油真的太腻了，我这杯就喝了三分之一就没喝了。给我留下了深刻的印象和阴影，然后好像是我躺在她们两个中间睡午觉，已经记不起是 8 号还是 9 号了，又好像两天都睡过。</p>
+<p>现在脑袋已经过载了，稍微细一点的事情都记不起来了，那就总结一下吧，这个地方对我来说不算好玩，但是有了两个大爷来说充满了乐趣，用她们的洗发水和洗面奶，让我充满了女人味，直到现在我洗了两次澡味道还没有洗掉，还有是去湖南博物馆我在中间拉着她们两个的手看文物，这个情况我从小就希望发生，不过是想要两个照顾弟弟姐姐来，没想过是拉着两个好朋友的手，真没想到这次去玩是我的人生巅峰。唯一难受的是需要帮一下她们拿包和给她们扇风，还需要给她们拍照，和有足够的耐心等她们拍照。不过我也被照顾了许多，累了她们也会拽着我走，会给我靠着，打车钱还没让我出，还买了许多小吃给我吃。</p>
+<p>这次去玩大概花了一千左右，我记了金额较大的数字，零零碎碎的小钱没有算上去。</p>
+<ul>
+<li><code>来回的车票 314</code></li>
+<li><code>两个晚上的宾馆 267.4</code></li>
+<li><code>打车费 16.6</code></li>
+<li><code>橘子洲观光车 40 -没用学生票</code></li>
+<li><code>六杯茶颜悦色 97</code></li>
+<li><code>下馆子 75.3</code></li>
+<li><code>博物馆两个特展学生票 40</code></li>
+<li><code>离开湖南的最后一餐火锅 90.3</code></li>
+</ul>
+<p>一共是  <code>940.6</code> , 学到的东西是吃火锅不要点生菜和牛肉丸 TAT，和她们出去玩确实很不错，需要 AA 的钱她们都会立马转，问她们去吃什么立马都会决定好，很少听到过 <code>随便</code> ， <code>都行</code> ，这几个字，做事也不会拖泥带水，拍的照片非常好看，P 图技术特别牛逼，在回南昌的高铁上看她们 P 了十几分钟才一张照片给我极大地震撼，让我感到非常羞愧，因为我会吐槽她们的朋友圈照片，嘴下从不留情，要多贱有多贱，现在带入进去就是我辛辛苦苦做了一个网页，被人一句话好丑，这里不行，那里不行，血压直接飙升。所以她们要是再发朋友圈我一定会好好欣赏，然后夸一下她们，会评论 <code>姐姐本来就很好看，根本就不用花半小时来P图</code> ，让她们感受人间险恶，哈哈哈哈，就这样，玩的很开心，掰掰  😋 ~</p>
+]]></content>
+      <categories>
+        <category>生活</category>
+      </categories>
+      <tags>
+        <tag>生活</tag>
+        <tag>周记</tag>
+        <tag>旅游</tag>
       </tags>
   </entry>
   <entry>
