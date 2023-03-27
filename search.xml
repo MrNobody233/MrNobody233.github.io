@@ -1,6 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Markor</title>
+    <url>/2022/04/02/Markor/</url>
+    <content><![CDATA[<h3 id="markor"><a class="anchor" href="#markor">#</a> Markor</h3>
+<p>最近想了一小问题，就是学校解封以后，如果我回家的话基本上是不会碰电脑的，虽然我会把电脑一起带回去，但是基本上都没有打开过，可能是我觉得带着有重量感，不对，是害怕我的 github 没有保持日常提交代码，所以为了避免这个情况，我可以使用平板来写文档，虽然提交不上去，但是回宿舍以后，我也可以躺在床上用平板来写一写自己想写的东西，这样有挺多好处的，可以避免我在床上玩手机，这样就可以玩平板了，哈哈哈哈哈，为什么想要用平板来写文档呢，写博客什么的都不是最主要的，最重要的是让我的平板键盘能有用武之地，我已经太久没有用我的平板键盘了，一直放在抽屉里积灰，这东西花了我 600RMB，我也不知道当时我怎么想的，会买这么贵的东西。</p>
+<p>好吧我突然想起来了，在我没有买显示器之前，平板一直是我的副屏，多亏了华为的多屏协同，能帮我省很多事，虽然延迟还是有一小丢丢，但是日常使用还是很给力的，即使是这样还是有缺点的，就是字太小了，我眼睛很好，但是一直看着这么小的字也是会很难受的，所以我买了显示器，果然大屏就是爽，立马抛弃了我的小平板，只用它来记笔记，我们三个一直相处的很好，直到有一天！！！我会写博客了，我为什么不把笔记写在博客里呢，所以我再次抛弃了我的平板，没有考虑平板的感受，呜呜，果然是买前生产力，买后哔哩哔哩，盖泡面，当手托，摸鱼。所以为了改变现状，我可以使用<strong> Markor</strong> 来满足自己突然想写博客的欲望，这一篇博客就是使用 Markor 来写的，还挺像回事，如果找到更好的软件我还是会替代 Markor 的，哈哈哈哈哈哈，这样我的平板就不会失宠了。</p>
+<p>日常水博客，就酱紫，拜拜。</p>
+]]></content>
+      <categories>
+        <category>生活</category>
+      </categories>
+      <tags>
+        <tag>智障</tag>
+        <tag>自言自语</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>First_Vue_Web</title>
     <url>/2022/03/25/First-Vue-Web/</url>
     <content><![CDATA[<h2 id="原因"><a class="anchor" href="#原因">#</a> 原因</h2>
@@ -51,22 +67,6 @@
       <tags>
         <tag>项目</tag>
         <tag>前端</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Markor</title>
-    <url>/2022/04/02/Markor/</url>
-    <content><![CDATA[<h3 id="markor"><a class="anchor" href="#markor">#</a> Markor</h3>
-<p>最近想了一小问题，就是学校解封以后，如果我回家的话基本上是不会碰电脑的，虽然我会把电脑一起带回去，但是基本上都没有打开过，可能是我觉得带着有重量感，不对，是害怕我的 github 没有保持日常提交代码，所以为了避免这个情况，我可以使用平板来写文档，虽然提交不上去，但是回宿舍以后，我也可以躺在床上用平板来写一写自己想写的东西，这样有挺多好处的，可以避免我在床上玩手机，这样就可以玩平板了，哈哈哈哈哈，为什么想要用平板来写文档呢，写博客什么的都不是最主要的，最重要的是让我的平板键盘能有用武之地，我已经太久没有用我的平板键盘了，一直放在抽屉里积灰，这东西花了我 600RMB，我也不知道当时我怎么想的，会买这么贵的东西。</p>
-<p>好吧我突然想起来了，在我没有买显示器之前，平板一直是我的副屏，多亏了华为的多屏协同，能帮我省很多事，虽然延迟还是有一小丢丢，但是日常使用还是很给力的，即使是这样还是有缺点的，就是字太小了，我眼睛很好，但是一直看着这么小的字也是会很难受的，所以我买了显示器，果然大屏就是爽，立马抛弃了我的小平板，只用它来记笔记，我们三个一直相处的很好，直到有一天！！！我会写博客了，我为什么不把笔记写在博客里呢，所以我再次抛弃了我的平板，没有考虑平板的感受，呜呜，果然是买前生产力，买后哔哩哔哩，盖泡面，当手托，摸鱼。所以为了改变现状，我可以使用<strong> Markor</strong> 来满足自己突然想写博客的欲望，这一篇博客就是使用 Markor 来写的，还挺像回事，如果找到更好的软件我还是会替代 Markor 的，哈哈哈哈哈哈，这样我的平板就不会失宠了。</p>
-<p>日常水博客，就酱紫，拜拜。</p>
-]]></content>
-      <categories>
-        <category>生活</category>
-      </categories>
-      <tags>
-        <tag>智障</tag>
-        <tag>自言自语</tag>
       </tags>
   </entry>
   <entry>
@@ -806,6 +806,26 @@
       </tags>
   </entry>
   <entry>
+    <title>Vuex持久化</title>
+    <url>/2022/05/30/Vuex%E6%8C%81%E4%B9%85%E5%8C%96/</url>
+    <content><![CDATA[<h1 id="vuex持久化"><a class="anchor" href="#vuex持久化">#</a> vuex 持久化</h1>
+<p>vuex 可以进行全局的状态管理，在开发的过程中，用户的各种信息（<strong>用户名</strong>，<strong>token</strong>，<strong>头像</strong>），需要 vuex 中存储，并且本地存储，我们可以安装一个 vuex 的插件 <code>vuex-persistedstate</code>  来支持 vuex 的状态持久化，免去自己存储的环节。</p>
+<ol>
+<li>安装 <code>vuex-persistedstate</code>  来支持 vuex 的状态持久化</li>
+</ol>
+<figure class="highlight js"><figcaption data-lang="JavaScript"></figcaption><table><tbody><tr><td data-num="1"></td><td><pre>npm i vuex<span class="token operator">-</span>persistedstate</pre></td></tr></tbody></table></figure><ol start="2">
+<li>在 <code>store/index.js</code>  中导入和配置</li>
+</ol>
+<figure class="highlight js"><figcaption data-lang="JavaScript"></figcaption><table><tbody><tr><td data-num="1"></td><td><pre><span class="token keyword">import</span> <span class="token punctuation">{</span>createStore<span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'vuex'</span></pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token keyword">import</span> <span class="token punctuation">{</span>modulesA<span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">"@/store/modules/modulesA"</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="3"></td><td><pre><span class="token keyword">import</span> createPersistedState <span class="token keyword">from</span> <span class="token string">'vuex-persistedstate'</span></pre></td></tr><tr><td data-num="4"></td><td><pre></pre></td></tr><tr><td data-num="5"></td><td><pre><span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token function">createStore</span><span class="token punctuation">(</span><span class="token punctuation">{</span></pre></td></tr><tr><td data-num="6"></td><td><pre>    <span class="token literal-property property">modules</span><span class="token operator">:</span> <span class="token punctuation">{</span></pre></td></tr><tr><td data-num="7"></td><td><pre>        modulesA</pre></td></tr><tr><td data-num="8"></td><td><pre>    <span class="token punctuation">}</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="9"></td><td><pre>    <span class="token comment">// 配置插件</span></pre></td></tr><tr><td data-num="10"></td><td><pre>    <span class="token literal-property property">plugins</span><span class="token operator">:</span> <span class="token punctuation">[</span></pre></td></tr><tr><td data-num="11"></td><td><pre>        <span class="token function">createPersistedState</span><span class="token punctuation">(</span><span class="token punctuation">{</span></pre></td></tr><tr><td data-num="12"></td><td><pre>            <span class="token comment">// 本地存储的名字</span></pre></td></tr><tr><td data-num="13"></td><td><pre>            <span class="token literal-property property">key</span><span class="token operator">:</span> <span class="token string">'demo-store'</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="14"></td><td><pre>            <span class="token comment">// 指定需要存储的模块</span></pre></td></tr><tr><td data-num="15"></td><td><pre>            <span class="token literal-property property">path</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">'modulesA'</span><span class="token punctuation">]</span></pre></td></tr><tr><td data-num="16"></td><td><pre>        <span class="token punctuation">}</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="17"></td><td><pre>    <span class="token punctuation">]</span></pre></td></tr><tr><td data-num="18"></td><td><pre><span class="token punctuation">}</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="19"></td><td><pre><span class="token comment">// 默认是存储到 localStorage</span></pre></td></tr></tbody></table></figure>]]></content>
+      <categories>
+        <category>web前端</category>
+      </categories>
+      <tags>
+        <tag>前端</tag>
+        <tag>Vue</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Vue-ref引用-作用域插槽</title>
     <url>/2022/04/03/Vue-ref%E5%BC%95%E7%94%A8-%E4%BD%9C%E7%94%A8%E5%9F%9F%E6%8F%92%E6%A7%BD/</url>
     <content><![CDATA[<h3 id="ref引用"><a class="anchor" href="#ref引用">#</a> ref 引用</h3>
@@ -855,26 +875,6 @@
 <p>在封装组件的过程中，可以为预留的 <code>&lt;slot&gt;</code>  插槽绑定 props 数据，这种<span style="color:red">带有 props 数据的 <code>&lt;slot&gt;</code> </span>就是作用域插槽</p>
 <figure class="highlight html"><figcaption data-lang="HTML"></figcaption><table><tbody><tr><td data-num="1"></td><td><pre><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>com-container<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span></pre></td></tr><tr><td data-num="2"></td><td><pre>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h3</span><span class="token punctuation">&gt;</span></span>MyCom组件--作用域插槽<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h3</span><span class="token punctuation">&gt;</span></span></pre></td></tr><tr><td data-num="3"></td><td><pre>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>hr</span><span class="token punctuation">&gt;</span></span></pre></td></tr><tr><td data-num="4"></td><td><pre>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>slot</span> <span class="token attr-name">:info</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>userInfo<span class="token punctuation">"</span></span> <span class="token attr-name">:msg</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>message<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>slot</span><span class="token punctuation">&gt;</span></span></pre></td></tr><tr><td data-num="5"></td><td><pre>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></pre></td></tr></tbody></table></figure><p>v-slot:default="任意合法名" 一般使用 scope 接收 接着可以使用插值表达式渲染出来</p>
 <figure class="highlight html"><figcaption data-lang="HTML"></figcaption><table><tbody><tr><td data-num="1"></td><td><pre><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>MyCom</span><span class="token punctuation">&gt;</span></span></pre></td></tr><tr><td data-num="2"></td><td><pre>      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span> <span class="token attr-name">#default</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>scope<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span></pre></td></tr><tr><td data-num="3"></td><td><pre>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span><span class="token comment"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span></pre></td></tr><tr><td data-num="4"></td><td><pre>      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span></pre></td></tr><tr><td data-num="5"></td><td><pre> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>MyCom</span><span class="token punctuation">&gt;</span></span></pre></td></tr></tbody></table></figure>]]></content>
-      <categories>
-        <category>web前端</category>
-      </categories>
-      <tags>
-        <tag>前端</tag>
-        <tag>Vue</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Vuex持久化</title>
-    <url>/2022/05/30/Vuex%E6%8C%81%E4%B9%85%E5%8C%96/</url>
-    <content><![CDATA[<h1 id="vuex持久化"><a class="anchor" href="#vuex持久化">#</a> vuex 持久化</h1>
-<p>vuex 可以进行全局的状态管理，在开发的过程中，用户的各种信息（<strong>用户名</strong>，<strong>token</strong>，<strong>头像</strong>），需要 vuex 中存储，并且本地存储，我们可以安装一个 vuex 的插件 <code>vuex-persistedstate</code>  来支持 vuex 的状态持久化，免去自己存储的环节。</p>
-<ol>
-<li>安装 <code>vuex-persistedstate</code>  来支持 vuex 的状态持久化</li>
-</ol>
-<figure class="highlight js"><figcaption data-lang="JavaScript"></figcaption><table><tbody><tr><td data-num="1"></td><td><pre>npm i vuex<span class="token operator">-</span>persistedstate</pre></td></tr></tbody></table></figure><ol start="2">
-<li>在 <code>store/index.js</code>  中导入和配置</li>
-</ol>
-<figure class="highlight js"><figcaption data-lang="JavaScript"></figcaption><table><tbody><tr><td data-num="1"></td><td><pre><span class="token keyword">import</span> <span class="token punctuation">{</span>createStore<span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'vuex'</span></pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token keyword">import</span> <span class="token punctuation">{</span>modulesA<span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">"@/store/modules/modulesA"</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="3"></td><td><pre><span class="token keyword">import</span> createPersistedState <span class="token keyword">from</span> <span class="token string">'vuex-persistedstate'</span></pre></td></tr><tr><td data-num="4"></td><td><pre></pre></td></tr><tr><td data-num="5"></td><td><pre><span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token function">createStore</span><span class="token punctuation">(</span><span class="token punctuation">{</span></pre></td></tr><tr><td data-num="6"></td><td><pre>    <span class="token literal-property property">modules</span><span class="token operator">:</span> <span class="token punctuation">{</span></pre></td></tr><tr><td data-num="7"></td><td><pre>        modulesA</pre></td></tr><tr><td data-num="8"></td><td><pre>    <span class="token punctuation">}</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="9"></td><td><pre>    <span class="token comment">// 配置插件</span></pre></td></tr><tr><td data-num="10"></td><td><pre>    <span class="token literal-property property">plugins</span><span class="token operator">:</span> <span class="token punctuation">[</span></pre></td></tr><tr><td data-num="11"></td><td><pre>        <span class="token function">createPersistedState</span><span class="token punctuation">(</span><span class="token punctuation">{</span></pre></td></tr><tr><td data-num="12"></td><td><pre>            <span class="token comment">// 本地存储的名字</span></pre></td></tr><tr><td data-num="13"></td><td><pre>            <span class="token literal-property property">key</span><span class="token operator">:</span> <span class="token string">'demo-store'</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="14"></td><td><pre>            <span class="token comment">// 指定需要存储的模块</span></pre></td></tr><tr><td data-num="15"></td><td><pre>            <span class="token literal-property property">path</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">'modulesA'</span><span class="token punctuation">]</span></pre></td></tr><tr><td data-num="16"></td><td><pre>        <span class="token punctuation">}</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="17"></td><td><pre>    <span class="token punctuation">]</span></pre></td></tr><tr><td data-num="18"></td><td><pre><span class="token punctuation">}</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="19"></td><td><pre><span class="token comment">// 默认是存储到 localStorage</span></pre></td></tr></tbody></table></figure>]]></content>
       <categories>
         <category>web前端</category>
       </categories>
@@ -1039,6 +1039,74 @@
       </tags>
   </entry>
   <entry>
+    <title>Vue数据共享</title>
+    <url>/2022/04/10/Vue%E6%95%B0%E6%8D%AE%E5%85%B1%E4%BA%AB/</url>
+    <content><![CDATA[<h2 id="组件之间的数据共享"><a class="anchor" href="#组件之间的数据共享">#</a> 组件之间的数据共享</h2>
+<h3 id="在项目开发中组件之间的关系分为如下3种"><a class="anchor" href="#在项目开发中组件之间的关系分为如下3种">#</a> 在项目开发中，组件之间的关系分为如下 3 种</h3>
+<ol>
+<li>父子关系</li>
+<li>兄弟关系</li>
+<li>后代关系</li>
+</ol>
+<hr>
+<h3 id="父子之间的数据共享"><a class="anchor" href="#父子之间的数据共享">#</a> 父子之间的数据共享</h3>
+<p>父子组件之间的数据共享又分为</p>
+<h4 id="1-span-stylecolorred父向子span共享数据"><a class="anchor" href="#1-span-stylecolorred父向子span共享数据">#</a> 1. <span style="color:red">父向子</span>共享数据</h4>
+<p>父组件通过<span style="color:red">v-bind 属性绑定</span>向子组件共享数据。同时，子组件需要使用<span style="color:red">props</span>接收数据</p>
+<p><span style="color:red">父组件</span></p>
+<figure class="highlight javascript"><figcaption data-lang="javascript"></figcaption><table><tbody><tr><td data-num="1"></td><td><pre><span class="token comment">// 父组件</span></pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token operator">&lt;</span>myTest </pre></td></tr><tr><td data-num="3"></td><td><pre>  <span class="token operator">:</span>msg<span class="token operator">=</span><span class="token string">"message"</span></pre></td></tr><tr><td data-num="4"></td><td><pre>  <span class="token operator">:</span>user<span class="token operator">=</span><span class="token string">"userinfo"</span><span class="token operator">&gt;</span></pre></td></tr><tr><td data-num="5"></td><td><pre><span class="token operator">&lt;</span><span class="token operator">/</span>myTest<span class="token operator">&gt;</span></pre></td></tr><tr><td data-num="6"></td><td><pre></pre></td></tr><tr><td data-num="7"></td><td><pre><span class="token function">data</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span></pre></td></tr><tr><td data-num="8"></td><td><pre>  <span class="token keyword">return</span><span class="token punctuation">{</span></pre></td></tr><tr><td data-num="9"></td><td><pre>    <span class="token literal-property property">message</span><span class="token operator">:</span><span class="token string">'hello vue'</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="10"></td><td><pre>    <span class="token literal-property property">userinfo</span><span class="token operator">:</span><span class="token punctuation">{</span> <span class="token literal-property property">name</span><span class="token operator">:</span><span class="token string">'zs'</span><span class="token punctuation">,</span> <span class="token literal-property property">age</span><span class="token operator">:</span><span class="token number">20</span> <span class="token punctuation">}</span></pre></td></tr><tr><td data-num="11"></td><td><pre>  <span class="token punctuation">}</span></pre></td></tr><tr><td data-num="12"></td><td><pre><span class="token punctuation">}</span></pre></td></tr></tbody></table></figure><p><span style="color:red">子组件</span></p>
+<figure class="highlight javascript"><figcaption data-lang="javascript"></figcaption><table><tbody><tr><td data-num="1"></td><td><pre><span class="token operator">&lt;</span><span class="token operator">!</span><span class="token operator">--</span> 子组件 <span class="token operator">--</span><span class="token operator">&gt;</span></pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token operator">&lt;</span>template<span class="token operator">&gt;</span></pre></td></tr><tr><td data-num="3"></td><td><pre>  <span class="token operator">&lt;</span>h3<span class="token operator">&gt;</span>测试父子传值<span class="token operator">&lt;</span><span class="token operator">/</span>h3<span class="token operator">&gt;</span></pre></td></tr><tr><td data-num="4"></td><td><pre>  <span class="token operator">&lt;</span>p<span class="token operator">&gt;</span><span class="token punctuation">{</span> msg <span class="token punctuation">}</span><span class="token operator">&lt;</span><span class="token operator">/</span>p<span class="token operator">&gt;</span></pre></td></tr><tr><td data-num="5"></td><td><pre>  <span class="token operator">&lt;</span>p<span class="token operator">&gt;</span><span class="token punctuation">{</span> userinfo <span class="token punctuation">}</span><span class="token operator">&lt;</span><span class="token operator">/</span>p<span class="token operator">&gt;</span></pre></td></tr><tr><td data-num="6"></td><td><pre><span class="token operator">&lt;</span><span class="token operator">/</span>template<span class="token operator">&gt;</span></pre></td></tr><tr><td data-num="7"></td><td><pre></pre></td></tr><tr><td data-num="8"></td><td><pre><span class="token operator">&lt;</span>script<span class="token operator">&gt;</span></pre></td></tr><tr><td data-num="9"></td><td><pre><span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span></pre></td></tr><tr><td data-num="10"></td><td><pre>  <span class="token literal-property property">name</span><span class="token operator">:</span> <span class="token string">"MyTest"</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="11"></td><td><pre>  <span class="token literal-property property">props</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">'msg'</span><span class="token punctuation">,</span> <span class="token string">'userinfo'</span><span class="token punctuation">]</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="12"></td><td><pre><span class="token punctuation">}</span></pre></td></tr><tr><td data-num="13"></td><td><pre><span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">&gt;</span></pre></td></tr></tbody></table></figure><hr>
+<h4 id="2-span-stylecolorred子向父span共享数据"><a class="anchor" href="#2-span-stylecolorred子向父span共享数据">#</a> 2. <span style="color:red">子向父</span>共享数据</h4>
+<p>子组件通过<span style="color:red">自定义事件</span>的方式向父组件共享数据。</p>
+<p>在<span style="color:red">子组件</span>中</p>
+<ul>
+<li>先声明自定义事件  <code>  emits: ['MyTestCount'],</code></li>
+<li>触发自定义事件  <code>   this.$emit('MyTestCount', this.count)</code></li>
+</ul>
+<figure class="highlight javascript"><figcaption data-lang="javascript"></figcaption><table><tbody><tr><td data-num="1"></td><td><pre><span class="token comment">// 子组件</span></pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span></pre></td></tr><tr><td data-num="3"></td><td><pre>  <span class="token comment">// 1. 声明自定义事件</span></pre></td></tr><tr><td data-num="4"></td><td><pre>  <span class="token literal-property property">emits</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">'MyTestCount'</span><span class="token punctuation">]</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="5"></td><td><pre>  <span class="token function">data</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span></pre></td></tr><tr><td data-num="6"></td><td><pre>    <span class="token keyword">return</span> <span class="token punctuation">{</span></pre></td></tr><tr><td data-num="7"></td><td><pre>      <span class="token literal-property property">count</span><span class="token operator">:</span> <span class="token number">0</span></pre></td></tr><tr><td data-num="8"></td><td><pre>    <span class="token punctuation">}</span></pre></td></tr><tr><td data-num="9"></td><td><pre>  <span class="token punctuation">}</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="10"></td><td><pre>  <span class="token literal-property property">methods</span><span class="token operator">:</span> <span class="token punctuation">{</span></pre></td></tr><tr><td data-num="11"></td><td><pre>    <span class="token function">add</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span></pre></td></tr><tr><td data-num="12"></td><td><pre>      <span class="token keyword">this</span><span class="token punctuation">.</span>count <span class="token operator">+=</span> <span class="token number">1</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="13"></td><td><pre>      <span class="token comment">// 2. 数据发生变化时，触发自定义事件</span></pre></td></tr><tr><td data-num="14"></td><td><pre>      <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">$emit</span><span class="token punctuation">(</span><span class="token string">'MyTestCount'</span><span class="token punctuation">,</span> <span class="token keyword">this</span><span class="token punctuation">.</span>count<span class="token punctuation">)</span></pre></td></tr><tr><td data-num="15"></td><td><pre>    <span class="token punctuation">}</span></pre></td></tr><tr><td data-num="16"></td><td><pre>  <span class="token punctuation">}</span></pre></td></tr><tr><td data-num="17"></td><td><pre><span class="token punctuation">}</span></pre></td></tr></tbody></table></figure><p>在<span style="color:red"> 父组件</span>中</p>
+<ul>
+<li>监听子组件的自定义事件   <code>&lt;test @MyTestCount = 'getTestCount'&gt; &lt;/test&gt;</code></li>
+<li>通过形参接收子组件传递过来的数据</li>
+</ul>
+<figure class="highlight javascript"><figcaption data-lang="javascript"></figcaption><table><tbody><tr><td data-num="1"></td><td><pre><span class="token operator">&lt;</span><span class="token operator">!</span><span class="token operator">--</span>父组件<span class="token operator">--</span><span class="token operator">&gt;</span></pre></td></tr><tr><td data-num="2"></td><td><pre>  <span class="token operator">&lt;</span><span class="token operator">!</span><span class="token operator">--</span><span class="token number">1.</span>监听子组件的自定义事件 @MyTestCount<span class="token operator">--</span><span class="token operator">&gt;</span></pre></td></tr><tr><td data-num="3"></td><td><pre>  <span class="token operator">&lt;</span>MyTest @MyTestCount<span class="token operator">=</span><span class="token string">"getMyTestCount"</span><span class="token operator">&gt;</span><span class="token operator">&lt;</span><span class="token operator">/</span>MyTest<span class="token operator">&gt;</span></pre></td></tr><tr><td data-num="4"></td><td><pre></pre></td></tr><tr><td data-num="5"></td><td><pre></pre></td></tr><tr><td data-num="6"></td><td><pre><span class="token operator">&lt;</span>script<span class="token operator">&gt;</span></pre></td></tr><tr><td data-num="7"></td><td><pre><span class="token keyword">import</span> MyTest <span class="token keyword">from</span> <span class="token string">"@/components/MyTest"</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="8"></td><td><pre></pre></td></tr><tr><td data-num="9"></td><td><pre></pre></td></tr><tr><td data-num="10"></td><td><pre><span class="token comment">// 父组件</span></pre></td></tr><tr><td data-num="11"></td><td><pre><span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span></pre></td></tr><tr><td data-num="12"></td><td><pre>  <span class="token literal-property property">components</span><span class="token operator">:</span> <span class="token punctuation">{</span>MyTest<span class="token punctuation">,</span><span class="token punctuation">}</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="13"></td><td><pre>  <span class="token function">data</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span></pre></td></tr><tr><td data-num="14"></td><td><pre>    <span class="token keyword">return</span> <span class="token punctuation">{</span></pre></td></tr><tr><td data-num="15"></td><td><pre>      <span class="token literal-property property">count</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="16"></td><td><pre>    <span class="token punctuation">}</span></pre></td></tr><tr><td data-num="17"></td><td><pre>  <span class="token punctuation">}</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="18"></td><td><pre>  <span class="token literal-property property">methods</span><span class="token operator">:</span> <span class="token punctuation">{</span></pre></td></tr><tr><td data-num="19"></td><td><pre>    <span class="token function">getMyTestCount</span><span class="token punctuation">(</span><span class="token parameter">val</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token comment">// 2. 通过形参，接收子组件传递过来的数据</span></pre></td></tr><tr><td data-num="20"></td><td><pre>      <span class="token keyword">this</span><span class="token punctuation">.</span>count <span class="token operator">=</span> val</pre></td></tr><tr><td data-num="21"></td><td><pre>    <span class="token punctuation">}</span></pre></td></tr><tr><td data-num="22"></td><td><pre>  <span class="token punctuation">}</span></pre></td></tr><tr><td data-num="23"></td><td><pre><span class="token punctuation">}</span></pre></td></tr><tr><td data-num="24"></td><td><pre><span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">&gt;</span></pre></td></tr></tbody></table></figure><hr>
+<h4 id="3-span-stylecolorred父与子span双向数据同步"><a class="anchor" href="#3-span-stylecolorred父与子span双向数据同步">#</a> 3. <span style="color:red">父与子</span>双向数据同步</h4>
+<p>父组件在使用子组件期间，可以使用<span style="color:red">v-model 指令</span>维护组件内外数据的双向同步</p>
+<ol>
+<li>首先父组件通过<span style="color:red">属性绑定</span>的形式，向子组件传递一个<span style="color:red">props</span>数据</li>
+</ol>
+<figure class="highlight html"><figcaption data-lang="HTML"></figcaption><table><tbody><tr><td data-num="1"></td><td><pre><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>MySon</span> <span class="token attr-name"><span class="token namespace">v-model:</span>num</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>count<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>MySon</span><span class="token punctuation">&gt;</span></span></pre></td></tr></tbody></table></figure><ol start="2">
+<li>接下来在子组件接收 props 并声明<span style="color:red">emits</span>. 注意 emits 需要以 <code>'update:要更新谁放谁'</code>  形式写出来，这是一个固定写法</li>
+</ol>
+<figure class="highlight javascript"><figcaption data-lang="javascript"></figcaption><table><tbody><tr><td data-num="1"></td><td><pre><span class="token literal-property property">props</span><span class="token operator">:</span><span class="token punctuation">[</span><span class="token string">'num'</span><span class="token punctuation">]</span></pre></td></tr><tr><td data-num="2"></td><td><pre>  <span class="token literal-property property">emits</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">'update:num'</span><span class="token punctuation">]</span><span class="token punctuation">,</span></pre></td></tr></tbody></table></figure><ol start="3">
+<li>接下来可以调用 <code>this.$emit('update:xxx',最新的数据)</code>  发送出去即可</li>
+</ol>
+<figure class="highlight javascript"><figcaption data-lang="javascript"></figcaption><table><tbody><tr><td data-num="1"></td><td><pre><span class="token function">add</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span></pre></td></tr><tr><td data-num="2"></td><td><pre>      <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">$emit</span><span class="token punctuation">(</span><span class="token string">'update:num'</span><span class="token punctuation">,</span> <span class="token keyword">this</span><span class="token punctuation">.</span>num <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="3"></td><td><pre>  <span class="token punctuation">}</span></pre></td></tr></tbody></table></figure><hr>
+<h3 id="兄弟组件之间的数据共享"><a class="anchor" href="#兄弟组件之间的数据共享">#</a> 兄弟组件之间的数据共享</h3>
+<p>兄弟组件之间实现数据共享的方案是<span style="color:red">EventBus</span>，可以接受第三方的包<span style="color:red">mitt</span>来创建<span style="color:red">eventBus 对象</span>，从而实现兄弟组件之间的数据共享</p>
+<ol>
+<li>安装 mitt 依赖包<br>
+ <code>npm i mitt</code></li>
+<li>创建公共的<span style="color:red">eventBus</span>模块</li>
+</ol>
+<figure class="highlight javascript"><figcaption data-lang="javascript"></figcaption><table><tbody><tr><td data-num="1"></td><td><pre><span class="token comment">// 导入 mitt 包</span></pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token keyword">import</span> mitt <span class="token keyword">from</span> <span class="token string">'mitt'</span></pre></td></tr><tr><td data-num="3"></td><td><pre></pre></td></tr><tr><td data-num="4"></td><td><pre><span class="token comment">// 创建 EventBus 对象</span></pre></td></tr><tr><td data-num="5"></td><td><pre><span class="token keyword">const</span> bus <span class="token operator">=</span> <span class="token function">mitt</span><span class="token punctuation">(</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="6"></td><td><pre></pre></td></tr><tr><td data-num="7"></td><td><pre><span class="token comment">// 将 EventBus 的实例对象共享出去</span></pre></td></tr><tr><td data-num="8"></td><td><pre></pre></td></tr><tr><td data-num="9"></td><td><pre><span class="token keyword">export</span> <span class="token keyword">default</span> but</pre></td></tr></tbody></table></figure><ol start="3">
+<li>在<span style="color:red">数据接收方</span>定义事件<br>
+在数据接收方调用<span style="color:red">bus.on</span>(' 事件名 ', 事件处理函数) 方法<span style="color:red">注册一个自定义事件</span></li>
+</ol>
+<figure class="highlight javascript"><figcaption data-lang="javascript"></figcaption><table><tbody><tr><td data-num="1"></td><td><pre><span class="token comment">// 导入 eventBus.js 模块，得到共享的 bus 对象</span></pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token keyword">import</span> bus <span class="token keyword">from</span> <span class="token string">'@/eventBus/eventBus.js'</span></pre></td></tr><tr><td data-num="3"></td><td><pre></pre></td></tr><tr><td data-num="4"></td><td><pre><span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span></pre></td></tr><tr><td data-num="5"></td><td><pre>  <span class="token literal-property property">name</span><span class="token operator">:</span> <span class="token string">"Right"</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="6"></td><td><pre>  <span class="token function">data</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span></pre></td></tr><tr><td data-num="7"></td><td><pre>    <span class="token keyword">return</span> <span class="token punctuation">{</span></pre></td></tr><tr><td data-num="8"></td><td><pre>      <span class="token literal-property property">count</span><span class="token operator">:</span> <span class="token number">0</span></pre></td></tr><tr><td data-num="9"></td><td><pre>    <span class="token punctuation">}</span></pre></td></tr><tr><td data-num="10"></td><td><pre>  <span class="token punctuation">}</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="11"></td><td><pre>  <span class="token function">created</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span></pre></td></tr><tr><td data-num="12"></td><td><pre>    <span class="token comment">//  调用 bus.on () 方法注册一个自定义事件，通过事件处理函数的形参接收数据</span></pre></td></tr><tr><td data-num="13"></td><td><pre>    bus<span class="token punctuation">.</span><span class="token function">on</span><span class="token punctuation">(</span><span class="token string">'countChange'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token parameter">num</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span></pre></td></tr><tr><td data-num="14"></td><td><pre>      <span class="token keyword">this</span><span class="token punctuation">.</span>count <span class="token operator">=</span> num</pre></td></tr><tr><td data-num="15"></td><td><pre>    <span class="token punctuation">}</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="16"></td><td><pre>  <span class="token punctuation">}</span></pre></td></tr><tr><td data-num="17"></td><td><pre><span class="token punctuation">}</span></pre></td></tr></tbody></table></figure><ol start="4">
+<li>在<span style="color:red">数据发送方</span>触发事件</li>
+</ol>
+<p>在数据发送方，调用<span style="color:red">bus.emit</span>(' 事件名称 ', 要发送的数据) 方法<span style="color:red">触发自定义事件</span></p>
+<figure class="highlight javascript"><figcaption data-lang="javascript"></figcaption><table><tbody><tr><td data-num="1"></td><td><pre><span class="token keyword">import</span> bus <span class="token keyword">from</span> <span class="token string">"@/eventBus/eventBus.js"</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="2"></td><td><pre></pre></td></tr><tr><td data-num="3"></td><td><pre><span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span></pre></td></tr><tr><td data-num="4"></td><td><pre>  <span class="token literal-property property">name</span><span class="token operator">:</span> <span class="token string">"Left"</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="5"></td><td><pre>  <span class="token function">data</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span></pre></td></tr><tr><td data-num="6"></td><td><pre>    <span class="token keyword">return</span> <span class="token punctuation">{</span></pre></td></tr><tr><td data-num="7"></td><td><pre>      <span class="token literal-property property">num</span><span class="token operator">:</span> <span class="token number">0</span></pre></td></tr><tr><td data-num="8"></td><td><pre>    <span class="token punctuation">}</span></pre></td></tr><tr><td data-num="9"></td><td><pre>  <span class="token punctuation">}</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="10"></td><td><pre>  <span class="token literal-property property">methods</span><span class="token operator">:</span> <span class="token punctuation">{</span></pre></td></tr><tr><td data-num="11"></td><td><pre>    <span class="token function">addCount</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span></pre></td></tr><tr><td data-num="12"></td><td><pre>      <span class="token keyword">this</span><span class="token punctuation">.</span>num<span class="token operator">++</span></pre></td></tr><tr><td data-num="13"></td><td><pre>      <span class="token comment">// 调用 bus.emit () 方法触发自定义事件，并发送数据</span></pre></td></tr><tr><td data-num="14"></td><td><pre>      bus<span class="token punctuation">.</span><span class="token function">emit</span><span class="token punctuation">(</span><span class="token string">'countChange'</span><span class="token punctuation">,</span> <span class="token keyword">this</span><span class="token punctuation">.</span>num<span class="token punctuation">)</span></pre></td></tr><tr><td data-num="15"></td><td><pre>    <span class="token punctuation">}</span></pre></td></tr><tr><td data-num="16"></td><td><pre>  <span class="token punctuation">}</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="17"></td><td><pre><span class="token punctuation">}</span></pre></td></tr></tbody></table></figure><hr>
+]]></content>
+      <categories>
+        <category>web前端</category>
+      </categories>
+      <tags>
+        <tag>前端</tag>
+        <tag>Vue</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Vue组件和props</title>
     <url>/2022/04/01/Vue%E7%BB%84%E4%BB%B6%E5%92%8Cprops/</url>
     <content><![CDATA[<h3 id="组件"><a class="anchor" href="#组件">#</a> 组件</h3>
@@ -1129,74 +1197,6 @@
 <p>默认情况下，切换动态组件时<span style="color:red">无法保持组件的状态</span>。这样就可以使用 <code> &lt;keep-alive&gt;</code>  组件保持动态组件的状态</p>
 <p>使用方式非常简单</p>
 <figure class="highlight html"><figcaption data-lang="HTML"></figcaption><table><tbody><tr><td data-num="1"></td><td><pre><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>keep-alive</span><span class="token punctuation">&gt;</span></span></pre></td></tr><tr><td data-num="2"></td><td><pre>      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>component</span> <span class="token attr-name">:is</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>comName<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>component</span><span class="token punctuation">&gt;</span></span></pre></td></tr><tr><td data-num="3"></td><td><pre> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>keep-alive</span><span class="token punctuation">&gt;</span></span></pre></td></tr></tbody></table></figure>]]></content>
-      <categories>
-        <category>web前端</category>
-      </categories>
-      <tags>
-        <tag>前端</tag>
-        <tag>Vue</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Vue数据共享</title>
-    <url>/2022/04/10/Vue%E6%95%B0%E6%8D%AE%E5%85%B1%E4%BA%AB/</url>
-    <content><![CDATA[<h2 id="组件之间的数据共享"><a class="anchor" href="#组件之间的数据共享">#</a> 组件之间的数据共享</h2>
-<h3 id="在项目开发中组件之间的关系分为如下3种"><a class="anchor" href="#在项目开发中组件之间的关系分为如下3种">#</a> 在项目开发中，组件之间的关系分为如下 3 种</h3>
-<ol>
-<li>父子关系</li>
-<li>兄弟关系</li>
-<li>后代关系</li>
-</ol>
-<hr>
-<h3 id="父子之间的数据共享"><a class="anchor" href="#父子之间的数据共享">#</a> 父子之间的数据共享</h3>
-<p>父子组件之间的数据共享又分为</p>
-<h4 id="1-span-stylecolorred父向子span共享数据"><a class="anchor" href="#1-span-stylecolorred父向子span共享数据">#</a> 1. <span style="color:red">父向子</span>共享数据</h4>
-<p>父组件通过<span style="color:red">v-bind 属性绑定</span>向子组件共享数据。同时，子组件需要使用<span style="color:red">props</span>接收数据</p>
-<p><span style="color:red">父组件</span></p>
-<figure class="highlight javascript"><figcaption data-lang="javascript"></figcaption><table><tbody><tr><td data-num="1"></td><td><pre><span class="token comment">// 父组件</span></pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token operator">&lt;</span>myTest </pre></td></tr><tr><td data-num="3"></td><td><pre>  <span class="token operator">:</span>msg<span class="token operator">=</span><span class="token string">"message"</span></pre></td></tr><tr><td data-num="4"></td><td><pre>  <span class="token operator">:</span>user<span class="token operator">=</span><span class="token string">"userinfo"</span><span class="token operator">&gt;</span></pre></td></tr><tr><td data-num="5"></td><td><pre><span class="token operator">&lt;</span><span class="token operator">/</span>myTest<span class="token operator">&gt;</span></pre></td></tr><tr><td data-num="6"></td><td><pre></pre></td></tr><tr><td data-num="7"></td><td><pre><span class="token function">data</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span></pre></td></tr><tr><td data-num="8"></td><td><pre>  <span class="token keyword">return</span><span class="token punctuation">{</span></pre></td></tr><tr><td data-num="9"></td><td><pre>    <span class="token literal-property property">message</span><span class="token operator">:</span><span class="token string">'hello vue'</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="10"></td><td><pre>    <span class="token literal-property property">userinfo</span><span class="token operator">:</span><span class="token punctuation">{</span> <span class="token literal-property property">name</span><span class="token operator">:</span><span class="token string">'zs'</span><span class="token punctuation">,</span> <span class="token literal-property property">age</span><span class="token operator">:</span><span class="token number">20</span> <span class="token punctuation">}</span></pre></td></tr><tr><td data-num="11"></td><td><pre>  <span class="token punctuation">}</span></pre></td></tr><tr><td data-num="12"></td><td><pre><span class="token punctuation">}</span></pre></td></tr></tbody></table></figure><p><span style="color:red">子组件</span></p>
-<figure class="highlight javascript"><figcaption data-lang="javascript"></figcaption><table><tbody><tr><td data-num="1"></td><td><pre><span class="token operator">&lt;</span><span class="token operator">!</span><span class="token operator">--</span> 子组件 <span class="token operator">--</span><span class="token operator">&gt;</span></pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token operator">&lt;</span>template<span class="token operator">&gt;</span></pre></td></tr><tr><td data-num="3"></td><td><pre>  <span class="token operator">&lt;</span>h3<span class="token operator">&gt;</span>测试父子传值<span class="token operator">&lt;</span><span class="token operator">/</span>h3<span class="token operator">&gt;</span></pre></td></tr><tr><td data-num="4"></td><td><pre>  <span class="token operator">&lt;</span>p<span class="token operator">&gt;</span><span class="token punctuation">{</span> msg <span class="token punctuation">}</span><span class="token operator">&lt;</span><span class="token operator">/</span>p<span class="token operator">&gt;</span></pre></td></tr><tr><td data-num="5"></td><td><pre>  <span class="token operator">&lt;</span>p<span class="token operator">&gt;</span><span class="token punctuation">{</span> userinfo <span class="token punctuation">}</span><span class="token operator">&lt;</span><span class="token operator">/</span>p<span class="token operator">&gt;</span></pre></td></tr><tr><td data-num="6"></td><td><pre><span class="token operator">&lt;</span><span class="token operator">/</span>template<span class="token operator">&gt;</span></pre></td></tr><tr><td data-num="7"></td><td><pre></pre></td></tr><tr><td data-num="8"></td><td><pre><span class="token operator">&lt;</span>script<span class="token operator">&gt;</span></pre></td></tr><tr><td data-num="9"></td><td><pre><span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span></pre></td></tr><tr><td data-num="10"></td><td><pre>  <span class="token literal-property property">name</span><span class="token operator">:</span> <span class="token string">"MyTest"</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="11"></td><td><pre>  <span class="token literal-property property">props</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">'msg'</span><span class="token punctuation">,</span> <span class="token string">'userinfo'</span><span class="token punctuation">]</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="12"></td><td><pre><span class="token punctuation">}</span></pre></td></tr><tr><td data-num="13"></td><td><pre><span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">&gt;</span></pre></td></tr></tbody></table></figure><hr>
-<h4 id="2-span-stylecolorred子向父span共享数据"><a class="anchor" href="#2-span-stylecolorred子向父span共享数据">#</a> 2. <span style="color:red">子向父</span>共享数据</h4>
-<p>子组件通过<span style="color:red">自定义事件</span>的方式向父组件共享数据。</p>
-<p>在<span style="color:red">子组件</span>中</p>
-<ul>
-<li>先声明自定义事件  <code>  emits: ['MyTestCount'],</code></li>
-<li>触发自定义事件  <code>   this.$emit('MyTestCount', this.count)</code></li>
-</ul>
-<figure class="highlight javascript"><figcaption data-lang="javascript"></figcaption><table><tbody><tr><td data-num="1"></td><td><pre><span class="token comment">// 子组件</span></pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span></pre></td></tr><tr><td data-num="3"></td><td><pre>  <span class="token comment">// 1. 声明自定义事件</span></pre></td></tr><tr><td data-num="4"></td><td><pre>  <span class="token literal-property property">emits</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">'MyTestCount'</span><span class="token punctuation">]</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="5"></td><td><pre>  <span class="token function">data</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span></pre></td></tr><tr><td data-num="6"></td><td><pre>    <span class="token keyword">return</span> <span class="token punctuation">{</span></pre></td></tr><tr><td data-num="7"></td><td><pre>      <span class="token literal-property property">count</span><span class="token operator">:</span> <span class="token number">0</span></pre></td></tr><tr><td data-num="8"></td><td><pre>    <span class="token punctuation">}</span></pre></td></tr><tr><td data-num="9"></td><td><pre>  <span class="token punctuation">}</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="10"></td><td><pre>  <span class="token literal-property property">methods</span><span class="token operator">:</span> <span class="token punctuation">{</span></pre></td></tr><tr><td data-num="11"></td><td><pre>    <span class="token function">add</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span></pre></td></tr><tr><td data-num="12"></td><td><pre>      <span class="token keyword">this</span><span class="token punctuation">.</span>count <span class="token operator">+=</span> <span class="token number">1</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="13"></td><td><pre>      <span class="token comment">// 2. 数据发生变化时，触发自定义事件</span></pre></td></tr><tr><td data-num="14"></td><td><pre>      <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">$emit</span><span class="token punctuation">(</span><span class="token string">'MyTestCount'</span><span class="token punctuation">,</span> <span class="token keyword">this</span><span class="token punctuation">.</span>count<span class="token punctuation">)</span></pre></td></tr><tr><td data-num="15"></td><td><pre>    <span class="token punctuation">}</span></pre></td></tr><tr><td data-num="16"></td><td><pre>  <span class="token punctuation">}</span></pre></td></tr><tr><td data-num="17"></td><td><pre><span class="token punctuation">}</span></pre></td></tr></tbody></table></figure><p>在<span style="color:red"> 父组件</span>中</p>
-<ul>
-<li>监听子组件的自定义事件   <code>&lt;test @MyTestCount = 'getTestCount'&gt; &lt;/test&gt;</code></li>
-<li>通过形参接收子组件传递过来的数据</li>
-</ul>
-<figure class="highlight javascript"><figcaption data-lang="javascript"></figcaption><table><tbody><tr><td data-num="1"></td><td><pre><span class="token operator">&lt;</span><span class="token operator">!</span><span class="token operator">--</span>父组件<span class="token operator">--</span><span class="token operator">&gt;</span></pre></td></tr><tr><td data-num="2"></td><td><pre>  <span class="token operator">&lt;</span><span class="token operator">!</span><span class="token operator">--</span><span class="token number">1.</span>监听子组件的自定义事件 @MyTestCount<span class="token operator">--</span><span class="token operator">&gt;</span></pre></td></tr><tr><td data-num="3"></td><td><pre>  <span class="token operator">&lt;</span>MyTest @MyTestCount<span class="token operator">=</span><span class="token string">"getMyTestCount"</span><span class="token operator">&gt;</span><span class="token operator">&lt;</span><span class="token operator">/</span>MyTest<span class="token operator">&gt;</span></pre></td></tr><tr><td data-num="4"></td><td><pre></pre></td></tr><tr><td data-num="5"></td><td><pre></pre></td></tr><tr><td data-num="6"></td><td><pre><span class="token operator">&lt;</span>script<span class="token operator">&gt;</span></pre></td></tr><tr><td data-num="7"></td><td><pre><span class="token keyword">import</span> MyTest <span class="token keyword">from</span> <span class="token string">"@/components/MyTest"</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="8"></td><td><pre></pre></td></tr><tr><td data-num="9"></td><td><pre></pre></td></tr><tr><td data-num="10"></td><td><pre><span class="token comment">// 父组件</span></pre></td></tr><tr><td data-num="11"></td><td><pre><span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span></pre></td></tr><tr><td data-num="12"></td><td><pre>  <span class="token literal-property property">components</span><span class="token operator">:</span> <span class="token punctuation">{</span>MyTest<span class="token punctuation">,</span><span class="token punctuation">}</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="13"></td><td><pre>  <span class="token function">data</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span></pre></td></tr><tr><td data-num="14"></td><td><pre>    <span class="token keyword">return</span> <span class="token punctuation">{</span></pre></td></tr><tr><td data-num="15"></td><td><pre>      <span class="token literal-property property">count</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="16"></td><td><pre>    <span class="token punctuation">}</span></pre></td></tr><tr><td data-num="17"></td><td><pre>  <span class="token punctuation">}</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="18"></td><td><pre>  <span class="token literal-property property">methods</span><span class="token operator">:</span> <span class="token punctuation">{</span></pre></td></tr><tr><td data-num="19"></td><td><pre>    <span class="token function">getMyTestCount</span><span class="token punctuation">(</span><span class="token parameter">val</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token comment">// 2. 通过形参，接收子组件传递过来的数据</span></pre></td></tr><tr><td data-num="20"></td><td><pre>      <span class="token keyword">this</span><span class="token punctuation">.</span>count <span class="token operator">=</span> val</pre></td></tr><tr><td data-num="21"></td><td><pre>    <span class="token punctuation">}</span></pre></td></tr><tr><td data-num="22"></td><td><pre>  <span class="token punctuation">}</span></pre></td></tr><tr><td data-num="23"></td><td><pre><span class="token punctuation">}</span></pre></td></tr><tr><td data-num="24"></td><td><pre><span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">&gt;</span></pre></td></tr></tbody></table></figure><hr>
-<h4 id="3-span-stylecolorred父与子span双向数据同步"><a class="anchor" href="#3-span-stylecolorred父与子span双向数据同步">#</a> 3. <span style="color:red">父与子</span>双向数据同步</h4>
-<p>父组件在使用子组件期间，可以使用<span style="color:red">v-model 指令</span>维护组件内外数据的双向同步</p>
-<ol>
-<li>首先父组件通过<span style="color:red">属性绑定</span>的形式，向子组件传递一个<span style="color:red">props</span>数据</li>
-</ol>
-<figure class="highlight html"><figcaption data-lang="HTML"></figcaption><table><tbody><tr><td data-num="1"></td><td><pre><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>MySon</span> <span class="token attr-name"><span class="token namespace">v-model:</span>num</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>count<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>MySon</span><span class="token punctuation">&gt;</span></span></pre></td></tr></tbody></table></figure><ol start="2">
-<li>接下来在子组件接收 props 并声明<span style="color:red">emits</span>. 注意 emits 需要以 <code>'update:要更新谁放谁'</code>  形式写出来，这是一个固定写法</li>
-</ol>
-<figure class="highlight javascript"><figcaption data-lang="javascript"></figcaption><table><tbody><tr><td data-num="1"></td><td><pre><span class="token literal-property property">props</span><span class="token operator">:</span><span class="token punctuation">[</span><span class="token string">'num'</span><span class="token punctuation">]</span></pre></td></tr><tr><td data-num="2"></td><td><pre>  <span class="token literal-property property">emits</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">'update:num'</span><span class="token punctuation">]</span><span class="token punctuation">,</span></pre></td></tr></tbody></table></figure><ol start="3">
-<li>接下来可以调用 <code>this.$emit('update:xxx',最新的数据)</code>  发送出去即可</li>
-</ol>
-<figure class="highlight javascript"><figcaption data-lang="javascript"></figcaption><table><tbody><tr><td data-num="1"></td><td><pre><span class="token function">add</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span></pre></td></tr><tr><td data-num="2"></td><td><pre>      <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">$emit</span><span class="token punctuation">(</span><span class="token string">'update:num'</span><span class="token punctuation">,</span> <span class="token keyword">this</span><span class="token punctuation">.</span>num <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="3"></td><td><pre>  <span class="token punctuation">}</span></pre></td></tr></tbody></table></figure><hr>
-<h3 id="兄弟组件之间的数据共享"><a class="anchor" href="#兄弟组件之间的数据共享">#</a> 兄弟组件之间的数据共享</h3>
-<p>兄弟组件之间实现数据共享的方案是<span style="color:red">EventBus</span>，可以接受第三方的包<span style="color:red">mitt</span>来创建<span style="color:red">eventBus 对象</span>，从而实现兄弟组件之间的数据共享</p>
-<ol>
-<li>安装 mitt 依赖包<br>
- <code>npm i mitt</code></li>
-<li>创建公共的<span style="color:red">eventBus</span>模块</li>
-</ol>
-<figure class="highlight javascript"><figcaption data-lang="javascript"></figcaption><table><tbody><tr><td data-num="1"></td><td><pre><span class="token comment">// 导入 mitt 包</span></pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token keyword">import</span> mitt <span class="token keyword">from</span> <span class="token string">'mitt'</span></pre></td></tr><tr><td data-num="3"></td><td><pre></pre></td></tr><tr><td data-num="4"></td><td><pre><span class="token comment">// 创建 EventBus 对象</span></pre></td></tr><tr><td data-num="5"></td><td><pre><span class="token keyword">const</span> bus <span class="token operator">=</span> <span class="token function">mitt</span><span class="token punctuation">(</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="6"></td><td><pre></pre></td></tr><tr><td data-num="7"></td><td><pre><span class="token comment">// 将 EventBus 的实例对象共享出去</span></pre></td></tr><tr><td data-num="8"></td><td><pre></pre></td></tr><tr><td data-num="9"></td><td><pre><span class="token keyword">export</span> <span class="token keyword">default</span> but</pre></td></tr></tbody></table></figure><ol start="3">
-<li>在<span style="color:red">数据接收方</span>定义事件<br>
-在数据接收方调用<span style="color:red">bus.on</span>(' 事件名 ', 事件处理函数) 方法<span style="color:red">注册一个自定义事件</span></li>
-</ol>
-<figure class="highlight javascript"><figcaption data-lang="javascript"></figcaption><table><tbody><tr><td data-num="1"></td><td><pre><span class="token comment">// 导入 eventBus.js 模块，得到共享的 bus 对象</span></pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token keyword">import</span> bus <span class="token keyword">from</span> <span class="token string">'@/eventBus/eventBus.js'</span></pre></td></tr><tr><td data-num="3"></td><td><pre></pre></td></tr><tr><td data-num="4"></td><td><pre><span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span></pre></td></tr><tr><td data-num="5"></td><td><pre>  <span class="token literal-property property">name</span><span class="token operator">:</span> <span class="token string">"Right"</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="6"></td><td><pre>  <span class="token function">data</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span></pre></td></tr><tr><td data-num="7"></td><td><pre>    <span class="token keyword">return</span> <span class="token punctuation">{</span></pre></td></tr><tr><td data-num="8"></td><td><pre>      <span class="token literal-property property">count</span><span class="token operator">:</span> <span class="token number">0</span></pre></td></tr><tr><td data-num="9"></td><td><pre>    <span class="token punctuation">}</span></pre></td></tr><tr><td data-num="10"></td><td><pre>  <span class="token punctuation">}</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="11"></td><td><pre>  <span class="token function">created</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span></pre></td></tr><tr><td data-num="12"></td><td><pre>    <span class="token comment">//  调用 bus.on () 方法注册一个自定义事件，通过事件处理函数的形参接收数据</span></pre></td></tr><tr><td data-num="13"></td><td><pre>    bus<span class="token punctuation">.</span><span class="token function">on</span><span class="token punctuation">(</span><span class="token string">'countChange'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token parameter">num</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span></pre></td></tr><tr><td data-num="14"></td><td><pre>      <span class="token keyword">this</span><span class="token punctuation">.</span>count <span class="token operator">=</span> num</pre></td></tr><tr><td data-num="15"></td><td><pre>    <span class="token punctuation">}</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="16"></td><td><pre>  <span class="token punctuation">}</span></pre></td></tr><tr><td data-num="17"></td><td><pre><span class="token punctuation">}</span></pre></td></tr></tbody></table></figure><ol start="4">
-<li>在<span style="color:red">数据发送方</span>触发事件</li>
-</ol>
-<p>在数据发送方，调用<span style="color:red">bus.emit</span>(' 事件名称 ', 要发送的数据) 方法<span style="color:red">触发自定义事件</span></p>
-<figure class="highlight javascript"><figcaption data-lang="javascript"></figcaption><table><tbody><tr><td data-num="1"></td><td><pre><span class="token keyword">import</span> bus <span class="token keyword">from</span> <span class="token string">"@/eventBus/eventBus.js"</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="2"></td><td><pre></pre></td></tr><tr><td data-num="3"></td><td><pre><span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span></pre></td></tr><tr><td data-num="4"></td><td><pre>  <span class="token literal-property property">name</span><span class="token operator">:</span> <span class="token string">"Left"</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="5"></td><td><pre>  <span class="token function">data</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span></pre></td></tr><tr><td data-num="6"></td><td><pre>    <span class="token keyword">return</span> <span class="token punctuation">{</span></pre></td></tr><tr><td data-num="7"></td><td><pre>      <span class="token literal-property property">num</span><span class="token operator">:</span> <span class="token number">0</span></pre></td></tr><tr><td data-num="8"></td><td><pre>    <span class="token punctuation">}</span></pre></td></tr><tr><td data-num="9"></td><td><pre>  <span class="token punctuation">}</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="10"></td><td><pre>  <span class="token literal-property property">methods</span><span class="token operator">:</span> <span class="token punctuation">{</span></pre></td></tr><tr><td data-num="11"></td><td><pre>    <span class="token function">addCount</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span></pre></td></tr><tr><td data-num="12"></td><td><pre>      <span class="token keyword">this</span><span class="token punctuation">.</span>num<span class="token operator">++</span></pre></td></tr><tr><td data-num="13"></td><td><pre>      <span class="token comment">// 调用 bus.emit () 方法触发自定义事件，并发送数据</span></pre></td></tr><tr><td data-num="14"></td><td><pre>      bus<span class="token punctuation">.</span><span class="token function">emit</span><span class="token punctuation">(</span><span class="token string">'countChange'</span><span class="token punctuation">,</span> <span class="token keyword">this</span><span class="token punctuation">.</span>num<span class="token punctuation">)</span></pre></td></tr><tr><td data-num="15"></td><td><pre>    <span class="token punctuation">}</span></pre></td></tr><tr><td data-num="16"></td><td><pre>  <span class="token punctuation">}</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="17"></td><td><pre><span class="token punctuation">}</span></pre></td></tr></tbody></table></figure><hr>
-]]></content>
       <categories>
         <category>web前端</category>
       </categories>
@@ -1383,44 +1383,6 @@
     <content><![CDATA[<h1>安装axios</h1>
 <figure class="highlight js"><figcaption data-lang="JavaScript"></figcaption><table><tbody><tr><td data-num="1"></td><td><pre>npm i axios</pre></td></tr></tbody></table></figure><h1>新建 " src/utils/request.js "模块，代码如下</h1>
 <figure class="highlight js"><figcaption data-lang="JavaScript"></figcaption><table><tbody><tr><td data-num="1"></td><td><pre><span class="token comment">// 3.1 剥离无效数据  3.2 处理 token 失效</span></pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token comment">// 4. 导出一个函数，调用当前的 axios 实例发请求，返回值 promise</span></pre></td></tr><tr><td data-num="3"></td><td><pre><span class="token comment">// 导入 axios</span></pre></td></tr><tr><td data-num="4"></td><td><pre><span class="token keyword">import</span> axios <span class="token keyword">from</span> <span class="token string">'axios'</span></pre></td></tr><tr><td data-num="5"></td><td><pre><span class="token comment">// 导入 vuex 仓库</span></pre></td></tr><tr><td data-num="6"></td><td><pre><span class="token keyword">import</span> store <span class="token keyword">from</span> <span class="token string">'@/store'</span></pre></td></tr><tr><td data-num="7"></td><td><pre><span class="token comment">// 导入路由</span></pre></td></tr><tr><td data-num="8"></td><td><pre><span class="token keyword">import</span> router <span class="token keyword">from</span> <span class="token string">'@/router'</span></pre></td></tr><tr><td data-num="9"></td><td><pre></pre></td></tr><tr><td data-num="10"></td><td><pre><span class="token comment">// 导出 baseURL, 原因：其他地方不是通过 axios 发请求的地方用上基准地址</span></pre></td></tr><tr><td data-num="11"></td><td><pre><span class="token keyword">export</span> <span class="token keyword">const</span> baseURL <span class="token operator">=</span> <span class="token string">'地址'</span></pre></td></tr><tr><td data-num="12"></td><td><pre></pre></td></tr><tr><td data-num="13"></td><td><pre></pre></td></tr><tr><td data-num="14"></td><td><pre><span class="token comment">// 1. 创建一个新的 axios 实例</span></pre></td></tr><tr><td data-num="15"></td><td><pre><span class="token keyword">const</span> instance <span class="token operator">=</span> axios<span class="token punctuation">.</span><span class="token function">create</span><span class="token punctuation">(</span><span class="token punctuation">{</span></pre></td></tr><tr><td data-num="16"></td><td><pre>  <span class="token comment">//axios 的一些配置，baseURL timeout</span></pre></td></tr><tr><td data-num="17"></td><td><pre>  baseUrl<span class="token punctuation">,</span></pre></td></tr><tr><td data-num="18"></td><td><pre>  <span class="token literal-property property">timeout</span><span class="token operator">:</span><span class="token number">5000</span></pre></td></tr><tr><td data-num="19"></td><td><pre><span class="token punctuation">}</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="20"></td><td><pre></pre></td></tr><tr><td data-num="21"></td><td><pre><span class="token comment">// 2. 请求拦截器，如果有 token 进行头部携带</span></pre></td></tr><tr><td data-num="22"></td><td><pre>instance<span class="token punctuation">.</span>interceptors<span class="token punctuation">.</span>request<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">=&gt;</span><span class="token punctuation">{</span></pre></td></tr><tr><td data-num="23"></td><td><pre>  <span class="token comment">// 拦截业务逻辑</span></pre></td></tr><tr><td data-num="24"></td><td><pre>  <span class="token comment">// 进行请求配置的修改</span></pre></td></tr><tr><td data-num="25"></td><td><pre>  <span class="token comment">// 如果本地有 token 就在头部携带</span></pre></td></tr><tr><td data-num="26"></td><td><pre></pre></td></tr><tr><td data-num="27"></td><td><pre>  <span class="token comment">// 2.1 获取用户信息对象</span></pre></td></tr><tr><td data-num="28"></td><td><pre>  <span class="token keyword">const</span> <span class="token punctuation">{</span> profile <span class="token punctuation">}</span> <span class="token operator">=</span> store<span class="token punctuation">.</span>state<span class="token punctuation">.</span>user</pre></td></tr><tr><td data-num="29"></td><td><pre>  <span class="token comment">// 2.2 判断是否有 token</span></pre></td></tr><tr><td data-num="30"></td><td><pre>    <span class="token keyword">if</span> <span class="token punctuation">(</span>profile<span class="token punctuation">.</span>token<span class="token punctuation">)</span> <span class="token punctuation">{</span></pre></td></tr><tr><td data-num="31"></td><td><pre>        <span class="token comment">// 2.3 设置 token</span></pre></td></tr><tr><td data-num="32"></td><td><pre>        config<span class="token punctuation">.</span>headers<span class="token punctuation">.</span>Authorization <span class="token operator">=</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">Bearer </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>profile<span class="token punctuation">.</span>token<span class="token interpolation-punctuation punctuation">}</span></span><span class="token template-punctuation string">`</span></span></pre></td></tr><tr><td data-num="33"></td><td><pre>    <span class="token punctuation">}</span></pre></td></tr><tr><td data-num="34"></td><td><pre><span class="token punctuation">}</span><span class="token punctuation">,</span><span class="token punctuation">(</span><span class="token parameter">err</span><span class="token punctuation">)</span><span class="token operator">=&gt;</span><span class="token punctuation">{</span></pre></td></tr><tr><td data-num="35"></td><td><pre>  <span class="token comment">// 将错误对象传递进去</span></pre></td></tr><tr><td data-num="36"></td><td><pre>  <span class="token keyword">return</span> Promise<span class="token punctuation">.</span><span class="token function">reject</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span></pre></td></tr><tr><td data-num="37"></td><td><pre><span class="token punctuation">}</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="38"></td><td><pre></pre></td></tr><tr><td data-num="39"></td><td><pre><span class="token comment">// 3 响应拦截器：</span></pre></td></tr><tr><td data-num="40"></td><td><pre><span class="token comment">// 3.1 剥离无效数据：res=&gt;res.data 取出 data 数据，将来调用接口的时候直接拿到的就是后台的数据</span></pre></td></tr><tr><td data-num="41"></td><td><pre>instance<span class="token punctuation">.</span>interceptors<span class="token punctuation">.</span>response<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span><span class="token parameter">res</span><span class="token operator">=&gt;</span>res<span class="token punctuation">.</span>data<span class="token punctuation">,</span><span class="token punctuation">(</span><span class="token parameter">err</span><span class="token punctuation">)</span><span class="token operator">=&gt;</span><span class="token punctuation">{</span></pre></td></tr><tr><td data-num="42"></td><td><pre>  <span class="token comment">// 401 状态码，进入该函数</span></pre></td></tr><tr><td data-num="43"></td><td><pre>  <span class="token comment">// 3.2 处理无效 token</span></pre></td></tr><tr><td data-num="44"></td><td><pre>  <span class="token keyword">if</span><span class="token punctuation">(</span>err<span class="token punctuation">.</span>response <span class="token operator">&amp;&amp;</span> err<span class="token punctuation">.</span>response<span class="token punctuation">.</span>status <span class="token operator">===</span> <span class="token number">401</span><span class="token punctuation">)</span><span class="token punctuation">{</span></pre></td></tr><tr><td data-num="45"></td><td><pre>    <span class="token comment">// 3.2.1 清空无效用户信息</span></pre></td></tr><tr><td data-num="46"></td><td><pre>    store<span class="token punctuation">.</span><span class="token function">commit</span><span class="token punctuation">(</span><span class="token string">'user/setUser'</span><span class="token punctuation">,</span><span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="47"></td><td><pre>    <span class="token comment">// 3.2.2 跳转到登录页面</span></pre></td></tr><tr><td data-num="48"></td><td><pre>      router<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span><span class="token string">'/login'</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="49"></td><td><pre>    <span class="token comment">// 3.2.3 跳转需要传参 (当前路由地址) 给登录码</span></pre></td></tr><tr><td data-num="50"></td><td><pre>    <span class="token keyword">const</span> fullPath <span class="token operator">=</span> <span class="token function">encodeURIComponent</span><span class="token punctuation">(</span>router<span class="token punctuation">.</span>currentRoute<span class="token punctuation">.</span>value<span class="token punctuation">.</span>fullPath<span class="token punctuation">)</span></pre></td></tr><tr><td data-num="51"></td><td><pre>    <span class="token comment">//encodeURIComponent 转换 uri 编码，防止解析地址出问题</span></pre></td></tr><tr><td data-num="52"></td><td><pre>    router<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span><span class="token string">'/login?redirectUrl='</span> <span class="token operator">+</span> fullPath<span class="token punctuation">)</span></pre></td></tr><tr><td data-num="53"></td><td><pre>  <span class="token punctuation">}</span></pre></td></tr><tr><td data-num="54"></td><td><pre></pre></td></tr><tr><td data-num="55"></td><td><pre>  <span class="token keyword">return</span> Promise<span class="token punctuation">.</span><span class="token function">reject</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span></pre></td></tr><tr><td data-num="56"></td><td><pre></pre></td></tr><tr><td data-num="57"></td><td><pre><span class="token punctuation">}</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="58"></td><td><pre></pre></td></tr><tr><td data-num="59"></td><td><pre><span class="token comment">// 请求工具函数</span></pre></td></tr><tr><td data-num="60"></td><td><pre><span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">(</span><span class="token parameter">url<span class="token punctuation">,</span> method<span class="token punctuation">,</span> submitData</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span></pre></td></tr><tr><td data-num="61"></td><td><pre>  <span class="token comment">// 负责发请求：请求地址，请求方式，提交的数据</span></pre></td></tr><tr><td data-num="62"></td><td><pre>  <span class="token keyword">return</span> <span class="token function">instance</span><span class="token punctuation">(</span><span class="token punctuation">{</span></pre></td></tr><tr><td data-num="63"></td><td><pre>    url<span class="token punctuation">,</span></pre></td></tr><tr><td data-num="64"></td><td><pre>    method<span class="token punctuation">,</span></pre></td></tr><tr><td data-num="65"></td><td><pre>    <span class="token comment">// 1. 如果是 get 请求  需要使用 params 来传递 submitData   ?a=10&amp;c=10</span></pre></td></tr><tr><td data-num="66"></td><td><pre>    <span class="token comment">// 2. 如果不是 get 请求  需要使用 data 来传递 submitData   请求体传参</span></pre></td></tr><tr><td data-num="67"></td><td><pre>    <span class="token comment">// [] 设置一个动态的 key, 写 js 表达式，js 表达式的执行结果当作 KEY</span></pre></td></tr><tr><td data-num="68"></td><td><pre>    <span class="token comment">//method 参数：get,Get,GET  转换成小写再来判断</span></pre></td></tr><tr><td data-num="69"></td><td><pre>    <span class="token comment">// 在对象，['params']:submitData ===== params:submitData 这样理解</span></pre></td></tr><tr><td data-num="70"></td><td><pre>    <span class="token punctuation">[</span>method<span class="token punctuation">.</span><span class="token function">toLowerCase</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">===</span> <span class="token string">'get'</span> <span class="token operator">?</span> <span class="token string">'params'</span> <span class="token operator">:</span> <span class="token string">'data'</span><span class="token punctuation">]</span><span class="token operator">:</span> submitData</pre></td></tr><tr><td data-num="71"></td><td><pre>  <span class="token punctuation">}</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="72"></td><td><pre><span class="token punctuation">}</span></pre></td></tr></tbody></table></figure>]]></content>
-      <categories>
-        <category>web前端</category>
-      </categories>
-      <tags>
-        <tag>前端</tag>
-        <tag>Ajax</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>axios</title>
-    <url>/2022/04/19/axios/</url>
-    <content><![CDATA[<h3 id="axios-是什么东东"><a class="anchor" href="#axios-是什么东东">#</a> axios 是什么东东</h3>
-<p>Axios 是专注于<span style="color:red">网络数据请求</span>的库</p>
-<p>相比原生的 XMLHttpRequest 对象 ， axios <span style="color:red">简单易用</span></p>
-<p>相比 jquery，axios 更加<span style="color:red">轻量化</span>，只专注于网络数据请求</p>
-<hr>
-<h3 id="axios发起get请求"><a class="anchor" href="#axios发起get请求">#</a> axios 发起 GET 请求</h3>
-<p>axios 发起 get 请求的语法：</p>
-<p><code>axios.get('url', { params:{ 参数 } }).then(callback)</code></p>
-<p>具体请求实例如下：</p>
-<figure class="highlight js"><figcaption data-lang="JavaScript"></figcaption><table><tbody><tr><td data-num="1"></td><td><pre><span class="token comment">// 请求的 URL 地址</span></pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token keyword">const</span> url <span class="token operator">=</span> <span class="token string">'http://www.liulongbin.top:3006/api/get'</span></pre></td></tr><tr><td data-num="3"></td><td><pre></pre></td></tr><tr><td data-num="4"></td><td><pre><span class="token comment">// 请求的参数对象</span></pre></td></tr><tr><td data-num="5"></td><td><pre><span class="token keyword">const</span> paramsObj <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token literal-property property">name</span><span class="token operator">:</span> <span class="token string">'zs'</span><span class="token punctuation">,</span> <span class="token literal-property property">age</span><span class="token operator">:</span> <span class="token number">20</span><span class="token punctuation">}</span></pre></td></tr><tr><td data-num="6"></td><td><pre></pre></td></tr><tr><td data-num="7"></td><td><pre><span class="token comment">// 调用 axios.get () 发起 GET 请求</span></pre></td></tr><tr><td data-num="8"></td><td><pre>axios<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span>url<span class="token punctuation">,</span> <span class="token punctuation">{</span><span class="token literal-property property">params</span><span class="token operator">:</span> paramsObj<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">res</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span></pre></td></tr><tr><td data-num="9"></td><td><pre>  <span class="token comment">//res.data 才是服务器返回的数据</span></pre></td></tr><tr><td data-num="10"></td><td><pre>  <span class="token keyword">let</span> result <span class="token operator">=</span> res<span class="token punctuation">.</span>data</pre></td></tr><tr><td data-num="11"></td><td><pre>  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>result<span class="token punctuation">)</span></pre></td></tr><tr><td data-num="12"></td><td><pre><span class="token punctuation">}</span><span class="token punctuation">)</span></pre></td></tr></tbody></table></figure><hr>
-<h3 id="axios发起post请求"><a class="anchor" href="#axios发起post请求">#</a> axios 发起 POST 请求</h3>
-<p><code>axios.post('url',{ 参数 }).then( callback )</code></p>
-<p>具体请求实例如下：</p>
-<figure class="highlight js"><figcaption data-lang="JavaScript"></figcaption><table><tbody><tr><td data-num="1"></td><td><pre><span class="token comment">// 请求的 url 地址</span></pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token keyword">const</span> postUrl <span class="token operator">=</span> <span class="token string">'http://www.liulongbin.top:3006/api/post'</span></pre></td></tr><tr><td data-num="3"></td><td><pre></pre></td></tr><tr><td data-num="4"></td><td><pre><span class="token comment">//  要提交到服务器的数据</span></pre></td></tr><tr><td data-num="5"></td><td><pre><span class="token keyword">const</span> dataObj <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token literal-property property">location</span><span class="token operator">:</span> <span class="token string">'北京'</span><span class="token punctuation">,</span> <span class="token literal-property property">address</span><span class="token operator">:</span> <span class="token string">'顺义'</span><span class="token punctuation">}</span></pre></td></tr><tr><td data-num="6"></td><td><pre></pre></td></tr><tr><td data-num="7"></td><td><pre><span class="token comment">// 调用 axios.post () 发起 POST 请求</span></pre></td></tr><tr><td data-num="8"></td><td><pre></pre></td></tr><tr><td data-num="9"></td><td><pre>axios<span class="token punctuation">.</span><span class="token function">post</span><span class="token punctuation">(</span>postUrl<span class="token punctuation">,</span> dataObj<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">res</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span></pre></td></tr><tr><td data-num="10"></td><td><pre><span class="token comment">//res.data 才是服务器发送的数据</span></pre></td></tr><tr><td data-num="11"></td><td><pre>  <span class="token keyword">let</span> result <span class="token operator">=</span> res<span class="token punctuation">.</span>data</pre></td></tr><tr><td data-num="12"></td><td><pre>  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>result<span class="token punctuation">)</span></pre></td></tr><tr><td data-num="13"></td><td><pre><span class="token punctuation">}</span><span class="token punctuation">)</span></pre></td></tr></tbody></table></figure><hr>
-<h3 id="直接使用axios发起请求"><a class="anchor" href="#直接使用axios发起请求">#</a> 直接使用 axios 发起请求</h3>
-<p>asiox 也提供了类似 jQuery 中 $.ajax () 的函数，语法如下：</p>
-<figure class="highlight js"><figcaption data-lang="JavaScript"></figcaption><table><tbody><tr><td data-num="1"></td><td><pre><span class="token function">axios</span><span class="token punctuation">(</span><span class="token punctuation">{</span></pre></td></tr><tr><td data-num="2"></td><td><pre>  <span class="token literal-property property">method</span><span class="token operator">:</span> <span class="token string">' 请求类型 '</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="3"></td><td><pre>  <span class="token literal-property property">url</span><span class="token operator">:</span> <span class="token string">' 请求的URL地址 '</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="4"></td><td><pre>  <span class="token literal-property property">data</span><span class="token operator">:</span> <span class="token punctuation">{</span> post数据 <span class="token punctuation">}</span></pre></td></tr><tr><td data-num="5"></td><td><pre>  <span class="token literal-property property">params</span><span class="token operator">:</span> <span class="token punctuation">{</span> <span class="token constant">GET</span>参数 <span class="token punctuation">}</span></pre></td></tr><tr><td data-num="6"></td><td><pre><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span>callback<span class="token punctuation">)</span></pre></td></tr></tbody></table></figure><h4 id="直接使用axios发起get请求"><a class="anchor" href="#直接使用axios发起get请求">#</a> 直接使用 axios 发起 GET 请求</h4>
-<figure class="highlight js"><figcaption data-lang="JavaScript"></figcaption><table><tbody><tr><td data-num="1"></td><td><pre><span class="token function">axios</span><span class="token punctuation">(</span><span class="token punctuation">{</span></pre></td></tr><tr><td data-num="2"></td><td><pre>  <span class="token literal-property property">method</span><span class="token operator">:</span> <span class="token string">'GET'</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="3"></td><td><pre>  <span class="token literal-property property">url</span><span class="token operator">:</span> <span class="token string">'http://www.liulongbin.top:3006/api/get'</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="4"></td><td><pre>  <span class="token literal-property property">params</span><span class="token operator">:</span> <span class="token punctuation">{</span>  <span class="token comment">// GET 参数要通过 params 属性提供</span></pre></td></tr><tr><td data-num="5"></td><td><pre>    <span class="token literal-property property">name</span><span class="token operator">:</span> <span class="token string">'zs'</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="6"></td><td><pre>    <span class="token literal-property property">age</span><span class="token operator">:</span> <span class="token number">20</span></pre></td></tr><tr><td data-num="7"></td><td><pre>  <span class="token punctuation">}</span></pre></td></tr><tr><td data-num="8"></td><td><pre><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">res</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span></pre></td></tr><tr><td data-num="9"></td><td><pre>  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>res<span class="token punctuation">.</span>data<span class="token punctuation">)</span></pre></td></tr><tr><td data-num="10"></td><td><pre><span class="token punctuation">}</span><span class="token punctuation">)</span></pre></td></tr></tbody></table></figure><h4 id="直接使用axios发起post请求"><a class="anchor" href="#直接使用axios发起post请求">#</a> 直接使用 axios 发起 POST 请求</h4>
-<figure class="highlight js"><figcaption data-lang="JavaScript"></figcaption><table><tbody><tr><td data-num="1"></td><td><pre><span class="token function">axios</span><span class="token punctuation">(</span><span class="token punctuation">{</span></pre></td></tr><tr><td data-num="2"></td><td><pre>  <span class="token literal-property property">method</span><span class="token operator">:</span> <span class="token string">'POST'</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="3"></td><td><pre>  <span class="token literal-property property">url</span><span class="token operator">:</span> <span class="token string">'http://www.liulongbin.top:3006/api/post'</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="4"></td><td><pre>  <span class="token literal-property property">data</span><span class="token operator">:</span> <span class="token punctuation">{</span>  <span class="token comment">// POST 数据要通过 data 属性提供</span></pre></td></tr><tr><td data-num="5"></td><td><pre>    <span class="token literal-property property">location</span><span class="token operator">:</span> <span class="token string">'北京'</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="6"></td><td><pre>    <span class="token literal-property property">address</span><span class="token operator">:</span> <span class="token string">'顺义'</span></pre></td></tr><tr><td data-num="7"></td><td><pre>  <span class="token punctuation">}</span></pre></td></tr><tr><td data-num="8"></td><td><pre><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">res</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span></pre></td></tr><tr><td data-num="9"></td><td><pre>  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>res<span class="token punctuation">.</span>data<span class="token punctuation">)</span></pre></td></tr><tr><td data-num="10"></td><td><pre><span class="token punctuation">}</span><span class="token punctuation">)</span></pre></td></tr></tbody></table></figure><hr>
-<h3 id="结合-async-和-await-来使用axios"><a class="anchor" href="#结合-async-和-await-来使用axios">#</a> 结合 async 和 await 来使用 axios</h3>
-<ol>
-<li>调用 axios 之后 可以使用 async/await 进行简化</li>
-<li>使用解构赋值，从 axios 封装的大对象中，把 data 属性解构出来</li>
-<li data="" :="" res="">把结构出来的 data 属性，使用 冒号 进行重命名，一般都重命名为</li>
-</ol>
-<p>可以使用<span style="color:red">结构赋值</span></p>
-<figure class="highlight js"><figcaption data-lang="JavaScript"></figcaption><table><tbody><tr><td data-num="1"></td><td><pre><span class="token keyword">async</span> <span class="token function">btnGet</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span></pre></td></tr><tr><td data-num="2"></td><td><pre>      <span class="token keyword">const</span> <span class="token punctuation">{</span><span class="token literal-property property">data</span><span class="token operator">:</span> res<span class="token punctuation">}</span> <span class="token operator">=</span> <span class="token keyword">await</span> <span class="token function">axios</span><span class="token punctuation">(</span><span class="token punctuation">{</span></pre></td></tr><tr><td data-num="3"></td><td><pre>        <span class="token literal-property property">method</span><span class="token operator">:</span> <span class="token string">'GET'</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="4"></td><td><pre>        <span class="token literal-property property">url</span><span class="token operator">:</span> <span class="token string">'http://www.liulongbin.top:3006/api/get'</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="5"></td><td><pre>        <span class="token literal-property property">params</span><span class="token operator">:</span> <span class="token punctuation">{</span>  <span class="token comment">// GET 参数要通过 params 属性提供</span></pre></td></tr><tr><td data-num="6"></td><td><pre>          <span class="token literal-property property">name</span><span class="token operator">:</span> <span class="token string">'zs'</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="7"></td><td><pre>          <span class="token literal-property property">age</span><span class="token operator">:</span> <span class="token number">20</span></pre></td></tr><tr><td data-num="8"></td><td><pre>        <span class="token punctuation">}</span></pre></td></tr><tr><td data-num="9"></td><td><pre>      <span class="token punctuation">}</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="10"></td><td><pre>      console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>res<span class="token punctuation">)</span></pre></td></tr><tr><td data-num="11"></td><td><pre>    <span class="token punctuation">}</span></pre></td></tr></tbody></table></figure>]]></content>
       <categories>
         <category>web前端</category>
       </categories>
@@ -1719,31 +1681,6 @@
       </tags>
   </entry>
   <entry>
-    <title>不要熬夜</title>
-    <url>/2022/03/28/%E4%B8%8D%E8%A6%81%E7%86%AC%E5%A4%9C/</url>
-    <content><![CDATA[<h3 id="span-stylecolor4d77ff熬夜span"><a class="anchor" href="#span-stylecolor4d77ff熬夜span">#</a> <span style="color:#4D77FF">熬夜</span></h3>
-<hr>
-<h4 id="起因"><a class="anchor" href="#起因">#</a> 起因</h4>
-<p>昨天和工作室的小伙伴们一起看<span class="exturl" data-url="aHR0cHM6Ly9jaGFyZXQuZ2l0aHViLmlvLw==">社恐废宅充电器</span>在玩一款新的游戏，叫做<span style="color:#5EE6EB">幽灵线：东京</span>，我们更喜欢叫他<span style="color:#FFB72B">林正英模拟器</span><img data-src="http://i0.hdslb.com/bfs/article/51c890784afb0a55bb8a2d8af4431dcc4809eac3.jpg" alt="" width="50"></p>
-<p>对了那个游戏长这样<img data-src="http://p2.itc.cn/q_70/images03/20210714/2ce935a73e8f4db89e26c91f37b6561f.jpeg" alt="" width="100">确实比较新颖，因为他的攻击方式是把手比作枪，用手射出子弹一样，给人眼前一亮的感觉，但是玩久了感觉有点单调，不算很耐玩的游戏，也许是它太贵了我买不起，要 200 多 RMB。</p>
-<hr>
-<h4 id="然后"><a class="anchor" href="#然后">#</a> 然后</h4>
-<p>我们的<span class="exturl" data-url="aHR0cHM6Ly9jaGFyZXQuZ2l0aHViLmlvLw==">社恐废宅充电器</span>就开始了今天的<span style="color:#6A5495">熬夜</span>，他花了一晚上的时间通关了<span style="color:#5EE6EB">幽灵线：东京</span>，虽然是<span style="color:red">简单版的</span>模式，但主要的是他通宵到到第二天中午才开始睡觉，这是他的睡姿<img data-src="https://raw.githubusercontent.com/MrNobody233/Pohot/main/blog/Nn_Sleep.jpg" width="100" alt="图片没有显示呀，网太差了吧~"> 睡得和<span style="color:red">死了</span>一样，这样的情况已经不是第一次了，我们也不是第一次提醒他，所以这里提前说明一下，如果他突然有一天走着走着就<span style="color:red">猝死了</span>，希望他不要来找我，因为我已经提醒了很多次了，</p>
-<hr>
-<h4 id="接着"><a class="anchor" href="#接着">#</a> 接着</h4>
-<p>在寒假的时候我也熬夜，但是没有他这么严重，最多熬到四五点，偶尔六点多起来去吃早餐，我记得五点半去的时候老板娘还没有准备好，所以我等到六点在去吃的，挖槽，原来早饭这么好吃，特别是那个<span style="color:#DD4A48">猪血粉</span>，等学校解封我回我奶奶家，一定得再去吃一次，现在想起来那个老板娘还是我小学同学的妈妈，她告诉我她女儿去参军了，两年以后才会回来，我倒是挺期待她能被改变成什么样，但是我最希望的是老板娘能送我瓶<span style="color:#A05344">核桃味</span>的早餐奶给我喝，我太喜欢喝了，噗哈哈。</p>
-<h4 id="最后"><a class="anchor" href="#最后">#</a> 最后</h4>
-<p>额，今天写的这个主要是做了一个新的分类，叫做<span style="color:#EEB76B">自言自语</span>，其目的是为了水博客，和分享关于自己有意思的事情，又或者是把自己可能会忘记的日常存在这里，所以最后还是点名一下主题把，就是希望我以后能少熬点夜，不能和那个 SB 一样，就当为了吃到好吃的<span style="color:#DD4A48">猪血粉</span>而努力吧，就这样，晚安～</p>
-]]></content>
-      <categories>
-        <category>生活</category>
-      </categories>
-      <tags>
-        <tag>智障</tag>
-        <tag>自言自语</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>一天二十四小时</title>
     <url>/2023/02/01/%E4%B8%80%E5%A4%A9%E4%BA%8C%E5%8D%81%E5%9B%9B%E5%B0%8F%E6%97%B6/</url>
     <content><![CDATA[<h1 id="听会歌"><a class="anchor" href="#听会歌">#</a> 听会歌</h1>
@@ -1802,6 +1739,31 @@
       </tags>
   </entry>
   <entry>
+    <title>不要熬夜</title>
+    <url>/2022/03/28/%E4%B8%8D%E8%A6%81%E7%86%AC%E5%A4%9C/</url>
+    <content><![CDATA[<h3 id="span-stylecolor4d77ff熬夜span"><a class="anchor" href="#span-stylecolor4d77ff熬夜span">#</a> <span style="color:#4D77FF">熬夜</span></h3>
+<hr>
+<h4 id="起因"><a class="anchor" href="#起因">#</a> 起因</h4>
+<p>昨天和工作室的小伙伴们一起看<span class="exturl" data-url="aHR0cHM6Ly9jaGFyZXQuZ2l0aHViLmlvLw==">社恐废宅充电器</span>在玩一款新的游戏，叫做<span style="color:#5EE6EB">幽灵线：东京</span>，我们更喜欢叫他<span style="color:#FFB72B">林正英模拟器</span><img data-src="http://i0.hdslb.com/bfs/article/51c890784afb0a55bb8a2d8af4431dcc4809eac3.jpg" alt="" width="50"></p>
+<p>对了那个游戏长这样<img data-src="http://p2.itc.cn/q_70/images03/20210714/2ce935a73e8f4db89e26c91f37b6561f.jpeg" alt="" width="100">确实比较新颖，因为他的攻击方式是把手比作枪，用手射出子弹一样，给人眼前一亮的感觉，但是玩久了感觉有点单调，不算很耐玩的游戏，也许是它太贵了我买不起，要 200 多 RMB。</p>
+<hr>
+<h4 id="然后"><a class="anchor" href="#然后">#</a> 然后</h4>
+<p>我们的<span class="exturl" data-url="aHR0cHM6Ly9jaGFyZXQuZ2l0aHViLmlvLw==">社恐废宅充电器</span>就开始了今天的<span style="color:#6A5495">熬夜</span>，他花了一晚上的时间通关了<span style="color:#5EE6EB">幽灵线：东京</span>，虽然是<span style="color:red">简单版的</span>模式，但主要的是他通宵到到第二天中午才开始睡觉，这是他的睡姿<img data-src="https://raw.githubusercontent.com/MrNobody233/Pohot/main/blog/Nn_Sleep.jpg" width="100" alt="图片没有显示呀，网太差了吧~"> 睡得和<span style="color:red">死了</span>一样，这样的情况已经不是第一次了，我们也不是第一次提醒他，所以这里提前说明一下，如果他突然有一天走着走着就<span style="color:red">猝死了</span>，希望他不要来找我，因为我已经提醒了很多次了，</p>
+<hr>
+<h4 id="接着"><a class="anchor" href="#接着">#</a> 接着</h4>
+<p>在寒假的时候我也熬夜，但是没有他这么严重，最多熬到四五点，偶尔六点多起来去吃早餐，我记得五点半去的时候老板娘还没有准备好，所以我等到六点在去吃的，挖槽，原来早饭这么好吃，特别是那个<span style="color:#DD4A48">猪血粉</span>，等学校解封我回我奶奶家，一定得再去吃一次，现在想起来那个老板娘还是我小学同学的妈妈，她告诉我她女儿去参军了，两年以后才会回来，我倒是挺期待她能被改变成什么样，但是我最希望的是老板娘能送我瓶<span style="color:#A05344">核桃味</span>的早餐奶给我喝，我太喜欢喝了，噗哈哈。</p>
+<h4 id="最后"><a class="anchor" href="#最后">#</a> 最后</h4>
+<p>额，今天写的这个主要是做了一个新的分类，叫做<span style="color:#EEB76B">自言自语</span>，其目的是为了水博客，和分享关于自己有意思的事情，又或者是把自己可能会忘记的日常存在这里，所以最后还是点名一下主题把，就是希望我以后能少熬点夜，不能和那个 SB 一样，就当为了吃到好吃的<span style="color:#DD4A48">猪血粉</span>而努力吧，就这样，晚安～</p>
+]]></content>
+      <categories>
+        <category>生活</category>
+      </categories>
+      <tags>
+        <tag>智障</tag>
+        <tag>自言自语</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>不要被外表迷惑</title>
     <url>/2022/03/25/%E4%B8%8D%E8%A6%81%E8%A2%AB%E5%A4%96%E8%A1%A8%E8%BF%B7%E6%83%91/</url>
     <content><![CDATA[<p>本来这个博客很早就可以完成的，都怪我被迷惑了，因为那个网站实在是太漂亮了，我也想整一个 就是<span class="exturl" data-url="aHR0cHM6Ly90b21vdG9lcy5jb20v">这个网站 (可以点我)</span>，他实在是太漂亮了，原来网站可以这么漂亮，所以我决定使用这个网站，但是发现他的配置文件完全看不懂，我实在是太菜了。</p>
@@ -1813,6 +1775,44 @@
       </categories>
       <tags>
         <tag>智障</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>axios</title>
+    <url>/2022/04/19/axios/</url>
+    <content><![CDATA[<h3 id="axios-是什么东东"><a class="anchor" href="#axios-是什么东东">#</a> axios 是什么东东</h3>
+<p>Axios 是专注于<span style="color:red">网络数据请求</span>的库</p>
+<p>相比原生的 XMLHttpRequest 对象 ， axios <span style="color:red">简单易用</span></p>
+<p>相比 jquery，axios 更加<span style="color:red">轻量化</span>，只专注于网络数据请求</p>
+<hr>
+<h3 id="axios发起get请求"><a class="anchor" href="#axios发起get请求">#</a> axios 发起 GET 请求</h3>
+<p>axios 发起 get 请求的语法：</p>
+<p><code>axios.get('url', { params:{ 参数 } }).then(callback)</code></p>
+<p>具体请求实例如下：</p>
+<figure class="highlight js"><figcaption data-lang="JavaScript"></figcaption><table><tbody><tr><td data-num="1"></td><td><pre><span class="token comment">// 请求的 URL 地址</span></pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token keyword">const</span> url <span class="token operator">=</span> <span class="token string">'http://www.liulongbin.top:3006/api/get'</span></pre></td></tr><tr><td data-num="3"></td><td><pre></pre></td></tr><tr><td data-num="4"></td><td><pre><span class="token comment">// 请求的参数对象</span></pre></td></tr><tr><td data-num="5"></td><td><pre><span class="token keyword">const</span> paramsObj <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token literal-property property">name</span><span class="token operator">:</span> <span class="token string">'zs'</span><span class="token punctuation">,</span> <span class="token literal-property property">age</span><span class="token operator">:</span> <span class="token number">20</span><span class="token punctuation">}</span></pre></td></tr><tr><td data-num="6"></td><td><pre></pre></td></tr><tr><td data-num="7"></td><td><pre><span class="token comment">// 调用 axios.get () 发起 GET 请求</span></pre></td></tr><tr><td data-num="8"></td><td><pre>axios<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span>url<span class="token punctuation">,</span> <span class="token punctuation">{</span><span class="token literal-property property">params</span><span class="token operator">:</span> paramsObj<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">res</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span></pre></td></tr><tr><td data-num="9"></td><td><pre>  <span class="token comment">//res.data 才是服务器返回的数据</span></pre></td></tr><tr><td data-num="10"></td><td><pre>  <span class="token keyword">let</span> result <span class="token operator">=</span> res<span class="token punctuation">.</span>data</pre></td></tr><tr><td data-num="11"></td><td><pre>  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>result<span class="token punctuation">)</span></pre></td></tr><tr><td data-num="12"></td><td><pre><span class="token punctuation">}</span><span class="token punctuation">)</span></pre></td></tr></tbody></table></figure><hr>
+<h3 id="axios发起post请求"><a class="anchor" href="#axios发起post请求">#</a> axios 发起 POST 请求</h3>
+<p><code>axios.post('url',{ 参数 }).then( callback )</code></p>
+<p>具体请求实例如下：</p>
+<figure class="highlight js"><figcaption data-lang="JavaScript"></figcaption><table><tbody><tr><td data-num="1"></td><td><pre><span class="token comment">// 请求的 url 地址</span></pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token keyword">const</span> postUrl <span class="token operator">=</span> <span class="token string">'http://www.liulongbin.top:3006/api/post'</span></pre></td></tr><tr><td data-num="3"></td><td><pre></pre></td></tr><tr><td data-num="4"></td><td><pre><span class="token comment">//  要提交到服务器的数据</span></pre></td></tr><tr><td data-num="5"></td><td><pre><span class="token keyword">const</span> dataObj <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token literal-property property">location</span><span class="token operator">:</span> <span class="token string">'北京'</span><span class="token punctuation">,</span> <span class="token literal-property property">address</span><span class="token operator">:</span> <span class="token string">'顺义'</span><span class="token punctuation">}</span></pre></td></tr><tr><td data-num="6"></td><td><pre></pre></td></tr><tr><td data-num="7"></td><td><pre><span class="token comment">// 调用 axios.post () 发起 POST 请求</span></pre></td></tr><tr><td data-num="8"></td><td><pre></pre></td></tr><tr><td data-num="9"></td><td><pre>axios<span class="token punctuation">.</span><span class="token function">post</span><span class="token punctuation">(</span>postUrl<span class="token punctuation">,</span> dataObj<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">res</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span></pre></td></tr><tr><td data-num="10"></td><td><pre><span class="token comment">//res.data 才是服务器发送的数据</span></pre></td></tr><tr><td data-num="11"></td><td><pre>  <span class="token keyword">let</span> result <span class="token operator">=</span> res<span class="token punctuation">.</span>data</pre></td></tr><tr><td data-num="12"></td><td><pre>  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>result<span class="token punctuation">)</span></pre></td></tr><tr><td data-num="13"></td><td><pre><span class="token punctuation">}</span><span class="token punctuation">)</span></pre></td></tr></tbody></table></figure><hr>
+<h3 id="直接使用axios发起请求"><a class="anchor" href="#直接使用axios发起请求">#</a> 直接使用 axios 发起请求</h3>
+<p>asiox 也提供了类似 jQuery 中 $.ajax () 的函数，语法如下：</p>
+<figure class="highlight js"><figcaption data-lang="JavaScript"></figcaption><table><tbody><tr><td data-num="1"></td><td><pre><span class="token function">axios</span><span class="token punctuation">(</span><span class="token punctuation">{</span></pre></td></tr><tr><td data-num="2"></td><td><pre>  <span class="token literal-property property">method</span><span class="token operator">:</span> <span class="token string">' 请求类型 '</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="3"></td><td><pre>  <span class="token literal-property property">url</span><span class="token operator">:</span> <span class="token string">' 请求的URL地址 '</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="4"></td><td><pre>  <span class="token literal-property property">data</span><span class="token operator">:</span> <span class="token punctuation">{</span> post数据 <span class="token punctuation">}</span></pre></td></tr><tr><td data-num="5"></td><td><pre>  <span class="token literal-property property">params</span><span class="token operator">:</span> <span class="token punctuation">{</span> <span class="token constant">GET</span>参数 <span class="token punctuation">}</span></pre></td></tr><tr><td data-num="6"></td><td><pre><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span>callback<span class="token punctuation">)</span></pre></td></tr></tbody></table></figure><h4 id="直接使用axios发起get请求"><a class="anchor" href="#直接使用axios发起get请求">#</a> 直接使用 axios 发起 GET 请求</h4>
+<figure class="highlight js"><figcaption data-lang="JavaScript"></figcaption><table><tbody><tr><td data-num="1"></td><td><pre><span class="token function">axios</span><span class="token punctuation">(</span><span class="token punctuation">{</span></pre></td></tr><tr><td data-num="2"></td><td><pre>  <span class="token literal-property property">method</span><span class="token operator">:</span> <span class="token string">'GET'</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="3"></td><td><pre>  <span class="token literal-property property">url</span><span class="token operator">:</span> <span class="token string">'http://www.liulongbin.top:3006/api/get'</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="4"></td><td><pre>  <span class="token literal-property property">params</span><span class="token operator">:</span> <span class="token punctuation">{</span>  <span class="token comment">// GET 参数要通过 params 属性提供</span></pre></td></tr><tr><td data-num="5"></td><td><pre>    <span class="token literal-property property">name</span><span class="token operator">:</span> <span class="token string">'zs'</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="6"></td><td><pre>    <span class="token literal-property property">age</span><span class="token operator">:</span> <span class="token number">20</span></pre></td></tr><tr><td data-num="7"></td><td><pre>  <span class="token punctuation">}</span></pre></td></tr><tr><td data-num="8"></td><td><pre><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">res</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span></pre></td></tr><tr><td data-num="9"></td><td><pre>  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>res<span class="token punctuation">.</span>data<span class="token punctuation">)</span></pre></td></tr><tr><td data-num="10"></td><td><pre><span class="token punctuation">}</span><span class="token punctuation">)</span></pre></td></tr></tbody></table></figure><h4 id="直接使用axios发起post请求"><a class="anchor" href="#直接使用axios发起post请求">#</a> 直接使用 axios 发起 POST 请求</h4>
+<figure class="highlight js"><figcaption data-lang="JavaScript"></figcaption><table><tbody><tr><td data-num="1"></td><td><pre><span class="token function">axios</span><span class="token punctuation">(</span><span class="token punctuation">{</span></pre></td></tr><tr><td data-num="2"></td><td><pre>  <span class="token literal-property property">method</span><span class="token operator">:</span> <span class="token string">'POST'</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="3"></td><td><pre>  <span class="token literal-property property">url</span><span class="token operator">:</span> <span class="token string">'http://www.liulongbin.top:3006/api/post'</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="4"></td><td><pre>  <span class="token literal-property property">data</span><span class="token operator">:</span> <span class="token punctuation">{</span>  <span class="token comment">// POST 数据要通过 data 属性提供</span></pre></td></tr><tr><td data-num="5"></td><td><pre>    <span class="token literal-property property">location</span><span class="token operator">:</span> <span class="token string">'北京'</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="6"></td><td><pre>    <span class="token literal-property property">address</span><span class="token operator">:</span> <span class="token string">'顺义'</span></pre></td></tr><tr><td data-num="7"></td><td><pre>  <span class="token punctuation">}</span></pre></td></tr><tr><td data-num="8"></td><td><pre><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">res</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span></pre></td></tr><tr><td data-num="9"></td><td><pre>  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>res<span class="token punctuation">.</span>data<span class="token punctuation">)</span></pre></td></tr><tr><td data-num="10"></td><td><pre><span class="token punctuation">}</span><span class="token punctuation">)</span></pre></td></tr></tbody></table></figure><hr>
+<h3 id="结合-async-和-await-来使用axios"><a class="anchor" href="#结合-async-和-await-来使用axios">#</a> 结合 async 和 await 来使用 axios</h3>
+<ol>
+<li>调用 axios 之后 可以使用 async/await 进行简化</li>
+<li>使用解构赋值，从 axios 封装的大对象中，把 data 属性解构出来</li>
+<li data="" :="" res="">把结构出来的 data 属性，使用 冒号 进行重命名，一般都重命名为</li>
+</ol>
+<p>可以使用<span style="color:red">结构赋值</span></p>
+<figure class="highlight js"><figcaption data-lang="JavaScript"></figcaption><table><tbody><tr><td data-num="1"></td><td><pre><span class="token keyword">async</span> <span class="token function">btnGet</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span></pre></td></tr><tr><td data-num="2"></td><td><pre>      <span class="token keyword">const</span> <span class="token punctuation">{</span><span class="token literal-property property">data</span><span class="token operator">:</span> res<span class="token punctuation">}</span> <span class="token operator">=</span> <span class="token keyword">await</span> <span class="token function">axios</span><span class="token punctuation">(</span><span class="token punctuation">{</span></pre></td></tr><tr><td data-num="3"></td><td><pre>        <span class="token literal-property property">method</span><span class="token operator">:</span> <span class="token string">'GET'</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="4"></td><td><pre>        <span class="token literal-property property">url</span><span class="token operator">:</span> <span class="token string">'http://www.liulongbin.top:3006/api/get'</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="5"></td><td><pre>        <span class="token literal-property property">params</span><span class="token operator">:</span> <span class="token punctuation">{</span>  <span class="token comment">// GET 参数要通过 params 属性提供</span></pre></td></tr><tr><td data-num="6"></td><td><pre>          <span class="token literal-property property">name</span><span class="token operator">:</span> <span class="token string">'zs'</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="7"></td><td><pre>          <span class="token literal-property property">age</span><span class="token operator">:</span> <span class="token number">20</span></pre></td></tr><tr><td data-num="8"></td><td><pre>        <span class="token punctuation">}</span></pre></td></tr><tr><td data-num="9"></td><td><pre>      <span class="token punctuation">}</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="10"></td><td><pre>      console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>res<span class="token punctuation">)</span></pre></td></tr><tr><td data-num="11"></td><td><pre>    <span class="token punctuation">}</span></pre></td></tr></tbody></table></figure>]]></content>
+      <categories>
+        <category>web前端</category>
+      </categories>
+      <tags>
+        <tag>前端</tag>
+        <tag>Ajax</tag>
       </tags>
   </entry>
   <entry>
@@ -1843,6 +1843,27 @@
         <tag>自言自语</tag>
         <tag>周记</tag>
         <tag>生活</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>凌晨校园</title>
+    <url>/2022/04/18/%E5%87%8C%E6%99%A8%E6%A0%A1%E5%9B%AD/</url>
+    <content><![CDATA[<h3 id="第二次"><a class="anchor" href="#第二次">#</a> 第二次</h3>
+<p>本来想在工作室过夜写会儿代码的，但是在十一点四十的时候<span style="color:pink">果果超甜</span>突然告诉我明天早上要做核酸，TNND，我真的受不了了，明明今天已经做过了，居然连续做两天，所以我准备回宿舍，不过红绿蓝并不是只有我一个人，还有一个老师也在，整个地方只有他的办公室还是亮着的，为了不让他发现我在这里，我小心的打开自己办公室的门，然后悄咪咪的溜到大门口，这个真的是高难度，因为大门太重了，开的时候会发出嘎吱嘎吱的响声，我也经常在办公室听大门的开关声来判断是否有人进来。所以结局很正常，我被他发现了，关键是我打都没打开门，因为门被锁了，而且还是磁力锁，我来这里三个学期了都没有看到他们打开磁力，今天 TMD 突然就打开了，然后老师就说了一句 谁？  把我尬死在原地，我故作镇定，回答：还能出去吗？ 然后他说待会走。</p>
+<p>然后我就默默的回到自己的办公室打开小灯开始看自己的代码，尬的我连刚刚学的 Vuex 传值都不会了，加上我尿急，我都快绷不住了，过了好一会儿他来了，说 走吧 ，问我为什么这么晚还没回宿舍，我说项目还有一些需要改的地方，他也没多问，出去的时候我才知道，磁力门并不是那个老师弄的，他也尝试拉了一下门，和我一样打不开，我按了一下右边的按钮就开了，接着就在外面等他锁门，拿手电筒照着他，看他锁门，尬死我了，心里想赶紧让我先走吧，然后他就让我先回去了，哎，还好他没问我这么晚了怎么回宿舍，不然我真的答不出来。<br>
+宿舍离工作室也不算很远，不过路上还是特别可怕的，第一个是太黑了一点灯都没有，第二个是太冷了，第三个就是妈的那个<span style="color:red">SB</span>孔雀突然叫了一下，把我吓得鸡皮疙瘩都起来了，搞不明白为什么孔雀要放在我宿舍对面，现在住在这栋宿舍的人每天都在群里想着怎么杀掉这几个孔雀。<br>
+终于到了老地方，那颗支撑我回宿舍的小树，看来多锻炼还是特别有用的，对于我来说通过这个树上二楼是一件非常轻松的事情，也许是我太轻了，手臂能够把我支撑起来，就这样我安全都回去了。</p>
+<h3 id="第一次"><a class="anchor" href="#第一次">#</a> 第一次</h3>
+<p>实际上这并不是我第一次这么晚还在学校外面溜达，在几号来着。。也就前几天吧，因为一些原因，<span style="color:pink">果果超甜</span>，<span style="color:skyblue">胃痛患者</span>，还有我很晚的时候在外面溜达，本来想着等老师走了以后再回工作室的，在外面溜达了好一会儿，终于来学校这么久了找到古茗的位置了，还有我去年暑假留校做比赛经常点的外卖的位置，那个炸鸡真的太好吃了，还看见了我们学校的留学生在操场用音响放音乐，如果不是封校了，我们肯定会出去溜达的，真的可惜呀，，</p>
+<p>过了好一会我们准备回工作室了，结果发现二楼大门被锁了。。通常是一楼被锁的，我们可以从食堂小门进去，但是二楼被锁了实在就无能为力了。期间尝试了很多方法进去，结果也就我能实现，可以从厕所那里爬过去，也就爬两个小房间的高度，然后抓着钢管到男厕所窗口就可以了，我示范了一遍给他们看，但是到钢管哪里我就没爬了，太黑了，为了安全考虑我和他们一起回宿舍了，还是熟悉的位置，我第一个爬上去了，能感觉到树枝被裁剪了许多，相比之前爬难了一点点点点，但是对于他们来说就特别困难了，努力了半天，他们终于也上来了，看得我心惊胆跳的，真是捏了一把汗，如果失误了从上面摔下来，也就一条腿骨折而已，如果没站稳脑袋磕到石头了也就一辈子躺床上罢了。安全的回到了宿舍，可是 胃痛患者 并不想回自己宿舍，因为和室友关系不好什么的，所以我善心大方收留了他 ，也就是这个决定，让我尬死了一晚上</p>
+<p>那个时候太热了，又热又闷的，我想去开空调，但是空调线没插，我想过去插线，可是那边室友已经睡着了，所以结局很明了，我把线插好了，也把室友吵醒了被骂了一顿，可以说是我今年最尬的时候了，那晚过的很煎熬，果然我还是比较适合一个人睡，如果<span style="color:#ccc">废宅充电器</span>在的话就好了，他可以一晚上不睡，然后让<span style="color:skyblue">胃痛患者</span>睡他床，不过想想也不可能，因为不知道他们宿舍怎么上二楼，不过我以后再也不会让别人和我一起挤那么小的床睡觉了。拜拜</p>
+<p>这次写的太粗略了，很多细节都没有写，可能是这一篇生活写的太多了，而且现在已经 12：48 了，明天还得早起做核酸，，等过几年我突然想起来了更多细节，也许会补充上去吧？也许。</p>
+]]></content>
+      <categories>
+        <category>生活</category>
+      </categories>
+      <tags>
+        <tag>智障</tag>
       </tags>
   </entry>
   <entry>
@@ -2780,71 +2801,6 @@
       </tags>
   </entry>
   <entry>
-    <title>多巴胺脱瘾治疗</title>
-    <url>/2023/02/18/%E5%A4%9A%E5%B7%B4%E8%83%BA%E8%84%B1%E7%98%BE%E6%B2%BB%E7%96%97/</url>
-    <content><![CDATA[<h1 id="身份证"><a class="anchor" href="#身份证">#</a> 身份证</h1>
-<p>都出门一段时间了，才发现现在是正月，看来得过两天才能剪头了，烦内，这次的头发长的特别丑，原因是很早之前我身份证快过期了，当时我头发很长，又没洗头，于是和我妈妈去理发店，但是如果剪头的话我的头发又会很难看，妈的，这可是身份证啊，要用十年的身份证啊！为了我帅气的形象，我犹豫不决，于是我妈就在理发店帮我洗头，尬死我了，虽然理发店的老板是我姨夫的徒弟，但还是好尴尬。然后我妈妈给我吹头发，不知道形容，好像就是把我吹成了路边上长相一般的头发比较长的男的，呜呜呜。在去派出所的路上我疯狂的把自己的头发往上撩，颜值上去了那么一丢丢，然后在派出所自助办理身份证机器里拍照，好嘛，它判断我头发太长遮住耳朵和眉毛之类的，拍了好几次都不行，真是麻麻石蜡。所以那天还是没办成身份证，过了两天后我就去理发了，不知道怎么回事，好像是我妈妈在边上，他给我剪的头发是那种很乖很小孩子的头发，更加无语了，所以我又得拖延一点时间让我头发慢慢成长了。接着就是去我外婆家呆了半个月，回来后过了一段时间，终于找机会去照相馆拍身份证照了，第二天早上去拿照片，麻的，这是谁啊，死鱼眼，又板着脸，我真的好不甘心啊，于是我去网上搜哪里能办身份证数码照片回执，找到后我自己上传了自认为帅气的照片，然后网站就开始给我返回各种错误，什么距离太远，颜色异常，上传三四次后网站就开始繁忙了，尼玛真的搞我心态啊，我又开始找其他办法，功夫不负有心人，在赣服通里有居民身份证换领，简直太方便了，一共花了我 35 元，虽然照片是之前的照片，不过还好上个身份证的照片还算不错。身份证拿到手的那一刻，终于放松了起来。</p>
-<h1 id="情人节和第一次收到花"><a class="anchor" href="#情人节和第一次收到花">#</a> 情人节和第一次收到花</h1>
-<p>玩游戏，玩游戏，玩游戏，为什么强度这么高啊，大神难道都没有对象的吗，果然女人只会影响拔枪的速度。那天我在 BB 空间看见了她第一次收到花，好像是谈了恋爱，我有点小失落又有点小开心，之前我过生日的时候她是人生中第一个送我花花的女孩子，我很开心，我就想着我一定要找机会送她一次花花，甚至送什么花都想好了，我从来没送过同龄女孩子花花，我觉得麻烦，过不了几天就枯萎了，那还不如不送。但是我收到花的时那份开心才让我认识到送花的意义。我记得小学教师节时送了许多老师花花，还是很漂亮很贵的那种，老师们那发自内心的笑容让我一直记到现在，所以我还是会第一次送花给她，不为别的，就因为她是第一个送我花的女孩子。就算她不是第一次收到花，那也是我真正意义上第一次送出去的花。然后那天晚上就一家人去吃火锅，突然就好想找个人聊天啊，线上打字太累了。于是就找了个买衣服和鞋子的理由叫<span style="color:#d3efd8">大个子</span>第二天陪我出来逛街，我给她半个小时时间回复去或者不去，因为半个小时正好是从火锅店走到奶奶家的时间。她说她去，也确认了她是闲得无聊没事干才去的。接着回去打游戏到凌晨四点才睡，呜呜因为游戏更新了，我最喜欢的人物被削弱了。</p>
-<h1 id="饼干"><a class="anchor" href="#饼干">#</a> 饼干</h1>
-<p>啊～熟悉的地方，好像是叫奥特莱斯，高中时常和各种人在这里逛街，和<span style="color:#d3efd8">大个子</span>好像还是第一次，她给我带了亲手做的饼干，看着非常人畜无害，当我咬下去细细品尝时...？好像是在嚼一个没有味道的土，然后土里面有几颗蔓越莓。看来我的形容又更上一层楼了。她说她忘了加糖，我只能说我不懂怎么做饼干，但还是想说 6 。直男就是我，我就是直男。石头剪刀布她输了，所以她请我喝 CoCo。于是我们就坐在里面聊天，聊了什么，我忘了，各种各样的事，非常有意思，她叫我专升本到她学校，呜呜，别提了，只要能达到分数线，什么学校我都可以接受。还好她还年轻，没那么早挂，希望她多遇到点有意思的事，然后继续讲给我听。然后就是去逛街了，其实我确实想买鞋子的，只能说我眼光太高了，去了好多家我都没有看上，耐克和阿迪达斯的鞋我又买不起，感觉<span style="color:#d3efd8">大个子</span>快被我折磨死了，哈哈哈哈，算了，还是回去线上购物吧。然后就去吃海底捞，就是很想吃，再顺便看看我老师的剧本杀店，妈的居然关门了，不然我要砸他场子！海底捞的小姐姐带我们进去，我要尬死她，问了一句可以做美甲麻，姐姐好像被我沉默释放不出技能了，说了一句要先预约。真好玩，口罩真是个好东西，下次继续找个人尬。我点了蛮多东西的，也许是我熬夜玩游戏，导致我战斗力下降了，所以我状态不是很好，虽然我特别想吃，但是我又困又累。还好<span style="color:#d3efd8">大个子</span>战斗力还不错，出乎我的意料，虽然没有 S 在长沙吃火锅时牛逼，但还是比我强得多。对了，我还带了滑板给她滑，本想看她出丑的，结果她居然会滑，只是不会转弯而已。死去的回忆突然攻击我，想起高中带滑板来学校玩，有个女孩子玩我滑板摔跤了，我没有管她，而是站在边上看着她还问了句还要玩吗，她说还要玩。我把这个记忆告诉了<span style="color:#d3efd8">大个子</span>，<span style="color:#d3efd8">大个子</span>说她就在现场，啊？啊？啊？然后我就说了一句原来那个时候你存在感这么低，wow，爆杀了，原来我还是和以前一样那么令人无语。然后干了啥，哦哦哦，每日一张，和上次不一样的是她拍的更好看了，我确更丑了。我懂了，下次不能让她来拍，妈的。</p>
-<h1 id="键盘"><a class="anchor" href="#键盘">#</a> 键盘</h1>
-<p>呜呜～之前在毕业宿舍捡垃圾时捞到的键盘，陪伴我这么久，最近出了一点小毛病，所以我买了一个新的键盘，紫粉黑搭配，冰淇淋轴，哇靠，爽爆了，<s>这不得在游戏里爆杀</s>，这不得提高我的学习效率，三模连接，学习时桌面放书，键盘放抽屉，绝配！没有线的感觉太棒了，而且手感一流，还可以自定义灯光，爽了啦。希望它能够陪伴我更久～～～写这篇博客时用这个键盘简直是一种享受。最近开学了，<span style="color:#d3efd8">大个子</span>今天也去了学校，我叫她给我看看她的美女室友，真狗东西，不给我看，气屎我了，不写了，掰掰。</p>
-]]></content>
-      <categories>
-        <category>生活</category>
-      </categories>
-      <tags>
-        <tag>自言自语</tag>
-        <tag>周记</tag>
-        <tag>生活</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>实用网站</title>
-    <url>/2022/03/26/%E5%AE%9E%E7%94%A8%E7%BD%91%E7%AB%99/</url>
-    <content><![CDATA[<h2 id="实用网站"><a class="anchor" href="#实用网站">#</a> 实用网站</h2>
-<p>我的文件夹里有许多使用的网站，但也只是放在文件夹里，乱七八糟，没有整理，所以现在放在这里，以后就可以更加方便的利用这些网站</p>
-<hr>
-<h3 id="span-stylecolor00a8ff编程类span"><a class="anchor" href="#span-stylecolor00a8ff编程类span">#</a> <span style="color:#00a8ff">编程类</span></h3>
-<p><span class="exturl" data-url="aHR0cHM6Ly9mbGF0dWljb2xvcnMuY29tLw==">颜色网站</span> 不知道如何配色可以看看介个网站</p>
-<p><span class="exturl" data-url="aHR0cHM6Ly9jb2xvcmh1bnQuY28v">另一个颜色网站</span> 这个也不错</p>
-<p><span class="exturl" data-url="aHR0cHM6Ly91bmJ1Zy5naXRodWIuaW8vY29kZWxmLw==">取名鬼才</span>不知道取什么变量名可以看看这个</p>
-<p><span class="exturl" data-url="aHR0cHM6Ly93d3cuaWNvbmZvbnQuY24v">阿里字库</span>不管是网页还是 PS，又或者是 PPT，都可以用得上，真不错</p>
-<h3 id="span-stylecolor9c88ff图片类span"><a class="anchor" href="#span-stylecolor9c88ff图片类span">#</a> <span style="color:#9c88ff">图片类</span></h3>
-<p><span class="exturl" data-url="aHR0cHM6Ly93YWxsLmFscGhhY29kZXJzLmNvbS8=">wallpaper 壁纸</span> 有许多挺不错的漂亮壁纸可以在这里看</p>
-<p><span class="exturl" data-url="aHR0cDovL3d3dy5zb3V0dXNoZW5xaS5jb20vaG9tZQ==">搜图神器</span> 可以搜索超清的好康的图片 主要我是<span style="color:red">荣耀捐赠会员</span></p>
-<h3 id="span-stylecolore84118音乐类span"><a class="anchor" href="#span-stylecolore84118音乐类span">#</a> <span style="color:#e84118">音乐类</span></h3>
-<p><span class="exturl" data-url="aHR0cHM6Ly9tdXNpYy5saXV6aGlqaW4uY24v">刘志进音乐直连搜索</span> 可以在这里搜索很多音乐</p>
-<p><span class="exturl" data-url="aHR0cHM6Ly9saW5rLmhodGppbS5jb20v">外链转换工具</span> 可以配合上一个网站获得音乐的 mp3 网址</p>
-<h3 id="span-stylecolor4b4b4b影视类span"><a class="anchor" href="#span-stylecolor4b4b4b影视类span">#</a> <span style="color:#4b4b4b">影视类</span></h3>
-<p><span class="exturl" data-url="aHR0cHM6Ly93d3cuaHdqeWluZ3NoaS54eXov">hwj 影视</span> 可以看各种电影和番剧 (<span style="color:#ff3838">使用手机打开会有广告，推荐打开网页版 </span>)</p>
-<p><span class="exturl" data-url="aHR0cDovL3d3dy54ZmNkbS5jb20v">寻剧吧</span> 也是看各种电影和番剧 (<span style="color:#ff3838">使用手机打开会有广告，推荐打开网页版 </span>)</p>
-<p><span class="exturl" data-url="aHR0cHM6Ly93d3cuYmlsaWJpbGkuY29tLw==">蜀黍的网站</span> 你所热爱的就是你的生活 (<strong>陈睿 吃柠檬</strong>)</p>
-<p><span class="exturl" data-url="aHR0cHM6Ly93d3cueW91dHViZS5jb20v">油管</span> 可以在里面找乐子 0.0 <span style="color:#ccc">要翻墙 </span></p>
-<h3 id="span-stylecolorff9f1a娱乐类span"><a class="anchor" href="#span-stylecolorff9f1a娱乐类span">#</a> <span style="color:#ff9f1a">娱乐类</span></h3>
-<p><span class="exturl" data-url="aHR0cHM6Ly9jaGlzaGVubWUueHl6Lw==">今天吃什么</span> 不知道吃什么可以看看介个</p>
-<p><span class="exturl" data-url="aHR0cHM6Ly9waWNyZXcubWUv">Picrew</span> 随机生成头像，我的<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL01yTm9ib2R5MjMz"> github</span> 的<span style="color:#afcfb7">头像</span>就是这里来的，是不是很好看 qwq <span style="color:#ccc">要翻墙 </span></p>
- <img data-src="https://avatars.githubusercontent.com/u/96650292?v=4" alt="图片没有显示呀，网太差了吧~" width="100">
-<p><span class="exturl" data-url="aHR0cHM6Ly93d3cuZGJicWIuY29t">逗比拯救世界</span> 很多各种各样的<span style="color:#ad9d3e">表情包</span>，逗比必备哦。</p>
-<img data-src="https://raw.githubusercontent.com/MrNobody233/Pohot/main/blog/cheems.jpg" alt="图片没有显示呀，网太差了吧~" width="100">
-<h3 id="span-stylecolor505a63其他span"><a class="anchor" href="#span-stylecolor505a63其他span">#</a> <span style="color:#505a63">其他</span></h3>
-<p><span class="exturl" data-url="aHR0cHM6Ly9mcmVlLjN2LmRvL21lbWJlci9pbmRleC5hc3A=">免费空间</span> 学习 html css 的时候跟着<span style="color:pink">pink</span>老师找到的网站。</p>
-<p><span class="exturl" data-url="aHR0cDovL21ybm9ib2R5LjN2aG9zdC5uZXQv">木子网</span> 上传的大一下学期的期末作业，纯 html 和 css，做的好像比现在还好看许多，果然我把 css 忘光了。</p>
-<p><span class="exturl" data-url="aHR0cDovLzE3Mi4xNi4wLjc1Lw==">查看综测分</span> 查看综测分</p>
-<p><span class="exturl" data-url="aHR0cHM6Ly96amtnancuZWR1Y2F0aW9uZ3JvdXAuY24vanhranh5X2pzeHNkLw==">学校选课</span> 学校选修网课</p>
-<br>
-<h3 id="span-stylecolorpink-无聊了继续更新-拜拜-span"><a class="anchor" href="#span-stylecolorpink-无聊了继续更新-拜拜-span">#</a> <span style="color:pink"> 无聊了继续更新 拜拜 </span></h3>
-]]></content>
-      <categories>
-        <category>生活</category>
-      </categories>
-      <tags>
-        <tag>网站</tag>
-        <tag>工具</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>多媒体与信息安全</title>
     <url>/2023/02/25/%E5%A4%9A%E5%AA%92%E4%BD%93%E6%8A%80%E6%9C%AF%E4%B8%8E%E4%BF%A1%E6%81%AF%E5%AE%89%E5%85%A8/</url>
     <content><![CDATA[<h1 id="单选题"><a class="anchor" href="#单选题">#</a> 单选题</h1>
@@ -3407,24 +3363,68 @@
       </tags>
   </entry>
   <entry>
-    <title>凌晨校园</title>
-    <url>/2022/04/18/%E5%87%8C%E6%99%A8%E6%A0%A1%E5%9B%AD/</url>
-    <content><![CDATA[<h3 id="第二次"><a class="anchor" href="#第二次">#</a> 第二次</h3>
-<p>本来想在工作室过夜写会儿代码的，但是在十一点四十的时候<span style="color:pink">果果超甜</span>突然告诉我明天早上要做核酸，TNND，我真的受不了了，明明今天已经做过了，居然连续做两天，所以我准备回宿舍，不过红绿蓝并不是只有我一个人，还有一个老师也在，整个地方只有他的办公室还是亮着的，为了不让他发现我在这里，我小心的打开自己办公室的门，然后悄咪咪的溜到大门口，这个真的是高难度，因为大门太重了，开的时候会发出嘎吱嘎吱的响声，我也经常在办公室听大门的开关声来判断是否有人进来。所以结局很正常，我被他发现了，关键是我打都没打开门，因为门被锁了，而且还是磁力锁，我来这里三个学期了都没有看到他们打开磁力，今天 TMD 突然就打开了，然后老师就说了一句 谁？  把我尬死在原地，我故作镇定，回答：还能出去吗？ 然后他说待会走。</p>
-<p>然后我就默默的回到自己的办公室打开小灯开始看自己的代码，尬的我连刚刚学的 Vuex 传值都不会了，加上我尿急，我都快绷不住了，过了好一会儿他来了，说 走吧 ，问我为什么这么晚还没回宿舍，我说项目还有一些需要改的地方，他也没多问，出去的时候我才知道，磁力门并不是那个老师弄的，他也尝试拉了一下门，和我一样打不开，我按了一下右边的按钮就开了，接着就在外面等他锁门，拿手电筒照着他，看他锁门，尬死我了，心里想赶紧让我先走吧，然后他就让我先回去了，哎，还好他没问我这么晚了怎么回宿舍，不然我真的答不出来。<br>
-宿舍离工作室也不算很远，不过路上还是特别可怕的，第一个是太黑了一点灯都没有，第二个是太冷了，第三个就是妈的那个<span style="color:red">SB</span>孔雀突然叫了一下，把我吓得鸡皮疙瘩都起来了，搞不明白为什么孔雀要放在我宿舍对面，现在住在这栋宿舍的人每天都在群里想着怎么杀掉这几个孔雀。<br>
-终于到了老地方，那颗支撑我回宿舍的小树，看来多锻炼还是特别有用的，对于我来说通过这个树上二楼是一件非常轻松的事情，也许是我太轻了，手臂能够把我支撑起来，就这样我安全都回去了。</p>
-<h3 id="第一次"><a class="anchor" href="#第一次">#</a> 第一次</h3>
-<p>实际上这并不是我第一次这么晚还在学校外面溜达，在几号来着。。也就前几天吧，因为一些原因，<span style="color:pink">果果超甜</span>，<span style="color:skyblue">胃痛患者</span>，还有我很晚的时候在外面溜达，本来想着等老师走了以后再回工作室的，在外面溜达了好一会儿，终于来学校这么久了找到古茗的位置了，还有我去年暑假留校做比赛经常点的外卖的位置，那个炸鸡真的太好吃了，还看见了我们学校的留学生在操场用音响放音乐，如果不是封校了，我们肯定会出去溜达的，真的可惜呀，，</p>
-<p>过了好一会我们准备回工作室了，结果发现二楼大门被锁了。。通常是一楼被锁的，我们可以从食堂小门进去，但是二楼被锁了实在就无能为力了。期间尝试了很多方法进去，结果也就我能实现，可以从厕所那里爬过去，也就爬两个小房间的高度，然后抓着钢管到男厕所窗口就可以了，我示范了一遍给他们看，但是到钢管哪里我就没爬了，太黑了，为了安全考虑我和他们一起回宿舍了，还是熟悉的位置，我第一个爬上去了，能感觉到树枝被裁剪了许多，相比之前爬难了一点点点点，但是对于他们来说就特别困难了，努力了半天，他们终于也上来了，看得我心惊胆跳的，真是捏了一把汗，如果失误了从上面摔下来，也就一条腿骨折而已，如果没站稳脑袋磕到石头了也就一辈子躺床上罢了。安全的回到了宿舍，可是 胃痛患者 并不想回自己宿舍，因为和室友关系不好什么的，所以我善心大方收留了他 ，也就是这个决定，让我尬死了一晚上</p>
-<p>那个时候太热了，又热又闷的，我想去开空调，但是空调线没插，我想过去插线，可是那边室友已经睡着了，所以结局很明了，我把线插好了，也把室友吵醒了被骂了一顿，可以说是我今年最尬的时候了，那晚过的很煎熬，果然我还是比较适合一个人睡，如果<span style="color:#ccc">废宅充电器</span>在的话就好了，他可以一晚上不睡，然后让<span style="color:skyblue">胃痛患者</span>睡他床，不过想想也不可能，因为不知道他们宿舍怎么上二楼，不过我以后再也不会让别人和我一起挤那么小的床睡觉了。拜拜</p>
-<p>这次写的太粗略了，很多细节都没有写，可能是这一篇生活写的太多了，而且现在已经 12：48 了，明天还得早起做核酸，，等过几年我突然想起来了更多细节，也许会补充上去吧？也许。</p>
+    <title>多巴胺脱瘾治疗</title>
+    <url>/2023/02/18/%E5%A4%9A%E5%B7%B4%E8%83%BA%E8%84%B1%E7%98%BE%E6%B2%BB%E7%96%97/</url>
+    <content><![CDATA[<h1 id="身份证"><a class="anchor" href="#身份证">#</a> 身份证</h1>
+<p>都出门一段时间了，才发现现在是正月，看来得过两天才能剪头了，烦内，这次的头发长的特别丑，原因是很早之前我身份证快过期了，当时我头发很长，又没洗头，于是和我妈妈去理发店，但是如果剪头的话我的头发又会很难看，妈的，这可是身份证啊，要用十年的身份证啊！为了我帅气的形象，我犹豫不决，于是我妈就在理发店帮我洗头，尬死我了，虽然理发店的老板是我姨夫的徒弟，但还是好尴尬。然后我妈妈给我吹头发，不知道形容，好像就是把我吹成了路边上长相一般的头发比较长的男的，呜呜呜。在去派出所的路上我疯狂的把自己的头发往上撩，颜值上去了那么一丢丢，然后在派出所自助办理身份证机器里拍照，好嘛，它判断我头发太长遮住耳朵和眉毛之类的，拍了好几次都不行，真是麻麻石蜡。所以那天还是没办成身份证，过了两天后我就去理发了，不知道怎么回事，好像是我妈妈在边上，他给我剪的头发是那种很乖很小孩子的头发，更加无语了，所以我又得拖延一点时间让我头发慢慢成长了。接着就是去我外婆家呆了半个月，回来后过了一段时间，终于找机会去照相馆拍身份证照了，第二天早上去拿照片，麻的，这是谁啊，死鱼眼，又板着脸，我真的好不甘心啊，于是我去网上搜哪里能办身份证数码照片回执，找到后我自己上传了自认为帅气的照片，然后网站就开始给我返回各种错误，什么距离太远，颜色异常，上传三四次后网站就开始繁忙了，尼玛真的搞我心态啊，我又开始找其他办法，功夫不负有心人，在赣服通里有居民身份证换领，简直太方便了，一共花了我 35 元，虽然照片是之前的照片，不过还好上个身份证的照片还算不错。身份证拿到手的那一刻，终于放松了起来。</p>
+<h1 id="情人节和第一次收到花"><a class="anchor" href="#情人节和第一次收到花">#</a> 情人节和第一次收到花</h1>
+<p>玩游戏，玩游戏，玩游戏，为什么强度这么高啊，大神难道都没有对象的吗，果然女人只会影响拔枪的速度。那天我在 BB 空间看见了她第一次收到花，好像是谈了恋爱，我有点小失落又有点小开心，之前我过生日的时候她是人生中第一个送我花花的女孩子，我很开心，我就想着我一定要找机会送她一次花花，甚至送什么花都想好了，我从来没送过同龄女孩子花花，我觉得麻烦，过不了几天就枯萎了，那还不如不送。但是我收到花的时那份开心才让我认识到送花的意义。我记得小学教师节时送了许多老师花花，还是很漂亮很贵的那种，老师们那发自内心的笑容让我一直记到现在，所以我还是会第一次送花给她，不为别的，就因为她是第一个送我花的女孩子。就算她不是第一次收到花，那也是我真正意义上第一次送出去的花。然后那天晚上就一家人去吃火锅，突然就好想找个人聊天啊，线上打字太累了。于是就找了个买衣服和鞋子的理由叫<span style="color:#d3efd8">大个子</span>第二天陪我出来逛街，我给她半个小时时间回复去或者不去，因为半个小时正好是从火锅店走到奶奶家的时间。她说她去，也确认了她是闲得无聊没事干才去的。接着回去打游戏到凌晨四点才睡，呜呜因为游戏更新了，我最喜欢的人物被削弱了。</p>
+<h1 id="饼干"><a class="anchor" href="#饼干">#</a> 饼干</h1>
+<p>啊～熟悉的地方，好像是叫奥特莱斯，高中时常和各种人在这里逛街，和<span style="color:#d3efd8">大个子</span>好像还是第一次，她给我带了亲手做的饼干，看着非常人畜无害，当我咬下去细细品尝时...？好像是在嚼一个没有味道的土，然后土里面有几颗蔓越莓。看来我的形容又更上一层楼了。她说她忘了加糖，我只能说我不懂怎么做饼干，但还是想说 6 。直男就是我，我就是直男。石头剪刀布她输了，所以她请我喝 CoCo。于是我们就坐在里面聊天，聊了什么，我忘了，各种各样的事，非常有意思，她叫我专升本到她学校，呜呜，别提了，只要能达到分数线，什么学校我都可以接受。还好她还年轻，没那么早挂，希望她多遇到点有意思的事，然后继续讲给我听。然后就是去逛街了，其实我确实想买鞋子的，只能说我眼光太高了，去了好多家我都没有看上，耐克和阿迪达斯的鞋我又买不起，感觉<span style="color:#d3efd8">大个子</span>快被我折磨死了，哈哈哈哈，算了，还是回去线上购物吧。然后就去吃海底捞，就是很想吃，再顺便看看我老师的剧本杀店，妈的居然关门了，不然我要砸他场子！海底捞的小姐姐带我们进去，我要尬死她，问了一句可以做美甲麻，姐姐好像被我沉默释放不出技能了，说了一句要先预约。真好玩，口罩真是个好东西，下次继续找个人尬。我点了蛮多东西的，也许是我熬夜玩游戏，导致我战斗力下降了，所以我状态不是很好，虽然我特别想吃，但是我又困又累。还好<span style="color:#d3efd8">大个子</span>战斗力还不错，出乎我的意料，虽然没有 S 在长沙吃火锅时牛逼，但还是比我强得多。对了，我还带了滑板给她滑，本想看她出丑的，结果她居然会滑，只是不会转弯而已。死去的回忆突然攻击我，想起高中带滑板来学校玩，有个女孩子玩我滑板摔跤了，我没有管她，而是站在边上看着她还问了句还要玩吗，她说还要玩。我把这个记忆告诉了<span style="color:#d3efd8">大个子</span>，<span style="color:#d3efd8">大个子</span>说她就在现场，啊？啊？啊？然后我就说了一句原来那个时候你存在感这么低，wow，爆杀了，原来我还是和以前一样那么令人无语。然后干了啥，哦哦哦，每日一张，和上次不一样的是她拍的更好看了，我确更丑了。我懂了，下次不能让她来拍，妈的。</p>
+<h1 id="键盘"><a class="anchor" href="#键盘">#</a> 键盘</h1>
+<p>呜呜～之前在毕业宿舍捡垃圾时捞到的键盘，陪伴我这么久，最近出了一点小毛病，所以我买了一个新的键盘，紫粉黑搭配，冰淇淋轴，哇靠，爽爆了，<s>这不得在游戏里爆杀</s>，这不得提高我的学习效率，三模连接，学习时桌面放书，键盘放抽屉，绝配！没有线的感觉太棒了，而且手感一流，还可以自定义灯光，爽了啦。希望它能够陪伴我更久～～～写这篇博客时用这个键盘简直是一种享受。最近开学了，<span style="color:#d3efd8">大个子</span>今天也去了学校，我叫她给我看看她的美女室友，真狗东西，不给我看，气屎我了，不写了，掰掰。</p>
 ]]></content>
       <categories>
         <category>生活</category>
       </categories>
       <tags>
-        <tag>智障</tag>
+        <tag>自言自语</tag>
+        <tag>周记</tag>
+        <tag>生活</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>实用网站</title>
+    <url>/2022/03/26/%E5%AE%9E%E7%94%A8%E7%BD%91%E7%AB%99/</url>
+    <content><![CDATA[<h2 id="实用网站"><a class="anchor" href="#实用网站">#</a> 实用网站</h2>
+<p>我的文件夹里有许多使用的网站，但也只是放在文件夹里，乱七八糟，没有整理，所以现在放在这里，以后就可以更加方便的利用这些网站</p>
+<hr>
+<h3 id="span-stylecolor00a8ff编程类span"><a class="anchor" href="#span-stylecolor00a8ff编程类span">#</a> <span style="color:#00a8ff">编程类</span></h3>
+<p><span class="exturl" data-url="aHR0cHM6Ly9mbGF0dWljb2xvcnMuY29tLw==">颜色网站</span> 不知道如何配色可以看看介个网站</p>
+<p><span class="exturl" data-url="aHR0cHM6Ly9jb2xvcmh1bnQuY28v">另一个颜色网站</span> 这个也不错</p>
+<p><span class="exturl" data-url="aHR0cHM6Ly91bmJ1Zy5naXRodWIuaW8vY29kZWxmLw==">取名鬼才</span>不知道取什么变量名可以看看这个</p>
+<p><span class="exturl" data-url="aHR0cHM6Ly93d3cuaWNvbmZvbnQuY24v">阿里字库</span>不管是网页还是 PS，又或者是 PPT，都可以用得上，真不错</p>
+<h3 id="span-stylecolor9c88ff图片类span"><a class="anchor" href="#span-stylecolor9c88ff图片类span">#</a> <span style="color:#9c88ff">图片类</span></h3>
+<p><span class="exturl" data-url="aHR0cHM6Ly93YWxsLmFscGhhY29kZXJzLmNvbS8=">wallpaper 壁纸</span> 有许多挺不错的漂亮壁纸可以在这里看</p>
+<p><span class="exturl" data-url="aHR0cDovL3d3dy5zb3V0dXNoZW5xaS5jb20vaG9tZQ==">搜图神器</span> 可以搜索超清的好康的图片 主要我是<span style="color:red">荣耀捐赠会员</span></p>
+<h3 id="span-stylecolore84118音乐类span"><a class="anchor" href="#span-stylecolore84118音乐类span">#</a> <span style="color:#e84118">音乐类</span></h3>
+<p><span class="exturl" data-url="aHR0cHM6Ly9tdXNpYy5saXV6aGlqaW4uY24v">刘志进音乐直连搜索</span> 可以在这里搜索很多音乐</p>
+<p><span class="exturl" data-url="aHR0cHM6Ly9saW5rLmhodGppbS5jb20v">外链转换工具</span> 可以配合上一个网站获得音乐的 mp3 网址</p>
+<h3 id="span-stylecolor4b4b4b影视类span"><a class="anchor" href="#span-stylecolor4b4b4b影视类span">#</a> <span style="color:#4b4b4b">影视类</span></h3>
+<p><span class="exturl" data-url="aHR0cHM6Ly93d3cuaHdqeWluZ3NoaS54eXov">hwj 影视</span> 可以看各种电影和番剧 (<span style="color:#ff3838">使用手机打开会有广告，推荐打开网页版 </span>)</p>
+<p><span class="exturl" data-url="aHR0cDovL3d3dy54ZmNkbS5jb20v">寻剧吧</span> 也是看各种电影和番剧 (<span style="color:#ff3838">使用手机打开会有广告，推荐打开网页版 </span>)</p>
+<p><span class="exturl" data-url="aHR0cHM6Ly93d3cuYmlsaWJpbGkuY29tLw==">蜀黍的网站</span> 你所热爱的就是你的生活 (<strong>陈睿 吃柠檬</strong>)</p>
+<p><span class="exturl" data-url="aHR0cHM6Ly93d3cueW91dHViZS5jb20v">油管</span> 可以在里面找乐子 0.0 <span style="color:#ccc">要翻墙 </span></p>
+<h3 id="span-stylecolorff9f1a娱乐类span"><a class="anchor" href="#span-stylecolorff9f1a娱乐类span">#</a> <span style="color:#ff9f1a">娱乐类</span></h3>
+<p><span class="exturl" data-url="aHR0cHM6Ly9jaGlzaGVubWUueHl6Lw==">今天吃什么</span> 不知道吃什么可以看看介个</p>
+<p><span class="exturl" data-url="aHR0cHM6Ly9waWNyZXcubWUv">Picrew</span> 随机生成头像，我的<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL01yTm9ib2R5MjMz"> github</span> 的<span style="color:#afcfb7">头像</span>就是这里来的，是不是很好看 qwq <span style="color:#ccc">要翻墙 </span></p>
+ <img data-src="https://avatars.githubusercontent.com/u/96650292?v=4" alt="图片没有显示呀，网太差了吧~" width="100">
+<p><span class="exturl" data-url="aHR0cHM6Ly93d3cuZGJicWIuY29t">逗比拯救世界</span> 很多各种各样的<span style="color:#ad9d3e">表情包</span>，逗比必备哦。</p>
+<img data-src="https://raw.githubusercontent.com/MrNobody233/Pohot/main/blog/cheems.jpg" alt="图片没有显示呀，网太差了吧~" width="100">
+<h3 id="span-stylecolor505a63其他span"><a class="anchor" href="#span-stylecolor505a63其他span">#</a> <span style="color:#505a63">其他</span></h3>
+<p><span class="exturl" data-url="aHR0cHM6Ly9mcmVlLjN2LmRvL21lbWJlci9pbmRleC5hc3A=">免费空间</span> 学习 html css 的时候跟着<span style="color:pink">pink</span>老师找到的网站。</p>
+<p><span class="exturl" data-url="aHR0cDovL21ybm9ib2R5LjN2aG9zdC5uZXQv">木子网</span> 上传的大一下学期的期末作业，纯 html 和 css，做的好像比现在还好看许多，果然我把 css 忘光了。</p>
+<p><span class="exturl" data-url="aHR0cDovLzE3Mi4xNi4wLjc1Lw==">查看综测分</span> 查看综测分</p>
+<p><span class="exturl" data-url="aHR0cHM6Ly96amtnancuZWR1Y2F0aW9uZ3JvdXAuY24vanhranh5X2pzeHNkLw==">学校选课</span> 学校选修网课</p>
+<br>
+<h3 id="span-stylecolorpink-无聊了继续更新-拜拜-span"><a class="anchor" href="#span-stylecolorpink-无聊了继续更新-拜拜-span">#</a> <span style="color:pink"> 无聊了继续更新 拜拜 </span></h3>
+]]></content>
+      <categories>
+        <category>生活</category>
+      </categories>
+      <tags>
+        <tag>网站</tag>
+        <tag>工具</tag>
       </tags>
   </entry>
   <entry>
@@ -4275,6 +4275,23 @@
       </tags>
   </entry>
   <entry>
+    <title>新的主题:shoka</title>
+    <url>/2022/05/08/%E6%96%B0%E7%9A%84%E4%B8%BB%E9%A2%98-shoka/</url>
+    <content><![CDATA[<h3 id="shoka"><a class="anchor" href="#shoka">#</a> shoka</h3>
+<p>太符合我的 xp 了这个主题，虽然配置的过程非常艰苦，特别是搜索功能，但是终于成功一些，还有好多功能没有实现。和之前<span class="exturl" data-url="aHR0cHM6Ly9mZWNoLmluLw=="> Diaspora</span> 这个主题相处的很愉快，虽然也很简洁漂亮，不过让我彻底换成<span class="exturl" data-url="aHR0cHM6Ly9zaG9rYS5sb3N0eXUubWUv"> shoka</span> 的原因是<span class="exturl" data-url="aHR0cHM6Ly9mZWNoLmluLw=="> Diaspora</span> 的主体样式失效了，为什么会失效，嘿嘿嘿，因为我就想看看<span class="exturl" data-url="aHR0cHM6Ly9zaG9rYS5sb3N0eXUubWUv"> shoka</span> 难不难配置，搞了乱七八糟的东西以后最终乱套了，所以我不得不换这个主题，实在是太香了，我会记住你的！嘿嘿嘿</p>
+<img width="330px" height="200px" data-src="https://raw.githubusercontent.com/MrNobody233/Pohot/main/blog/2022-5-8-14%3A34%3A25/Snipaste_2022-05-08_14-32-15.png">
+<img width="330px" height="200px" data-src="https://raw.githubusercontent.com/MrNobody233/Pohot/main/blog/2022-5-8-14%3A34%3A25/Snipaste_2022-05-08_14-32-38.png">
+<p>还需要先学习一下这个主题的小语法，实在是太好看啦！！ <span class="exturl" data-url="aHR0cHM6Ly9zaG9rYS5sb3N0eXUubWUvY29tcHV0ZXItc2NpZW5jZS9ub3RlL3RoZW1lLXNob2thLWRvYy9zcGVjaWFsLw==">点我去 copy</span></p>
+]]></content>
+      <categories>
+        <category>生活</category>
+      </categories>
+      <tags>
+        <tag>网站</tag>
+        <tag>工具</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>操作系统</title>
     <url>/2023/01/26/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/</url>
     <content><![CDATA[<h1 id="单选题"><a class="anchor" href="#单选题">#</a> 单选题</h1>
@@ -4945,9 +4962,9 @@
     <title>无尽旅途</title>
     <url>/2022/12/19/%E6%97%A0%E5%B0%BD%E6%97%85%E9%80%94/</url>
     <content><![CDATA[<p>在很早的时候我在 b 站看过一个视频，是一个世界渲染大赛，主题是 <code>无尽旅途</code> ，就是下面的视频。</p>
-<style>.bbplayer{width: 100%; max-width: 850px; margin: auto}</style><div class="bbplayer"><iframe class="bbplayer" id="mmedia-CSINnkYOWmwdrWHQ" src="https://player.bilibili.com/player.html?bvid=BV1KP4y137s6&amp;page=1&amp;high_quality=1&amp;danmaku=true" allowfullscreen="allowfullscreen" scrolling="no" border="0" frameborder="0" framespacing="0" sandbox="allow-top-navigation allow-same-origin allow-forms allow-scripts allow-popups"></iframe></div><script> document.getElementById("mmedia-CSINnkYOWmwdrWHQ").style.height=document.getElementById("mmedia-CSINnkYOWmwdrWHQ").scrollWidth*0.76+"px";
+<style>.bbplayer{width: 100%; max-width: 850px; margin: auto}</style><div class="bbplayer"><iframe class="bbplayer" id="mmedia-NzvDSYJrGDwrpmrf" src="https://player.bilibili.com/player.html?bvid=BV1KP4y137s6&amp;page=1&amp;high_quality=1&amp;danmaku=true" allowfullscreen="allowfullscreen" scrolling="no" border="0" frameborder="0" framespacing="0" sandbox="allow-top-navigation allow-same-origin allow-forms allow-scripts allow-popups"></iframe></div><script> document.getElementById("mmedia-NzvDSYJrGDwrpmrf").style.height=document.getElementById("mmedia-NzvDSYJrGDwrpmrf").scrollWidth*0.76+"px";
     window.onresize = function(){
-      document.getElementById("mmedia-CSINnkYOWmwdrWHQ").style.height=document.getElementById("mmedia-CSINnkYOWmwdrWHQ").scrollWidth*0.76+"px";
+      document.getElementById("mmedia-NzvDSYJrGDwrpmrf").style.height=document.getElementById("mmedia-NzvDSYJrGDwrpmrf").scrollWidth*0.76+"px";
     }; </script>
 <p>我很喜欢这种类型的视频，但是我的语文水平实在是太差了，不知道该怎么去形容，让我想起了小学时候我爸爸问我语文的阅读理解怎么这么差，我说我明白那是什么意思，只是不知道怎么表达出来而已。我喜欢这种在去某一个地方过程中等待的感觉，比如早些时候独自坐火车去合肥的时候，这种感觉，孤独，未知，安静。而我却很享受这些感觉。在高中时候我经常和某人看关于太空的电影，通常电影中都会有去某一个星球的过程，而这个过程就会给我这种感觉。如果在早几年也许我会分享这个视频，但是我已经没有这种分享欲了，即使是给别人看也不会抱太大的期望，我记得我向别人推荐过我最喜欢的两个动漫，分别是 <code>星际牛仔</code> 和 <code>混沌武士</code> ，不过我分享过的人没有人去看，即使是我最好的朋友，当时确实给我一种很失望的感觉，不过我现在倒是不会在乎那么多，毕竟每个人喜欢的东西不同。</p>
 <p>今天凌晨好像是世界杯结束了，阿根廷赢了，各种软件都推送给我梅西和世界杯的视频，朋友圈也刷屏式的更新，我不觉得热闹，只感觉厌烦，不明白是因为讨厌跟风还是因为自己，我没有关注世界杯，想起了上次世界杯，也就是四年前 (时间过得真快妈的)。那个时候队友们通宵看球，还算热闹，不过我还是没有参与进去，但是感受到了气氛，也算是开心。今年有人在家围在一起看球，有人在酒吧不怕疫情看球，有人打开腾讯会议一起看球，而我在玩荒野大镖客，那为什么不玩 APEX，因为我删了 qwq，如果不删我想我现在玩的不是博客了。 反正昨天过的挺无聊的，只能看着别人热闹，或者天天都挺无聊，但我已经对这种东西产生抗体了，反正也无所谓了，原本计划着出去玩，没想到疫情蔓延的这么快，被感染的同学戴着口罩躺着床上说着快死人一般的语气说着自己不行了，还有的同学一家人只剩下自己没被感染，到这个时候我也想不明白为什么一些媒体还要开玩笑似的淡化疫情。</p>
@@ -4976,23 +4993,6 @@
         <tag>自言自语</tag>
         <tag>周记</tag>
         <tag>生活</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>新的主题:shoka</title>
-    <url>/2022/05/08/%E6%96%B0%E7%9A%84%E4%B8%BB%E9%A2%98-shoka/</url>
-    <content><![CDATA[<h3 id="shoka"><a class="anchor" href="#shoka">#</a> shoka</h3>
-<p>太符合我的 xp 了这个主题，虽然配置的过程非常艰苦，特别是搜索功能，但是终于成功一些，还有好多功能没有实现。和之前<span class="exturl" data-url="aHR0cHM6Ly9mZWNoLmluLw=="> Diaspora</span> 这个主题相处的很愉快，虽然也很简洁漂亮，不过让我彻底换成<span class="exturl" data-url="aHR0cHM6Ly9zaG9rYS5sb3N0eXUubWUv"> shoka</span> 的原因是<span class="exturl" data-url="aHR0cHM6Ly9mZWNoLmluLw=="> Diaspora</span> 的主体样式失效了，为什么会失效，嘿嘿嘿，因为我就想看看<span class="exturl" data-url="aHR0cHM6Ly9zaG9rYS5sb3N0eXUubWUv"> shoka</span> 难不难配置，搞了乱七八糟的东西以后最终乱套了，所以我不得不换这个主题，实在是太香了，我会记住你的！嘿嘿嘿</p>
-<img width="330px" height="200px" data-src="https://raw.githubusercontent.com/MrNobody233/Pohot/main/blog/2022-5-8-14%3A34%3A25/Snipaste_2022-05-08_14-32-15.png">
-<img width="330px" height="200px" data-src="https://raw.githubusercontent.com/MrNobody233/Pohot/main/blog/2022-5-8-14%3A34%3A25/Snipaste_2022-05-08_14-32-38.png">
-<p>还需要先学习一下这个主题的小语法，实在是太好看啦！！ <span class="exturl" data-url="aHR0cHM6Ly9zaG9rYS5sb3N0eXUubWUvY29tcHV0ZXItc2NpZW5jZS9ub3RlL3RoZW1lLXNob2thLWRvYy9zcGVjaWFsLw==">点我去 copy</span></p>
-]]></content>
-      <categories>
-        <category>生活</category>
-      </categories>
-      <tags>
-        <tag>网站</tag>
-        <tag>工具</tag>
       </tags>
   </entry>
   <entry>
@@ -5115,26 +5115,6 @@
       </tags>
   </entry>
   <entry>
-    <title>熬夜之旅</title>
-    <url>/2022/04/01/%E7%86%AC%E5%A4%9C%E4%B9%8B%E6%97%85/</url>
-    <content><![CDATA[<h3 id="熬夜之旅"><a class="anchor" href="#熬夜之旅">#</a> 熬夜之旅</h3>
-<p>今天在工作室度过第一个夜晚，虽然在暑假比赛的时候已经住过另一个工作室了，但是这里还是头一次，和我一起的有<span class="exturl" data-url="aHR0cHM6Ly9jaGFyZXQuZ2l0aHViLmlvLw==">社恐废宅充电器</span>和<span class="exturl" data-url="aHR0cHM6Ly90aGlyc3R5LWMuZ2l0aHViLmlvLw==">胃病患者</span>，比起宿舍我确实更喜欢这里，毕竟这里不需要交<span style="color:red">电费</span>和<span style="color:red">水费</span>，最主要的是还有空调可以吹，虽然室友都有比较好的作息时间，但在其他时间还是比较吵的，串门的比较多，所以非常感谢有这么好的环境提供给我学习和休息，今晚如果没有 SB 抢我的折叠床，我应该会睡的比较早。</p>
-<h3 id="其他的事"><a class="anchor" href="#其他的事">#</a> 其他的事</h3>
-<p>凌晨两点半的时候，有一个网友突然发现了我，她问我是谁，毕竟隔了四五年了，不记得我是谁也很正常，所以我稍微和她解释了一下，这样体现了给人写备注的好处。这个姑娘的也挺悲催的，所以我对她印象挺深刻，她和父母关系不好，有自残倾向，到了现在和她聊了一会，她告诉我在今年，也就是她的 18 岁那天，她<span style="color:red">自杀未遂</span>，但是和父母关系好了一些，她说她重生了，我为她感到高兴，但也不敢问的太仔细，虽然她貌似想向我分享那些事情，但我还是把话题给往其他地方给放了，认识她是在一个仓鼠群里，我以前养过仓鼠，和她聊得比较好所以她加了我，并且告诉我她家里的一些事，当时我并不会安慰人，只是默默听着，让她有一个地方可以宣泄自己的压力，虽然现在也是一样，我还是不会安慰人，能感受的到别人悲伤的情绪，但也不会说什么，还可能会逃避。</p>
-<p>扯多了，她问我怕蛇吗，我没回答，只是问她现在开始养蛇了嘛，和仓鼠放在一起不会出事吗，以及蛇没有咬过你吗，她说没有，倒是很想被咬一下试试，所以一不小心又回到了自残的话题，说自己又开始抽起了烟，本以为能缓解压力，结果压力更大了，每天晚上睡眠时间只有 5 小时，离她想上的大学平均分还差 2 分，也就是每科需要进步十分，我不敢多聊，因为太晚了，已经快凌晨 3 点了，所以告诉她生活的美好，以及还有很多没有碰到过的有意思的事情之类的，接着就睡了。</p>
-<p>其实像这样的网友还有很多，以前聊的特别欢乐，突然有一天就没继续下去，也不知道是什么时候结束，但还是保存在自己的联系人里，默默的看着他们的变化，也是一种属于我自己的乐趣，</p>
-<h3 id="最后"><a class="anchor" href="#最后">#</a> 最后</h3>
-<p>注意身体，不要熬夜现在是 2022 年 4 月 2 日 00:00:57，虽然标题是熬夜之旅，实际上是我想不出标题的名字而已，就酱紫，如果我再不睡，我的折叠床就要被傻逼玷污了！就酱紫，掰掰。还有一件事，这个标签是自言自语，看看就行了，全当我放屁，掰掰。</p>
-]]></content>
-      <categories>
-        <category>生活</category>
-      </categories>
-      <tags>
-        <tag>智障</tag>
-        <tag>自言自语</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>疯狂星期四</title>
     <url>/2023/02/03/%E7%96%AF%E7%8B%82%E6%98%9F%E6%9C%9F%E5%9B%9B/</url>
     <content><![CDATA[<p>三年啊，这三年我怎么过的哇，每年爷爷都会问我的高中毕业证有没有去拿，为什么还不去拿，昨天我终于拿到手了，也多亏了我高中班主任时隔二十多天起死回生回我消息，他说他过年回家了，所以没搭理我，呜呜，他真的，我哭死。昨天下午我准备和<span style="color:#d3efd8">大个子</span>去老师家拜年，顺便看看电影，玩儿会滑板，虽然年好像过完了，但还是要送点什么礼，那送什么呢，以前好像送的都是红酒，不算贵，挺好喝，今年在爷爷家，爷爷也说送瓶红酒，于是给我拿了一个积了点灰的盒子，他说这个酒也蛮不错，但是不知道价格，我淘宝搜了搜，好家伙，快 500RMB 了，我有点心痛，想起以前我住老师家时，经常喝着其他家长给他送的牛奶和清明酒，我就想着会不会那瓶酒会不会也被其他小弟弟喝掉。当我要走的时候，爷爷说就送一个不太好吧，奶奶说送那么贵的酒就不错了，但还是让我提着一箱奶走了，其实我也只想送一瓶酒算了，因为提的东西太多了，好不方便啊，才不是我小气不想送多点给老师呢 😭, 我记得我前几年给他送了瓶红酒，他说留着等我结婚时打开喝，我希望他能把结婚时喝的酒换成今年我给他送的这瓶 qwq。</p>
@@ -5196,6 +5176,50 @@
   </div>
 </div>
 <script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
+  </entry>
+  <entry>
+    <title>第一次拆机</title>
+    <url>/2022/04/23/%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%8B%86%E6%9C%BA/</url>
+    <content><![CDATA[<h3 id="周记"><a class="anchor" href="#周记">#</a> 周记</h3>
+<p>创建了一个新的标签 叫做周记 和日记差不多，不过是换成了一周一次，又或者是好几周一次，所以取名为周记，</p>
+<h3 id="起因"><a class="anchor" href="#起因">#</a> 起因</h3>
+<p>昨天<span style="color:#ccc">充电器</span>把<span style="color:#a33038">apex</span>传给我了，安装好以后确实能玩，把所有配置降到最低以后还是卡的一批，<span style="color:#ccc">充电器</span>检查后找到了一些原因，就是我的电脑太辣鸡啦，除了写代码一无是处，还有一些原因是我的电脑买了快两年了，散热器积灰了，风都出不来了，从而导致的帧数降低，为了让我更好的使用这台 华为 matebook13 2020 办公本，来玩 <span style="color:#a33038">apex</span> 和 <span style="color:#edb94d">CSGO</span> 带<span style="color:#ccc">充电器</span> 上大分，他今天中午带了螺丝刀准备帮我拆机清理灰尘，说实话我还是非常担心的。</p>
+<h3 id="回忆"><a class="anchor" href="#回忆">#</a> 回忆</h3>
+<p>在 19 年的时候我也尝试过自己拆机，不过拆的是我的手机，我心爱的 小米 mix2s 因为它打游戏的续航能力实在是太垃圾了啦，玩两局吃鸡就基本没电了，所以我买了它的 4500 毫安的电池，准备给它换一个新的心脏。经历了九九八十一难，我终于把它的后盖打开了，一切都准备就绪，可是我弄错了一根线，以为它是电源线，实际上它是前置摄像头的线，用力一拔下后，断了。。。当时我心都凉了一大截，在一瞬间我买什么手机都想好了，后来长按开机后才发现是前置摄像头，吓屎我了，差点就要换手机了。嘿嘿，虽然不能拍我的美照了，但是游戏续航提升了一大截，缺点就是充电慢了许多。</p>
+<h3 id="拆机"><a class="anchor" href="#拆机">#</a> 拆机</h3>
+<p>经历了那件事后，我对拆机有了一些莫名的恐惧感，生怕拆断一根线，但是现在是<span style="color:#ccc">充电器</span>来帮我拆，即使是这样我还是会非常担心滴，毕竟我没有更多的钱买新的电脑了。在拆完外面六个螺丝之后，准备打开后盖，我差点要暴力拆开后壳了，还好<span style="color:#ccc">充电器</span>叫我看一下拆机视频，结果发现垫子底下居然藏了四个螺丝，妈的差点外壳就要报废了。所以需要回到我宿舍使用吹风机把垫子里面的胶吹化掉然后拿下来。回宿舍期间我给<span style="color:#ccc">充电器</span>买了个 1.5￥ 的冰棒作为报酬。拆完垫子之后回到工作室，终于看到了我心爱的电脑的内脏，长这样子。</p>
+<img data-src="https://raw.githubusercontent.com/MrNobody233/Pohot/main/blog/MyComputer.jpg" width="200/">
+<p>可见灰尘还是蛮多的，接下来就看<span style="color:#ccc">充电器</span>的操作了，不愧是老手，在拆机之前居然双手摸桌子下的铁柱子，来释放人体电流，防止电脑触电烧机，实在是太高级了！在他的努力下，我的电脑居然安然无恙，正常开机了，而且还抹了散热硅胶，本来想 <s>狠狠敲诈</s>  好好报答他的，没有机会了 嘿嘿。</p>
+<h3 id="结尾"><a class="anchor" href="#结尾">#</a> 结尾</h3>
+<p>后面就是打开<span style="color:#a33038">apex</span>测试了一下，太棒了，稳定 40 帧，偶尔上 60，俗话说：<span style="color:red">1 帧能玩 2 帧流畅 3 帧电竞</span>, 我的宝贝本子居然上 40 帧，简直就是神机啊。测试了几局以后还开出了两个<span style="color:#f5de16">金箱子</span>，<span style="color:purple">紫箱子</span>，不愧是宝藏本子，还给我带来好运，真滴太棒啦，唯一的缺点就是风扇声更大了，仿佛回到了我和它刚见面的模样，当时它也是转的很大声，经历了这一次拆机过程以后，我学会啦！！ 就是不要自己拆机，买个冰棒给<span style="color:#ccc">充电器</span>让他帮我拆就行了</p>
+<p>就这样，掰掰！期待夏天买新散热硅脂再次拆机.</p>
+]]></content>
+      <categories>
+        <category>生活</category>
+      </categories>
+      <tags>
+        <tag>周记</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>熬夜之旅</title>
+    <url>/2022/04/01/%E7%86%AC%E5%A4%9C%E4%B9%8B%E6%97%85/</url>
+    <content><![CDATA[<h3 id="熬夜之旅"><a class="anchor" href="#熬夜之旅">#</a> 熬夜之旅</h3>
+<p>今天在工作室度过第一个夜晚，虽然在暑假比赛的时候已经住过另一个工作室了，但是这里还是头一次，和我一起的有<span class="exturl" data-url="aHR0cHM6Ly9jaGFyZXQuZ2l0aHViLmlvLw==">社恐废宅充电器</span>和<span class="exturl" data-url="aHR0cHM6Ly90aGlyc3R5LWMuZ2l0aHViLmlvLw==">胃病患者</span>，比起宿舍我确实更喜欢这里，毕竟这里不需要交<span style="color:red">电费</span>和<span style="color:red">水费</span>，最主要的是还有空调可以吹，虽然室友都有比较好的作息时间，但在其他时间还是比较吵的，串门的比较多，所以非常感谢有这么好的环境提供给我学习和休息，今晚如果没有 SB 抢我的折叠床，我应该会睡的比较早。</p>
+<h3 id="其他的事"><a class="anchor" href="#其他的事">#</a> 其他的事</h3>
+<p>凌晨两点半的时候，有一个网友突然发现了我，她问我是谁，毕竟隔了四五年了，不记得我是谁也很正常，所以我稍微和她解释了一下，这样体现了给人写备注的好处。这个姑娘的也挺悲催的，所以我对她印象挺深刻，她和父母关系不好，有自残倾向，到了现在和她聊了一会，她告诉我在今年，也就是她的 18 岁那天，她<span style="color:red">自杀未遂</span>，但是和父母关系好了一些，她说她重生了，我为她感到高兴，但也不敢问的太仔细，虽然她貌似想向我分享那些事情，但我还是把话题给往其他地方给放了，认识她是在一个仓鼠群里，我以前养过仓鼠，和她聊得比较好所以她加了我，并且告诉我她家里的一些事，当时我并不会安慰人，只是默默听着，让她有一个地方可以宣泄自己的压力，虽然现在也是一样，我还是不会安慰人，能感受的到别人悲伤的情绪，但也不会说什么，还可能会逃避。</p>
+<p>扯多了，她问我怕蛇吗，我没回答，只是问她现在开始养蛇了嘛，和仓鼠放在一起不会出事吗，以及蛇没有咬过你吗，她说没有，倒是很想被咬一下试试，所以一不小心又回到了自残的话题，说自己又开始抽起了烟，本以为能缓解压力，结果压力更大了，每天晚上睡眠时间只有 5 小时，离她想上的大学平均分还差 2 分，也就是每科需要进步十分，我不敢多聊，因为太晚了，已经快凌晨 3 点了，所以告诉她生活的美好，以及还有很多没有碰到过的有意思的事情之类的，接着就睡了。</p>
+<p>其实像这样的网友还有很多，以前聊的特别欢乐，突然有一天就没继续下去，也不知道是什么时候结束，但还是保存在自己的联系人里，默默的看着他们的变化，也是一种属于我自己的乐趣，</p>
+<h3 id="最后"><a class="anchor" href="#最后">#</a> 最后</h3>
+<p>注意身体，不要熬夜现在是 2022 年 4 月 2 日 00:00:57，虽然标题是熬夜之旅，实际上是我想不出标题的名字而已，就酱紫，如果我再不睡，我的折叠床就要被傻逼玷污了！就酱紫，掰掰。还有一件事，这个标签是自言自语，看看就行了，全当我放屁，掰掰。</p>
+]]></content>
+      <categories>
+        <category>生活</category>
+      </categories>
+      <tags>
+        <tag>智障</tag>
+        <tag>自言自语</tag>
+      </tags>
   </entry>
   <entry>
     <title>红辣椒</title>
@@ -5406,9 +5430,9 @@
 <div class="note success">
 <p>就在下面的视频里</p>
 </div>
-<style>.bbplayer{width: 100%; max-width: 850px; margin: auto}</style><div class="bbplayer"><iframe class="bbplayer" id="mmedia-jFcEBgUHMBUHedPd" src="https://player.bilibili.com/player.html?bvid=BV1ZE411774o&amp;page=1&amp;high_quality=1&amp;danmaku=true" allowfullscreen="allowfullscreen" scrolling="no" border="0" frameborder="0" framespacing="0" sandbox="allow-top-navigation allow-same-origin allow-forms allow-scripts allow-popups"></iframe></div><script> document.getElementById("mmedia-jFcEBgUHMBUHedPd").style.height=document.getElementById("mmedia-jFcEBgUHMBUHedPd").scrollWidth*0.76+"px";
+<style>.bbplayer{width: 100%; max-width: 850px; margin: auto}</style><div class="bbplayer"><iframe class="bbplayer" id="mmedia-ROfHZDqxseFBHYuO" src="https://player.bilibili.com/player.html?bvid=BV1ZE411774o&amp;page=1&amp;high_quality=1&amp;danmaku=true" allowfullscreen="allowfullscreen" scrolling="no" border="0" frameborder="0" framespacing="0" sandbox="allow-top-navigation allow-same-origin allow-forms allow-scripts allow-popups"></iframe></div><script> document.getElementById("mmedia-ROfHZDqxseFBHYuO").style.height=document.getElementById("mmedia-ROfHZDqxseFBHYuO").scrollWidth*0.76+"px";
     window.onresize = function(){
-      document.getElementById("mmedia-jFcEBgUHMBUHedPd").style.height=document.getElementById("mmedia-jFcEBgUHMBUHedPd").scrollWidth*0.76+"px";
+      document.getElementById("mmedia-ROfHZDqxseFBHYuO").style.height=document.getElementById("mmedia-ROfHZDqxseFBHYuO").scrollWidth*0.76+"px";
     }; </script>
 <p>所以昨天只睡了 5 小时的原因就在这里，太好康了，我才看到 30 集，她到 23 年还没更新完，虽然她 18 年就拍完了，但是剪辑工作还再继续，一想到看完后还要等她更新就难受捏，好了，恰饭去了，掰掰。</p>
 ]]></content>
@@ -5422,27 +5446,83 @@
       </tags>
   </entry>
   <entry>
-    <title>第一次拆机</title>
-    <url>/2022/04/23/%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%8B%86%E6%9C%BA/</url>
-    <content><![CDATA[<h3 id="周记"><a class="anchor" href="#周记">#</a> 周记</h3>
-<p>创建了一个新的标签 叫做周记 和日记差不多，不过是换成了一周一次，又或者是好几周一次，所以取名为周记，</p>
-<h3 id="起因"><a class="anchor" href="#起因">#</a> 起因</h3>
-<p>昨天<span style="color:#ccc">充电器</span>把<span style="color:#a33038">apex</span>传给我了，安装好以后确实能玩，把所有配置降到最低以后还是卡的一批，<span style="color:#ccc">充电器</span>检查后找到了一些原因，就是我的电脑太辣鸡啦，除了写代码一无是处，还有一些原因是我的电脑买了快两年了，散热器积灰了，风都出不来了，从而导致的帧数降低，为了让我更好的使用这台 华为 matebook13 2020 办公本，来玩 <span style="color:#a33038">apex</span> 和 <span style="color:#edb94d">CSGO</span> 带<span style="color:#ccc">充电器</span> 上大分，他今天中午带了螺丝刀准备帮我拆机清理灰尘，说实话我还是非常担心的。</p>
-<h3 id="回忆"><a class="anchor" href="#回忆">#</a> 回忆</h3>
-<p>在 19 年的时候我也尝试过自己拆机，不过拆的是我的手机，我心爱的 小米 mix2s 因为它打游戏的续航能力实在是太垃圾了啦，玩两局吃鸡就基本没电了，所以我买了它的 4500 毫安的电池，准备给它换一个新的心脏。经历了九九八十一难，我终于把它的后盖打开了，一切都准备就绪，可是我弄错了一根线，以为它是电源线，实际上它是前置摄像头的线，用力一拔下后，断了。。。当时我心都凉了一大截，在一瞬间我买什么手机都想好了，后来长按开机后才发现是前置摄像头，吓屎我了，差点就要换手机了。嘿嘿，虽然不能拍我的美照了，但是游戏续航提升了一大截，缺点就是充电慢了许多。</p>
-<h3 id="拆机"><a class="anchor" href="#拆机">#</a> 拆机</h3>
-<p>经历了那件事后，我对拆机有了一些莫名的恐惧感，生怕拆断一根线，但是现在是<span style="color:#ccc">充电器</span>来帮我拆，即使是这样我还是会非常担心滴，毕竟我没有更多的钱买新的电脑了。在拆完外面六个螺丝之后，准备打开后盖，我差点要暴力拆开后壳了，还好<span style="color:#ccc">充电器</span>叫我看一下拆机视频，结果发现垫子底下居然藏了四个螺丝，妈的差点外壳就要报废了。所以需要回到我宿舍使用吹风机把垫子里面的胶吹化掉然后拿下来。回宿舍期间我给<span style="color:#ccc">充电器</span>买了个 1.5￥ 的冰棒作为报酬。拆完垫子之后回到工作室，终于看到了我心爱的电脑的内脏，长这样子。</p>
-<img data-src="https://raw.githubusercontent.com/MrNobody233/Pohot/main/blog/MyComputer.jpg" width="200/">
-<p>可见灰尘还是蛮多的，接下来就看<span style="color:#ccc">充电器</span>的操作了，不愧是老手，在拆机之前居然双手摸桌子下的铁柱子，来释放人体电流，防止电脑触电烧机，实在是太高级了！在他的努力下，我的电脑居然安然无恙，正常开机了，而且还抹了散热硅胶，本来想 <s>狠狠敲诈</s>  好好报答他的，没有机会了 嘿嘿。</p>
-<h3 id="结尾"><a class="anchor" href="#结尾">#</a> 结尾</h3>
-<p>后面就是打开<span style="color:#a33038">apex</span>测试了一下，太棒了，稳定 40 帧，偶尔上 60，俗话说：<span style="color:red">1 帧能玩 2 帧流畅 3 帧电竞</span>, 我的宝贝本子居然上 40 帧，简直就是神机啊。测试了几局以后还开出了两个<span style="color:#f5de16">金箱子</span>，<span style="color:purple">紫箱子</span>，不愧是宝藏本子，还给我带来好运，真滴太棒啦，唯一的缺点就是风扇声更大了，仿佛回到了我和它刚见面的模样，当时它也是转的很大声，经历了这一次拆机过程以后，我学会啦！！ 就是不要自己拆机，买个冰棒给<span style="color:#ccc">充电器</span>让他帮我拆就行了</p>
-<p>就这样，掰掰！期待夏天买新散热硅脂再次拆机.</p>
+    <title>计算机网络</title>
+    <url>/2023/03/05/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/</url>
+    <content><![CDATA[<h1 id="单选题"><a class="anchor" href="#单选题">#</a> 单选题</h1>
+<ol>
+<li class="quiz">
+<p>下列关于 IPv6 的叙述错误的是<span class="gap"></span></p>
+<ul class="options">
+<li>地址空间更大</li>
+<li>首部格式灵活</li>
+<li>目前的主流操作系统以支持 IPv6</li>
+<li class="correct">不支持自动配置</li>
+</ul>
+<blockquote>
+<ul class="options">
+<li>❌</li>
+<li>❌</li>
+<li>❌</li>
+<li>✔️ IPv4 和 IPv6 在设置主机的 IP 地址时都支持自动分配 IP 地址。</li>
+</ul>
+</blockquote>
+</li>
+<li class="quiz">
+<p>下列不属于网络协议组成要素的是<span class="gap"></span></p>
+<ul class="options">
+<li>语法</li>
+<li>语义</li>
+<li>时序</li>
+<li>进程</li>
+</ul>
+<blockquote>
+<ul class="options">
+<li>❌用户数据与控制信息的结构或格式</li>
+<li>❌ 需要发出何种控制信息，以及完成的动作和作出的响应</li>
+<li>❌ 对事件实现顺序的详细说明</li>
+<li>✔️ 一个网络协议至少包括三要素：语法，语义，时序</li>
+</ul>
+</blockquote>
+</li>
+<li class="quiz">
+<p>计算机网络中，通信子网的主要任务是<span class="gap"></span></p>
+<ul class="options">
+<li>数据输入</li>
+<li>数据输出</li>
+<li class="correct">数据传输</li>
+<li>数据处理</li>
+</ul>
+<blockquote>
+<ul class="options">
+<li>❌</li>
+<li>❌</li>
+<li>✔️ 通信子网提供计算机网络的通信功能，由网络节点和通信链路组成，主要任务是数据传输。</li>
+<li>❌</li>
+</ul>
+</blockquote>
+</li>
+</ol>
+<h1 id="填空题"><a class="anchor" href="#填空题">#</a> 填空题</h1>
+<ol>
+<li class="quiz fill">
+<p>计算机网络是通过通信线路连接起来，在网络操作系统，网络管理软件及网络通信协议的管理和协调下，实现<span class="gap"> <code>数据通信</code> </span>和<span class="gap"> <code>资源共享</code> </span>的计算机系统</p>
+</li>
+<li class="quiz fill">
+<p>文件传输协议的英文简称是<span class="gap"> <code>FTP</code> </span></p>
+</li>
+<li class="quiz fill">
+<p>电子邮件地址的格式为<span class="gap"> <code>&lt;用户名&gt;@&lt;电子邮件服务器名&gt;</code> </span></p>
+</li>
+<li class="quiz fill">
+<p>TCP 协议属于 TCP/IP 参考模型中的<span class="gap"> <code>传输层 </code> </span></p>
+</li>
+</ol>
 ]]></content>
       <categories>
-        <category>生活</category>
+        <category>专升本</category>
       </categories>
       <tags>
-        <tag>周记</tag>
+        <tag>专升本</tag>
       </tags>
   </entry>
   <entry>
@@ -6138,119 +6218,6 @@
       </tags>
   </entry>
   <entry>
-    <title>计算机网络</title>
-    <url>/2023/03/05/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/</url>
-    <content><![CDATA[<h1 id="单选题"><a class="anchor" href="#单选题">#</a> 单选题</h1>
-<ol>
-<li class="quiz">
-<p>下列关于 IPv6 的叙述错误的是<span class="gap"></span></p>
-<ul class="options">
-<li>地址空间更大</li>
-<li>首部格式灵活</li>
-<li>目前的主流操作系统以支持 IPv6</li>
-<li class="correct">不支持自动配置</li>
-</ul>
-<blockquote>
-<ul class="options">
-<li>❌</li>
-<li>❌</li>
-<li>❌</li>
-<li>✔️ IPv4 和 IPv6 在设置主机的 IP 地址时都支持自动分配 IP 地址。</li>
-</ul>
-</blockquote>
-</li>
-<li class="quiz">
-<p>下列不属于网络协议组成要素的是<span class="gap"></span></p>
-<ul class="options">
-<li>语法</li>
-<li>语义</li>
-<li>时序</li>
-<li>进程</li>
-</ul>
-<blockquote>
-<ul class="options">
-<li>❌用户数据与控制信息的结构或格式</li>
-<li>❌ 需要发出何种控制信息，以及完成的动作和作出的响应</li>
-<li>❌ 对事件实现顺序的详细说明</li>
-<li>✔️ 一个网络协议至少包括三要素：语法，语义，时序</li>
-</ul>
-</blockquote>
-</li>
-<li class="quiz">
-<p>计算机网络中，通信子网的主要任务是<span class="gap"></span></p>
-<ul class="options">
-<li>数据输入</li>
-<li>数据输出</li>
-<li class="correct">数据传输</li>
-<li>数据处理</li>
-</ul>
-<blockquote>
-<ul class="options">
-<li>❌</li>
-<li>❌</li>
-<li>✔️ 通信子网提供计算机网络的通信功能，由网络节点和通信链路组成，主要任务是数据传输。</li>
-<li>❌</li>
-</ul>
-</blockquote>
-</li>
-</ol>
-<h1 id="填空题"><a class="anchor" href="#填空题">#</a> 填空题</h1>
-<ol>
-<li class="quiz fill">
-<p>计算机网络是通过通信线路连接起来，在网络操作系统，网络管理软件及网络通信协议的管理和协调下，实现<span class="gap"> <code>数据通信</code> </span>和<span class="gap"> <code>资源共享</code> </span>的计算机系统</p>
-</li>
-<li class="quiz fill">
-<p>文件传输协议的英文简称是<span class="gap"> <code>FTP</code> </span></p>
-</li>
-<li class="quiz fill">
-<p>电子邮件地址的格式为<span class="gap"> <code>&lt;用户名&gt;@&lt;电子邮件服务器名&gt;</code> </span></p>
-</li>
-<li class="quiz fill">
-<p>TCP 协议属于 TCP/IP 参考模型中的<span class="gap"> <code>传输层 </code> </span></p>
-</li>
-</ol>
-]]></content>
-      <categories>
-        <category>专升本</category>
-      </categories>
-      <tags>
-        <tag>专升本</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>长沙之旅</title>
-    <url>/2022/08/10/%E9%95%BF%E6%B2%99%E4%B9%8B%E6%97%85/</url>
-    <content><![CDATA[<p>仿佛做了一个很长的梦，醒后特别疲惫，打开相册和微信后，发现一切又是真实发生的，那就是我 7 号去了长沙，和我的两位初中同学，简称 X 和 S，明明是八个人的群，五个女生，三个男生，今年出来玩的只有三个人，其他人不是工作了就是家里管得严，想到这些后更加坚定了我要去玩的想法，用不了多久我也将成为他们的一份子，忙于工作和其他事，抽不出时间和好友享受生活。</p>
-<p>这次去长沙可以说是我真正意义上和好朋友出去旅游，也是第一次和两个女生去旅游，可以说是非常幸福的一件事情，因为我不用担心去哪里玩，也不需要准备太多的东西，她们该准备的都会准备好，而我需要做的事情就是帮她们拿这些东西就是，7 号晚上八点半，我与 X 一同去南昌西站乘坐高铁，而 S 是从广州出发去长沙，如果不是疫情，也许我会和 X 或者其他的字母一起去广州找 S 玩，去跳伞，看海，尝试各种新鲜的事情，但不是所有事都能如愿，能去长沙就已经很满足了。</p>
-<p>去长沙的高铁上我和 X 边吃零食边看《招魂 2》，大概算一下，她吃了我买的四包波力海苔，半包草莓巧克力棒，一小瓶旺仔牛奶，半包乐事薯片，如果不是我带的少，我相信她还能接着吃下去，大概过了一个半小时就到了长沙，然后等 S 来后一起把包丢在我身上就一起去做核酸，接着就是打车去宾馆，凌晨 12 点左右到，然后去宾馆下面吃羊肉串，天哪巨好吃，知道为什么吗，因为巨好吃！ 哈哈，其实是放多了料，我口味又比较重，加上只有一块肥肉。</p>
-<p>接着又发生了在长沙的第一件比较有意思的事情，就是坐在我后面那桌的人喝多了，和自己的同伴发生了冲突，把桌子都掀了，酒瓶都拿在手里了，S 和 X 都对我招手，让我赶紧到她们那边去，而我还沉浸在羊肉串的美味里无法自拔，还是一边看他们边吃，直到 S 叫出声了，都爬到 X 的身上了，我才坐到 S 的位置上去，后面也没干起来，被他的同伴拉走了，这件事情的受害者是在睡觉的新疆小女孩，被锤了两拳还没碎的玻璃桌子，还有被 S 和 X 嘲笑的我。不知道发生了什么事情，她们说我边吃羊肉串边看他们发生冲突的场景特别出戏，又搞笑又害怕酒瓶砸在我头上。她们就这样笑到回酒店，我唯一注意的事情是捶桌子的人还为吵醒小朋友睡觉而感到抱歉。</p>
-<p>回宾馆后已经一点左右了，她们发现宾馆房间的光线照在床上特别好看，然后就想拍照了，这个床上比较热，让我来睡这张床，但是她们又要拍照，所以我只能去她们要睡的床上趴着，她们就这样拍到了凌晨三点钟，我因为打不过就加入了她们，也拍了几张我特别好看的照片，和两个我吐槽她们的视频，然后睡了，到了早上六点，睡了三个小时左右，就大概睡不着了，我和 S 吵醒了 X，X 也睡不着了，给我喷了一身防晒霜，滴了两下眼药水就准备出发去橘子洲看毛爷爷了。</p>
-<p>人真的特别多，原本以为早上大家都起不来，结果却相反，不管是上地铁，坐地铁还是下地铁，人都不带少的，大部分人的目的都是去看毛爷爷，到站后我们三个韭菜一起花了 120 元做观光车到毛爷爷头像下拍照，真的巨热，人又巨多，X 的墨镜轮了一圈到我，给我拍了一张巨傻逼的照片，她们又说我拍的巨帅，虽然我觉得不好看，但我还是留了下来，再叫路人给我们三个一起拍了一张，我和 S 因为没有墨镜，所以只有 X 拍的巨好看，我们两个只能拿手遮着阳光跟个弱智一样。完事后准备去岳麓山的，排队时听他们说买到票还要去上面排两小时才能做到缆车，然后我们果断放弃回酒店睡大觉。</p>
-<p>因为茶颜悦色就在酒店的下面，也是刚开门，所以我没有排队就买到了，确实蛮好喝的，我喝的是椰子什么东东，她们的我也尝了一口，蛮清爽的，吃过午饭后问她们还想不想喝，然后我又接着去买，但是人变多了，我大概等了半小时多才买到，上去后尝了一口，我的妈啊那个奶油真的太腻了，我这杯就喝了三分之一就没喝了。给我留下了深刻的印象和阴影，然后好像是我躺在她们两个中间睡午觉，已经记不起是 8 号还是 9 号了，又好像两天都睡过。</p>
-<p>现在脑袋已经过载了，稍微细一点的事情都记不起来了，那就总结一下吧，这个地方对我来说不算好玩，但是有了两个大爷来说充满了乐趣，用她们的洗发水和洗面奶，让我充满了女人味，直到现在我洗了两次澡味道还没有洗掉，还有是去湖南博物馆我在中间拉着她们两个的手看文物，这个情况我从小就希望发生，不过是想要两个照顾弟弟姐姐来，没想过是拉着两个好朋友的手，真没想到这次去玩是我的人生巅峰。唯一难受的是需要帮一下她们拿包和给她们扇风，还需要给她们拍照，和有足够的耐心等她们拍照。不过我也被照顾了许多，累了她们也会拽着我走，会给我靠着，打车钱还没让我出，还买了许多小吃给我吃。</p>
-<p>这次去玩大概花了一千左右，我记了金额较大的数字，零零碎碎的小钱没有算上去。</p>
-<ul>
-<li><code>来回的车票 314</code></li>
-<li><code>两个晚上的宾馆 267.4</code></li>
-<li><code>打车费 16.6</code></li>
-<li><code>橘子洲观光车 40 -没用学生票</code></li>
-<li><code>六杯茶颜悦色 97</code></li>
-<li><code>下馆子 75.3</code></li>
-<li><code>博物馆两个特展学生票 40</code></li>
-<li><code>离开湖南的最后一餐火锅 90.3</code></li>
-</ul>
-<p>一共是  <code>940.6</code> , 学到的东西是吃火锅不要点生菜和牛肉丸 TAT，和她们出去玩确实很不错，需要 AA 的钱她们都会立马转，问她们去吃什么立马都会决定好，很少听到过 <code>随便</code> ， <code>都行</code> ，这几个字，做事也不会拖泥带水，拍的照片非常好看，P 图技术特别牛逼，在回南昌的高铁上看她们 P 了十几分钟才一张照片给我极大地震撼，让我感到非常羞愧，因为我会吐槽她们的朋友圈照片，嘴下从不留情，要多贱有多贱，现在带入进去就是我辛辛苦苦做了一个网页，被人一句话好丑，这里不行，那里不行，血压直接飙升。所以她们要是再发朋友圈我一定会好好欣赏，然后夸一下她们，会评论 <code>姐姐本来就很好看，根本就不用花半小时来P图</code> ，让她们感受人间险恶，哈哈哈哈，就这样，玩的很开心，掰掰  😋 ~</p>
-]]></content>
-      <categories>
-        <category>生活</category>
-      </categories>
-      <tags>
-        <tag>周记</tag>
-        <tag>生活</tag>
-        <tag>旅游</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>黑马程序员-电商管理知识总结</title>
     <url>/2022/04/21/%E9%BB%91%E9%A9%AC%E7%A8%8B%E5%BA%8F%E5%91%98-%E7%94%B5%E5%95%86%E7%AE%A1%E7%90%86%E7%9F%A5%E8%AF%86%E6%80%BB%E7%BB%93/</url>
     <content><![CDATA[<h3 id="使用阿里图标"><a class="anchor" href="#使用阿里图标">#</a> 使用阿里图标</h3>
@@ -6297,6 +6264,39 @@
         <tag>前端</tag>
         <tag>Vue</tag>
         <tag>axios</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>长沙之旅</title>
+    <url>/2022/08/10/%E9%95%BF%E6%B2%99%E4%B9%8B%E6%97%85/</url>
+    <content><![CDATA[<p>仿佛做了一个很长的梦，醒后特别疲惫，打开相册和微信后，发现一切又是真实发生的，那就是我 7 号去了长沙，和我的两位初中同学，简称 X 和 S，明明是八个人的群，五个女生，三个男生，今年出来玩的只有三个人，其他人不是工作了就是家里管得严，想到这些后更加坚定了我要去玩的想法，用不了多久我也将成为他们的一份子，忙于工作和其他事，抽不出时间和好友享受生活。</p>
+<p>这次去长沙可以说是我真正意义上和好朋友出去旅游，也是第一次和两个女生去旅游，可以说是非常幸福的一件事情，因为我不用担心去哪里玩，也不需要准备太多的东西，她们该准备的都会准备好，而我需要做的事情就是帮她们拿这些东西就是，7 号晚上八点半，我与 X 一同去南昌西站乘坐高铁，而 S 是从广州出发去长沙，如果不是疫情，也许我会和 X 或者其他的字母一起去广州找 S 玩，去跳伞，看海，尝试各种新鲜的事情，但不是所有事都能如愿，能去长沙就已经很满足了。</p>
+<p>去长沙的高铁上我和 X 边吃零食边看《招魂 2》，大概算一下，她吃了我买的四包波力海苔，半包草莓巧克力棒，一小瓶旺仔牛奶，半包乐事薯片，如果不是我带的少，我相信她还能接着吃下去，大概过了一个半小时就到了长沙，然后等 S 来后一起把包丢在我身上就一起去做核酸，接着就是打车去宾馆，凌晨 12 点左右到，然后去宾馆下面吃羊肉串，天哪巨好吃，知道为什么吗，因为巨好吃！ 哈哈，其实是放多了料，我口味又比较重，加上只有一块肥肉。</p>
+<p>接着又发生了在长沙的第一件比较有意思的事情，就是坐在我后面那桌的人喝多了，和自己的同伴发生了冲突，把桌子都掀了，酒瓶都拿在手里了，S 和 X 都对我招手，让我赶紧到她们那边去，而我还沉浸在羊肉串的美味里无法自拔，还是一边看他们边吃，直到 S 叫出声了，都爬到 X 的身上了，我才坐到 S 的位置上去，后面也没干起来，被他的同伴拉走了，这件事情的受害者是在睡觉的新疆小女孩，被锤了两拳还没碎的玻璃桌子，还有被 S 和 X 嘲笑的我。不知道发生了什么事情，她们说我边吃羊肉串边看他们发生冲突的场景特别出戏，又搞笑又害怕酒瓶砸在我头上。她们就这样笑到回酒店，我唯一注意的事情是捶桌子的人还为吵醒小朋友睡觉而感到抱歉。</p>
+<p>回宾馆后已经一点左右了，她们发现宾馆房间的光线照在床上特别好看，然后就想拍照了，这个床上比较热，让我来睡这张床，但是她们又要拍照，所以我只能去她们要睡的床上趴着，她们就这样拍到了凌晨三点钟，我因为打不过就加入了她们，也拍了几张我特别好看的照片，和两个我吐槽她们的视频，然后睡了，到了早上六点，睡了三个小时左右，就大概睡不着了，我和 S 吵醒了 X，X 也睡不着了，给我喷了一身防晒霜，滴了两下眼药水就准备出发去橘子洲看毛爷爷了。</p>
+<p>人真的特别多，原本以为早上大家都起不来，结果却相反，不管是上地铁，坐地铁还是下地铁，人都不带少的，大部分人的目的都是去看毛爷爷，到站后我们三个韭菜一起花了 120 元做观光车到毛爷爷头像下拍照，真的巨热，人又巨多，X 的墨镜轮了一圈到我，给我拍了一张巨傻逼的照片，她们又说我拍的巨帅，虽然我觉得不好看，但我还是留了下来，再叫路人给我们三个一起拍了一张，我和 S 因为没有墨镜，所以只有 X 拍的巨好看，我们两个只能拿手遮着阳光跟个弱智一样。完事后准备去岳麓山的，排队时听他们说买到票还要去上面排两小时才能做到缆车，然后我们果断放弃回酒店睡大觉。</p>
+<p>因为茶颜悦色就在酒店的下面，也是刚开门，所以我没有排队就买到了，确实蛮好喝的，我喝的是椰子什么东东，她们的我也尝了一口，蛮清爽的，吃过午饭后问她们还想不想喝，然后我又接着去买，但是人变多了，我大概等了半小时多才买到，上去后尝了一口，我的妈啊那个奶油真的太腻了，我这杯就喝了三分之一就没喝了。给我留下了深刻的印象和阴影，然后好像是我躺在她们两个中间睡午觉，已经记不起是 8 号还是 9 号了，又好像两天都睡过。</p>
+<p>现在脑袋已经过载了，稍微细一点的事情都记不起来了，那就总结一下吧，这个地方对我来说不算好玩，但是有了两个大爷来说充满了乐趣，用她们的洗发水和洗面奶，让我充满了女人味，直到现在我洗了两次澡味道还没有洗掉，还有是去湖南博物馆我在中间拉着她们两个的手看文物，这个情况我从小就希望发生，不过是想要两个照顾弟弟姐姐来，没想过是拉着两个好朋友的手，真没想到这次去玩是我的人生巅峰。唯一难受的是需要帮一下她们拿包和给她们扇风，还需要给她们拍照，和有足够的耐心等她们拍照。不过我也被照顾了许多，累了她们也会拽着我走，会给我靠着，打车钱还没让我出，还买了许多小吃给我吃。</p>
+<p>这次去玩大概花了一千左右，我记了金额较大的数字，零零碎碎的小钱没有算上去。</p>
+<ul>
+<li><code>来回的车票 314</code></li>
+<li><code>两个晚上的宾馆 267.4</code></li>
+<li><code>打车费 16.6</code></li>
+<li><code>橘子洲观光车 40 -没用学生票</code></li>
+<li><code>六杯茶颜悦色 97</code></li>
+<li><code>下馆子 75.3</code></li>
+<li><code>博物馆两个特展学生票 40</code></li>
+<li><code>离开湖南的最后一餐火锅 90.3</code></li>
+</ul>
+<p>一共是  <code>940.6</code> , 学到的东西是吃火锅不要点生菜和牛肉丸 TAT，和她们出去玩确实很不错，需要 AA 的钱她们都会立马转，问她们去吃什么立马都会决定好，很少听到过 <code>随便</code> ， <code>都行</code> ，这几个字，做事也不会拖泥带水，拍的照片非常好看，P 图技术特别牛逼，在回南昌的高铁上看她们 P 了十几分钟才一张照片给我极大地震撼，让我感到非常羞愧，因为我会吐槽她们的朋友圈照片，嘴下从不留情，要多贱有多贱，现在带入进去就是我辛辛苦苦做了一个网页，被人一句话好丑，这里不行，那里不行，血压直接飙升。所以她们要是再发朋友圈我一定会好好欣赏，然后夸一下她们，会评论 <code>姐姐本来就很好看，根本就不用花半小时来P图</code> ，让她们感受人间险恶，哈哈哈哈，就这样，玩的很开心，掰掰  😋 ~</p>
+]]></content>
+      <categories>
+        <category>生活</category>
+      </categories>
+      <tags>
+        <tag>周记</tag>
+        <tag>生活</tag>
+        <tag>旅游</tag>
       </tags>
   </entry>
 </search>
