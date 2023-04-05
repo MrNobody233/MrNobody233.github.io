@@ -6374,10 +6374,10 @@
 <h1 id="3"><a class="anchor" href="#3">#</a> 3</h1>
 <p>看完电影回家后，用电脑刷 b 站，发现明日方舟出新干员介绍了，然后一激动，不小心踢到主机了，结果就死机了，你嘛的，重启后显示器也不亮，后面排查发现是内存条松动了，于是我开始重新拔插内存条，但始终只有一个卡槽工作，又开始重新拔插，最后两根都不工作了，显示器都不亮了，主板变黄灯了，你妈，这么容易报废的吗，然后我学着视频里的用橡皮擦擦金手指，反复测试两个卡槽，到凌晨一点放弃了，直接开始睡觉。睡得很舒服，今天早上八点多起来，饭都没吃就开始折腾，怀疑是 CPU 松动，于是我拆开散热器重新安放 CPU，重新差内存条，纸板纽扣电池也扣下来等几分钟，到最后也无济于事。我不会装机的人都把散热器重新拆装了，真把我逼急了，但我也只能找专业人士来处理，于是我到美团找了一个人来，妈的他用手抹了一下金手指，然后插上去后就亮灯了，接着另一个也插上，显示两个内存条工作，我尼玛玄学，明明方式一样，为什么他插一下就好了，草，最后他收了我 60 元，人都笑麻了，还说我技术不行，电脑怕他之类的，我太弱小了我应该强硬一点出 30 元的，这个故事告诉我们，内存条能用就别乱动它，还有就是我应该学会砍价。</p>
 <h1 id="4"><a class="anchor" href="#4">#</a> 4</h1>
-<p>最近一直在听歌曲名：ロマンス 这首歌，好可爱～但是要 vip 才能听，所以一直嫖<span style="color:#d3efd8">大个子</span>的 QQ 年费绿钻。所以博客不能放这首歌，只能找 bilibili 的视频来代替一下咯</p>
-<style>.bbplayer{width: 100%; max-width: 850px; margin: auto}</style><div class="bbplayer"><iframe class="bbplayer" id="mmedia-PYVxsIxfLSwhKZfV" src="https://player.bilibili.com/player.html?bvid=BV1BU4y157dx&amp;page=1&amp;high_quality=1&amp;danmaku=true" allowfullscreen="allowfullscreen" scrolling="no" border="0" frameborder="0" framespacing="0" sandbox="allow-top-navigation allow-same-origin allow-forms allow-scripts allow-popups"></iframe></div><script> document.getElementById("mmedia-PYVxsIxfLSwhKZfV").style.height=document.getElementById("mmedia-PYVxsIxfLSwhKZfV").scrollWidth*0.76+"px";
+<p>最近一直在听  <code>ロマンス</code>  这首歌，好可爱～但是要 vip 才能听，所以一直嫖<span style="color:#d3efd8">大个子</span>的 QQ 年费绿钻。所以博客不能放这首歌，只能找 bilibili 的视频来代替一下咯</p>
+<style>.bbplayer{width: 100%; max-width: 850px; margin: auto}</style><div class="bbplayer"><iframe class="bbplayer" id="mmedia-zFVehYodvOuyOeyo" src="https://player.bilibili.com/player.html?bvid=BV1BU4y157dx&amp;page=1&amp;high_quality=1&amp;danmaku=true" allowfullscreen="allowfullscreen" scrolling="no" border="0" frameborder="0" framespacing="0" sandbox="allow-top-navigation allow-same-origin allow-forms allow-scripts allow-popups"></iframe></div><script> document.getElementById("mmedia-zFVehYodvOuyOeyo").style.height=document.getElementById("mmedia-zFVehYodvOuyOeyo").scrollWidth*0.76+"px";
     window.onresize = function(){
-      document.getElementById("mmedia-PYVxsIxfLSwhKZfV").style.height=document.getElementById("mmedia-PYVxsIxfLSwhKZfV").scrollWidth*0.76+"px";
+      document.getElementById("mmedia-zFVehYodvOuyOeyo").style.height=document.getElementById("mmedia-zFVehYodvOuyOeyo").scrollWidth*0.76+"px";
     }; </script>
 ]]></content>
       <categories>
