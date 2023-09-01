@@ -3662,7 +3662,6 @@ function refreshPage() {
  * w: http://animista.net, t: @cssanimista
  * ---------------------------------------------- */
 @-webkit-keyframes heartbeat{from{-webkit-transform:scale(1);transform:scale(1);-webkit-transform-origin:center center;transform-origin:center center;-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}10%{-webkit-transform:scale(.91);transform:scale(.91);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}17%{-webkit-transform:scale(.98);transform:scale(.98);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}33%{-webkit-transform:scale(.87);transform:scale(.87);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}45%{-webkit-transform:scale(1);transform:scale(1);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}}@keyframes heartbeat{from{-webkit-transform:scale(1);transform:scale(1);-webkit-transform-origin:center center;transform-origin:center center;-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}10%{-webkit-transform:scale(.91);transform:scale(.91);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}17%{-webkit-transform:scale(.98);transform:scale(.98);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}33%{-webkit-transform:scale(.87);transform:scale(.87);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}45%{-webkit-transform:scale(1);transform:scale(1);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}}
-
 .refBtn {
   color: white;
   background: linear-gradient(to right, #ffb9b9, #ff8dc7);
@@ -3716,11 +3715,11 @@ function refreshPage() {
       radius: '50%',
      data: [
         { value: 1765.43, name: '7月' },
-        { value: 408.3, name: '8月' },
-        { value: 0, name: '9月' },
+        { value: 1125.09, name: '8月' },
+/*         { value: 0, name: '9月' },
         { value: 0, name: '10月' },
         { value: 0, name: '11月' },
-        { value: 0, name: '12月' },
+        { value: 0, name: '12月' }, */
       ],
       emphasis: {
         itemStyle: {
@@ -3759,6 +3758,103 @@ function refreshPage() {
         textStyle:{
         color: ['skyblue', '#fcbaad', '#e48586', '#916db3','#b6eada','#c8e4b2','#6d67e4','#a5d7e8','#1c82ad','#03c988','#395b64','#c87698'], // 系列颜色
         },
+      },
+      //跟随鼠标的那个盒子
+      tooltip: {
+        trigger: 'axis',
+        textStyle: {
+        color:'#fff'
+        },
+      },
+      legend: {
+       textStyle:{
+        color:"#c3dbff"
+      },
+      lineStyle:{
+        color: "#c87698",
+      }
+      },
+      grid: {
+        left: '3%',
+        right: '4%',
+        bottom: '3%',
+        containLabel: true
+      },
+      // 工具栏
+      toolbox: {
+        show: true,
+      feature: {
+        // 保存图片功能
+        saveAsImage: {},
+        // 缩放功能
+        dataZoom: {},
+        // 切换饼图功能
+        magicType: {
+        type: ['line', 'bar']
+        }
+      }
+    },
+ xAxis: {
+    axisLabel: {
+       show: true,  
+        textStyle: {
+          //更改坐标轴文字颜色
+          color: '#c87698',  
+        }
+     },
+    type: 'category',
+    boundaryGap: false,
+    // 
+    data:["1日","2日","3日","4日","5日","6日","7日","8日","9日","10日","11日","12日","13日","14日","15日","16日","17日","18日","19日","20日","21日","22日","23日","24日","25日","26日","27日","28日","29日","30日","31日"]
+  },
+  yAxis: {
+    type: 'value',
+    axisLabel: {
+       show: true,
+        textStyle: {
+          //更改坐标轴文字颜色
+          color: '#c87698',  
+        }
+     },
+  },
+  series: [
+    {
+      name:'8月',
+      type: 'line',
+      data: [20.5, 19, 32.3, 13, 0, 80, 18.5, 17, 21.3, 44.5, 108.2, 0, 34, 15, 14, 13.5, 98.1, 25.5, 39.5, 45, 41.91, 47, 18,16,17,6,12,28,22.4,14,243.88],
+    },
+      {
+      name:'7月',
+      data: [172.23, 63.72, 44.6, 17, 44.6, 12, 29, 329.4, 133.36, 28.5, 205.9, 36, 23, 6, 24, 31.8, 12.5, 119.87, 12.5, 14.5, 61.5, 45, 27, 18.5, 22.5, 25, 56.86, 17.5, 52.5, 0, 32.5],
+      type: 'line',
+      // 是否打开平滑曲线
+      // smooth:true,
+      // 添加填充效果
+      // areaStyle: {
+      //  color: 'rgba(0, 128, 255, 0.3)'  // 设置填充颜色和透明度
+      // }
+    }
+  ]
+})
+</script>
+<h2 id="9月"><a class="anchor" href="#9月">#</a> 9 月</h2>
+<script src="https://cdn.jsdelivr.net/npm/echarts@4.8.0/dist/echarts.min.js"></script>
+<!-- 为 ECharts 准备一个具备大小（宽高）的 DOM -->
+<div class="chartBox" id="chart20239" style="max-width: 100%; min-width:300px; height:500px;"></div>
+<script type="text/javascript">
+  // 基于准备好的dom，初始化echarts实例
+  var myChart20238 = echarts.init(document.getElementById('chart20239'));
+
+    myChart20238.setOption({
+      title: {
+      // 标题文字
+      text: '9月消费',
+      //设置标题样式
+      textStyle: {  
+      // 标题颜色
+      color: '#c87698', 
+      fontSize:20,
+        }
       },
       //跟随鼠标的那个盒子
       tooltip: {
@@ -3807,7 +3903,7 @@ function refreshPage() {
     type: 'category',
     boundaryGap: false,
     // 
-    data:["1日","2日","3日","4日","5日","6日","7日","8日","9日","10日","11日","12日","13日","14日","15日","16日","17日","18日","19日","20日","21日","22日","23日","24日","25日","26日","27日","28日","29日","30日","31日"]
+    data: ['9月1日', '9月2日', '9月3日', '9月4日', '9月5日', '9月6日', '9月7日', '9月8日', '9月9日', '9月10日', '9月11日', '9月12日', '9月13日', '9月14日', '9月15日', '9月16日', '9月17日', '9月18日', '9月19日', '9月20日', '9月21日', '9月22日', '9月23日', '9月24日', '9月25日', '9月26日', '9月27日', '9月28日', '9月29日', '9月30日','9月31日']
   },
   yAxis: {
     type: 'value',
@@ -3819,26 +3915,26 @@ function refreshPage() {
         }
      },
   },
+  // 数据
   series: [
     {
-      name:'8月',
+      name: '9月',
       type: 'line',
-      data: [20.5, 19, 32.3, 13, 0, 80, 18.5, 17, 21.3, 44.5, 108.2, 0, 34, 15, 14, 13.5],
-    },
-      {
-      name:'7月',
-      data: [172.23, 63.72, 44.6, 17, 44.6, 12, 29, 329.4, 133.36, 28.5, 205.9, 36, 23, 6, 24, 31.8, 12.5, 119.87, 12.5, 14.5, 61.5, 45, 27, 18.5, 22.5, 25, 56.86, 17.5, 52.5, 0, 32.5],
-      type: 'line',
-      // 是否打开平滑曲线
-      // smooth:true,
-      // 添加填充效果
-      // areaStyle: {
-      //  color: 'rgba(0, 128, 255, 0.3)'  // 设置填充颜色和透明度
-      // }
+      stack: 'Total',
+      data: [],
+      // 折线图颜色
+      itemStyle: {
+        color: "#c87698"
     }
-  ]
-    })
+  }
+  ]})
 </script>
+<h3 id="1日"><a class="anchor" href="#1日">#</a> 1 日</h3>
+<ul>
+<li>早饭 韭菜盒子 =  <code>3￥</code></li>
+</ul>
+<p><code>9月1日共计: ￥</code></p>
+<hr>
 <h2 id="8月"><a class="anchor" href="#8月">#</a> 8 月</h2>
 <script src="https://cdn.jsdelivr.net/npm/echarts@4.8.0/dist/echarts.min.js"></script>
 <!-- 为 ECharts 准备一个具备大小（宽高）的 DOM -->
@@ -3923,16 +4019,110 @@ function refreshPage() {
       name: '8月',
       type: 'line',
       stack: 'Total',
-      data: [20.5, 19, 32.3, 13, 0, 80, 18.5, 17, 21.3, 44.5, 108.2, 0, 34, 15, 14, 13.5],
+      data: [20.5, 19, 32.3, 13, 0, 80, 18.5, 17, 21.3, 44.5, 108.2, 0, 34, 15, 14, 13.5, 98.1, 25.5, 39.5, 45, 41.91, 47, 18,16,17,6,12,28,22.4,14,243.88],
       // 折线图颜色
       itemStyle: {
         color: "#c87698"
-      }
-    },
-  ]
-})
+    }
+  }
+  ]})
+
 </script>
-<p>八月份一共消费 <span class="blue">200.8￥</span>  平均每天消费约<span class="blue"> 25.1￥</span></p>
+<p>八月份一共消费 <span class="blue">1125.09￥</span>  平均每天消费约<span class="blue"> 36￥</span></p>
+<h3 id="31日"><a class="anchor" href="#31日">#</a> 31 日</h3>
+<ul>
+<li>早饭 糖饼 =  <code>2￥</code></li>
+<li>华为手环 =  <code>228.88￥</code></li>
+<li>晚饭 一元一串 + 手抓饼  =  <code>13￥</code></li>
+</ul>
+<p><code>8月30日共计: 243.88￥</code></p>
+<h3 id="30日"><a class="anchor" href="#30日">#</a> 30 日</h3>
+<ul>
+<li>早饭 饭团 =  <code>4￥</code></li>
+<li>晚饭 牛肉手擀面 =  <code>10￥</code> <br>
+ <code>8月30日共计: 14￥</code></li>
+</ul>
+<h3 id="29日"><a class="anchor" href="#29日">#</a> 29 日</h3>
+<ul>
+<li>早饭 什么粥 =  <code>2.5￥</code></li>
+<li>晚饭 意面 =  <code>19.9￥</code>  没那么好吃<br>
+ <code>8月29日共计: 22.4￥</code></li>
+</ul>
+<h3 id="28日"><a class="anchor" href="#28日">#</a> 28 日</h3>
+<ul>
+<li>早饭 青椒什么煎饼 =  <code>3￥</code>  好吃是好吃 就是辣死了</li>
+<li>晚饭 串串 <code>10￥</code>  + 花甲粉 <code>15￥</code>  =  <code>25￥</code></li>
+</ul>
+<p><code>8月28日共计: 28￥</code></p>
+<h3 id="27日"><a class="anchor" href="#27日">#</a> 27 日</h3>
+<ul>
+<li>晚饭 鸡蛋肉丝炒饭 =  <code>12$</code></li>
+</ul>
+<p><code>8月27日共计: 12￥</code></p>
+<h3 id="26日"><a class="anchor" href="#26日">#</a> 26 日</h3>
+<ul>
+<li>早饭 小笼包 =  <code>6￥</code></li>
+</ul>
+<p><code>8月26日共计: 6￥</code></p>
+<h3 id="25日"><a class="anchor" href="#25日">#</a> 25 日</h3>
+<ul>
+<li>早饭  =  <code>3￥</code></li>
+<li>晚饭 牛肉重庆小面 =  <code>14￥</code></li>
+</ul>
+<p><code>8月25日共计: 17￥</code></p>
+<h3 id="24日"><a class="anchor" href="#24日">#</a> 24 日</h3>
+<ul>
+<li>3+6+7 没记错应该是早饭肉饼 + 晚饭狼牙土豆 + 煎饼果子 被叫去做事了，没空<br>
+ <code>8月24日共计: 16￥</code></li>
+</ul>
+<h3 id="23日"><a class="anchor" href="#23日">#</a> 23 日</h3>
+<ul>
+<li>早饭 韭菜盒子 =  <code>3￥</code>  好吃好吃 就是有点油</li>
+<li>晚饭 黄焖鸡米饭 =  <code>15￥</code>  依旧很贵 只是没高中的好吃</li>
+</ul>
+<p><code>8月23日共计: 18￥</code></p>
+<h3 id="22日"><a class="anchor" href="#22日">#</a> 22 日</h3>
+<ul>
+<li>共享电动车 =  <code>2.5￥</code>  说好不骑车上班，可是华莱士太顶了，早上肚子痛，关键还被我舅舅逮到了，不过很开心他只是问我昨晚有没有睡好。</li>
+<li>早饭 黑米粥 =  <code>2.5￥</code></li>
+<li>话费 =  <code>30￥</code>  考虑要不要换个套餐或者整个 WIFI</li>
+<li>晚饭 炸酱面 =  <code>12￥</code>  没我阿姨做的好吃</li>
+</ul>
+<p><code>8月22日共计: 47￥</code></p>
+<h3 id="21日"><a class="anchor" href="#21日">#</a> 21 日</h3>
+<ul>
+<li>早饭 糖饼 =  <code>2￥</code></li>
+<li>晚饭 华莱士 =  <code>23.99￥</code>  想体验一下喷射战士</li>
+<li>内裤 =  <code>15.92</code>  虽然我很喜欢那几条内裤，不过再怎么样还是要换的 qwq</li>
+</ul>
+<p><code>8月21日共计: 41.91￥</code></p>
+<h3 id="20日"><a class="anchor" href="#20日">#</a> 20 日</h3>
+<ul>
+<li>中饭 快餐 =  <code>12￥</code></li>
+<li>果茶 蜜雪冰城  =  <code>7￥</code>  甜得发腻</li>
+<li>晚饭 老乡鸡 =  <code>26￥</code></li>
+</ul>
+<p><code>8月20日共计: 45￥</code></p>
+<h3 id="19日"><a class="anchor" href="#19日">#</a> 19 日</h3>
+<ul>
+<li>早饭 烧麦 + 肉包 =  <code>2.5￥</code></li>
+<li>中饭 糖醋排骨 + 西红柿炒蛋 =  <code>25￥</code>  公司食堂为什么不周六周日也开门啊 呜呜呜</li>
+<li>晚饭 牛肉刀削面 =  <code>12￥</code></li>
+</ul>
+<p><code>8月19日共计: 39.5￥</code></p>
+<h3 id="18日"><a class="anchor" href="#18日">#</a> 18 日</h3>
+<ul>
+<li>早饭 糖饼 =  <code>2￥</code></li>
+<li>晚饭 油炸 + 手抓饼 =  <code>23.5</code>  不会串稀的油炸就是好油炸！！</li>
+</ul>
+<p><code>8月18日共计: 25.5￥</code></p>
+<h3 id="17日"><a class="anchor" href="#17日">#</a> 17 日</h3>
+<ul>
+<li>早饭 什么粥 =  <code>2.5￥</code></li>
+<li>老乡鸡 =  <code>25￥</code></li>
+<li>书 百年孤独 + 活着 =  <code>70.6</code>   我不应该把百年孤独送 Fish，应该换本书</li>
+</ul>
+<p><code>8月17日共计: 98.1￥</code></p>
 <h3 id="16日"><a class="anchor" href="#16日">#</a> 16 日</h3>
 <ul>
 <li>早饭 小米南瓜粥 =  <code>2.5￥</code></li>
@@ -3948,7 +4138,7 @@ function refreshPage() {
 <h3 id="14日"><a class="anchor" href="#14日">#</a> 14 日</h3>
 <ul>
 <li>早饭 黑米粥 =  <code>2.5￥</code></li>
-<li>共享电动 =  <code>2.5￥</code> 身体不适，硬着头皮去上班 原谅自己了</li>
+<li>共享电动 =  <code>2.5￥</code>  身体不适，硬着头皮去上班 原谅自己了 ovo</li>
 <li>晚饭 牛肉手擀面 =  <code>10￥</code></li>
 </ul>
 <p><code>8月14日共计: 15￥</code></p>
@@ -4022,7 +4212,7 @@ function refreshPage() {
 <li>手工刀  =  <code>1￥</code></li>
 </ul>
 <p><code>8月2日共计: 19￥</code></p>
-<h3 id="1日"><a class="anchor" href="#1日">#</a> 1 日</h3>
+<h3 id="1日-2"><a class="anchor" href="#1日-2">#</a> 1 日</h3>
 <ul>
 <li>早饭 某种粥 =  <code>2.5￥</code></li>
 <li>晚饭 油炸 + 土家酱香饼 = <code>18￥</code></li>
@@ -4034,7 +4224,7 @@ function refreshPage() {
 <!-- 为 ECharts 准备一个具备大小（宽高）的 DOM -->
 <div id="chart20237" style="max-width: 100%; min-width:300px; height:500px;"></div>
 <p>七月份一共消费 <span class="blue">1719.34￥</span>  平均每天消费约<span class="blue"> 55.4￥</span>  八月开始省点钱</p>
-<h3 id="31日"><a class="anchor" href="#31日">#</a> 31 日</h3>
+<h3 id="31日-2"><a class="anchor" href="#31日-2">#</a> 31 日</h3>
 <ul>
 <li>早饭 梅干菜烤饼 =  <code>5￥</code>   太贵啦</li>
 <li>晚饭 牛肉手擀面 =  <code>10</code></li>
@@ -4042,52 +4232,52 @@ function refreshPage() {
 <li></li>
 </ul>
 <p><code>7月31日共计: 32.5￥</code></p>
-<h3 id="30日"><a class="anchor" href="#30日">#</a> 30 日</h3>
+<h3 id="30日-2"><a class="anchor" href="#30日-2">#</a> 30 日</h3>
 <p>今天没花钱，中午吃泡面，晚上舅妈请吃烤肉，太香啦！！！</p>
-<h3 id="29日"><a class="anchor" href="#29日">#</a> 29 日</h3>
+<h3 id="29日-2"><a class="anchor" href="#29日-2">#</a> 29 日</h3>
 <ul>
 <li>午饭 老乡鸡 =  <code>20￥</code></li>
 <li>零食 =  <code>32.5￥</code></li>
 </ul>
 <p><code>7月29日共计: 52.5￥</code></p>
-<h3 id="28日"><a class="anchor" href="#28日">#</a> 28 日</h3>
+<h3 id="28日-2"><a class="anchor" href="#28日-2">#</a> 28 日</h3>
 <ul>
 <li>早饭 卤肉面 =  <code>5.5￥ </code></li>
 <li>牛肉手擀面 + 葱油饼 =  <code>12￥</code></li>
 </ul>
 <p><code>7月28日共计: 17.5￥</code></p>
-<h3 id="27日"><a class="anchor" href="#27日">#</a> 27 日</h3>
+<h3 id="27日-2"><a class="anchor" href="#27日-2">#</a> 27 日</h3>
 <ul>
 <li>早饭 鸡蛋饼 =  <code>3￥</code></li>
 <li>逛超市 =  <code>53.86￥</code> 、</li>
 </ul>
 <p><code>7月27日共计: 56.86￥</code></p>
-<h3 id="26日"><a class="anchor" href="#26日">#</a> 26 日</h3>
+<h3 id="26日-2"><a class="anchor" href="#26日-2">#</a> 26 日</h3>
 <ul>
 <li>早饭 煎饺 =  <code>3￥</code></li>
 <li>晚饭 红烧肉鹌鹑蛋 + 西红柿炒蛋 =  <code>22￥</code>   球球公司食堂晚上也开门，不然太贵了 QWQ<br>
  <code>7月26日共计: 25￥</code></li>
 </ul>
-<h3 id="25日"><a class="anchor" href="#25日">#</a> 25 日</h3>
+<h3 id="25日-2"><a class="anchor" href="#25日-2">#</a> 25 日</h3>
 <ul>
 <li>早饭 不知道什么喝的 =  <code>2.5￥</code></li>
 <li>晚饭 油炸  <code>8￥</code>  + 刀削面  <code>12￥</code>  =  <code>20￥</code> <br>
  <code>7月25日共计: 22.5￥</code></li>
 </ul>
-<h3 id="24日"><a class="anchor" href="#24日">#</a> 24 日</h3>
+<h3 id="24日-2"><a class="anchor" href="#24日-2">#</a> 24 日</h3>
 <ul>
 <li>早饭 不知道什么喝的  =  <code>2.5￥</code></li>
 <li>晚饭 虾米牛肉炸酱面 =  <code>16￥</code>  小小虾米不过敏，关键是根本没多少虾米和牛肉，妈的</li>
 </ul>
 <p><code>7月24日共计: 18.5￥</code></p>
-<h3 id="23日"><a class="anchor" href="#23日">#</a> 23 日</h3>
+<h3 id="23日-2"><a class="anchor" href="#23日-2">#</a> 23 日</h3>
 <ul>
 <li>午饭  鸡腿手擀面 =  <code>15￥</code></li>
 <li>晚饭 牛肉手擀面 =  <code>10￥</code></li>
 <li>山楂冰棒 =  <code>2¥</code></li>
 </ul>
 <p><code>7月23日共计: 27￥</code></p>
-<h3 id="22日"><a class="anchor" href="#22日">#</a> 22 日</h3>
+<h3 id="22日-2"><a class="anchor" href="#22日-2">#</a> 22 日</h3>
 <ul>
 <li>中饭 楼下盒饭 =  <code>10￥</code></li>
 <li>固体胶  =  <code>2￥</code></li>
@@ -4095,34 +4285,34 @@ function refreshPage() {
 <li>晚饭 烤肉卷饼 + 牛肉饼 + 奶 =  <code>23￥</code>  狗屁牛肉饼，绝对是猪肉，明明看人家辛苦才去光顾，结果被这样对待，妈的。</li>
 </ul>
 <p><code>7月22日共计: 45￥</code></p>
-<h3 id="21日"><a class="anchor" href="#21日">#</a> 21 日</h3>
+<h3 id="21日-2"><a class="anchor" href="#21日-2">#</a> 21 日</h3>
 <ul>
 <li>早饭 韭菜饼 =  <code>2.5￥</code></li>
 <li>话费 =  <code>30￥</code></li>
 <li>晚饭 猪头肉 + 鸭腿 =  <code>29￥</code></li>
 </ul>
 <p><code>7月21日共计: 61.5￥</code></p>
-<h3 id="20日"><a class="anchor" href="#20日">#</a> 20 日</h3>
+<h3 id="20日-2"><a class="anchor" href="#20日-2">#</a> 20 日</h3>
 <ul>
 <li>早饭 小米南瓜粥 =  <code>2.5￥</code>  不着急的话就不吃了，水分太多</li>
 <li>晚饭 牛肉炒饭 =  <code>12￥</code>  不如他家的牛肉面</li>
 <li></li>
 </ul>
 <p><code>7月20日共计: 14.5￥</code></p>
-<h3 id="19日"><a class="anchor" href="#19日">#</a> 19 日</h3>
+<h3 id="19日-2"><a class="anchor" href="#19日-2">#</a> 19 日</h3>
 <ul>
 <li>早饭 豆腐脑 =  <code>2.5￥</code>  好贵啊，最重要的是还是咸辣的，我还没来得及说加糖，可恶的咸辣党。</li>
 <li>晚饭 牛肉面 =  <code>10￥</code></li>
 </ul>
 <p><code>7月19日共计: 12.5￥</code></p>
-<h3 id="18日"><a class="anchor" href="#18日">#</a> 18 日</h3>
+<h3 id="18日-2"><a class="anchor" href="#18日-2">#</a> 18 日</h3>
 <ul>
 <li>零食 =  <code>27.07￥</code>   什么？你问我为什么天天买零食，这次是因为在公司被投食了所以报答人家的。</li>
 <li>剃须刀 =  <code>79￥</code>    哥也是会长胡子的</li>
 <li>电脑支架 =  <code>13.8￥</code></li>
 </ul>
 <p><code>7月18日共计: 119.87￥</code></p>
-<h3 id="17日"><a class="anchor" href="#17日">#</a> 17 日</h3>
+<h3 id="17日-2"><a class="anchor" href="#17日-2">#</a> 17 日</h3>
 <ul>
 <li>早饭 茶叶蛋 + 烧麦 =  <code>2.5￥</code></li>
 <li>晚饭 牛肉面 = <code>10¥</code></li>
@@ -4224,7 +4414,7 @@ function refreshPage() {
 <li>晚饭 楼下小摊鸡蛋肉丝炒饭 =  <code>12¥</code></li>
 </ul>
 <p><code>7月2日共计: 63.72¥ </code></p>
-<h3 id="1日-2"><a class="anchor" href="#1日-2">#</a> 1 日</h3>
+<h3 id="1日-3"><a class="anchor" href="#1日-3">#</a> 1 日</h3>
 <ul>
 <li>零食  (香蕉牛奶 x3 红牛 没见过的牛奶 x3 猪肉铺 (散装) 每日坚果 x3) =  <code>43.07￥</code></li>
 <li>生活用品  (抽纸，湿纸巾 x2, 驱蚊花露水，杯子)=  <code>86.5￥</code></li>
@@ -4445,7 +4635,29 @@ function refreshPage() {
   <entry>
     <title>高德地图API</title>
     <url>/2023/08/16/%E9%AB%98%E5%BE%B7%E5%9C%B0%E5%9B%BEAPI/</url>
-    <content><![CDATA[<p>使用 vue2 渲染高德地图</p>
+    <content><![CDATA[<p><button class="refBtn heartbeat" onclick="refreshPage()">点我刷新显示地图～</button><br>
+使用 vue2 渲染高德地图</p>
+<style>
+  .heartbeat{-webkit-animation:heartbeat 1.5s infinite;animation:heartbeat 1.5s infinite}
+  /* ----------------------------------------------
+ * Generated by Animista on 2023-8-4 15:11:6
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+@-webkit-keyframes heartbeat{from{-webkit-transform:scale(1);transform:scale(1);-webkit-transform-origin:center center;transform-origin:center center;-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}10%{-webkit-transform:scale(.91);transform:scale(.91);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}17%{-webkit-transform:scale(.98);transform:scale(.98);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}33%{-webkit-transform:scale(.87);transform:scale(.87);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}45%{-webkit-transform:scale(1);transform:scale(1);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}}@keyframes heartbeat{from{-webkit-transform:scale(1);transform:scale(1);-webkit-transform-origin:center center;transform-origin:center center;-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}10%{-webkit-transform:scale(.91);transform:scale(.91);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}17%{-webkit-transform:scale(.98);transform:scale(.98);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}33%{-webkit-transform:scale(.87);transform:scale(.87);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}45%{-webkit-transform:scale(1);transform:scale(1);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}}
+
+.refBtn {
+  color: white;
+  background: linear-gradient(to right, #ffb9b9, #ff8dc7);
+  cursor: pointer;
+  height: 40px;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  padding:10px;
+}
+</style>
 <h1 id="展示地图"><a class="anchor" href="#展示地图">#</a> 展示地图</h1>
 <ol>
 <li>
@@ -4472,8 +4684,9 @@ NPM 方式安装使用 Loader<br>
 <figure class="highlight html"><figcaption data-lang="HTML"></figcaption><table><tbody><tr><td data-num="1"></td><td><pre><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">&gt;</span></span></pre></td></tr><tr><td data-num="2"></td><td><pre>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>container<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span></pre></td></tr><tr><td data-num="3"></td><td><pre></pre></td></tr><tr><td data-num="4"></td><td><pre>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></pre></td></tr><tr><td data-num="5"></td><td><pre><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span></pre></td></tr><tr><td data-num="6"></td><td><pre></pre></td></tr><tr><td data-num="7"></td><td><pre><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript"></span></span></pre></td></tr><tr><td data-num="8"></td><td><pre><span class="token keyword">import</span> AMapLoader <span class="token keyword">from</span> <span class="token string">'@amap/amap-jsapi-loader'</span></pre></td></tr><tr><td data-num="9"></td><td><pre>window<span class="token punctuation">.</span>_AMapSecurityConfig <span class="token operator">=</span> <span class="token punctuation">{</span></pre></td></tr><tr><td data-num="10"></td><td><pre>  <span class="token literal-property property">securityJsCode</span><span class="token operator">:</span> <span class="token string">'54511095faf2a894afc040995694b1c8'</span></pre></td></tr><tr><td data-num="11"></td><td><pre><span class="token punctuation">}</span></pre></td></tr><tr><td data-num="12"></td><td><pre><span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span></pre></td></tr><tr><td data-num="13"></td><td><pre>  <span class="token function">data</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span></pre></td></tr><tr><td data-num="14"></td><td><pre>    <span class="token keyword">return</span> <span class="token punctuation">{</span></pre></td></tr><tr><td data-num="15"></td><td><pre>      <span class="token literal-property property">map</span><span class="token operator">:</span> <span class="token keyword">null</span></pre></td></tr><tr><td data-num="16"></td><td><pre>    <span class="token punctuation">}</span></pre></td></tr><tr><td data-num="17"></td><td><pre>  <span class="token punctuation">}</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="18"></td><td><pre>  <span class="token literal-property property">methods</span><span class="token operator">:</span> <span class="token punctuation">{</span></pre></td></tr><tr><td data-num="19"></td><td><pre>    <span class="token function">initMap</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span></pre></td></tr><tr><td data-num="20"></td><td><pre>      AMapLoader<span class="token punctuation">.</span><span class="token function">load</span><span class="token punctuation">(</span><span class="token punctuation">{</span></pre></td></tr><tr><td data-num="21"></td><td><pre>        <span class="token literal-property property">key</span><span class="token operator">:</span> <span class="token string">'62a0edf82e46f928397e075b1b89a225'</span><span class="token punctuation">,</span> <span class="token comment">// 申请好的 Web 端开发者 Key，首次调用 load 时必填</span></pre></td></tr><tr><td data-num="22"></td><td><pre>        <span class="token literal-property property">version</span><span class="token operator">:</span> <span class="token string">'2.0'</span><span class="token punctuation">,</span> <span class="token comment">// 指定要加载的 JSAPI 的版本，缺省时默认为 1.4.15</span></pre></td></tr><tr><td data-num="23"></td><td><pre>        <span class="token literal-property property">plugins</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">'AMap.Scale'</span><span class="token punctuation">]</span> <span class="token comment">// 需要使用的的插件列表，如比例尺 'AMap.Scale' 等</span></pre></td></tr><tr><td data-num="24"></td><td><pre>      <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token parameter">AMap</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span></pre></td></tr><tr><td data-num="25"></td><td><pre>        <span class="token keyword">this</span><span class="token punctuation">.</span>map <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">AMap<span class="token punctuation">.</span>Map</span><span class="token punctuation">(</span><span class="token string">'container'</span><span class="token punctuation">,</span> <span class="token punctuation">{</span></pre></td></tr><tr><td data-num="26"></td><td><pre>          <span class="token comment">// 设置地图容器 id</span></pre></td></tr><tr><td data-num="27"></td><td><pre>          <span class="token literal-property property">viewMode</span><span class="token operator">:</span> <span class="token string">'3D'</span><span class="token punctuation">,</span> <span class="token comment">// 是否为 3D 地图模式</span></pre></td></tr><tr><td data-num="28"></td><td><pre>          <span class="token literal-property property">zoom</span><span class="token operator">:</span> <span class="token number">10</span><span class="token punctuation">,</span> <span class="token comment">// 初始化地图级别</span></pre></td></tr><tr><td data-num="29"></td><td><pre>          <span class="token literal-property property">center</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token number">121.473667</span><span class="token punctuation">,</span> <span class="token number">31.230525</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token comment">// 初始化地图中心点位置</span></pre></td></tr><tr><td data-num="30"></td><td><pre>        <span class="token punctuation">}</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="31"></td><td><pre>      <span class="token punctuation">}</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="32"></td><td><pre>    <span class="token punctuation">}</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="33"></td><td><pre>  <span class="token punctuation">}</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="34"></td><td><pre>  <span class="token function">mounted</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span></pre></td></tr><tr><td data-num="35"></td><td><pre>    <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">initMap</span><span class="token punctuation">(</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="36"></td><td><pre>  <span class="token punctuation">}</span></pre></td></tr><tr><td data-num="37"></td><td><pre><span class="token punctuation">}</span></pre></td></tr><tr><td data-num="38"></td><td><pre><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span></pre></td></tr><tr><td data-num="39"></td><td><pre></pre></td></tr><tr><td data-num="40"></td><td><pre><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span>  <span class="token attr-name">scoped</span><span class="token punctuation">&gt;</span></span><span class="token style"><span class="token language-css"></span></span></pre></td></tr><tr><td data-num="41"></td><td><pre><span class="token selector">#container</span> <span class="token punctuation">{</span></pre></td></tr><tr><td data-num="42"></td><td><pre>  <span class="token property">padding</span><span class="token punctuation">:</span> 0px<span class="token punctuation">;</span></pre></td></tr><tr><td data-num="43"></td><td><pre>  <span class="token property">margin</span><span class="token punctuation">:</span> 0px auto<span class="token punctuation">;</span></pre></td></tr><tr><td data-num="44"></td><td><pre>  <span class="token property">width</span><span class="token punctuation">:</span> 30vw<span class="token punctuation">;</span></pre></td></tr><tr><td data-num="45"></td><td><pre>  <span class="token property">height</span><span class="token punctuation">:</span> 30vw<span class="token punctuation">;</span></pre></td></tr><tr><td data-num="46"></td><td><pre><span class="token punctuation">}</span></pre></td></tr><tr><td data-num="47"></td><td><pre><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">&gt;</span></span></pre></td></tr></tbody></table></figure><!-- ================================================== -->
 <style>
   #mapContainer {
-    width: 600px;
-    height: 280px;
+    width: 450px;
+    height: 380px;
+    margin:0 auto;
   }
 .amap-logo {
 display: none;
@@ -4485,7 +4698,6 @@ opacity: 0 !important;
 </style>
 <p><span class="red">这样就绘制出一个地图了，你还可以设置它的主题，非常好看！</span></p>
 <div class="input-card" style="width:16rem">
-    <span>官方默认自定义样式，可以点击小圆圈切换哦！从官网上扒下来的</span>
     <div id="map-styles">
       <div class="input-item">
         <input type="radio" name="mapStyle" value="normal">
@@ -4525,16 +4737,11 @@ opacity: 0 !important;
 添加 Marker 实例</p>
 <figure class="highlight js"><figcaption data-lang="JavaScript"></figcaption><table><tbody><tr><td data-num="1"></td><td><pre><span class="token keyword">this</span><span class="token punctuation">.</span>marker <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">AMap<span class="token punctuation">.</span>Marker</span><span class="token punctuation">(</span><span class="token punctuation">{</span></pre></td></tr><tr><td data-num="2"></td><td><pre>  <span class="token literal-property property">position</span><span class="token operator">:</span> <span class="token keyword">new</span> <span class="token class-name">AMap<span class="token punctuation">.</span>LngLat</span><span class="token punctuation">(</span><span class="token number">115.881141</span><span class="token punctuation">,</span> <span class="token number">28.681356</span><span class="token punctuation">)</span><span class="token punctuation">,</span>   <span class="token comment">// 经纬度对象，也可以是经纬度构成的一维数组 [116.39, 39.9]</span></pre></td></tr><tr><td data-num="3"></td><td><pre>  <span class="token literal-property property">title</span><span class="token operator">:</span> <span class="token string">'我的家'</span></pre></td></tr><tr><td data-num="4"></td><td><pre><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="5"></td><td><pre></pre></td></tr><tr><td data-num="6"></td><td><pre><span class="token comment">// 将创建的点标记添加到已有的地图实例：</span></pre></td></tr><tr><td data-num="7"></td><td><pre><span class="token keyword">this</span><span class="token punctuation">.</span>map<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>marker<span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr></tbody></table></figure><!-- ============================ -->
 <!-- 演示marker的盒子容器 -->
-<div id="mapContainerMarker" style="width:600px; height:280px">
+<div id="mapContainerMarker" style="width:450px; height:380px;margin:0 auto;">
 </div>
 <!-- ============================= -->
 可以一次性添加多个Marker实例，只需将每个Marker示例放入一个数组Array中。
-```js
-// 多个点实例组成的数组
-const markerList = [marker1, marker2, marker3];
-map.add(markerList)
-```
-<p>可以为创建的 Marker 指定自定义内容</p>
+<figure class="highlight js"><figcaption data-lang="JavaScript"></figcaption><table><tbody><tr><td data-num="1"></td><td><pre><span class="token comment">// 多个点实例组成的数组</span></pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token keyword">const</span> markerList <span class="token operator">=</span> <span class="token punctuation">[</span>marker1<span class="token punctuation">,</span> marker2<span class="token punctuation">,</span> marker3<span class="token punctuation">]</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="3"></td><td><pre>map<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span>markerList<span class="token punctuation">)</span></pre></td></tr></tbody></table></figure><p>可以为创建的 Marker 指定自定义内容</p>
 <figure class="highlight js"><figcaption data-lang="JavaScript"></figcaption><table><tbody><tr><td data-num="1"></td><td><pre><span class="token keyword">var</span> marker1 <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">AMap<span class="token punctuation">.</span>Marker</span><span class="token punctuation">(</span><span class="token punctuation">{</span></pre></td></tr><tr><td data-num="2"></td><td><pre>  <span class="token literal-property property">position</span><span class="token operator">:</span> <span class="token keyword">new</span> <span class="token class-name">AMap<span class="token punctuation">.</span>LngLat</span><span class="token punctuation">(</span><span class="token number">115.881141</span><span class="token punctuation">,</span> <span class="token number">28.681356</span><span class="token punctuation">)</span><span class="token punctuation">,</span>   <span class="token comment">// 经纬度对象，也可以是经纬度构成的一维数组 [116.39, 39.9]</span></pre></td></tr><tr><td data-num="3"></td><td><pre>  <span class="token literal-property property">title</span><span class="token operator">:</span> <span class="token string">'滕王阁'</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="4"></td><td><pre>  <span class="token comment">// 自定义内容</span></pre></td></tr><tr><td data-num="5"></td><td><pre>  <span class="token literal-property property">content</span><span class="token operator">:</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">&lt;div style="color:white"&gt;妈妈生的&lt;/div&gt;</span><span class="token template-punctuation string">`</span></span></pre></td></tr><tr><td data-num="6"></td><td><pre><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr></tbody></table></figure><p>当然也可以给标记绑定点击事件 因为博客会和放大图片冲突就不做演示 （懒）</p>
 <figure class="highlight js"><figcaption data-lang="JavaScript"></figcaption><table><tbody><tr><td data-num="1"></td><td><pre>marker<span class="token punctuation">.</span><span class="token function">on</span><span class="token punctuation">(</span><span class="token string">'click'</span><span class="token punctuation">,</span> <span class="token parameter">e</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span></pre></td></tr><tr><td data-num="2"></td><td><pre>  <span class="token comment">// 形参中获取标记</span></pre></td></tr><tr><td data-num="3"></td><td><pre>  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>e<span class="token punctuation">.</span>target<span class="token punctuation">.</span>De<span class="token punctuation">.</span>title<span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="4"></td><td><pre><span class="token punctuation">}</span><span class="token punctuation">)</span></pre></td></tr></tbody></table></figure><h2 id="绘制行政区划边界"><a class="anchor" href="#绘制行政区划边界">#</a> 绘制行政区划边界</h2>
 <p>地图上将行政区的边界绘制出来 主要包含以下三步：</p>
@@ -4545,7 +4752,7 @@ map.add(markerList)
 </ol>
 <figure class="highlight js"><figcaption data-lang="JavaScript"></figcaption><table><tbody><tr><td data-num="1"></td><td><pre><span class="token keyword">var</span> opts <span class="token operator">=</span> <span class="token punctuation">{</span></pre></td></tr><tr><td data-num="2"></td><td><pre>    <span class="token literal-property property">subdistrict</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>   <span class="token comment">// 获取边界不需要返回下级行政区</span></pre></td></tr><tr><td data-num="3"></td><td><pre>    <span class="token literal-property property">extensions</span><span class="token operator">:</span> <span class="token string">'all'</span><span class="token punctuation">,</span>  <span class="token comment">// 返回行政区边界坐标组等具体信息</span></pre></td></tr><tr><td data-num="4"></td><td><pre>    <span class="token literal-property property">level</span><span class="token operator">:</span> <span class="token string">'district'</span>  <span class="token comment">// 查询行政级别为 市</span></pre></td></tr><tr><td data-num="5"></td><td><pre><span class="token punctuation">}</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="6"></td><td><pre></pre></td></tr><tr><td data-num="7"></td><td><pre><span class="token comment">// 创建行政区查询对象</span></pre></td></tr><tr><td data-num="8"></td><td><pre><span class="token keyword">this</span><span class="token punctuation">.</span>district <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">AMap<span class="token punctuation">.</span>DistrictSearch</span><span class="token punctuation">(</span>opts<span class="token punctuation">)</span></pre></td></tr><tr><td data-num="9"></td><td><pre></pre></td></tr><tr><td data-num="10"></td><td><pre><span class="token keyword">this</span><span class="token punctuation">.</span>district<span class="token punctuation">.</span><span class="token function">search</span><span class="token punctuation">(</span><span class="token string">"南昌"</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token parameter">status<span class="token punctuation">,</span> result</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span></pre></td></tr><tr><td data-num="11"></td><td><pre>  <span class="token comment">// 获取南昌的边界信息</span></pre></td></tr><tr><td data-num="12"></td><td><pre>  <span class="token keyword">var</span> bounds <span class="token operator">=</span> result<span class="token punctuation">.</span>districtList<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">.</span>boundaries<span class="token punctuation">;</span></pre></td></tr><tr><td data-num="13"></td><td><pre>  <span class="token keyword">if</span> <span class="token punctuation">(</span>bounds<span class="token punctuation">)</span> <span class="token punctuation">{</span></pre></td></tr><tr><td data-num="14"></td><td><pre>    <span class="token comment">// 生成行政区划 polygon</span></pre></td></tr><tr><td data-num="15"></td><td><pre>    <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">var</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> bounds<span class="token punctuation">.</span>length<span class="token punctuation">;</span> i <span class="token operator">+=</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token comment">// 构造 MultiPolygon 的 path</span></pre></td></tr><tr><td data-num="16"></td><td><pre>      bounds<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">[</span>bounds<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">]</span></pre></td></tr><tr><td data-num="17"></td><td><pre>    <span class="token punctuation">}</span></pre></td></tr><tr><td data-num="18"></td><td><pre>    <span class="token keyword">this</span><span class="token punctuation">.</span>polygon <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">AMap<span class="token punctuation">.</span>Polygon</span><span class="token punctuation">(</span><span class="token punctuation">{</span></pre></td></tr><tr><td data-num="19"></td><td><pre>      <span class="token literal-property property">map</span><span class="token operator">:</span> <span class="token keyword">this</span><span class="token punctuation">.</span>map<span class="token punctuation">,</span>    <span class="token comment">// 指定地图对象</span></pre></td></tr><tr><td data-num="20"></td><td><pre>      <span class="token literal-property property">strokeWeight</span><span class="token operator">:</span> <span class="token number">4</span><span class="token punctuation">,</span>  <span class="token comment">// 轮廓线宽度</span></pre></td></tr><tr><td data-num="21"></td><td><pre>      <span class="token literal-property property">path</span><span class="token operator">:</span> bounds<span class="token punctuation">,</span>      <span class="token comment">// 轮廓线的节点坐标数组</span></pre></td></tr><tr><td data-num="22"></td><td><pre>      <span class="token literal-property property">fillOpacity</span><span class="token operator">:</span> <span class="token number">0.1</span><span class="token punctuation">,</span>  <span class="token comment">// 透明度</span></pre></td></tr><tr><td data-num="23"></td><td><pre>      <span class="token literal-property property">fillColor</span><span class="token operator">:</span> <span class="token string">'#1187f3'</span><span class="token punctuation">,</span> <span class="token comment">// 填充颜色</span></pre></td></tr><tr><td data-num="24"></td><td><pre>      <span class="token literal-property property">strokeColor</span><span class="token operator">:</span> <span class="token string">'#1187f3'</span> <span class="token comment">// 线条颜色</span></pre></td></tr><tr><td data-num="25"></td><td><pre>    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="26"></td><td><pre>    <span class="token keyword">this</span><span class="token punctuation">.</span>map<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>polygon<span class="token punctuation">)</span></pre></td></tr><tr><td data-num="27"></td><td><pre>    <span class="token keyword">this</span><span class="token punctuation">.</span>map<span class="token punctuation">.</span><span class="token function">setFitView</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>polygon<span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">// 视口自适应</span></pre></td></tr><tr><td data-num="28"></td><td><pre>  <span class="token punctuation">}</span></pre></td></tr><tr><td data-num="29"></td><td><pre><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr></tbody></table></figure><!-- ============================ -->
 <!-- 演示边界区的盒子容器 -->
-<div id="mapContainerDistrict" style="width:600px; height:280px">
+<div id="mapContainerDistrict" style="width:450px; height:380px;margin:0 auto;">
 </div>
 <!-- ============================= -->
 <script type="text/javascript">
@@ -4621,6 +4828,9 @@ this.district.search("南昌", (status, result) => {
     mapContainerDistrict.setFitView(polygon);// 视口自适应
   }
 });
+function refreshPage() {
+    location.reload(); // 这里使用location.reload()来刷新页面
+}
 </script>]]></content>
       <categories>
         <category>web前端</category>
