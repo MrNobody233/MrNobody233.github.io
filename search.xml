@@ -3957,6 +3957,23 @@ function refreshPage() {
   }
   ]})
 </script>
+<h3 id="9日"><a class="anchor" href="#9日">#</a> 9 日</h3>
+<ul>
+<li>话费 =  <code>30</code></li>
+</ul>
+<h3 id="8日"><a class="anchor" href="#8日">#</a> 8 日</h3>
+<ul>
+<li>早饭 鸡蛋饼 =  <code>3</code></li>
+<li>晚饭 老乡鸡 =  <code>16</code></li>
+<li>营养土 =  <code>24.95</code> <br>
+ <code>10月8日共计43.95</code></li>
+</ul>
+<h3 id="7日"><a class="anchor" href="#7日">#</a> 7 日</h3>
+<ul>
+<li>早饭 八宝粥 =  <code>2.5</code></li>
+<li>晚饭 饭团 =  <code>4</code></li>
+</ul>
+<p><code>10月7日共计6.5</code></p>
 <h3 id="6日"><a class="anchor" href="#6日">#</a> 6 日</h3>
 <ul>
 <li>午饭 快餐 =  <code>12</code></li>
@@ -4206,14 +4223,14 @@ function refreshPage() {
 <li>滑滑板太渴 =  <code>7￥</code></li>
 </ul>
 <p><code>9月10日共计: 52.09￥</code></p>
-<h3 id="9日"><a class="anchor" href="#9日">#</a> 9 日</h3>
+<h3 id="9日-2"><a class="anchor" href="#9日-2">#</a> 9 日</h3>
 <ul>
 <li>午饭 快餐 =  <code>12￥</code></li>
 <li>话费 =  <code>5￥</code></li>
 <li>晚饭 水饺 =  <code>10￥</code> <br>
  <code>9月9日共计: 27￥</code></li>
 </ul>
-<h3 id="8日"><a class="anchor" href="#8日">#</a> 8 日</h3>
+<h3 id="8日-2"><a class="anchor" href="#8日-2">#</a> 8 日</h3>
 <ul>
 <li>早饭 韭菜盒子 =  <code>3￥</code>  太油了 吃腻了</li>
 <li>去舅妈的超市买了两块肥皂，两瓶奶  =  <code>15￥</code></li>
@@ -4221,7 +4238,7 @@ function refreshPage() {
 <li>滑滑板太渴了买的什么饮料 =  <code>7￥ </code> <br>
  <code>9月8日共计: 31￥</code></li>
 </ul>
-<h3 id="7日"><a class="anchor" href="#7日">#</a> 7 日</h3>
+<h3 id="7日-2"><a class="anchor" href="#7日-2">#</a> 7 日</h3>
 <ul>
 <li>早饭 肉饼 =  <code>3￥</code>  还不错，这次是新鲜的，上次给了我一个过夜的饼，下次要是再给我过夜的我就不吃了！</li>
 <li>晚饭 牛肉手擀面 + 卤鸡腿 =  <code>18￥</code></li>
@@ -4501,19 +4518,19 @@ function refreshPage() {
 <li>豪华晚餐老乡鸡 =  <code>25￥</code> <br>
  <code>8月10日共计: 44.5￥</code></li>
 </ul>
-<h3 id="9日-2"><a class="anchor" href="#9日-2">#</a> 9 日</h3>
+<h3 id="9日-3"><a class="anchor" href="#9日-3">#</a> 9 日</h3>
 <ul>
 <li>早饭 难吃的葱油饼 脆的 + 很贵的安慕希 =  <code>9.3￥</code></li>
 <li>晚饭 鸡蛋肉丝炒饭 =  <code>12￥</code></li>
 </ul>
 <p><code>8月9日共计:21.3￥</code></p>
-<h3 id="8日-2"><a class="anchor" href="#8日-2">#</a> 8 日</h3>
+<h3 id="8日-3"><a class="anchor" href="#8日-3">#</a> 8 日</h3>
 <ul>
 <li>早饭 糖饼 =  <code>2￥</code></li>
 <li>牛肉炒粉丝 =  <code>15￥</code></li>
 </ul>
 <p><code>8月8日共计:17￥</code></p>
-<h3 id="7日-2"><a class="anchor" href="#7日-2">#</a> 7 日</h3>
+<h3 id="7日-3"><a class="anchor" href="#7日-3">#</a> 7 日</h3>
 <ul>
 <li>早饭 糖饼 =  <code>2￥</code></li>
 <li>油炸 =  <code>16.5￥</code> <br>
@@ -4697,14 +4714,14 @@ function refreshPage() {
 <li>晚饭 老乡鸡 =  <code>27￥</code></li>
 </ul>
 <p><code>7月10日共计: 28.5￥</code></p>
-<h3 id="9日-3"><a class="anchor" href="#9日-3">#</a> 9 日</h3>
+<h3 id="9日-4"><a class="anchor" href="#9日-4">#</a> 9 日</h3>
 <ul>
 <li>晚饭 老乡鸡 = <code>33￥</code></li>
 <li>逛超市 =  <code>88.36￥</code></li>
 <li>理发 =  <code>12￥</code></li>
 </ul>
 <p><code>7月9日共计: 133.36￥</code></p>
-<h3 id="8日-3"><a class="anchor" href="#8日-3">#</a> 8 日</h3>
+<h3 id="8日-4"><a class="anchor" href="#8日-4">#</a> 8 日</h3>
 <ul>
 <li>入职体检套餐 = <code>280￥</code></li>
 <li>去体检中心来回路费 =  <code>5￥</code></li>
@@ -4712,7 +4729,7 @@ function refreshPage() {
 <li>零食 =  <code>21.4￥</code></li>
 </ul>
 <p><code>7月8日共计: 329.4￥</code></p>
-<h3 id="7日-3"><a class="anchor" href="#7日-3">#</a> 7 日</h3>
+<h3 id="7日-4"><a class="anchor" href="#7日-4">#</a> 7 日</h3>
 <ul>
 <li>早饭 楼下小摊烤糖饼 =  <code>2￥</code></li>
 <li>晚饭 老乡鸡 (葱油鸡 <code>16￥</code> + 西红柿炒鸡蛋 <code>9￥</code> + 米饭 <code>2￥</code> )</li>
