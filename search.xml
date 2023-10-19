@@ -3808,7 +3808,7 @@ function refreshPage() {
         { value: 1765.43, name: '7月' },
         { value: 1125.09, name: '8月' },
         { value: 1168.94, name: '9月' },
-        { value: 244.08, name: '10月' },
+        { value: 671.05, name: '10月' },
         // { value: 0, name: '11月' },
         // { value: 0, name: '12月' },
       ],
@@ -4017,7 +4017,7 @@ function refreshPage() {
       name: '10月',
       type: 'line',
       stack: 'Total',
-      data:[0,0,0,93.8, 55, 95.28, 6.5, 43.95, 112.6, 31.36, 24.34, 22.74, 3, 58.76, 21.24],
+      data:[0, 0, 0, 93.8, 55, 95.28, 6.5, 43.95, 112.6, 31.36, 24.34, 22.74, 3, 58.76, 41.24, 23.62, 34.74, 24.12 ],
       // 折线图颜色
       itemStyle: {
         color: "#c87698"
@@ -4025,15 +4025,30 @@ function refreshPage() {
   }
   ]})
 </script>
+<h3 id="18日"><a class="anchor" href="#18日">#</a> 18 日</h3>
+<ul>
+<li>早饭 饼 =  <code>3</code></li>
+<li>晚饭 老乡鸡 =  <code>21.12</code> <br>
+ <code>10月18日共计:24.12</code></li>
+</ul>
+<h3 id="17日"><a class="anchor" href="#17日">#</a> 17 日</h3>
+<ul>
+<li>早饭 饼干 + 牛奶 =  <code>14.5</code>  楼下小摊都无了，估计是今天城管检查，只能去舅妈超市买早餐了。</li>
+<li>晚饭 老乡鸡 =  <code>20.24</code></li>
+</ul>
+<p><code>10月17日共计:34.74</code></p>
 <h3 id="16日"><a class="anchor" href="#16日">#</a> 16 日</h3>
 <ul>
 <li>早饭 咸豆腐脑  =  <code>2.5</code>   吃不习惯，豆腐脑里面放香菜酱油还有豆皮，TAT</li>
+<li>晚饭 老乡鸡 =  <code>21.12</code></li>
 </ul>
+<p><code>10月16日共计23.62</code></p>
 <h3 id="15日"><a class="anchor" href="#15日">#</a> 15 日</h3>
 <ul>
 <li>午饭 老乡鸡 = <code>21.24</code></li>
+<li>彩票 =  <code>20</code>  因为大个子买了好几张彩票没中奖，我 v 她 20，如果她中了 100w 就分我一点，（赌狗不得房子）<br>
+ <code>10月15日共计41.24</code></li>
 </ul>
-<p><code>10月15日共计21.24</code></p>
 <h3 id="14日"><a class="anchor" href="#14日">#</a> 14 日</h3>
 <ul>
 <li>午饭 老乡鸡 =  <code>24.76</code></li>
@@ -4285,12 +4300,12 @@ function refreshPage() {
 <li>晚饭 老乡鸡 =  <code>27￥</code></li>
 </ul>
 <p><code>9月19日共计: 34.45￥</code></p>
-<h3 id="18日"><a class="anchor" href="#18日">#</a> 18 日</h3>
+<h3 id="18日-2"><a class="anchor" href="#18日-2">#</a> 18 日</h3>
 <ul>
 <li>早饭 小米南瓜粥 =  <code>2.5￥</code> <br>
  <code>9月18日共计: 2.5￥</code></li>
 </ul>
-<h3 id="17日"><a class="anchor" href="#17日">#</a> 17 日</h3>
+<h3 id="17日-2"><a class="anchor" href="#17日-2">#</a> 17 日</h3>
 <ul>
 <li>早饭 舅妈便利店的早餐套餐 =  <code>7.2￥</code>  自己做自己吃</li>
 <li>午饭 两根烤肠 + 大肉包 =  <code>13￥</code> <br>
@@ -4573,13 +4588,13 @@ function refreshPage() {
 <li>晚饭 牛肉刀削面 =  <code>12￥</code></li>
 </ul>
 <p><code>8月19日共计: 39.5￥</code></p>
-<h3 id="18日-2"><a class="anchor" href="#18日-2">#</a> 18 日</h3>
+<h3 id="18日-3"><a class="anchor" href="#18日-3">#</a> 18 日</h3>
 <ul>
 <li>早饭 糖饼 =  <code>2￥</code></li>
 <li>晚饭 油炸 + 手抓饼 =  <code>23.5</code>  不会串稀的油炸就是好油炸！！</li>
 </ul>
 <p><code>8月18日共计: 25.5￥</code></p>
-<h3 id="17日-2"><a class="anchor" href="#17日-2">#</a> 17 日</h3>
+<h3 id="17日-3"><a class="anchor" href="#17日-3">#</a> 17 日</h3>
 <ul>
 <li>早饭 什么粥 =  <code>2.5￥</code></li>
 <li>老乡鸡 =  <code>25￥</code></li>
@@ -4768,14 +4783,14 @@ function refreshPage() {
 <li>晚饭 牛肉面 =  <code>10￥</code></li>
 </ul>
 <p><code>7月19日共计: 12.5￥</code></p>
-<h3 id="18日-3"><a class="anchor" href="#18日-3">#</a> 18 日</h3>
+<h3 id="18日-4"><a class="anchor" href="#18日-4">#</a> 18 日</h3>
 <ul>
 <li>零食 =  <code>27.07￥</code>   什么？你问我为什么天天买零食，这次是因为在公司被投食了所以报答人家的。</li>
 <li>剃须刀 =  <code>79￥</code>    哥也是会长胡子的</li>
 <li>电脑支架 =  <code>13.8￥</code></li>
 </ul>
 <p><code>7月18日共计: 119.87￥</code></p>
-<h3 id="17日-3"><a class="anchor" href="#17日-3">#</a> 17 日</h3>
+<h3 id="17日-4"><a class="anchor" href="#17日-4">#</a> 17 日</h3>
 <ul>
 <li>早饭 茶叶蛋 + 烧麦 =  <code>2.5￥</code></li>
 <li>晚饭 牛肉面 = <code>10¥</code></li>
@@ -5345,6 +5360,52 @@ function refreshPage() {
         <tag>前端</tag>
         <tag>Vue</tag>
         <tag>axios</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>风之谷</title>
+    <url>/2023/10/19/%E9%A3%8E%E4%B9%8B%E8%B0%B7/</url>
+    <content><![CDATA[<h1 id="生活"><a class="anchor" href="#生活">#</a> 生活</h1>
+<p>七天很长，九天更长，或者说不是九天，我要从 10 月 8 日上班到 10 月 20 日，因为周六周日我去舅妈的便利店上班了，并不是很想写关于生活的事情了，都挺无聊的，比如上周五我去公园滑滑板，结果被保安骑着小电驴叫停，说 “大人不能在里面滑滑板”，断了我为数不多发泄情绪的方式，<br>
+还有周六在便利店兼职，有个老外大爷骑着共享单车来买，这是我和他的对话，虽然记不太清了，不过大致意思就是这样</p>
+<p><span class="blue">老外： "coffee"</span></p>
+<p><span class="red">我："sry my english is bad."</span></p>
+<p><span class="blue">老外："no no is ok , 窝妖卡布奇诺。"</span></p>
+<p><span class="red">我："没有卡布奇诺，我们有椰乳，拿铁，美式。"</span></p>
+<p><span class="blue">老外："梅悠 cappuccino？？ milk and coffee, cappuccino"</span></p>
+<p>我不知道咖啡加上牛奶是哪种咖啡，我经常喝的是椰乳，所以我在收银台点了椰乳咖啡给他，但在咖啡机上点的是拿铁，我都不知道我怎么想的，脑子和手各干各的事，结果答案正确，咖啡液先是流出，然后自动加入牛奶。</p>
+<p>当然最后也在意料之内的失败了，因为牛奶不够，瓶子里只剩下一点，咖啡机像是吃不到奶的婴儿一般开始发出滋滋滋的声音，把我和老外看呆了，好吧只有老外看呆了，我是知道没有奶了，但是没想到拿铁会加奶，也没想到会有人来买加奶的咖啡，当然也不知道牛奶在哪里，我急了，害怕耽搁洋大人时间，打电话给舅妈，接到电话后好像她在午睡，但我也没管那么多，得知牛奶在冰箱后我也没去拿，而是做了椰乳给他，因为有其他客人来了，他看着我把椰乳加进咖啡说:</p>
+<p><span class="blue">"yeah put milk in coffee"</span></p>
+<p>随后发出疑问：</p>
+<p><span class="blue">"Is that milk?"</span></p>
+<p>我不知道椰乳用英文怎么说，他指了指冰箱里面的牛奶</p>
+<p><span class="red">我："that's different."</span></p>
+<p><span class="blue">老外："different!? oh ok"</span></p>
+<p>他歪着脑袋，妥协了，做好后我递给他</p>
+<p><span class="red">我："do you need sugar?"</span></p>
+<p><span class="blue">老外："of course! give me one more"</span></p>
+<p>我递给他三包糖 他拿了两包，倒进咖啡后搅拌搅拌，然后一口气喝完了，应该是非常口渴吧，我浪费太多时间了，太丢脸了，这就是没学好洋文的结果，这好像是我印象中和老外对话最多的一次吧，不过他脾气很好，很有耐心，也许以后也会碰到其他歪果仁，毕竟这里是中德合作，嗯，下次我一定打开实时翻译。</p>
+<p><code>2023年10月17日</code></p>
+<h1 id="宫崎骏"><a class="anchor" href="#宫崎骏">#</a> 宫崎骏</h1>
+<p>用小学生文笔发表一下观后感，已经写了太多有关生活的事情，偶尔也要换换口味，更何况最近无事发生。</p>
+<p>在小学时候，我在一个地方上托管班，每天晚上会在那边，大概做什么呢，呃，其实也不重要，就是让老师完成家长该完成的事情，比如说背诵课文签字，不会的可以问老师之类的，有一个老师我的印象深刻，甚至到现在我还记得她的名字，<span class="blue"> 蓝春花</span>，当然我可能也记错了，如果我还在江西的话，我会找证据，那就是摆在我书柜上的小学语文书，上面绝对有她的签名，我还清楚记得去她的大学玩偶遇她，要是算一算的话，她现在应该 35 岁左右了，如果结婚了孩子估计都快上小学了。</p>
+<p>记住她的原因很简单，<s>她很漂亮啊！</s> 她在某天下午放了一部电影给我们看，是宫崎骏的 <code>《幽灵公主》</code> , 直接给我增加了童年的美好回忆，没错，看过的人应该都知道，断手，子弹穿心，还有山猪神身上爬满了虫子的画面，这些东西深深的刻在了我的脑海里面，当然了，还有幽灵公主。那么这样说的话我的童年女神就是她了，直到现在她依旧是我最喜欢的动漫女性角色... 之一 哈哈哈，我喜欢的女性角色太多了，但是在宫崎骏作品中，她绝对排名第一，下面放上我女神的照片，如果看的到的话。</p>
+<p><a href="https://i0.hdslb.com/bfs/article/watermark/b9152b6cf6f8eecb8b78a9e62b2910109f78a230.jpg"><u>看不到点我也行</u></a>。</p>
+<img data-src="https://github.com/MrNobody233/Pohot/blob/main/blog/ylgz.jpg?raw=true" alt="" width="200">
+<p>最近我又看了几部宫崎骏的作品，准确的说是四部， <code>《千与千寻の神隐》</code> 、 <code>《哈尔的移动城堡》</code>  、 <code>《魔女宅急便》</code> 还有 <code>《风之谷的娜乌西卡》</code> , 呃，还是说叫  <code>《风之谷》</code> 比较好，宫崎骏大多作品都是以女性为主角，讲述人与自然，和平，成长的故事，首先是误入神界的千寻，然后是被荒野女巫变成老太婆的苏菲，一个从胆小变得勇敢，另一个从自卑变得自信，每个女主都很让人喜欢，当然也有一上来就很棒的，比如风之谷的娜乌西卡，最开始点开这个动漫的时候我居然犹豫了，因为 <code>《风之谷》</code> 是 1984 年的电影，害怕这个年纪比我妈都大的电影让我失望，但看完后实在是出人意料，再得知电影版只是漫画版本的冰山一角，只展示了漫画的一册，而漫画版有 7 册，因为中途制作其他动画原因，从 82 年开始连载到直到 94 年才结束。她的漫画版也远比电影黑暗许多，在风之谷面前，幽灵公主的黑暗程度根本不算什么，甚至可以说有很多作品是基于风之谷的故事框架去完成的，这尼玛，我绝对要买她的漫画，-&gt; 打开淘宝 -&gt; 搜索风之谷 -&gt; 点击详情页 -&gt; 卷后 269￥ -&gt; 关闭淘宝。</p>
+<p>咳咳，娜乌西卡在电影中的表现与漫画中不同，电影中娜乌西卡用爱与温柔解决很多问题，开始杀几个人后还哭哭说自己被仇恨蒙蔽了双眼，然而漫画版中的娜乌西卡明辨是非，杀伐果断，听人家视频这么介绍，直接好感 +++，并且决定要买她的漫画版好好享用这份大餐，娜乌西卡也成功变成宫崎骏动画中我第二喜欢的女主角。</p>
+<p><a href="https://i0.hdslb.com/bfs/article/df0d419a16f726e3b57ecde66832e765ea6c8b41.jpg"><u>点我去看娜乌西卡</u></a>。</p>
+<p>什么？？你问我怎么喜欢的都是女角色，难道没有喜欢的男主角吗？那必定是有的，如果我是小女孩的话，那我的心就被哈尔偷走了～～～没戳，就是哈儿移动城堡里面的哈尔，在几周前某个下午观看这部动画的时，当哈尔牵着苏菲的手在空中散步，居然给哥们看哭了，什么嘛，真是莫名其妙，还配着这个音乐，哎妈呀，实在是太好听了 8，不愧是你啊久石让。</p>
+<style>.bbplayer{width: 100%; max-width: 850px; margin: auto}</style><div class="bbplayer"><iframe class="bbplayer" id="mmedia-HAEPTikUkmNjWabD" src="https://player.bilibili.com/player.html?bvid=BV1k54y1M7rj&amp;page=1&amp;high_quality=1&amp;danmaku=true" allowfullscreen="allowfullscreen" scrolling="no" border="0" frameborder="0" framespacing="0" sandbox="allow-top-navigation allow-same-origin allow-forms allow-scripts allow-popups"></iframe></div><script> document.getElementById("mmedia-HAEPTikUkmNjWabD").style.height=document.getElementById("mmedia-HAEPTikUkmNjWabD").scrollWidth*0.76+"px";
+    window.onresize = function(){
+      document.getElementById("mmedia-HAEPTikUkmNjWabD").style.height=document.getElementById("mmedia-HAEPTikUkmNjWabD").scrollWidth*0.76+"px";
+    }; </script>
+<p>我初中的语文老师，她也强烈安利我们看宫崎骏的漫画，她给我们放的是 <code>《起风了》</code> , 但我没有太多印象，可能是她没有放完的原因，我也是最近才知道，宫崎骏再做完这部动漫后也就是 2013 年，选择第七次退休，而现在  <code>《你想活出怎样的人生》</code> 复出作早已经在日本上映，估计是因为日本排放核废水的原因，不知这部电影何时能在国内上映，不过我很希望 <code>《风之谷》</code> 能够重映，想在电影院重新看这部快 40 多年前的手绘大作。</p>
+<p>就这样吧，语文学好点也不至于这样，还是得多看书。</p>
+]]></content>
+      <tags>
+        <tag>自言自语</tag>
+        <tag>周记</tag>
       </tags>
   </entry>
 </search>
