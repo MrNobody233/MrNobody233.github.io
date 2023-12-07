@@ -804,7 +804,7 @@
   </entry>
   <entry>
     <title>about</title>
-    <url>/2003/12/06/about/</url>
+    <url>/2022/03/25/about/</url>
     <content><![CDATA[<h1 class="rainbow" id="关于"><a class="anchor" href="#关于">#</a> 关于</h1>
 <p>为什么会有这个博客，因为我写的第一个 Vue 项目里面想添加一个友情链接，跳转到我的个人博客，但是我并没有博客，所以我从今天，也就是 2022 年 3 月 25 日 13:39:38 诞生了我的第一个博客。</p>
 <p>虽然这个博客的主题很漂亮，叫做<span class="exturl" data-url="aHR0cHM6Ly9mZWNoLmluLw=="> Diaspora</span> (已换成<span class="exturl" data-url="aHR0cHM6Ly9zaG9rYS5sb3N0eXUubWUv"> shoka</span>)，但是我写不出来，我太菜了，也许有朝一日我能写出属于自己主题的博客</p>
@@ -4028,6 +4028,8 @@ function refreshPage() {
 <h3 id="6日"><a class="anchor" href="#6日">#</a> 6 日</h3>
 <ul>
 <li>豆腐脑 =  <code>2.5</code></li>
+<li>油炸 + 鸡蛋灌饼 =  <code>22.5</code> <br>
+ <code>共计：25</code></li>
 </ul>
 <h3 id="5日"><a class="anchor" href="#5日">#</a> 5 日</h3>
 <ul>
