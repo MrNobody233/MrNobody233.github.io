@@ -4031,7 +4031,7 @@ function refreshPage() {
       name: '12月',
       type: 'line',
       stack: 'Total',
-      data:[12, 12, 25, 14.5, 26.38, 25, 20.24, 15.5, 64.95, 43, 73.62, 289.8],
+      data:[12, 12, 25, 14.5, 26.38, 25, 20.24, 15.5, 64.95, 43, 73.62, 335.64, 20.24],
       // 折线图颜色
       itemStyle: {
         color: "#c87698"
@@ -4039,11 +4039,27 @@ function refreshPage() {
   }
   ]})
 </script>
+<h3 id="15日"><a class="anchor" href="#15日">#</a> 15 日</h3>
+<ul>
+<li>饼 =  <code>3</code></li>
+</ul>
+<h3 id="14日"><a class="anchor" href="#14日">#</a> 14 日</h3>
+<ul>
+<li>老乡鸡会员 =  <code>8</code></li>
+<li>QQ 绿钻 =  <code>9.9</code>  禁止白嫖<br>
+ <code>共计：17.9</code></li>
+</ul>
+<h3 id="13日"><a class="anchor" href="#13日">#</a> 13 日</h3>
+<ul>
+<li>老乡鸡 =  <code>20.24</code> <br>
+ <code>共计：20.24</code></li>
+</ul>
 <h3 id="12日"><a class="anchor" href="#12日">#</a> 12 日</h3>
 <ul>
 <li>粥 =  <code>2.5</code></li>
 <li>便利店 =  <code>43.34</code>  双十二买四十送二十</li>
-<li>迪卡侬帆布滑板鞋和长裤 =  <code>289.8</code>  天太冷了，而且一直穿一双鞋也不好... 最主要是我想要个滑板鞋～～</li>
+<li>迪卡侬帆布滑板鞋和长裤 =  <code>289.8</code>  天太冷了，而且一直穿一双鞋也不好... 最主要是我想要个滑板鞋～～<br>
+ <code>共计：335.64</code></li>
 </ul>
 <h3 id="11日"><a class="anchor" href="#11日">#</a> 11 日</h3>
 <ul>
@@ -4296,13 +4312,13 @@ function refreshPage() {
 <li>晚饭 水饺 + 油炸 =  <code>24</code>  就是没痘痘才吃的，吃完就上火了！<br>
  <code>共计：27</code></li>
 </ul>
-<h3 id="15日"><a class="anchor" href="#15日">#</a> 15 日</h3>
+<h3 id="15日-2"><a class="anchor" href="#15日-2">#</a> 15 日</h3>
 <ul>
 <li>早饭 鸡蛋饼 =  <code>3</code></li>
 <li>晚饭 龙骨手擀面 =  <code>18</code>  书包落在店里了，又把老板他们逗笑了 qwq<br>
  <code>共计：21</code></li>
 </ul>
-<h3 id="14日"><a class="anchor" href="#14日">#</a> 14 日</h3>
+<h3 id="14日-2"><a class="anchor" href="#14日-2">#</a> 14 日</h3>
 <ul>
 <li>老乡鸡 和会员 =  <code>31.76</code></li>
 <li>棉服 =  <code>299.9</code></li>
@@ -4311,7 +4327,7 @@ function refreshPage() {
 <li>围巾 =  <code>25.9</code> <br>
  <code>共计:375.45</code></li>
 </ul>
-<h3 id="13日"><a class="anchor" href="#13日">#</a> 13 日</h3>
+<h3 id="13日-2"><a class="anchor" href="#13日-2">#</a> 13 日</h3>
 <ul>
 <li>早饭 饭团 =  <code>4</code>  老板送了杯豆浆</li>
 <li>棉马夹 =  <code>48</code>  冷麻了，谢谢你。<br>
@@ -4571,19 +4587,19 @@ function refreshPage() {
 <li>晚饭 老乡鸡 =  <code>21.12</code></li>
 </ul>
 <p><code>10月16日共计23.62</code></p>
-<h3 id="15日-2"><a class="anchor" href="#15日-2">#</a> 15 日</h3>
+<h3 id="15日-3"><a class="anchor" href="#15日-3">#</a> 15 日</h3>
 <ul>
 <li>午饭 老乡鸡 = <code>21.24</code></li>
 <li>彩票 =  <code>20</code>  因为大个子买了好几张彩票没中奖，我 v 她 20，如果她中了 100w 就分我一点，（赌狗不得房子）<br>
  <code>10月15日共计41.24</code></li>
 </ul>
-<h3 id="14日-2"><a class="anchor" href="#14日-2">#</a> 14 日</h3>
+<h3 id="14日-3"><a class="anchor" href="#14日-3">#</a> 14 日</h3>
 <ul>
 <li>午饭 老乡鸡 =  <code>24.76</code></li>
 <li>晚饭 方便面炒肉 + 一些烧烤 =  <code>34</code></li>
 </ul>
 <p><code>10月14日共计58.76</code></p>
-<h3 id="13日-2"><a class="anchor" href="#13日-2">#</a> 13 日</h3>
+<h3 id="13日-3"><a class="anchor" href="#13日-3">#</a> 13 日</h3>
 <ul>
 <li>早餐 忘了 =  <code>3</code></li>
 </ul>
@@ -4845,14 +4861,14 @@ function refreshPage() {
 <li>屌丝饮料 + 魔爪 =  <code>10￥</code> <br>
  <code>9月16日共计: 68￥</code></li>
 </ul>
-<h3 id="15日-3"><a class="anchor" href="#15日-3">#</a> 15 日</h3>
+<h3 id="15日-4"><a class="anchor" href="#15日-4">#</a> 15 日</h3>
 <ul>
 <li>烧麦 + 茶叶蛋 + 豆浆 + 百岁山 =  <code>10.20￥</code> <br>
  <code>9月15日共计: 10.20￥</code></li>
 </ul>
-<h3 id="14日-3"><a class="anchor" href="#14日-3">#</a> 14 日</h3>
+<h3 id="14日-4"><a class="anchor" href="#14日-4">#</a> 14 日</h3>
 <p>没花钱，白嫖舅妈超市临期食品</p>
-<h3 id="13日-3"><a class="anchor" href="#13日-3">#</a> 13 日</h3>
+<h3 id="13日-4"><a class="anchor" href="#13日-4">#</a> 13 日</h3>
 <ul>
 <li>超级腻的饼 =  <code>8￥</code>  放了很多芝麻酱，大早上真的吃不了</li>
 <li>牛奶 =  <code>4.95</code>  舅妈超市的牛奶，本来想冲淡一下芝麻味，结果牛奶味道也很重<br>
@@ -5135,20 +5151,20 @@ function refreshPage() {
 <li>晚饭 炸鸡柳 + 煎饼果子 =  <code>11￥</code> <br>
  <code>8月15日共计: 13.5￥</code></li>
 </ul>
-<h3 id="15日-4"><a class="anchor" href="#15日-4">#</a> 15 日</h3>
+<h3 id="15日-5"><a class="anchor" href="#15日-5">#</a> 15 日</h3>
 <ul>
 <li>早饭 饭团 =  <code>4￥</code></li>
 <li>晚饭 牛肉手擀面 =  <code>10￥</code></li>
 </ul>
 <p><code>8月15日共计: 14￥</code></p>
-<h3 id="14日-4"><a class="anchor" href="#14日-4">#</a> 14 日</h3>
+<h3 id="14日-5"><a class="anchor" href="#14日-5">#</a> 14 日</h3>
 <ul>
 <li>早饭 黑米粥 =  <code>2.5￥</code></li>
 <li>共享电动 =  <code>2.5￥</code>  身体不适，硬着头皮去上班 原谅自己了 ovo</li>
 <li>晚饭 牛肉手擀面 =  <code>10￥</code></li>
 </ul>
 <p><code>8月14日共计: 15￥</code></p>
-<h3 id="13日-4"><a class="anchor" href="#13日-4">#</a> 13 日</h3>
+<h3 id="13日-5"><a class="anchor" href="#13日-5">#</a> 13 日</h3>
 <ul>
 <li>晚饭 老乡鸡 =  <code>34￥</code>  老乡鸡！！！ 为什么你鸡汤只给我一块鸡肉和一个鸡蛋黄！<br>
  <code>8月13日共计: 34￥</code></li>
@@ -5330,19 +5346,19 @@ function refreshPage() {
 <li>晚饭 花甲粉 =  <code>15￥</code></li>
 </ul>
 <p><code>7月16日共计: 31.8￥</code></p>
-<h3 id="15日-5"><a class="anchor" href="#15日-5">#</a> 15 日</h3>
+<h3 id="15日-6"><a class="anchor" href="#15日-6">#</a> 15 日</h3>
 <ul>
 <li>早饭 茶叶蛋 =  <code>1.5￥</code></li>
 <li>葡萄 =   <code>￥10.5</code></li>
 <li>晚饭 牛肉刀削面 =  <code>12￥</code> <br>
  <code>7月15日共计: 24￥</code></li>
 </ul>
-<h3 id="14日-5"><a class="anchor" href="#14日-5">#</a> 14 日</h3>
+<h3 id="14日-6"><a class="anchor" href="#14日-6">#</a> 14 日</h3>
 <ul>
 <li>晚饭 煎饼果子 =  <code>6￥</code> <br>
  <code>7月14日共计: 6￥</code></li>
 </ul>
-<h3 id="13日-5"><a class="anchor" href="#13日-5">#</a> 13 日</h3>
+<h3 id="13日-6"><a class="anchor" href="#13日-6">#</a> 13 日</h3>
 <ul>
 <li>早饭 茶叶蛋 + 粉丝包 =  <code>3￥</code></li>
 <li>晚饭 鸡柳 + 鸡蛋肥肠炒面 =  <code>20¥</code></li>
